@@ -18,13 +18,16 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #222
+; background = #222
+; background = #1C1B22
+background = #14161B
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 ; primary = #ffb52a
-primary = #2ecc71
+; primary = #2ecc71
+primary = #3498DB 
 secondary = #e60053
 alert = #bd2c40
 

@@ -2,14 +2,12 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'preservim/nerdtree' 
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/tagbar'
-Plug 'aserebryakov/vim-todo-lists'
-" Plug 'preservim/nerdcommenter'
 Plug 'airblade/vim-gitgutter'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'joshdick/onedark.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
 
 call plug#end()
@@ -38,8 +36,9 @@ set autoindent
 let g:airline_theme="material"
 " let g:airline_theme="simple"
 " let g:airline_theme="onedark"
-" let g:material_theme_style="palenight"
+let g:material_theme_style="palenight"
 " colorscheme onedark
 colorscheme material
+" colorscheme nord
 
 set term=screen-256color
