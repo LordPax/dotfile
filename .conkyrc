@@ -53,7 +53,7 @@ ${font Open Sans: size=29}${time %H:%M %p}$font
 ${font Open Sans: size=12}${time %a} ${time %d %b %Y}$font
 
 ${font Open Sans Bold: size 12}${color 61afef}SYSTEM$font ${hr 3}$color
-${color 97A2B8}OS$color $alignr Manjaro
+${color 97A2B8}OS$color $alignr Arch Linux
 ${color 97A2B8}Kernel$color $alignr $kernel
 ${color 97A2B8}Host$color $alignr $nodename
 ${color 97A2B8}Uptime$color $alignr $uptime
@@ -74,8 +74,6 @@ ${color 97A2B8}/ $color $alignr ${fs_used /}/${fs_size /}
 ${color 98c379}${fs_bar 5 /}$color
 ${color 97A2B8}/home $color $alignr ${fs_used /home}/${fs_size /home}
 ${color 98c379}${fs_bar 5 /home}$color
-${color 97A2B8}/save $color $alignr ${fs_used /save}/${fs_size /save}
-${color 98c379}${fs_bar 5 /save}$color
 
 ${font Open Sans Bold: size 12}${color 61afef}PROCESSES$font ${hr 3}$color
 ${color 97A2B8}Name                 PID     CPU     MEM$color
