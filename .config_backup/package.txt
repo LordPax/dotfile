@@ -1,0 +1,5 @@
+burpsuite
+zoom
+gobuster
+i3lock-color
+nvm

@@ -1,0 +1,10 @@
+/home/lordpax/.config/i3/
+/home/lordpax/.config/rofi/
+/home/lordpax/.config/polybar/
+/home/lordpax/.config/picom/
+/home/lordpax/.config_backup/
+/home/lordpax/.bashrc
+/home/lordpax/.conkyrc
+/home/lordpax/.vimrc
+/home/lordpax/.tmux.conf
+

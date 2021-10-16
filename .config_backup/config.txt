@@ -1,0 +1,16 @@
+/home/lordpax/Images/
+/home/lordpax/programme/
+/home/lordpax/Documents/Banque
+/home/lordpax/Documents/Cours
+/home/lordpax/Documents/Doc
+/home/lordpax/Documents/Jeux
+/home/lordpax/Documents/Stage
+/home/lordpax/Documents/poursuite
+/home/lordpax/Documents/ParcourSup
+/home/lordpax/Documents/Programmation
+/home/lordpax/Documents/Pentest
+/home/lordpax/Documents/Alternance
+/home/lordpax/Documents/ESGI
+/home/lordpax/Documents/Challenge
+/home/lordpax/Documents/marionnet
+
