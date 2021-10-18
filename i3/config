@@ -223,7 +223,9 @@ for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
 # exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/backgrounds/xfce/manjaro_grid_maia.jpg'
 # exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/illyria-adapta-dark-maia.jpg'
-exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/manjaro_grid_maia.jpg'
+exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/default-adapta.jpg'
+# exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/light-stripe-maia.jpg'
+# exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/manjaro_grid_maia.jpg'
 # exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/backgrounds/xfce/illyria-adapta-dark-maia.jpg'
 
 exec_always --no-startup-id "killall polybar; polybar -r barLeft; polybar -r barRight; "
@@ -237,16 +239,17 @@ exec --no-startup-id keepassxc
 
 assign [class="firefox"] $ws1
 assign [class="code-oss"] $ws2
+assign [class="Xfce4-terminal"] $ws3
 assign [class="discord"] $ws6
 assign [class="Thunderbird"] $ws6
 assign [class="Steam"] $ws6
 assign [class="KeePassXC"] $ws6
 
-# class                 border  backgr. text    indicator child_border
+# # class                 border  backgr. text    indicator child_border
 # client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
 # client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 # client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 # client.urgent           #2f343a #900000 #ffffff #900000   #900000
 # client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-# 
+
 # client.background       #ffffff
