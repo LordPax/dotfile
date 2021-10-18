@@ -36,7 +36,7 @@ set autoindent
 let g:airline_theme="material"
 " let g:airline_theme="simple"
 " let g:airline_theme="onedark"
-let g:material_theme_style="palenight"
+" let g:material_theme_style="palenight"
 " colorscheme onedark
 colorscheme material
 " colorscheme nord
