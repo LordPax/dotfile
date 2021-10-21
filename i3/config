@@ -208,7 +208,7 @@ bindsym $mod+r mode "resize"
 gaps inner 6
 smart_borders on
 smart_gaps on
-border_radius 15
+# border_radius 15
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
