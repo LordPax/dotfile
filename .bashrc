@@ -153,8 +153,10 @@ alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"
 alias restore_file="backup -r /save -o /"
 alias restore_dotfile="backup -r /save -o / -n dotfile"
-alias save_mdp="cp ~/Mots_de_passe.kdbx /run/media/lordpax/8075-9C07/"
-alias restore_mdp="cp /run/media/lordpax/8075-9C07/Mots_de_passe.kdbx ~/"
+alias save_mdp="cp ~/Mots_de_passe.kdbx /save"
+alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/"
+alias save_mdp_usb="cp ~/Mots_de_passe.kdbx /run/media/lordpax/8075-9C07/"
+alias restore_mdp_usb="cp /run/media/lordpax/8075-9C07/Mots_de_passe.kdbx ~/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
 
 alias copy="xsel --clipboard -i"
