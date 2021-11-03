@@ -21,12 +21,12 @@ let g:airline#extensions#tabline#enabled = 1
 
 nmap <C-j> :bp<CR>
 nmap <C-k> :bn<CR>
-nmap <C-l> :tabprevious<CR>
-nmap <C-m> :tabnext<CR>
+nmap <C-l> :tabp<CR>
+nmap <C-m> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
 
-nmap <C-c> <C-w>5<
-nmap <C-v> <C-w>5>
+nmap <C-i> <C-w>5<
+nmap <C-o> <C-w>5>
 
 map j <Left>
 map k <Down>
