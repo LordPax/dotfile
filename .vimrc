@@ -23,6 +23,9 @@ nmap <C-j> :bp<CR>
 nmap <C-k> :bn<CR>
 nmap <C-n> :TagbarToggle<CR>
 
+nmap <C-l> <C-w>5<
+nmap <C-m> <C-w>5>
+
 map j <Left>
 map k <Down>
 map l <Up>
