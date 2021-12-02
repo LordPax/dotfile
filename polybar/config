@@ -31,7 +31,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/barLeft]
-;monitor = ${env:MONITOR:}
+monitor = ${env:MONITOR:LVDS-1}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -83,6 +83,43 @@ tray-padding = 2
 
 ;scroll-up = i3wm-wsnext
 ;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/barRight]
+monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 27
+radius = 0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = fixed:pixelsize=10;1
+font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+font-2 = siji:pixelsize=10;1
+font-3 = "Font Awesome 5 Free:style=Regular:pixelsize=10;1"
+font-4 = "Font Awesome 5 Free:style=Solid:pixelsize=10;1"
+font-5 = "Font Awesome 5 Brands:pixelsize=10";1"
+
+modules-left = i3
+
+tray-position = right
+tray-padding = 2
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -438,6 +475,17 @@ label-maxlen = 50
 ;   None
 ; label-empty = Bureau
 ; label-empty-foreground = #707880
+
+[module/xkeyboard]
+type = custom/script
+blacklist-0 = num lock
+interval = 1
+format-prefix = " "
+exec = setxkbmap -query | grep layout | awk '{print $2}'
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+click-left = /home/lordpax/.config/polybar/script/keyboard
 
 [settings]
 screenchange-reload = true
