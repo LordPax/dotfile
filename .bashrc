@@ -158,8 +158,8 @@ alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt
 alias save_mdp="cp ~/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/"
 
-alias save_mdp_usb="cp ~/Mots_de_passe.kdbx /run/media/lordpax/8075-9C07/"
-alias restore_mdp_usb="cp /run/media/lordpax/8075-9C07/Mots_de_passe.kdbx ~/"
+alias save_mdp_usb="cp ~/Mots_de_passe.kdbx /run/media/lordpax/5EA9-BCAA/"
+alias restore_mdp_usb="cp /run/media/lordpax/5EA9-BCAA/Mots_de_passe.kdbx ~/"
 
 alias save_mdp_windows="cp ~/Mots_de_passe.kdbx /run/media/lordpax/6D271A07D4DF8020/Users/gener/Documents/"
 alias restore_mdp_windows="cp /run/media/lordpax/6D271A07D4DF8020/Users/gener/Documents/Mots_de_passe.kdbx ~/"

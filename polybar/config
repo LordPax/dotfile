@@ -176,7 +176,7 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 ;label-indicator-underline = ${colors.secondary}
-click-left = /home/lordpax/programme/keyboard 
+click-left = /home/lordpax/.config/polybar/script/keyboard
 
 [module/filesystem]
 type = internal/fs

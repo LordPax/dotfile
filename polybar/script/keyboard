@@ -1,0 +1,4 @@
+#!/bin/bash
+
+key=$(setxkbmap -query | grep layout | awk '{print $2}')
+setxkbmap $([ "$key" == "fr" ] && echo "us" || echo "fr")
