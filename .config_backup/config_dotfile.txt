@@ -6,6 +6,7 @@
 /home/lordpax/.config/latte/
 /home/lordpax/.config/picom/
 /home/lordpax/.ssh/
+/home/lordpax/.gnupg/
 /home/lordpax/.vscode-oss/
 /home/lordpax/.config_backup/
 /home/lordpax/.themes/

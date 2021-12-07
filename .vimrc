@@ -13,20 +13,29 @@ Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
+for i in range(97,122)
+    let c = nr2char(i)
+    exec "map \e".c." <M-".c.">"
+endfor
+
 syntax on
 set nu
 set rnu
 filetype plugin indent on
 let g:airline#extensions#tabline#enabled = 1
 
-nmap <C-j> :bp<CR>
-nmap <C-k> :bn<CR>
+nmap <C-i> :bp<CR>
+nmap <C-o> :bn<CR>
 nmap <C-l> :tabp<CR>
 nmap <C-m> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
+nmap <C-j> :bel term<CR>
+nmap <C-k> :vert term<CR>
 
-nmap <C-i> <C-w>5<
-nmap <C-o> <C-w>5>
+nmap <M-j> <C-w>5<
+nmap <M-k> <C-w>5-
+nmap <M-l> <C-w>5+
+nmap <M-m> <C-w>5>
 
 map j <Left>
 map k <Down>
