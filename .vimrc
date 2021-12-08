@@ -5,9 +5,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'joshdick/onedark.vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 
@@ -52,13 +49,3 @@ let g:airline_theme="codedark"
 colorscheme codedark
 
 set term=screen-256color
-
-" let g:airline_theme="material"
-" colorscheme material
-" let g:material_theme_style="palenight"
-
-" let g:airline_theme="simple"
-" let g:airline_theme="onedark"
-" colorscheme onedark
-" colorscheme nord
-
