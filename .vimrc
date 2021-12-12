@@ -21,6 +21,12 @@ set rnu
 filetype plugin indent on
 set path+=**
 set wildmenu
+set mouse=a
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set autoindent
+
 let g:airline#extensions#tabline#enabled = 1
 
 nmap <C-i> :bp<CR>
@@ -40,12 +46,6 @@ map j <Left>
 map k <Down>
 map l <Up>
 map m <Right>
-
-set mouse=a
-set tabstop=4
-set expandtab
-set shiftwidth=4
-set autoindent
 
 let g:airline_theme="codedark"
 colorscheme codedark
