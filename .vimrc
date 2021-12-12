@@ -19,6 +19,8 @@ syntax on
 set nu
 set rnu
 filetype plugin indent on
+set path+=**
+set wildmenu
 let g:airline#extensions#tabline#enabled = 1
 
 nmap <C-i> :bp<CR>
