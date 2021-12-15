@@ -26,6 +26,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
+set cursorline
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -34,6 +35,7 @@ nmap <C-o> :bn<CR>
 nmap <C-l> :tabp<CR>
 nmap <C-m> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
+nmap <C-h> :bd<CR>
 nmap <C-j> :bel term<CR>
 nmap <C-k> :vert term<CR>
 
