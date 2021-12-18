@@ -71,7 +71,7 @@ modules-left = i3 xwindow
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date pulseaudio-control xkeyboard powermenu
+modules-right = date pulseaudio-control updates-pacman xkeyboard powermenu
 
 tray-position = right
 tray-padding = 2
@@ -509,6 +509,14 @@ menu-2-0 = power off
 menu-2-0-exec = poweroff
 menu-2-1 = cancel
 menu-2-1-exec = menu-open-0
+
+[module/updates-pacman]
+type = custom/script
+format-prefix = " "
+label-indicator-padding = 2
+label-indicator-margin = 1
+exec = ~/.config/polybar/script/updates-pacman-aurhelper.sh
+interval = 600
 
 [settings]
 screenchange-reload = true
