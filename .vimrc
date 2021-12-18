@@ -7,6 +7,7 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
 
