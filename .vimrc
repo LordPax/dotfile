@@ -48,6 +48,11 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+noremap <C-w>j <C-w>h
+noremap <C-w>k <C-w>j
+noremap <C-w>l <C-w>k
+noremap <C-w>m <C-w>l
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 colorscheme codedark
