@@ -31,10 +31,10 @@ set cursorline
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
+nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-l> :tabp<CR>
 nmap <C-m> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
-nmap <C-h> :bd<CR>
 nmap <C-j> :bel term<CR>
 nmap <C-k> :vert term<CR>
 
@@ -43,15 +43,15 @@ map <M-k> <C-w>5-
 map <M-l> <C-w>5+
 map <M-m> <C-w>5>
 
-map j <Left>
-map k <Down>
-map l <Up>
-map m <Right>
-
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
 noremap <C-w>l <C-w>k
 noremap <C-w>m <C-w>l
+
+map j <Left>
+map k <Down>
+map l <Up>
+map m <Right>
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
