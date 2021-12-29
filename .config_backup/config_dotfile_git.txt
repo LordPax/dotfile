@@ -3,6 +3,7 @@
 /home/lordpax/.config/polybar/
 /home/lordpax/.config/picom/
 /home/lordpax/.config_backup/
+/home/lordpax/.config/thunar-script/
 /home/lordpax/.bashrc
 /home/lordpax/.conkyrc
 /home/lordpax/.vimrc

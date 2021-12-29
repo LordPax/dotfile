@@ -5,6 +5,7 @@
 /home/lordpax/.config/Kvantum/
 /home/lordpax/.config/latte/
 /home/lordpax/.config/picom/
+/home/lordpax/.config/thunar-script/
 /home/lordpax/.ssh/
 /home/lordpax/.gnupg/
 /home/lordpax/.vscode-oss/
