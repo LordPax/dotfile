@@ -43,6 +43,11 @@ nmap <M-k> <C-w>5-
 nmap <M-l> <C-w>5+
 nmap <M-m> <C-w>5>
 
+noremap <C-w>j <C-w>h
+noremap <C-w>k <C-w>j
+noremap <C-w>l <C-w>k
+noremap <C-w>m <C-w>l
+
 map j <Left>
 map k <Down>
 map l <Up>

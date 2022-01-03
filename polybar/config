@@ -67,7 +67,7 @@ modules-left = i3 title
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date pulseaudio xkeyboard wlan eth battery luminosity powermenu
+modules-right = date pulseaudio xkeyboard updates-pacman battery luminosity powermenu
 
 tray-position = right
 tray-padding = 2
@@ -475,6 +475,14 @@ label-maxlen = 50
 ;   None
 ; label-empty = Bureau
 ; label-empty-foreground = #707880
+
+[module/updates-pacman]
+type = custom/script
+format-prefix = " "
+label-indicator-padding = 2
+label-indicator-margin = 1
+exec = ~/.config/polybar/script/updates-pacman-aurhelper.sh
+interval = 600
 
 [module/xkeyboard]
 type = custom/script

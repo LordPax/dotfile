@@ -26,10 +26,10 @@ export EDITOR=vim
 
 [ -z $TMUX ] && tmux
 
-alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /run/media/lordpax/8075-9C07/Backup -n dotfile_compute-1 -s 3"
-alias restore_dotfile="backup -r /run/media/lordpax/5EA9-BCAA/Backup -o / -n dotfile_compute-1"
-alias save_mdp="cp ~/Mots_de_passe.kdbx /run/media/lordpax/5EA9-BCAA/"
-alias restore_mdp="cp /run/media/lordpax/5EA9-BCAA/Mots_de_passe.kdbx ~/"
+alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /mnt/veracrypt1/Backup -n dotfile_compute-1 -s 3"
+alias restore_dotfile="backup -r /mnt/veracrypt1/Backup -o / -n dotfile_compute-1"
+alias save_mdp="cp ~/Mots_de_passe.kdbx /mnt/veracrypt1/"
+alias restore_mdp="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
 
 alias copy="xsel --clipboard -i"
