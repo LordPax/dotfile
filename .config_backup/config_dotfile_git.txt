@@ -6,3 +6,4 @@
 /home/lordpax/.config/i3
 /home/lordpax/.config/polybar
 /home/lordpax/.config/rofi
+/home/lordpax/.config/thunar-script
