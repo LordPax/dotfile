@@ -28,20 +28,21 @@ set expandtab
 set shiftwidth=4
 set autoindent
 set cursorline
+set hlsearch
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
+nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-l> :tabp<CR>
 nmap <C-m> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
-nmap <C-h> :bd<CR>
 nmap <C-j> :bel term<CR>
-nmap <C-k> :vert term<CR>
+nmap <C-k> :nohlsearch<CR>
 
-nmap <M-j> <C-w>5<
-nmap <M-k> <C-w>5-
-nmap <M-l> <C-w>5+
-nmap <M-m> <C-w>5>
+map <M-j> <C-w>5<
+map <M-k> <C-w>5-
+map <M-l> <C-w>5+
+map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
