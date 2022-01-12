@@ -34,11 +34,19 @@ set hlsearch
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
-nmap <C-l> :tabp<CR>
-nmap <C-m> :tabn<CR>
+nmap <C-j> :tabp<CR>
+nmap <C-k> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
-nmap <C-j> :bel term<CR>
-nmap <C-k> :nohlsearch<CR>
+nmap <C-l> :bel term<CR>
+nmap <C-m> :nohlsearch<CR>
+" nmap <C-i> :bp<CR>
+" nmap <C-o> :bn<CR>
+" nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
+" nmap <C-l> :tabp<CR>
+" nmap <C-m> :tabn<CR>
+" nmap <C-n> :TagbarToggle<CR>
+" nmap <C-j> :bel term<CR>
+" nmap <C-k> :nohlsearch<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
