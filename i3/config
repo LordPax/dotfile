@@ -214,10 +214,7 @@ smart_gaps on
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
 
-# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/backgrounds/Archlinux/uwp36748.png'
-# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/keep_id_simple_stupid.png'
-exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/wp5568817-archlinux-anime-wallpapers.jpg'
-# exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
+exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/split.png'
 exec_always --no-startup-id "killall polybar; polybar -r barLeft"
 exec_always --no-startup-id "killall conky; conky"
 # exec_always --no-startup-id "killall picom; picom"
