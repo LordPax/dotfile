@@ -12,7 +12,8 @@
 set $mod Mod4
 
 # exec_always xrdb /home/lordpax/.Xresources
-exec --no-startup-id xrandr --output LVDS-1 --brightness 0.8
+# exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.8
+exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.5
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id setxkbmap -option caps:escape 
 
@@ -33,7 +34,7 @@ font pango:DejaVu Sans 8
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
+exec_always --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
@@ -41,6 +42,9 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+bindsym XF86MonBrightnessUp exec --no-startup-id /home/lordpax/.config/polybar/script/brightnessUp
+bindsym XF86MonBrightnessDown exec --no-startup-id /home/lordpax/.config/polybar/script/brightnessDown
 
 # bindsym 
 
@@ -55,7 +59,7 @@ bindsym $mod+Shift+a kill
 
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec rofi -show drun
+bindsym $mod+d exec rofi -show drun -show-icons
 bindsym $mod+Shift+d exec rofi -show run
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -211,7 +215,9 @@ for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
 
 # exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/backgrounds/Archlinux/uwp36748.png'
-exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
+# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/keep_id_simple_stupid.png'
+exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/wp5568817-archlinux-anime-wallpapers.jpg'
+# exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
 exec_always --no-startup-id "killall polybar; polybar -r barLeft"
 exec_always --no-startup-id "killall conky; conky"
 # exec_always --no-startup-id "killall picom; picom"

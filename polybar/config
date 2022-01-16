@@ -31,7 +31,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/barLeft]
-monitor = ${env:MONITOR:LVDS-1}
+monitor = ${env:MONITOR:eDP-1}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -453,7 +453,8 @@ menu-2-1-exec = menu-open-0
 
 [module/luminosity]
 type = custom/script
-exec = echo " $(xrandr --verbose | grep Brightness | grep -o '[0-9].*')"
+exec = echo " $(xrandr --verbose | grep Brightness | grep -o '[0-9].*' | cut -d . -f 2)"
+interval = 1
 
 [module/title]
 type = internal/xwindow

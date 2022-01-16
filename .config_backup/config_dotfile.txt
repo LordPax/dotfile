@@ -1,11 +1,12 @@
 /home/lordpax/.vimrc
+/home/lordpax/.gitconfig
 /home/lordpax/.tmux.conf
 /home/lordpax/.conkyrc
-/home/lordpax/.vim
 /home/lordpax/.vscode-oss
 /home/lordpax/.config_backup
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
+/home/lordpax/.bashrc
 /home/lordpax/Mots_de_passe.kdbx
 /home/lordpax/.config/i3
 /home/lordpax/.config/polybar

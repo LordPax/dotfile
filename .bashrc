@@ -33,4 +33,4 @@ alias restore_mdp="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
 
 alias copy="xsel --clipboard -i"
-alias connect_HDMI="xrandr --output HDMI-1 --left-of LVDS-1"
+alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
