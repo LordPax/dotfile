@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -8,6 +8,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -25,6 +27,7 @@ set wildmenu
 set mouse=a
 set tabstop=4
 set expandtab
+" set noexpandtab
 set shiftwidth=4
 set autoindent
 set cursorline
@@ -57,5 +60,11 @@ map m <Right>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 colorscheme codedark
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-n>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 set term=screen-256color

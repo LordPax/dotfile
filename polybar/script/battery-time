@@ -1,0 +1,4 @@
+#!/bin/bash
+
+batTime=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep "time to empty" | awk '{print $4}')
+echo "( $batTime h )"

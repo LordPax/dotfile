@@ -67,7 +67,7 @@ modules-left = i3 title
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date pulseaudio xkeyboard updates-pacman battery luminosity powermenu
+modules-right = date pulseaudio xkeyboard updates-pacman battery battery-time luminosity powermenu
 
 tray-position = right
 tray-padding = 2
@@ -402,6 +402,11 @@ animation-discharging-1 = 
 animation-discharging-2 = 
 animation-discharging-foreground = ${colors.foreground}
 animation-discharging-framerate = 750
+
+[module/battery-time]
+type = custom/script
+exec = ~/.config/polybar/script/battery-time
+interval = 1
 
 [module/temperature]
 type = internal/temperature
