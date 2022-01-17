@@ -1,4 +1,4 @@
-call plug#begin('~/.vim/plugged')
+call plug#begin()
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -9,6 +9,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
 Plug 'github/copilot.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -26,6 +28,7 @@ set wildmenu
 set mouse=a
 set tabstop=4
 set expandtab
+" set noexpandtab
 set shiftwidth=4
 set autoindent
 set cursorline
@@ -39,14 +42,6 @@ nmap <C-k> :tabn<CR>
 nmap <C-n> :TagbarToggle<CR>
 nmap <C-l> :bel term<CR>
 nmap <C-m> :nohlsearch<CR>
-" nmap <C-i> :bp<CR>
-" nmap <C-o> :bn<CR>
-" nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
-" nmap <C-l> :tabp<CR>
-" nmap <C-m> :tabn<CR>
-" nmap <C-n> :TagbarToggle<CR>
-" nmap <C-j> :bel term<CR>
-" nmap <C-k> :nohlsearch<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -66,5 +61,11 @@ map m <Right>
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 colorscheme codedark
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-n>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 
 set term=screen-256color
