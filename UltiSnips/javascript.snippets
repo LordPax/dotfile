@@ -31,3 +31,31 @@ it('Should $1', () => {
 	result.should.be.deep.equal(expected)
 })
 endsnippet
+
+snippet promall "Promise.all()"
+${1:await} Promise.all([$2])
+endsnippet
+
+snippet elif "else if"
+else if ($1) {
+	$2
+}
+endsnippet
+
+snippet else "else"
+else {
+	$1
+}
+endsnippet
+
+snippet fun=> "name = () => {}"
+const ${1:func_name} = ${2:async} ($3) => {
+	$4
+}
+endsnippet
+
+snippet funprom "promise"
+const ${1:func_name} = ($2) => new Promise((resolve, reject) => {
+	$3
+})
+endsnippet
