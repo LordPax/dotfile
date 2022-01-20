@@ -1,0 +1,33 @@
+snippet desc "describe()"
+describe('$1', () => {
+	$2
+})
+endsnippet
+
+snippet it "it should"
+it('Should $1', () => {
+	$2
+})
+endsnippet
+
+snippet its "it should sample"
+it('Should $1', () => {
+	let date = new Date()
+	const addressFrom = faker.finance.ethereumAddress()
+	const addressTo = faker.finance.ethereumAddress()
+
+	for (let i = 0; i < 10; i++) {
+		$2
+		await Promise.all([$3])
+	}
+
+	const expected = $4
+
+	date = new Date()
+	const date2 = new Date(date.getTime() - 3 * 24 * 3600 * 1000)
+
+	const result = $5
+
+	result.should.be.deep.equal(expected)
+})
+endsnippet

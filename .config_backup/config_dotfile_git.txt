@@ -4,6 +4,7 @@
 /home/lordpax/.config/picom/
 /home/lordpax/.config_backup/
 /home/lordpax/.config/thunar-script/
+/home/lordpax/.vim/UltiSnips/
 /home/lordpax/.bashrc
 /home/lordpax/.conkyrc
 /home/lordpax/.vimrc
