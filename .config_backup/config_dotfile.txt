@@ -8,6 +8,7 @@
 /home/lordpax/.gnupg
 /home/lordpax/.bashrc
 /home/lordpax/Mots_de_passe.kdbx
+/home/lordpax/.vim/UltiSnips/
 /home/lordpax/.config/i3
 /home/lordpax/.config/polybar
 /home/lordpax/.config/rofi
