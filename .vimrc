@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
@@ -33,6 +34,7 @@ set shiftwidth=4
 set autoindent
 set cursorline
 set hlsearch
+set title
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
