@@ -5,28 +5,28 @@ describe('$1', () => {
 endsnippet
 
 snippet it "it should"
-it('Should $1', () => {
-	$2
+it('Should $1', ${2:async} () => {
+	$3
 })
 endsnippet
 
 snippet its "it should sample"
-it('Should $1', () => {
+it('Should $1', ${2:async} () => {
 	let date = new Date()
 	const addressFrom = faker.finance.ethereumAddress()
 	const addressTo = faker.finance.ethereumAddress()
 
 	for (let i = 0; i < 10; i++) {
-		$2
-		await Promise.all([$3])
+		$3
+		await Promise.all([$4])
 	}
 
-	const expected = $4
+	const expected = ${5:{}}
 
 	date = new Date()
 	const date2 = new Date(date.getTime() - 3 * 24 * 3600 * 1000)
 
-	const result = $5
+	const result = $6
 
 	result.should.be.deep.equal(expected)
 })
