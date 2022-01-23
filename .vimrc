@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
