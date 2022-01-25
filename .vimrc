@@ -12,6 +12,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'github/copilot.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'bfrg/vim-jqplay'
 
 call plug#end()
 
