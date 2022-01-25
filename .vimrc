@@ -55,6 +55,11 @@ noremap <C-w>k <C-w>j
 noremap <C-w>l <C-w>k
 noremap <C-w>m <C-w>l
 
+noremap <C-w>J <C-w>H
+noremap <C-w>K <C-w>J
+noremap <C-w>L <C-w>K
+noremap <C-w>M <C-w>L
+
 map j <Left>
 map k <Down>
 map l <Up>

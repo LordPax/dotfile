@@ -12,7 +12,7 @@ endsnippet
 
 snippet its "it should sample"
 it('Should $1', ${2:async} () => {
-	let date = new Date()
+	const date = new Date()
 	const addressFrom = faker.finance.ethereumAddress()
 	const addressTo = faker.finance.ethereumAddress()
 
@@ -23,8 +23,8 @@ it('Should $1', ${2:async} () => {
 
 	const expected = ${5:{}}
 
-	date = new Date()
-	const date2 = new Date(date.getTime() - 3 * 24 * 3600 * 1000)
+	const endDate = new Date()
+	const startDate = new Date(endDate.getTime() - 3 * 24 * 3600 * 1000)
 
 	const result = $6
 
