@@ -9,8 +9,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
+Plug 'github/copilot.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'bfrg/vim-jqplay'
 
 call plug#end()
 
@@ -33,6 +35,7 @@ set shiftwidth=4
 set autoindent
 set cursorline
 set hlsearch
+set title
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -52,6 +55,11 @@ noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
 noremap <C-w>l <C-w>k
 noremap <C-w>m <C-w>l
+
+noremap <C-w>J <C-w>H
+noremap <C-w>K <C-w>J
+noremap <C-w>L <C-w>K
+noremap <C-w>M <C-w>L
 
 map j <Left>
 map k <Down>
