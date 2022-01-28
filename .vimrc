@@ -46,7 +46,7 @@ set updatetime=100
 set nobackup
 set noswapfile
 
-autocmd BufEnter *.spec.js set makeprg=npm\ run\ test
+" autocmd BufEnter *.spec.js set makeprg=npm\ run\ test
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
