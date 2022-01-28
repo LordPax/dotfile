@@ -9,10 +9,12 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
-Plug 'github/copilot.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bfrg/vim-jqplay'
+" Plug 'rking/ag.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " penser à installer the_silver_searcher avant
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -36,15 +38,19 @@ set autoindent
 set cursorline
 set hlsearch
 set title
+set timeoutlen=1000 
+set ttimeoutlen=0
+set nobackup
+set noswapfile
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
-nmap <C-n> :TagbarToggle<CR>
+nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
-nmap <C-m> :nohlsearch<CR>
+noremap <ESC> <C-c>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
