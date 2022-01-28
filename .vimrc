@@ -13,7 +13,8 @@ Plug 'github/copilot.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bfrg/vim-jqplay'
-Plug 'rking/ag.vim'
+Plug 'mileszs/ack.vim'
+" Plug 'rking/ag.vim'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
 
@@ -44,6 +45,8 @@ set ttimeoutlen=0
 set updatetime=100
 set nobackup
 set noswapfile
+
+autocmd BufEnter *.spec.js set makeprg=npm\ run\ test
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
