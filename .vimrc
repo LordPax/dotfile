@@ -77,6 +77,7 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 colorscheme codedark
