@@ -12,9 +12,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'bfrg/vim-jqplay'
+Plug 'mileszs/ack.vim'
 " Plug 'rking/ag.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } " penser à installer the_silver_searcher avant
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -40,8 +41,11 @@ set hlsearch
 set title
 set timeoutlen=1000 
 set ttimeoutlen=0
+set updatetime=100
 set nobackup
 set noswapfile
+
+" autocmd BufEnter *.spec.js set makeprg=npm\ run\ test
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -72,6 +76,7 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 colorscheme codedark
