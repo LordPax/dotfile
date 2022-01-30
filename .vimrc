@@ -7,12 +7,15 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'bfrg/vim-jqplay'
+" Plug 'bfrg/vim-jqplay'
 Plug 'mileszs/ack.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'rking/ag.vim'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
@@ -44,8 +47,10 @@ set ttimeoutlen=0
 set updatetime=100
 set nobackup
 set noswapfile
+set autoread
 
-" autocmd BufEnter *.spec.js set makeprg=npm\ run\ test
+" autocmd BufEnter *.spec.js set makeprg="npm run test"
+" autocmd BufEnter *.ts set makeprg="npm run build"
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -76,10 +81,12 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+" let g:syntastic_javascript_checkers = ["eslint"]
+" let g:syntastic_c_checkers = ["clang_check"]
+" let g:syntastic_c_checkers = ["gcc"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme="codedark"
-colorscheme codedark
+let g:airline_theme="jellybeans"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
@@ -87,4 +94,5 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
+colorscheme jellybeans
 set term=screen-256color
