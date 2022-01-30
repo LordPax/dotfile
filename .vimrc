@@ -81,15 +81,17 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+" let g:syntastic_javascript_checkers = ["eslint"]
+" let g:syntastic_c_checkers = ["clang_check"]
+" let g:syntastic_c_checkers = ["gcc"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
-colorscheme codedark
-
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
+colorscheme codedark
 set term=screen-256color
