@@ -1,5 +1,5 @@
 #!/bin/bash
 
 brightness=$(xrandr --verbose | grep Brightness | grep -o '[0-9].*')
-new=$(echo "$brightness + 0.1" | bc)
+new=$(echo "$brightness + 0.05" | bc)
 xrandr --output eDP-1 --brightness $new
