@@ -16,6 +16,8 @@ Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'tpope/vim-markdown'
+" Plug 'LordPax/vim-encrypt'
 " Plug 'rking/ag.vim'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Plug 'junegunn/fzf.vim'
