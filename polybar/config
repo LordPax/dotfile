@@ -517,7 +517,7 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 exec = ~/.config/polybar/script/updates-pacman-aurhelper.sh
 click-left = ~/.config/polybar/script/script-update-show
-interval = 600
+interval = 10
 
 [settings]
 screenchange-reload = true

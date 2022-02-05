@@ -1,0 +1,23 @@
+#!/bin/bash
+
+data=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "time to (empty|full)")
+batTime=$(echo $data | awk '{print $4}')
+time=$(echo $data | awk '{print $5}')
+
+function getTime() {
+    local hours
+    local minute
+
+    if [ "$time" == "hours" ]; then
+        hour=$(echo $batTime | cut -d , -f 1)
+        minute=$(echo $batTime | cut -d , -f 2)
+        minute=$(echo "0.$minute * 60" | bc | cut -d . -f 1)
+    else
+        hour="0"
+        minute=$(echo $batTime | cut -d , -f 1)
+    fi
+
+    echo "( $hour h $minute min )"
+}
+
+[ "$data" != "" ] && getTime
