@@ -12,7 +12,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Plug 'bfrg/vim-jqplay'
-Plug 'mileszs/ack.vim'
+Plug 'mileszs/ack.vim' " install the_silver_searcher 
 Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'rafi/awesome-vim-colorschemes'
