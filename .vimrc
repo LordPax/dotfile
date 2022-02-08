@@ -8,6 +8,7 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 " Plug 'tomasiser/vim-code-dark'
+Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -17,6 +18,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
+Plug 'skywind3000/asyncrun.vim'
 " Plug 'LordPax/vim-encrypt'
 " Plug 'rking/ag.vim'
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -88,7 +90,8 @@ map m <Right>
 " let g:syntastic_c_checkers = ["gcc"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme="jellybeans"
+" let g:airline_theme="jellybeans"
+let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
@@ -96,5 +99,6 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme codedark
 set term=screen-256color
