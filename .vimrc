@@ -52,6 +52,7 @@ set updatetime=100
 set nobackup
 set noswapfile
 set autoread
+" highlight Normal ctermfg=grey ctermbg=231
 
 " autocmd BufEnter *.spec.js set makeprg="npm run test"
 " autocmd BufEnter *.ts set makeprg="npm run build"
