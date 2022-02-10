@@ -9,4 +9,5 @@
 /home/lordpax/.conkyrc
 /home/lordpax/.vimrc
 /home/lordpax/.tmux.conf
+/home/lordpax/.gitconfig
 

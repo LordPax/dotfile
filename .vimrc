@@ -12,17 +12,15 @@ Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'bfrg/vim-jqplay'
-Plug 'mileszs/ack.vim' " install the_silver_searcher 
+Plug 'mileszs/ack.vim' " need the_silver_searcher 
 Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'skanehira/gh.vim'
+" Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
-" Plug 'rking/ag.vim'
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -52,10 +50,9 @@ set updatetime=100
 set nobackup
 set noswapfile
 set autoread
-" highlight Normal ctermfg=grey ctermbg=231
 
-" autocmd BufEnter *.spec.js set makeprg="npm run test"
-" autocmd BufEnter *.ts set makeprg="npm run build"
+autocmd FileType javascript set makeprg=npm\ run\ test
+autocmd FileType typescript set makeprg=npm\ run\ build
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -86,20 +83,23 @@ map k <Down>
 map l <Up>
 map m <Right>
 
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\v(\.git|node_modules|build)$',
+\ 'file': '\v\.(swp)$',
+\ }
+
 " let g:syntastic_javascript_checkers = ["eslint"]
 " let g:syntastic_c_checkers = ["clang_check"]
 " let g:syntastic_c_checkers = ["gcc"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme="jellybeans"
 let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
-" colorscheme jellybeans
 colorscheme codedark
 set term=screen-256color
