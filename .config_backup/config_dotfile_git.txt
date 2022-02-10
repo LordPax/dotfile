@@ -3,6 +3,7 @@
 /home/lordpax/.tmux.conf
 /home/lordpax/.conkyrc
 /home/lordpax/.bashrc
+/home/lordpax/.gitconfig
 /home/lordpax/.vim/UltiSnips/
 /home/lordpax/.config_backup
 /home/lordpax/.config/i3
