@@ -1,0 +1,14 @@
+[user]
+	email = teddy.gauthier@outlook.com
+	name = teddy
+    signingKey = 9EE1CA666FFB5B77
+[init]
+	defaultBranch = master
+[commit]
+    gpgSign = true
+[alias]
+	hub = !gh
+[core]
+    editor = vim
+[format]
+    signoff = true
