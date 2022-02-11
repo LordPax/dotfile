@@ -167,6 +167,7 @@ alias restore_mdp_windows="cp /run/media/lordpax/6D271A07D4DF8020/Users/gener/Do
 alias backup_log="less ~/Documents/Programmation/Bash/backup/config/backup.log"
 
 alias copy="xsel --clipboard -i"
+alias emacs="emacs -nw"
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 

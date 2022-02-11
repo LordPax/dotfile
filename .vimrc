@@ -24,6 +24,9 @@ Plug 'skanehira/gh.vim'
 
 call plug#end()
 
+let s:back = 233
+let s:back2 = 234
+
 for i in range(97,122)
     let c = nr2char(i)
     exec "map \e".c." <M-".c.">"
@@ -102,4 +105,11 @@ let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 colorscheme codedark
+exe "highlight Normal ctermbg="..s:back
+exe "highlight nontext ctermbg="..s:back
+exe "highlight EndOfBuffer ctermbg="..s:back
+exe "highlight CursorLine ctermbg="..s:back2
+exe "highlight CursorColumn ctermbg="..s:back2
+exe "highlight ColorColumn ctermbg="..s:back2
+exe "highlight LineNr ctermbg="..s:back
 set term=screen-256color
