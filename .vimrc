@@ -26,6 +26,8 @@ call plug#end()
 
 let s:back = 233
 let s:back2 = 234
+let s:back3 = 235
+let s:front = 240
 
 for i in range(97,122)
     let c = nr2char(i)
@@ -88,7 +90,7 @@ map m <Right>
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build)$',
-\ 'file': '\v\.(swp)$',
+\ 'file': '\v\.(swp|o|so)$',
 \ }
 
 " let g:syntastic_javascript_checkers = ["eslint"]
@@ -110,6 +112,7 @@ exe "highlight nontext ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
 exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight ColorColumn ctermbg="..s:back2
+exe "highlight VertSplit ctermbg="..s:back3
+exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 set term=screen-256color
