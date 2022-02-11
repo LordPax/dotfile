@@ -115,4 +115,7 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+" exe "highlight TabLine ctermbg="..s:back
+" exe "highlight TabLineFill ctermbg="..s:back
+" exe "highlight TabLineSel ctermbg="..s:back
 set term=screen-256color
