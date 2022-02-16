@@ -55,6 +55,7 @@ set updatetime=100
 set nobackup
 set noswapfile
 set autoread
+set signcolumn="yes"
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
@@ -93,9 +94,18 @@ let g:ctrlp_custom_ignore = {
 \ 'file': '\v\.(swp|o|so)$',
 \ }
 
-" let g:syntastic_javascript_checkers = ["eslint"]
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_c_checkers = ["gcc"]
 " let g:syntastic_c_checkers = ["clang_check"]
-" let g:syntastic_c_checkers = ["gcc"]
+
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
