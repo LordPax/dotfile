@@ -99,11 +99,12 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_c_checkers = ["gcc"]
+let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
 " let g:syntastic_c_checkers = ["clang_check"]
 
 let g:ackprg = "ag --vimgrep"
@@ -128,4 +129,5 @@ exe "highlight LineNr ctermbg="..s:back
 " exe "highlight TabLine ctermbg="..s:back
 " exe "highlight TabLineFill ctermbg="..s:back
 " exe "highlight TabLineSel ctermbg="..s:back
+highlight SyntasticErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
