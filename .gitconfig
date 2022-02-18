@@ -5,7 +5,7 @@
 [init]
 	defaultBranch = master
 [commit]
-    gpgSign = true
+    gpgSign = false
 [alias]
 	hub = !gh
 [core]
