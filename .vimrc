@@ -12,19 +12,22 @@ Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'bfrg/vim-jqplay'
-Plug 'mileszs/ack.vim' " install the_silver_searcher 
+Plug 'mileszs/ack.vim' " need the_silver_searcher 
 Plug 'kien/ctrlp.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'skanehira/gh.vim'
+" Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
-" Plug 'rking/ag.vim'
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+let s:back = 233
+let s:back2 = 234
+let s:back3 = 235
+let s:front = 240
 
 for i in range(97,122)
     let c = nr2char(i)
@@ -52,10 +55,10 @@ set updatetime=100
 set nobackup
 set noswapfile
 set autoread
-" highlight Normal ctermfg=grey ctermbg=231
+set signcolumn="yes"
 
-" autocmd BufEnter *.spec.js set makeprg="npm run test"
-" autocmd BufEnter *.ts set makeprg="npm run build"
+autocmd FileType javascript set makeprg=npm\ run\ test
+autocmd FileType typescript set makeprg=npm\ run\ build
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -86,20 +89,46 @@ map k <Down>
 map l <Up>
 map m <Right>
 
-" let g:syntastic_javascript_checkers = ["eslint"]
+let g:ctrlp_custom_ignore = {
+\ 'dir':  '\v(\.git|node_modules|build)$',
+\ 'file': '\v\.(swp|o|so)$',
+\ }
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_c_checkers = ["gcc"]
+let g:syntastic_sh_checkers = ["shellcheck"]
+let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
 " let g:syntastic_c_checkers = ["clang_check"]
-" let g:syntastic_c_checkers = ["gcc"]
+
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
-" let g:airline_theme="jellybeans"
 let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
-" colorscheme jellybeans
 colorscheme codedark
+exe "highlight Normal ctermbg="..s:back
+exe "highlight nontext ctermbg="..s:back
+exe "highlight EndOfBuffer ctermbg="..s:back
+exe "highlight CursorLine ctermbg="..s:back2
+exe "highlight CursorColumn ctermbg="..s:back2
+exe "highlight VertSplit ctermbg="..s:back3
+exe "highlight VertSplit ctermfg="..s:front
+exe "highlight LineNr ctermbg="..s:back
+" exe "highlight TabLine ctermbg="..s:back
+" exe "highlight TabLineFill ctermbg="..s:back
+" exe "highlight TabLineSel ctermbg="..s:back
+highlight SyntasticErrorSign ctermfg=white ctermbg=red
 set term=screen-256color

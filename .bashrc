@@ -20,7 +20,8 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-PATH=$PATH:/home/lordpax/programme
+PATH=$PATH:/home/lordpax/programme:/home/lordpax/programme/emsdk:/home/lordpax/programme/emsdk/node/14.18.2_64bit/bin:/home/lordpax/programme/emsdk/upstream/emscripten
+
 
 export EDITOR=vim
 
@@ -33,6 +34,7 @@ alias restore_file="backup -r /mnt/veracrypt1/Backup -o / -n backup"
 alias save_mdp="cp ~/Mots_de_passe.kdbx /mnt/veracrypt1/"
 alias restore_mdp="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
+alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.vimrc"
 alias emacs="emacs -nw"
 
 alias copy="xsel --clipboard -i"
