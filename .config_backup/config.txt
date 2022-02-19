@@ -1,7 +1,12 @@
-/home/lordpax/Images/
-/home/lordpax/programme/
+/home/lordpax/Images
+/home/lordpax/programme
+/home/lordpax/Applications
 /home/lordpax/Documents/Banque
+/home/lordpax/Documents/Archlinux
 /home/lordpax/Documents/Cours
+/home/lordpax/Documents/Fogel
+/home/lordpax/Documents/CoursESGI
+/home/lordpax/Documents/Crypto
 /home/lordpax/Documents/Doc
 /home/lordpax/Documents/Jeux
 /home/lordpax/Documents/Stage
@@ -13,4 +18,6 @@
 /home/lordpax/Documents/ESGI
 /home/lordpax/Documents/Challenge
 /home/lordpax/Documents/marionnet
+/home/lordpax/Documents/saveKali
+/home/lordpax/Documents/Vpn
 
