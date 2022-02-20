@@ -217,7 +217,8 @@ for_window [class=".*"] title_format " %title"
 # exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/illyria-adapta-dark-maia.jpg'
 # exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/default-adapta.jpg'
 # exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/light-stripe-maia.jpg'
-exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/manjaro_grid_maia.jpg'
+# exec_always feh --bg-scale '/usr/share/backgrounds/manjaro-wallpapers-18.0/manjaro_grid_maia.jpg'
+exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
 
 exec_always --no-startup-id "killall polybar; polybar -r barLeft; polybar -r barRight; "
 exec_always --no-startup-id "killall picom; picom"
