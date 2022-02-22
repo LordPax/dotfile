@@ -69,6 +69,8 @@ nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
+nmap <F2> :SyntasticCheck<CR>
+
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
 map <M-l> <C-w>5+
@@ -90,7 +92,7 @@ map l <Up>
 map m <Right>
 
 let g:ctrlp_custom_ignore = {
-\ 'dir':  '\v(\.git|node_modules|build)$',
+\ 'dir':  '\v(\.git|node_modules|build|dist)$',
 \ 'file': '\v\.(swp|o|so)$',
 \ }
 
@@ -104,7 +106,6 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_c_checkers = ["gcc"]
-let g:syntastic_sh_checkers = ["shellcheck"]
 let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
 " let g:syntastic_c_checkers = ["clang_check"]
 

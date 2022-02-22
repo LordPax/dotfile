@@ -35,6 +35,7 @@ alias save_mdp="cp ~/Mots_de_passe.kdbx /mnt/veracrypt1/"
 alias restore_mdp="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
 alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.vimrc"
+alias get_tmux="mv ~/.tmux.conf ~/.tmux-old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.tmux.conf"
 alias emacs="emacs -nw"
 
 alias copy="xsel --clipboard -i"
