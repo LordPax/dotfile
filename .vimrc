@@ -69,6 +69,8 @@ nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
+nmap <F2> :SyntasticCheck<CR>
+
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
 map <M-l> <C-w>5+
@@ -90,7 +92,7 @@ map l <Up>
 map m <Right>
 
 let g:ctrlp_custom_ignore = {
-\ 'dir':  '\v(\.git|node_modules|build)$',
+\ 'dir':  '\v(\.git|node_modules|build|dist)$',
 \ 'file': '\v\.(swp|o|so)$',
 \ }
 
