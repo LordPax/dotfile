@@ -24,6 +24,20 @@ Plug 'skanehira/gh.vim'
 
 call plug#end()
 
+let g:useSpace = 1
+
+fun ToggleExpandTab()
+    if g:useSpace == 1
+        let g:useSpace = 0
+        set noexpandtab
+        echo "use tabulation"
+    else
+        let g:useSpace = 1
+        set expandtab
+        echo "use space"
+    endif
+endfun
+
 let s:back = 233
 let s:back2 = 234
 let s:back3 = 235
@@ -70,6 +84,7 @@ nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
 nmap <F2> :SyntasticCheck<CR>
+nmap <F3> :call ToggleExpandTab()<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
