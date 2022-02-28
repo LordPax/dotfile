@@ -121,7 +121,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_c_checkers = ["gcc"]
-let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
+let g:syntastic_php_checkers = ["php"]
 " let g:syntastic_c_checkers = ["clang_check"]
 
 let g:ackprg = "ag --vimgrep"
