@@ -24,6 +24,20 @@ Plug 'skanehira/gh.vim'
 
 call plug#end()
 
+let g:useSpace = 1
+
+fun ToggleExpandTab()
+    if g:useSpace == 1
+        let g:useSpace = 0
+        set noexpandtab
+        echo "use tabulation"
+    else
+        let g:useSpace = 1
+        set expandtab
+        echo "use space"
+    endif
+endfun
+
 let s:back = 233
 let s:back2 = 234
 let s:back3 = 235
@@ -70,6 +84,7 @@ nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
 nmap <F2> :SyntasticCheck<CR>
+nmap <F3> :call ToggleExpandTab()<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -106,8 +121,8 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_c_checkers = ["gcc"]
-let g:syntastic_php_checkers = ["php", "phpcs", "phpmd"]
-" let g:syntastic_c_checkers = ["clang_check"]
+let g:syntastic_php_checkers = ["php"]
+let g:syntastic_ruby_checkers = ["mri"]
 
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
@@ -128,8 +143,5 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-" exe "highlight TabLine ctermbg="..s:back
-" exe "highlight TabLineFill ctermbg="..s:back
-" exe "highlight TabLineSel ctermbg="..s:back
 highlight SyntasticErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
