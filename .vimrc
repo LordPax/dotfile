@@ -85,6 +85,7 @@ noremap <ESC> <C-c>
 
 nmap <F2> :SyntasticCheck<CR>
 nmap <F3> :call ToggleExpandTab()<CR>
+nmap <F4> :UltiSnipsEdit<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -122,6 +123,7 @@ let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_c_checkers = ["gcc"]
 let g:syntastic_php_checkers = ["php"]
+let g:syntastic_ruby_checkers = ["mri"]
 " let g:syntastic_c_checkers = ["clang_check"]
 
 let g:ackprg = "ag --vimgrep"
