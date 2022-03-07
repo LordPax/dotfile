@@ -164,7 +164,7 @@ alias restore_mdp_usb="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/"
 alias save_mdp_windows="cp ~/Mots_de_passe.kdbx /run/media/lordpax/6D271A07D4DF8020/Users/gener/Documents/"
 alias restore_mdp_windows="cp /run/media/lordpax/6D271A07D4DF8020/Users/gener/Documents/Mots_de_passe.kdbx ~/"
 
-alias backup_log="less ~/Documents/Programmation/Bash/backup/config/backup.log"
+alias backup_log="bat ~/.config_backup/backup.log"
 
 alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
