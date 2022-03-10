@@ -149,10 +149,10 @@
         "'": {
             "type": "mark.jump.prefix"
         },
-        "H": {
+        "J": {
             "type": "navigate.history.prev"
         },
-        "L": {
+        "M": {
             "type": "navigate.history.next"
         },
         "[[": {
