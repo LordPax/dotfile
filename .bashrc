@@ -151,8 +151,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 # alias android='/home/lordpax/programme/android-studio/bin/studio.sh'
 alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s 3"
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"
+alias backup_dotfile_usb="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /mnt/veracrypt1/Backup -n dotfile_compute2 -s 3"
 alias restore_file="backup -r /save -o /"
 alias restore_dotfile="backup -r /save -o / -n dotfile"
+alias restore_dotfile_usb="backup -r /mnt/veracrypt1/Backup -o / -n dotfile_compute2"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
 
 alias save_mdp="cp ~/Mots_de_passe.kdbx /save"
