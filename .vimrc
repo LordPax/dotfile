@@ -70,6 +70,8 @@ set nobackup
 set noswapfile
 set autoread
 set signcolumn="yes"
+set listchars=tab:>-
+set invlist
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
@@ -145,6 +147,7 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+highlight SpecialKey ctermfg=237
 " exe "highlight TabLine ctermbg="..s:back
 " exe "highlight TabLineFill ctermbg="..s:back
 " exe "highlight TabLineSel ctermbg="..s:back

@@ -167,6 +167,7 @@ alias backup_log="bat ~/.config_backup/backup.log"
 
 alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
+alias dust="dust -r"
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 
