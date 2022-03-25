@@ -70,7 +70,7 @@ set nobackup
 set noswapfile
 set autoread
 set signcolumn="yes"
-set listchars=tab:>-
+set listchars=tab:>-,trail:. ",eol:↲
 set invlist
 
 autocmd FileType javascript set makeprg=npm\ run\ test
