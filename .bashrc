@@ -9,7 +9,7 @@
 
 alias ls='ls --color=auto'
 # PS1='[\u@\h \W]\$ '
-PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
+PS1="\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] "
 
 # alias connect='~/programme/connect/connect_univ.sh'
 
@@ -37,6 +37,7 @@ alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt
 alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.vimrc"
 alias get_tmux="mv ~/.tmux.conf ~/.tmux-old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.tmux.conf"
 alias emacs="emacs -nw"
+alias dust="dust -r"
 
 alias copy="xsel --clipboard -i"
 alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
