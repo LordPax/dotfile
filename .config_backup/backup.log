@@ -626,3 +626,235 @@
 2022-03-25 15:03:10 : Backup /save/dotfile.2022-03-25.tar.gz end
 2022-03-25 15:03:10 : Deleting 1 old backup : 
 2022-03-25 15:03:10 :   -> Deleting /save/dotfile.2022-03-19.tar.gz ...
+2022-03-26 15:03:01 : Compress of :
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-03-26 15:03:01 :   -> /home/lordpax/.ssh/
+2022-03-26 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-03-26 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-03-26 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-03-26 15:03:01 :   -> /home/lordpax/.themes/
+2022-03-26 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-03-26 15:03:01 :   -> /home/lordpax/.Xresources
+2022-03-26 15:03:01 :   -> /home/lordpax/.bashrc
+2022-03-26 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-03-26 15:03:01 :   -> /home/lordpax/.vimrc
+2022-03-26 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-03-26 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-03-26 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-03-26 15:03:01 : Backup /save/dotfile.2022-03-26.tar.gz in progress ...
+2022-03-26 15:03:11 : Backup /save/dotfile.2022-03-26.tar.gz end
+2022-03-26 15:03:11 : Deleting 1 old backup : 
+2022-03-26 15:03:11 :   -> Deleting /save/dotfile.2022-03-21.tar.gz ...
+2022-03-27 15:03:02 : Compress of :
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/i3/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/rofi/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/polybar/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/kdeconnect/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/Kvantum/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/latte/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/picom/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config/thunar-script/
+2022-03-27 15:03:02 :   -> /home/lordpax/.ssh/
+2022-03-27 15:03:02 :   -> /home/lordpax/.gnupg/
+2022-03-27 15:03:02 :   -> /home/lordpax/.vscode-oss/
+2022-03-27 15:03:02 :   -> /home/lordpax/.config_backup/
+2022-03-27 15:03:02 :   -> /home/lordpax/.themes/
+2022-03-27 15:03:02 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-03-27 15:03:02 :   -> /home/lordpax/.Xresources
+2022-03-27 15:03:02 :   -> /home/lordpax/.bashrc
+2022-03-27 15:03:02 :   -> /home/lordpax/.conkyrc
+2022-03-27 15:03:02 :   -> /home/lordpax/.vimrc
+2022-03-27 15:03:02 :   -> /home/lordpax/.tmux.conf
+2022-03-27 15:03:02 :   -> /home/lordpax/.gitconfig
+2022-03-27 15:03:02 :   -> /home/lordpax/.vim-vixen.json
+2022-03-27 15:03:02 : Backup /save/dotfile.2022-03-27.tar.gz in progress ...
+2022-03-27 15:03:10 : Backup /save/dotfile.2022-03-27.tar.gz end
+2022-03-27 15:03:10 : Deleting 1 old backup : 
+2022-03-27 15:03:10 :   -> Deleting /save/dotfile.2022-03-24.tar.gz ...
+2022-03-31 15:38:56 : Compress of :
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/i3/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/rofi/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/polybar/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/kdeconnect/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/Kvantum/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/latte/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/picom/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config/thunar-script/
+2022-03-31 15:38:56 :   -> /home/lordpax/.ssh/
+2022-03-31 15:38:56 :   -> /home/lordpax/.gnupg/
+2022-03-31 15:38:56 :   -> /home/lordpax/.vscode-oss/
+2022-03-31 15:38:56 :   -> /home/lordpax/.config_backup/
+2022-03-31 15:38:56 :   -> /home/lordpax/.themes/
+2022-03-31 15:38:56 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-03-31 15:38:56 :   -> /home/lordpax/.Xresources
+2022-03-31 15:38:56 :   -> /home/lordpax/.bashrc
+2022-03-31 15:38:56 :   -> /home/lordpax/.conkyrc
+2022-03-31 15:38:56 :   -> /home/lordpax/.vimrc
+2022-03-31 15:38:56 :   -> /home/lordpax/.tmux.conf
+2022-03-31 15:38:56 :   -> /home/lordpax/.gitconfig
+2022-03-31 15:38:56 :   -> /home/lordpax/.vim-vixen.json
+2022-03-31 15:38:56 : Backup /save/dotfile.2022-03-31.tar.gz in progress ...
+2022-03-31 15:39:04 : Backup /save/dotfile.2022-03-31.tar.gz end
+2022-03-31 15:39:04 : Deleting 1 old backup : 
+2022-03-31 15:39:04 :   -> Deleting /save/dotfile.2022-03-25.tar.gz ...
+2022-04-05 15:03:01 : Compress of :
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-05 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-05 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-05 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-05 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-05 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-05 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-05 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-05 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-05 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-05 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-05 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-05 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-05 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-05 15:03:01 : Backup /save/dotfile.2022-04-05.tar.gz in progress ...
+2022-04-05 15:03:10 : Backup /save/dotfile.2022-04-05.tar.gz end
+2022-04-05 15:03:10 : Deleting 1 old backup : 
+2022-04-05 15:03:10 :   -> Deleting /save/dotfile.2022-03-26.tar.gz ...
+2022-04-07 15:03:01 : Compress of :
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-07 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-07 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-07 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-07 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-07 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-07 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-07 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-07 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-07 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-07 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-07 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-07 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-07 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-07 15:03:01 : Backup /save/dotfile.2022-04-07.tar.gz in progress ...
+2022-04-07 15:03:10 : Backup /save/dotfile.2022-04-07.tar.gz end
+2022-04-07 15:03:10 : Deleting 1 old backup : 
+2022-04-07 15:03:10 :   -> Deleting /save/dotfile.2022-03-27.tar.gz ...
+2022-04-08 15:03:01 : Compress of :
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-08 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-08 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-08 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-08 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-08 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-08 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-08 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-08 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-08 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-08 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-08 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-08 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-08 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-08 15:03:01 : Backup /save/dotfile.2022-04-08.tar.gz in progress ...
+2022-04-08 15:03:10 : Backup /save/dotfile.2022-04-08.tar.gz end
+2022-04-08 15:03:10 : Deleting 1 old backup : 
+2022-04-08 15:03:10 :   -> Deleting /save/dotfile.2022-03-31.tar.gz ...
+2022-04-09 15:03:01 : Compress of :
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-09 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-09 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-09 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-09 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-09 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-09 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-09 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-09 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-09 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-09 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-09 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-09 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-09 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-09 15:03:01 : Backup /save/dotfile.2022-04-09.tar.gz in progress ...
+2022-04-09 15:03:10 : Backup /save/dotfile.2022-04-09.tar.gz end
+2022-04-09 15:03:10 : Deleting 1 old backup : 
+2022-04-09 15:03:10 :   -> Deleting /save/dotfile.2022-04-05.tar.gz ...
+2022-04-10 15:03:01 : Compress of :
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-10 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-10 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-10 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-10 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-10 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-10 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-10 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-10 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-10 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-10 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-10 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-10 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-10 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-10 15:03:01 : Backup /save/dotfile.2022-04-10.tar.gz in progress ...
+2022-04-10 15:03:09 : Backup /save/dotfile.2022-04-10.tar.gz end
+2022-04-11 15:03:01 : Compress of :
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-04-11 15:03:01 :   -> /home/lordpax/.ssh/
+2022-04-11 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-04-11 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-04-11 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-04-11 15:03:01 :   -> /home/lordpax/.themes/
+2022-04-11 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-04-11 15:03:01 :   -> /home/lordpax/.Xresources
+2022-04-11 15:03:01 :   -> /home/lordpax/.bashrc
+2022-04-11 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-04-11 15:03:01 :   -> /home/lordpax/.vimrc
+2022-04-11 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-04-11 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-04-11 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-04-11 15:03:01 : Backup /save/dotfile.2022-04-11.tar.gz in progress ...
+2022-04-11 15:03:10 : Backup /save/dotfile.2022-04-11.tar.gz end
+2022-04-11 15:03:10 : Deleting 1 old backup : 
+2022-04-11 15:03:10 :   -> Deleting /save/dotfile.2022-04-08.tar.gz ...

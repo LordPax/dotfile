@@ -1,0 +1,10 @@
+#!/bin/bash
+
+([ "$1" == "" ] || [ "$2" == "" ]) && echo "Usage : $0 <mcu> <file>" && exit 1
+[ ! -f $2 ] && echo "ERROR : \"$2\" does not exist or is not a file" && exit 1
+
+dfu-programmer $1 erase --force || exit 1
+dfu-programmer $1 flash --force $2 || exit 1
+dfu-programmer $1 reset || exit 1
+
+[ $? -eq 0 ] && echo "Flash done"

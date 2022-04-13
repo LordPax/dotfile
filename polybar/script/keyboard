@@ -1,4 +1,19 @@
 #!/bin/bash
 
-key=$(setxkbmap -query | grep layout | awk '{print $2}')
-setxkbmap $([ "$key" == "fr" ] && echo "us" || echo "fr")
+layout=$(setxkbmap -query | grep layout | awk '{print $2}')
+variant=$(setxkbmap -query | grep variant | awk '{print $2}')
+
+[ "$1" == "query" ] && echo "$layout $variant" && exit 0
+
+case "${layout}${variant}" in
+    us)
+        setxkbmap fr;;
+    fr)
+        setxkbmap fr bepo;;
+    frbepo)
+        setxkbmap fr dvorak;;
+    frdvorak)
+        setxkbmap us;;
+    *)
+        setxkbmap fr
+esac

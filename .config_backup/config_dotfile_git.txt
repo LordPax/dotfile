@@ -1,3 +1,4 @@
+/home/lordpax/Documents/keyboard/
 /home/lordpax/.config/i3/
 /home/lordpax/.config/rofi/
 /home/lordpax/.config/polybar/
