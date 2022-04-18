@@ -19,6 +19,7 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skanehira/gh.vim'
+Plug 'ap/vim-css-color'
 " Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
 
