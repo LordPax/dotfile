@@ -86,9 +86,14 @@ nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
+vmap <C-s> "+y
+
 nmap <F2> :SyntasticCheck<CR>
 nmap <F3> :call ToggleExpandTab()<CR>
 nmap <F4> :UltiSnipsEdit<CR>
+nmap <F5> :Ack! 
+nmap <F6> :AckFromSearch!<CR>
+nmap <F7> :source ~/.vimrc<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -124,6 +129,7 @@ let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:syntastic_sh_checkers = ["sh"]
 let g:syntastic_c_checkers = ["gcc"]
 let g:syntastic_php_checkers = ["php"]
 let g:syntastic_ruby_checkers = ["mri"]
@@ -148,7 +154,7 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-highlight SpecialKey ctermfg=237
+exe "highlight SpecialKey ctermfg=237"
 " exe "highlight TabLine ctermbg="..s:back
 " exe "highlight TabLineFill ctermbg="..s:back
 " exe "highlight TabLineSel ctermbg="..s:back
