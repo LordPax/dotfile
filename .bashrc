@@ -170,8 +170,18 @@ alias emacs="emacs -nw"
 alias dust="dust -r"
 
 function vimf() {
-    [ "$1" == "" ] && echo "Usage : $0 <file>" &> /dev/stderr && return 1
+    [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
     vim -c "find $1"
+}
+
+function vimc() {
+    [ "$1" == "" ] && echo "Usage : vimc <command>" &> /dev/stderr && return 1
+    vim -c $1
+}
+
+function vimack() {
+    [ "$1" == "" ] && echo "Usage : vimack <command>" &> /dev/stderr && return 1
+    vim -c "Ack! $1"
 }
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile

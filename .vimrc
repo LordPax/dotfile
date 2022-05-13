@@ -20,6 +20,7 @@ Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
 
@@ -38,6 +39,8 @@ fun ToggleExpandTab()
         echo "use space"
     endif
 endfun
+
+command ToggleExpandTab call ToggleExpandTab()
 
 let s:back = 233
 let s:back2 = 234
@@ -89,7 +92,7 @@ noremap <ESC> <C-c>
 vmap <C-s> "+y
 
 nmap <F2> :SyntasticCheck<CR>
-nmap <F3> :call ToggleExpandTab()<CR>
+nmap <F3> :ToggleExpandTab<CR>
 nmap <F4> :UltiSnipsEdit<CR>
 nmap <F5> :Ack! 
 nmap <F6> :AckFromSearch!<CR>
@@ -138,6 +141,7 @@ let g:syntastic_ruby_checkers = ["mri"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
+let g:doge_mapping="<F7>"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
