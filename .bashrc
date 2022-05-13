@@ -169,6 +169,11 @@ alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
 alias dust="dust -r"
 
+function vimf() {
+    [ "$1" == "" ] && echo "Usage : $0 <file>" &> /dev/stderr && return 1
+    vim -c "find $1"
+}
+
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 
 PATH=$PATH:/home/lordpax/programme
