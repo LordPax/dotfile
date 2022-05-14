@@ -143,7 +143,7 @@ let g:syntastic_ruby_checkers = ["mri"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
-let g:doge_mapping="<F7>"
+let g:doge_mapping="<F8>"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
