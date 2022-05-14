@@ -89,7 +89,8 @@ nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
-vmap <C-s> "+y
+" vmap <C-s> "+y
+vmap h "+y
 
 nmap <F2> :SyntasticCheck<CR>
 nmap <F3> :ToggleExpandTab<CR>
