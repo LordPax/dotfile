@@ -132,6 +132,7 @@ let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
+" let g:syntastic_sh_checkers = ["shellcheck"]
 let g:syntastic_sh_checkers = ["sh"]
 let g:syntastic_c_checkers = ["gcc"]
 let g:syntastic_php_checkers = ["php"]
