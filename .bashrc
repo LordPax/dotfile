@@ -22,7 +22,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 PATH=$PATH:/home/lordpax/programme:/home/lordpax/programme/emsdk:/home/lordpax/programme/emsdk/node/14.18.2_64bit/bin:/home/lordpax/programme/emsdk/upstream/emscripten
 
-
 export EDITOR=vim
 
 [ -z $TMUX ] && tmux
@@ -41,3 +40,18 @@ alias dust="dust -r"
 
 alias copy="xsel --clipboard -i"
 alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
+
+function vimf() {
+    [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
+    vim -c "find $1"
+}
+
+function vimc() {
+    [ "$1" == "" ] && echo "Usage : vimc <command>" &> /dev/stderr && return 1
+    vim -c $1
+}
+
+function vimack() {
+    [ "$1" == "" ] && echo "Usage : vimack <command>" &> /dev/stderr && return 1
+    vim -c "Ack! $1"
+}

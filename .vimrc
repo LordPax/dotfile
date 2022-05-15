@@ -19,6 +19,8 @@ Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skanehira/gh.vim'
+Plug 'ap/vim-css-color'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
 
@@ -37,6 +39,8 @@ fun ToggleExpandTab()
         echo "use space"
     endif
 endfun
+
+command ToggleExpandTab call ToggleExpandTab()
 
 let s:back = 233
 let s:back2 = 234
@@ -85,9 +89,15 @@ nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
 noremap <ESC> <C-c>
 
+" vmap <C-s> "+y
+vmap h "+y
+
 nmap <F2> :SyntasticCheck<CR>
-nmap <F3> :call ToggleExpandTab()<CR>
+nmap <F3> :ToggleExpandTab<CR>
 nmap <F4> :UltiSnipsEdit<CR>
+nmap <F5> :Ack! 
+nmap <F6> :AckFromSearch!<CR>
+nmap <F7> :source ~/.vimrc<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -123,6 +133,8 @@ let g:syntastic_auto_loc_list = 2
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ["eslint"]
+" let g:syntastic_sh_checkers = ["shellcheck"]
+let g:syntastic_sh_checkers = ["sh"]
 let g:syntastic_c_checkers = ["gcc"]
 let g:syntastic_php_checkers = ["php"]
 let g:syntastic_ruby_checkers = ["mri"]
@@ -131,6 +143,7 @@ let g:syntastic_ruby_checkers = ["mri"]
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
+let g:doge_mapping="<F8>"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
@@ -147,7 +160,7 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-highlight SpecialKey ctermfg=237
+exe "highlight SpecialKey ctermfg=237"
 " exe "highlight TabLine ctermbg="..s:back
 " exe "highlight TabLineFill ctermbg="..s:back
 " exe "highlight TabLineSel ctermbg="..s:back
