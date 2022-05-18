@@ -1,0 +1,19 @@
+snippet getter "create a getter"
+/**
+ * ${4:undocumented function}
+ * @return $2
+ */
+public function get${1:Var}(): $2 {
+    return $this->${3};
+}
+endsnippet
+snippet setter "create a setter"
+/**
+ * ${4:undocumented function}
+ * @param $2 $$3
+ * @return void
+ */
+public function set${1:Var}($2 $$3): void {
+    $this->$3 = $$3;
+}
+endsnippet
