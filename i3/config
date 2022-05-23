@@ -13,7 +13,8 @@ set $mod Mod4
 
 # exec_always xrdb /home/lordpax/.Xresources
 # exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.8
-exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.4
+# exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.4
+exec_always --no-startup-id ~/.config/polybar/script/brightness -s 0.7
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id setxkbmap -option caps:escape 
 
@@ -43,8 +44,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-bindsym XF86MonBrightnessUp exec --no-startup-id /home/lordpax/.config/polybar/script/brightnessUp
-bindsym XF86MonBrightnessDown exec --no-startup-id /home/lordpax/.config/polybar/script/brightnessDown
+bindsym XF86MonBrightnessUp exec --no-startup-id /home/lordpax/.config/polybar/script/brightness -i 0.1
+bindsym XF86MonBrightnessDown exec --no-startup-id /home/lordpax/.config/polybar/script/brightness -d 0.1
 
 # bindsym 
 
@@ -164,7 +165,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # bindsym $mod+p exec shutdown -P now
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
-bindsym $mod+o exec /home/lordpax/programme/betterlockscreen -l dim
+bindsym $mod+o exec /home/lordpax/programme/betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
 
 # resize window (you can also use the mouse for that)
@@ -214,8 +215,8 @@ smart_gaps on
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
 
-# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/split.png'
-exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
+exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/tux_wallpaper.png'
+# exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
 exec_always --no-startup-id "killall polybar; polybar -r barLeft"
 exec_always --no-startup-id "killall conky; conky"
 # exec_always --no-startup-id "killall picom; picom"

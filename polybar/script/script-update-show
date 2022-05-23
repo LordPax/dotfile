@@ -4,8 +4,4 @@ checkupdates | awk 'OFS="\n" {print $1, $2, $4; fflush()}' | zenity --list \
 --text="Mise à jour disponible" \
 --column="Package" --column="Old version" --column="New version"
 
-if [ $? -eq 0 ]; then
-    # xfce4-terminal -x "sudo pacman -Sy archlinux-keyring && sudo pacman -Syu"
-    # xfce4-terminal -x sudo pacman -Syu
-    xfce4-terminal -x sudo pacman -Syu archlinux-keyring
-fi
+[ $? -eq 0 ] && xfce4-terminal -x sudo pacman -Syu archlinux-keyring
