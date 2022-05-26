@@ -1,0 +1,106 @@
+#!/bin/bash
+# author : lordpax
+# brightness v1.0
+
+screen="eDP-1"
+version="v1.1"
+action=0
+param=""
+
+function echoErr() {
+    [ "$1" == "" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    #function_body
+    echo $"Usage : $0 <option>
+
+Option :
+-h or --help ...................................... Show help
+-v or --version ................................... Show version
+--screen <screen> ................................. Change screen
+-i <num> .......................................... Increment brightness
+-d <num> .......................................... Decrement brightness
+-s <num> .......................................... Set brightness
+-g ................................................ Get brightness
+-G ................................................ Get brightness as a percentage"
+    exit 0
+}
+
+function verification() {
+    [ "$screen" == "" ] && echoErr "Screen must be indicated" && exit 1
+}
+
+# getBrightness [%]
+function getBrightness() {
+    local brightness=$(xrandr --verbose | grep Brightness | sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g")
+    [ "$1" == "%" ] && echo "$brightness * 100" | bc | cut -d '.' -f 1 || echo $brightness
+}
+
+# setBrightness <num>
+function setBrightness() {
+    [ "$1" == "" ] && echoErr "Parameter is needed" && exit 1
+    xrandr --output $screen --brightness $1
+}
+
+# brightness <+|-> <num>
+function brightness() {
+    ([ "$1" == "" ] || [ "$2" == "" ]) && echoErr "Parameter is needed" && exit 1
+
+    local brightness=$(getBrightness)
+    local new=$(echo "$brightness $1 $2" | bc)
+    setBrightness $new
+}
+
+if [ $# -ge 1 ]; then
+    for i in $(seq 1 $#); do
+        case $1 in
+            -h | --help)
+                helpFunc;;
+            -v | --version)
+                echo $version
+                exit 0;;
+            --screen)
+                screen="$2"
+                shift;;
+            -i)
+                action=1
+                param="+ $2"
+                shift;;
+            -d)
+                action=1
+                param="- $2"
+                shift;;
+            -s)
+                action=2
+                param="$2"
+                shift;;
+            -g)
+                action=3;;
+            -G)
+                action=3
+                param="%";;
+            "")
+                ;;
+            *)
+                echoErr $"Unknown parameter \"$1\""
+                exit 1
+        esac
+        shift
+    done
+fi
+
+verification
+
+case $action in
+    1)
+        brightness $param;;
+    2)
+        setBrightness $param;;
+    3)
+        getBrightness $param;;
+    *)
+        echoErr "Something wrong, type : $0 --help"
+        exit 1
+esac
