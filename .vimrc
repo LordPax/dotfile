@@ -7,8 +7,8 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-" Plug 'tomasiser/vim-code-dark'
-Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
+Plug 'tomasiser/vim-code-dark'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
