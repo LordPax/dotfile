@@ -1101,3 +1101,99 @@
 2022-05-26 15:03:10 : Backup /save/dotfile.2022-05-26.tar.gz end
 2022-05-26 15:03:10 : Deleting 1 old backup : 
 2022-05-26 15:03:10 :   -> Deleting /save/dotfile.2022-05-14.tar.gz ...
+2022-05-27 15:00:01 : Compress of :
+2022-05-27 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-05-27 15:00:01 :   -> /home/lordpax/Images
+2022-05-27 15:00:01 :   -> /home/lordpax/programme
+2022-05-27 15:00:01 :   -> /home/lordpax/Applications
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-05-27 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-05-27 15:00:01 : Backup /save/backup_compute-2.2022-05-27.tar.gz in progress ...
+2022-05-27 15:03:01 : Compress of :
+2022-05-27 15:03:01 :   -> /home/lordpax/Documents/keyboard/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-05-27 15:03:01 :   -> /home/lordpax/.ssh/
+2022-05-27 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-05-27 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-05-27 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-05-27 15:03:01 :   -> /home/lordpax/.themes/
+2022-05-27 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-05-27 15:03:01 :   -> /home/lordpax/.Xresources
+2022-05-27 15:03:01 :   -> /home/lordpax/.bashrc
+2022-05-27 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-05-27 15:03:01 :   -> /home/lordpax/.vimrc
+2022-05-27 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-05-27 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-05-27 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-05-27 15:03:01 : Backup /save/dotfile.2022-05-27.tar.gz in progress ...
+2022-05-27 15:03:07 : Backup /save/backup_compute-2.2022-05-27.tar.gz end
+2022-05-27 15:03:09 : Backup /save/dotfile.2022-05-27.tar.gz end
+2022-05-28 15:00:01 : Compress of :
+2022-05-28 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-05-28 15:00:01 :   -> /home/lordpax/Images
+2022-05-28 15:00:01 :   -> /home/lordpax/programme
+2022-05-28 15:00:01 :   -> /home/lordpax/Applications
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-05-28 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-05-28 15:00:01 : Backup /save/backup_compute-2.2022-05-28.tar.gz in progress ...
+2022-05-28 15:03:01 : Compress of :
+2022-05-28 15:03:01 :   -> /home/lordpax/Documents/keyboard/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/i3/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/rofi/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/polybar/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/kdeconnect/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/Kvantum/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/latte/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/picom/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config/thunar-script/
+2022-05-28 15:03:01 :   -> /home/lordpax/.ssh/
+2022-05-28 15:03:01 :   -> /home/lordpax/.gnupg/
+2022-05-28 15:03:01 :   -> /home/lordpax/.vscode-oss/
+2022-05-28 15:03:01 :   -> /home/lordpax/.config_backup/
+2022-05-28 15:03:01 :   -> /home/lordpax/.themes/
+2022-05-28 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-05-28 15:03:01 :   -> /home/lordpax/.Xresources
+2022-05-28 15:03:01 :   -> /home/lordpax/.bashrc
+2022-05-28 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-05-28 15:03:01 :   -> /home/lordpax/.vimrc
+2022-05-28 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-05-28 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-05-28 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-05-28 15:03:01 : Backup /save/dotfile.2022-05-28.tar.gz in progress ...
+2022-05-28 15:03:11 : Backup /save/dotfile.2022-05-28.tar.gz end
+2022-05-28 15:03:11 : Deleting 1 old backup : 
+2022-05-28 15:03:11 :   -> Deleting /save/dotfile.2022-05-19.tar.gz ...
+2022-05-28 15:03:14 : Backup /save/backup_compute-2.2022-05-28.tar.gz end

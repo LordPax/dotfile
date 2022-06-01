@@ -186,7 +186,7 @@ function vimack() {
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 
-PATH=$PATH:/home/lordpax/programme
+PATH=$PATH:/home/lordpax/programme:/home/lordpax/.local/share/gem/ruby/3.0.0/bin
 
 export EDITOR=vim
 

@@ -1,3 +1,4 @@
+/home/lordpax/.config_backup/
 /home/lordpax/Images
 /home/lordpax/programme
 /home/lordpax/Applications
@@ -11,7 +12,6 @@
 /home/lordpax/Documents/Stage
 /home/lordpax/Documents/poursuite
 /home/lordpax/Documents/ParcourSup
-/home/lordpax/Documents/Programmation
 /home/lordpax/Documents/Pentest
 /home/lordpax/Documents/Alternance
 /home/lordpax/Documents/ESGI
