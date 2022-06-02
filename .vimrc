@@ -21,7 +21,7 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
-" Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-rhubarb'
 " Plug 'LordPax/vim-encrypt'
 
 call plug#end()
@@ -87,6 +87,7 @@ nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
 nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
+nmap <C-m> :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 noremap <ESC> <C-c>
 
 " vmap <C-s> "+y
