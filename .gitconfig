@@ -8,6 +8,7 @@
     gpgSign = true
 [alias]
 	hub = !gh
+    file = !git show --pretty="" --name-status
 [core]
     editor = vim
 [format]
