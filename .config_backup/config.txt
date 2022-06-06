@@ -1,6 +1,7 @@
 /home/lordpax/.config_backup/
 /home/lordpax/Images
 /home/lordpax/programme
+/home/lordpax/recovery-code
 /home/lordpax/Applications
 /home/lordpax/Documents/Banque
 /home/lordpax/Documents/Archlinux
