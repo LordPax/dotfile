@@ -14,7 +14,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher 
 Plug 'kien/ctrlp.vim'
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
@@ -22,6 +22,8 @@ Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
+Plug 'prettier/vim-prettier'
+" Plug 'leafgarland/typescript-vim'
 " Plug 'LordPax/vim-encrypt'
 
 call plug#end()
@@ -61,9 +63,9 @@ set wildmenu
 set mouse=a
 set tabstop=4
 set expandtab
-" set noexpandtab
 set shiftwidth=4
 set autoindent
+set smartindent
 set cursorline
 set hlsearch
 set title
@@ -76,6 +78,7 @@ set autoread
 set signcolumn="yes"
 set listchars=tab:>-,trail:. ",eol:↲
 set invlist
+set re=0
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
@@ -90,7 +93,6 @@ nmap <C-l> :bel term<CR>
 nmap <C-m> :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 noremap <ESC> <C-c>
 
-" vmap <C-s> "+y
 vmap h "+y
 
 nmap <F2> :SyntasticCheck<CR>
@@ -125,22 +127,15 @@ let g:ctrlp_custom_ignore = {
 \ 'file': '\v\.(swp|o|so)$',
 \ }
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
 let g:gitgutter_sign_priority = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_sh_checkers = ["shellcheck"]
-" let g:syntastic_sh_checkers = ["sh"]
-let g:syntastic_c_checkers = ["gcc"]
-let g:syntastic_php_checkers = ["php"]
-let g:syntastic_ruby_checkers = ["mri"]
-" let g:syntastic_c_checkers = ["clang_check"]
+let b:ale_linters = {
+    \'javascript': ['eslint'],
+    \'typescript': ['eslint'],
+    \'sh': ['shellcheck', 'sh'],
+    \'c': ['gcc'],
+    \'php': ['php'],
+    \'ruby': ['mri']
+\}
 
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
@@ -163,8 +158,5 @@ exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 exe "highlight SpecialKey ctermfg=237"
-" exe "highlight TabLine ctermbg="..s:back
-" exe "highlight TabLineFill ctermbg="..s:back
-" exe "highlight TabLineSel ctermbg="..s:back
-highlight SyntasticErrorSign ctermfg=white ctermbg=red
+highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
