@@ -29,6 +29,7 @@ Plug 'prettier/vim-prettier'
 call plug#end()
 
 let g:useSpace = 1
+let g:length = 4
 
 fun ToggleExpandTab()
     if g:useSpace == 1
@@ -42,7 +43,20 @@ fun ToggleExpandTab()
     endif
 endfun
 
+fun ToggleLength()
+    if g:length == 4
+        let g:length = 2
+        echo "length set to 2"
+    else
+        let g:length = 4
+        echo "length set to 4"
+    endif
+    exe "set tabstop="..g:length
+    exe "set shiftwidth="..g:length
+endfun
+
 command ToggleExpandTab call ToggleExpandTab()
+command ToggleLength call ToggleLength()
 
 let s:back = 233
 let s:back2 = 234
@@ -97,10 +111,11 @@ vmap h "+y
 
 nmap <F2> :SyntasticCheck<CR>
 nmap <F3> :ToggleExpandTab<CR>
-nmap <F4> :UltiSnipsEdit<CR>
+nmap <F4> :ToggleLength<CR>
 nmap <F5> :Ack! 
 nmap <F6> :AckFromSearch!<CR>
 nmap <F7> :source ~/.vimrc<CR>
+nmap <F9> :UltiSnipsEdit<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
