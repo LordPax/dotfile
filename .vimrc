@@ -31,6 +31,19 @@ call plug#end()
 let g:useSpace = 1
 let g:length = 4
 
+fun HelpKey()
+    echo "Help : "
+    echo "F1 .......... This help"
+    echo "F2 .......... Search with Ack"
+    echo "F3 .......... Search with AckFromSearch"
+    echo "F4 .......... Open snippet editor"
+    echo "F5 .......... Refresh vimrc"
+    echo "F6 .......... Toggle with space and tab"
+    echo "F7 .......... Toggle with tab length 4 and 2"
+    echo "F8 .......... Toggle ale for a buffer"
+    echo "F9 .......... Generate doc for a function"
+endfun
+
 fun ToggleExpandTab()
     if g:useSpace == 1
         let g:useSpace = 0
@@ -55,6 +68,7 @@ fun ToggleLength()
     exe "set shiftwidth="..g:length
 endfun
 
+command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 
@@ -109,13 +123,15 @@ noremap <ESC> <C-c>
 
 vmap h "+y
 
-nmap <F2> :SyntasticCheck<CR>
-nmap <F3> :ToggleExpandTab<CR>
-nmap <F4> :ToggleLength<CR>
-nmap <F5> :Ack! 
-nmap <F6> :AckFromSearch!<CR>
-nmap <F7> :source ~/.vimrc<CR>
-nmap <F9> :UltiSnipsEdit<CR>
+nmap <F1> :HelpKey<CR>
+nmap <F2> :Ack! 
+nmap <F3> :AckFromSearch!<CR>
+nmap <F4> :UltiSnipsEdit<CR>
+nmap <F5> :source ~/.vimrc<CR>
+nmap <F6> :ToggleExpandTab<CR>
+nmap <F7> :ToggleLength<CR>
+nmap <F8> :ALEToggleBuffer<CR>
+let g:doge_mapping="<F9>"
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -155,7 +171,6 @@ let b:ale_linters = {
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
-let g:doge_mapping="<F8>"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
