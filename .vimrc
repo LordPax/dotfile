@@ -14,19 +14,35 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher 
 Plug 'kien/ctrlp.vim'
-Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
-" Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-rhubarb'
+Plug 'prettier/vim-prettier'
+" Plug 'leafgarland/typescript-vim'
 " Plug 'LordPax/vim-encrypt'
 
 call plug#end()
 
 let g:useSpace = 1
+let g:length = 4
+
+fun HelpKey()
+    echo "Help : "
+    echo "F1 .......... This help"
+    echo "F2 .......... Search with Ack"
+    echo "F3 .......... Search with AckFromSearch"
+    echo "F4 .......... Open snippet editor"
+    echo "F5 .......... Refresh vimrc"
+    echo "F6 .......... Toggle with space and tab"
+    echo "F7 .......... Toggle with tab length 4 and 2"
+    echo "F8 .......... Toggle ale for a buffer"
+    echo "F9 .......... Generate doc for a function"
+endfun
 
 fun ToggleExpandTab()
     if g:useSpace == 1
@@ -40,7 +56,21 @@ fun ToggleExpandTab()
     endif
 endfun
 
+fun ToggleLength()
+    if g:length == 4
+        let g:length = 2
+        echo "length set to 2"
+    else
+        let g:length = 4
+        echo "length set to 4"
+    endif
+    exe "set tabstop="..g:length
+    exe "set shiftwidth="..g:length
+endfun
+
+command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
+command ToggleLength call ToggleLength()
 
 let s:back = 233
 let s:back2 = 234
@@ -61,9 +91,9 @@ set wildmenu
 set mouse=a
 set tabstop=4
 set expandtab
-" set noexpandtab
 set shiftwidth=4
 set autoindent
+set smartindent
 set cursorline
 set hlsearch
 set title
@@ -76,6 +106,7 @@ set autoread
 set signcolumn="yes"
 set listchars=tab:>-,trail:. ",eol:↲
 set invlist
+set re=0
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
@@ -87,17 +118,20 @@ nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
 nmap <C-n> :nohlsearch<CR>
 nmap <C-l> :bel term<CR>
+nmap <C-m> :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 noremap <ESC> <C-c>
 
-" vmap <C-s> "+y
 vmap h "+y
 
-nmap <F2> :SyntasticCheck<CR>
-nmap <F3> :ToggleExpandTab<CR>
+nmap <F1> :HelpKey<CR>
+nmap <F2> :Ack! 
+nmap <F3> :AckFromSearch!<CR>
 nmap <F4> :UltiSnipsEdit<CR>
-nmap <F5> :Ack! 
-nmap <F6> :AckFromSearch!<CR>
-nmap <F7> :source ~/.vimrc<CR>
+nmap <F5> :source ~/.vimrc<CR>
+nmap <F6> :ToggleExpandTab<CR>
+nmap <F7> :ToggleLength<CR>
+nmap <F8> :ALEToggleBuffer<CR>
+let g:doge_mapping="<F9>"
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -124,26 +158,19 @@ let g:ctrlp_custom_ignore = {
 \ 'file': '\v\.(swp|o|so)$',
 \ }
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 2
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ["eslint"]
-" let g:syntastic_sh_checkers = ["shellcheck"]
-let g:syntastic_sh_checkers = ["sh"]
-let g:syntastic_c_checkers = ["gcc"]
-let g:syntastic_php_checkers = ["php"]
-let g:syntastic_ruby_checkers = ["mri"]
-" let g:syntastic_c_checkers = ["clang_check"]
+let g:gitgutter_sign_priority = 1
+let b:ale_linters = {
+    \'javascript': ['eslint'],
+    \'typescript': ['eslint'],
+    \'sh': ['shellcheck', 'sh'],
+    \'c': ['gcc'],
+    \'php': ['php'],
+    \'ruby': ['mri']
+\}
 
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
-let g:doge_mapping="<F8>"
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsListSnippets="<c-n>"
@@ -161,8 +188,5 @@ exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 exe "highlight SpecialKey ctermfg=237"
-" exe "highlight TabLine ctermbg="..s:back
-" exe "highlight TabLineFill ctermbg="..s:back
-" exe "highlight TabLineSel ctermbg="..s:back
-highlight SyntasticErrorSign ctermfg=white ctermbg=red
+highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
