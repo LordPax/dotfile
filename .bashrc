@@ -26,8 +26,8 @@ export EDITOR=vim
 
 [ -z $TMUX ] && tmux
 
-alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /mnt/veracrypt1/Backup -n dotfile -s 1"
-alias restore_dotfile="backup -r /mnt/veracrypt1/Backup -o / -n dotfile"
+alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /mnt/veracrypt1/Backup -n dotfile_compute1 -s 1"
+alias restore_dotfile="backup -r /mnt/veracrypt1/Backup -o / -n dotfile_compute1"
 alias backup_file="backup -c .config_backup/config.txt -o /mnt/veracrypt1/Backup -n backup -s 1"
 alias restore_file="backup -r /mnt/veracrypt1/Backup -o / -n backup"
 alias save_mdp="cp ~/Mots_de_passe.kdbx /mnt/veracrypt1/"
