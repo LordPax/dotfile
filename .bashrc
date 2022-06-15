@@ -96,6 +96,8 @@ alias restore_file_usb="backup -r /mnt/veracrypt1/Backup -o / -n backup_compute2
 alias restore_dotfile="backup -r /save -o / -n dotfile"
 alias restore_dotfile_usb="backup -r /mnt/veracrypt1/Backup -o / -n dotfile_compute2"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
+# alias save_rapport="cp /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt /save"
+alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 
 alias save_mdp="keepassxc-cli merge /save/Mots_de_passe.kdbx Mots_de_passe.kdbx"
 alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
@@ -107,6 +109,7 @@ alias backup_log="bat ~/.config_backup/backup.log"
 alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
 alias dust="dust -r"
+alias ctagsNode="ctags --exclude=node_modules --exclude=dist"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
