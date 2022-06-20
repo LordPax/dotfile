@@ -231,6 +231,7 @@ assign [class="xfce4-terminal|Xfce4-terminal"] $ws3
 assign [class="discord"] $ws4
 assign [class="Thunderbird"] $ws4
 assign [class="KeePassXC|keepassxc"] $ws4
+assign [class="Steam"] $ws4
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
