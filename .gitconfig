@@ -1,8 +1,15 @@
 [init]
-	defaultBranch = master
+    defaultBranch = master
 [user]
-	name = Teddy
-	email = teddy.gauthier@outlook.com
-	signingKey = 9EE1CA666FFB5B77
+    name = Teddy
+    email = teddy.gauthier@outlook.com
+    signingKey = 9EE1CA666FFB5B77
 [commit]
-	gpgSign = true
+    gpgSign = true
+[alias]
+    hub = !gh
+    file = !git show --pretty="" --name-status
+[core]
+    editor = vim
+[format]
+    signoff = true
