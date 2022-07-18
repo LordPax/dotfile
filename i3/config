@@ -17,7 +17,7 @@ set $mod Mod4
 exec_always --no-startup-id ~/.config/polybar/script/brightness -s 0.5
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id setxkbmap -option caps:escape 
-exec --no-startup-id /bin/warpd
+exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
