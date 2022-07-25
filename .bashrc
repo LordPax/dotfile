@@ -39,6 +39,7 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias ls='ls --color'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -99,8 +100,10 @@ alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt
 # alias save_rapport="cp /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt /save"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 
-alias save_mdp="keepassxc-cli merge /save/Mots_de_passe.kdbx Mots_de_passe.kdbx"
-alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
+# alias save_mdp="keepassxc-cli merge /save/Mots_de_passe.kdbx Mots_de_passe.kdbx"
+# alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
+alias save_mdp="cp ~/Mots_de_passe.kdbx /save"
+alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/"
 alias save_mdp_usb="keepassxc-cli merge /mnt/veracrypt1/Mots_de_passe.kdbx Mots_de_passe.kdbx"
 alias restore_mdp_usb="keepassxc-cli merge Mots_de_passe.kdbx /mnt/veracrypt1/Mots_de_passe.kdbx"
 
