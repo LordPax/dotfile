@@ -2452,3 +2452,798 @@
 2022-07-29 16:08:14 : Backup /save/backup_compute-2.2022-07-29.tar.gz end
 2022-07-29 16:08:14 : Deleting 1 old backup : 
 2022-07-29 16:08:14 :   -> Deleting /save/backup_compute-2.2022-07-26.tar.gz ...
+2022-07-30 15:00:01 : Compress of :
+2022-07-30 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-07-30 15:00:01 :   -> /home/lordpax/Images
+2022-07-30 15:00:01 :   -> /home/lordpax/programme
+2022-07-30 15:00:01 :   -> /home/lordpax/recovery-code
+2022-07-30 15:00:01 :   -> /home/lordpax/Applications
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-07-30 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-07-30 15:00:01 : Backup /save/backup_compute-2.2022-07-30.tar.gz in progress ...
+2022-07-30 15:03:01 : Compress of :
+2022-07-30 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/i3
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/latte
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/picom
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-07-30 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-07-30 15:03:01 :   -> /home/lordpax/.ssh
+2022-07-30 15:03:01 :   -> /home/lordpax/.gnupg
+2022-07-30 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-07-30 15:03:01 :   -> /home/lordpax/.config_backup
+2022-07-30 15:03:01 :   -> /home/lordpax/.themes
+2022-07-30 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-07-30 15:03:01 :   -> /home/lordpax/.Xresources
+2022-07-30 15:03:01 :   -> /home/lordpax/.bashrc
+2022-07-30 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-07-30 15:03:01 :   -> /home/lordpax/.vimrc
+2022-07-30 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-07-30 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-07-30 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-07-30 15:03:01 : Backup /save/dotfile.2022-07-30.tar.gz in progress ...
+2022-07-30 15:03:03 : Backup /save/backup_compute-2.2022-07-30.tar.gz end
+2022-07-30 15:03:03 : Deleting 1 old backup : 
+2022-07-30 15:03:03 :   -> Deleting /save/backup_compute-2.2022-07-27.tar.gz ...
+2022-07-30 15:03:10 : Backup /save/dotfile.2022-07-30.tar.gz end
+2022-07-30 15:03:10 : Deleting 1 old backup : 
+2022-07-30 15:03:10 :   -> Deleting /save/dotfile.2022-07-27.tar.gz ...
+2022-08-01 15:00:01 : Compress of :
+2022-08-01 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-01 15:00:01 :   -> /home/lordpax/Images
+2022-08-01 15:00:01 :   -> /home/lordpax/programme
+2022-08-01 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-01 15:00:01 :   -> /home/lordpax/Applications
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-01 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-01 15:00:01 : Backup /save/backup_compute-2.2022-08-01.tar.gz in progress ...
+2022-08-01 15:03:01 : Compress of :
+2022-08-01 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-01 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-01 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-01 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-01 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-01 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-01 15:03:01 :   -> /home/lordpax/.themes
+2022-08-01 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-01 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-01 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-01 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-01 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-01 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-01 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-01 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-01 15:03:01 : Backup /save/dotfile.2022-08-01.tar.gz in progress ...
+2022-08-01 15:03:02 : Backup /save/backup_compute-2.2022-08-01.tar.gz end
+2022-08-01 15:03:02 : Deleting 1 old backup : 
+2022-08-01 15:03:02 :   -> Deleting /save/backup_compute-2.2022-07-28.tar.gz ...
+2022-08-01 15:03:10 : Backup /save/dotfile.2022-08-01.tar.gz end
+2022-08-01 15:03:10 : Deleting 1 old backup : 
+2022-08-01 15:03:10 :   -> Deleting /save/dotfile.2022-07-28.tar.gz ...
+2022-08-02 15:00:01 : Compress of :
+2022-08-02 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-02 15:00:01 :   -> /home/lordpax/Images
+2022-08-02 15:00:01 :   -> /home/lordpax/programme
+2022-08-02 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-02 15:00:01 :   -> /home/lordpax/Applications
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-02 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-02 15:00:01 : Backup /save/backup_compute-2.2022-08-02.tar.gz in progress ...
+2022-08-02 15:03:01 : Compress of :
+2022-08-02 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-02 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-02 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-02 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-02 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-02 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-02 15:03:01 :   -> /home/lordpax/.themes
+2022-08-02 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-02 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-02 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-02 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-02 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-02 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-02 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-02 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-02 15:03:01 : Backup /save/dotfile.2022-08-02.tar.gz in progress ...
+2022-08-02 15:03:01 : Backup /save/backup_compute-2.2022-08-02.tar.gz end
+2022-08-02 15:03:01 : Deleting 1 old backup : 
+2022-08-02 15:03:01 :   -> Deleting /save/backup_compute-2.2022-07-29.tar.gz ...
+2022-08-02 15:03:09 : Backup /save/dotfile.2022-08-02.tar.gz end
+2022-08-02 15:03:09 : Deleting 1 old backup : 
+2022-08-02 15:03:09 :   -> Deleting /save/dotfile.2022-07-29.tar.gz ...
+2022-08-03 15:00:01 : Compress of :
+2022-08-03 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-03 15:00:01 :   -> /home/lordpax/Images
+2022-08-03 15:00:01 :   -> /home/lordpax/programme
+2022-08-03 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-03 15:00:01 :   -> /home/lordpax/Applications
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-03 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-03 15:00:01 : Backup /save/backup_compute-2.2022-08-03.tar.gz in progress ...
+2022-08-03 15:03:01 : Compress of :
+2022-08-03 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-03 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-03 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-03 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-03 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-03 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-03 15:03:01 :   -> /home/lordpax/.themes
+2022-08-03 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-03 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-03 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-03 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-03 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-03 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-03 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-03 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-03 15:03:01 : Backup /save/dotfile.2022-08-03.tar.gz in progress ...
+2022-08-03 15:03:11 : Backup /save/dotfile.2022-08-03.tar.gz end
+2022-08-03 15:03:11 : Deleting 1 old backup : 
+2022-08-03 15:03:11 :   -> Deleting /save/dotfile.2022-07-30.tar.gz ...
+2022-08-03 15:03:15 : Backup /save/backup_compute-2.2022-08-03.tar.gz end
+2022-08-03 15:03:15 : Deleting 1 old backup : 
+2022-08-03 15:03:15 :   -> Deleting /save/backup_compute-2.2022-07-30.tar.gz ...
+2022-08-04 15:00:01 : Compress of :
+2022-08-04 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-04 15:00:01 :   -> /home/lordpax/Images
+2022-08-04 15:00:01 :   -> /home/lordpax/programme
+2022-08-04 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-04 15:00:01 :   -> /home/lordpax/Applications
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-04 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-04 15:00:01 : Backup /save/backup_compute-2.2022-08-04.tar.gz in progress ...
+2022-08-04 15:03:01 : Compress of :
+2022-08-04 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-04 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-04 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-04 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-04 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-04 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-04 15:03:01 :   -> /home/lordpax/.themes
+2022-08-04 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-04 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-04 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-04 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-04 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-04 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-04 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-04 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-04 15:03:01 : Backup /save/dotfile.2022-08-04.tar.gz in progress ...
+2022-08-04 15:03:10 : Backup /save/dotfile.2022-08-04.tar.gz end
+2022-08-04 15:03:10 : Deleting 1 old backup : 
+2022-08-04 15:03:10 :   -> Deleting /save/dotfile.2022-08-01.tar.gz ...
+2022-08-04 15:03:10 : Backup /save/backup_compute-2.2022-08-04.tar.gz end
+2022-08-04 15:03:10 : Deleting 1 old backup : 
+2022-08-04 15:03:10 :   -> Deleting /save/backup_compute-2.2022-08-01.tar.gz ...
+2022-08-05 15:00:01 : Compress of :
+2022-08-05 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-05 15:00:01 :   -> /home/lordpax/Images
+2022-08-05 15:00:01 :   -> /home/lordpax/programme
+2022-08-05 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-05 15:00:01 :   -> /home/lordpax/Applications
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-05 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-05 15:00:01 : Backup /save/backup_compute-2.2022-08-05.tar.gz in progress ...
+2022-08-05 15:03:01 : Compress of :
+2022-08-05 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-05 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-05 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-05 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-05 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-05 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-05 15:03:01 :   -> /home/lordpax/.themes
+2022-08-05 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-05 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-05 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-05 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-05 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-05 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-05 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-05 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-05 15:03:01 : Backup /save/dotfile.2022-08-05.tar.gz in progress ...
+2022-08-05 15:03:01 : Backup /save/backup_compute-2.2022-08-05.tar.gz end
+2022-08-05 15:03:01 : Deleting 1 old backup : 
+2022-08-05 15:03:01 :   -> Deleting /save/backup_compute-2.2022-08-02.tar.gz ...
+2022-08-05 15:03:09 : Backup /save/dotfile.2022-08-05.tar.gz end
+2022-08-05 15:03:09 : Deleting 1 old backup : 
+2022-08-05 15:03:09 :   -> Deleting /save/dotfile.2022-08-02.tar.gz ...
+2022-08-06 15:00:02 : Compress of :
+2022-08-06 15:00:02 :   -> /home/lordpax/.config_backup/
+2022-08-06 15:00:02 :   -> /home/lordpax/Images
+2022-08-06 15:00:02 :   -> /home/lordpax/programme
+2022-08-06 15:00:02 :   -> /home/lordpax/recovery-code
+2022-08-06 15:00:02 :   -> /home/lordpax/Applications
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Banque
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Archlinux
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Cours
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Crypto
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Doc
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Jeux
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Stage
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/poursuite
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Pentest
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Alternance
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/ESGI
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/Challenge
+2022-08-06 15:00:02 :   -> /home/lordpax/Documents/marionnet
+2022-08-06 15:00:02 : Backup /save/backup_compute-2.2022-08-06.tar.gz in progress ...
+2022-08-06 15:03:02 : Compress of :
+2022-08-06 15:03:02 :   -> /home/lordpax/Documents/keyboard
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/i3
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/rofi
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/polybar
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/kdeconnect
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/Kvantum
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/latte
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/picom
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/thunar-script
+2022-08-06 15:03:02 :   -> /home/lordpax/.config/warpd
+2022-08-06 15:03:02 :   -> /home/lordpax/.ssh
+2022-08-06 15:03:02 :   -> /home/lordpax/.gnupg
+2022-08-06 15:03:02 :   -> /home/lordpax/.vscode-oss
+2022-08-06 15:03:02 :   -> /home/lordpax/.config_backup
+2022-08-06 15:03:02 :   -> /home/lordpax/.themes
+2022-08-06 15:03:02 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-06 15:03:02 :   -> /home/lordpax/.Xresources
+2022-08-06 15:03:02 :   -> /home/lordpax/.bashrc
+2022-08-06 15:03:02 :   -> /home/lordpax/.conkyrc
+2022-08-06 15:03:02 :   -> /home/lordpax/.vimrc
+2022-08-06 15:03:02 :   -> /home/lordpax/.tmux.conf
+2022-08-06 15:03:02 :   -> /home/lordpax/.gitconfig
+2022-08-06 15:03:02 :   -> /home/lordpax/.vim-vixen.json
+2022-08-06 15:03:02 : Backup /save/dotfile.2022-08-06.tar.gz in progress ...
+2022-08-06 15:03:06 : Backup /save/backup_compute-2.2022-08-06.tar.gz end
+2022-08-06 15:03:06 : Deleting 1 old backup : 
+2022-08-06 15:03:06 :   -> Deleting /save/backup_compute-2.2022-08-03.tar.gz ...
+2022-08-06 15:03:11 : Backup /save/dotfile.2022-08-06.tar.gz end
+2022-08-06 15:03:11 : Deleting 1 old backup : 
+2022-08-06 15:03:11 :   -> Deleting /save/dotfile.2022-08-03.tar.gz ...
+2022-08-07 15:00:01 : Compress of :
+2022-08-07 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-07 15:00:01 :   -> /home/lordpax/Images
+2022-08-07 15:00:01 :   -> /home/lordpax/programme
+2022-08-07 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-07 15:00:01 :   -> /home/lordpax/Applications
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-07 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-07 15:00:01 : Backup /save/backup_compute-2.2022-08-07.tar.gz in progress ...
+2022-08-07 15:03:01 : Compress of :
+2022-08-07 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-07 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-07 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-07 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-07 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-07 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-07 15:03:01 :   -> /home/lordpax/.themes
+2022-08-07 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-07 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-07 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-07 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-07 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-07 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-07 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-07 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-07 15:03:01 : Backup /save/dotfile.2022-08-07.tar.gz in progress ...
+2022-08-07 15:03:10 : Backup /save/dotfile.2022-08-07.tar.gz end
+2022-08-07 15:03:10 : Deleting 1 old backup : 
+2022-08-07 15:03:10 :   -> Deleting /save/dotfile.2022-08-04.tar.gz ...
+2022-08-07 15:03:18 : Backup /save/backup_compute-2.2022-08-07.tar.gz end
+2022-08-07 15:03:18 : Deleting 1 old backup : 
+2022-08-07 15:03:18 :   -> Deleting /save/backup_compute-2.2022-08-04.tar.gz ...
+2022-08-08 15:00:01 : Compress of :
+2022-08-08 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-08 15:00:01 :   -> /home/lordpax/Images
+2022-08-08 15:00:01 :   -> /home/lordpax/programme
+2022-08-08 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-08 15:00:01 :   -> /home/lordpax/Applications
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-08 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-08 15:00:01 : Backup /save/backup_compute-2.2022-08-08.tar.gz in progress ...
+2022-08-08 15:03:01 : Compress of :
+2022-08-08 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-08 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-08 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-08 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-08 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-08 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-08 15:03:01 :   -> /home/lordpax/.themes
+2022-08-08 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-08 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-08 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-08 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-08 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-08 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-08 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-08 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-08 15:03:01 : Backup /save/dotfile.2022-08-08.tar.gz in progress ...
+2022-08-08 15:03:11 : Backup /save/dotfile.2022-08-08.tar.gz end
+2022-08-08 15:03:11 : Deleting 1 old backup : 
+2022-08-08 15:03:11 :   -> Deleting /save/dotfile.2022-08-05.tar.gz ...
+2022-08-08 15:03:16 : Backup /save/backup_compute-2.2022-08-08.tar.gz end
+2022-08-08 15:03:16 : Deleting 1 old backup : 
+2022-08-08 15:03:16 :   -> Deleting /save/backup_compute-2.2022-08-05.tar.gz ...
+2022-08-09 15:00:01 : Compress of :
+2022-08-09 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-09 15:00:01 :   -> /home/lordpax/Images
+2022-08-09 15:00:01 :   -> /home/lordpax/programme
+2022-08-09 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-09 15:00:01 :   -> /home/lordpax/Applications
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-09 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-09 15:00:01 : Backup /save/backup_compute-2.2022-08-09.tar.gz in progress ...
+2022-08-09 15:03:01 : Compress of :
+2022-08-09 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-09 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-09 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-09 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-09 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-09 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-09 15:03:01 :   -> /home/lordpax/.themes
+2022-08-09 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-09 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-09 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-09 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-09 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-09 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-09 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-09 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-09 15:03:01 : Backup /save/dotfile.2022-08-09.tar.gz in progress ...
+2022-08-09 15:03:03 : Backup /save/backup_compute-2.2022-08-09.tar.gz end
+2022-08-09 15:03:03 : Deleting 1 old backup : 
+2022-08-09 15:03:03 :   -> Deleting /save/backup_compute-2.2022-08-06.tar.gz ...
+2022-08-09 15:03:10 : Backup /save/dotfile.2022-08-09.tar.gz end
+2022-08-09 15:03:10 : Deleting 1 old backup : 
+2022-08-09 15:03:10 :   -> Deleting /save/dotfile.2022-08-06.tar.gz ...
+2022-08-10 15:00:01 : Compress of :
+2022-08-10 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-10 15:00:01 :   -> /home/lordpax/Images
+2022-08-10 15:00:01 :   -> /home/lordpax/programme
+2022-08-10 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-10 15:00:01 :   -> /home/lordpax/Applications
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-10 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-10 15:00:01 : Backup /save/backup_compute-2.2022-08-10.tar.gz in progress ...
+2022-08-10 15:03:01 : Compress of :
+2022-08-10 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-10 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-10 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-10 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-10 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-10 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-10 15:03:01 :   -> /home/lordpax/.themes
+2022-08-10 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-10 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-10 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-10 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-10 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-10 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-10 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-10 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-10 15:03:01 : Backup /save/dotfile.2022-08-10.tar.gz in progress ...
+2022-08-10 15:03:10 : Backup /save/dotfile.2022-08-10.tar.gz end
+2022-08-10 15:03:10 : Deleting 1 old backup : 
+2022-08-10 15:03:10 :   -> Deleting /save/dotfile.2022-08-07.tar.gz ...
+2022-08-10 15:03:19 : Backup /save/backup_compute-2.2022-08-10.tar.gz end
+2022-08-10 15:03:19 : Deleting 1 old backup : 
+2022-08-10 15:03:19 :   -> Deleting /save/backup_compute-2.2022-08-07.tar.gz ...
+2022-08-11 15:00:01 : Compress of :
+2022-08-11 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-11 15:00:01 :   -> /home/lordpax/Images
+2022-08-11 15:00:01 :   -> /home/lordpax/programme
+2022-08-11 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-11 15:00:01 :   -> /home/lordpax/Applications
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-11 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-11 15:00:01 : Backup /save/backup_compute-2.2022-08-11.tar.gz in progress ...
+2022-08-11 15:03:01 : Compress of :
+2022-08-11 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-11 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-11 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-11 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-11 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-11 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-11 15:03:01 :   -> /home/lordpax/.themes
+2022-08-11 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-11 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-11 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-11 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-11 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-11 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-11 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-11 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-11 15:03:01 : Backup /save/dotfile.2022-08-11.tar.gz in progress ...
+2022-08-11 15:03:10 : Backup /save/dotfile.2022-08-11.tar.gz end
+2022-08-11 15:03:10 : Deleting 1 old backup : 
+2022-08-11 15:03:10 :   -> Deleting /save/dotfile.2022-08-08.tar.gz ...
+2022-08-11 15:03:20 : Backup /save/backup_compute-2.2022-08-11.tar.gz end
+2022-08-11 15:03:20 : Deleting 1 old backup : 
+2022-08-11 15:03:20 :   -> Deleting /save/backup_compute-2.2022-08-08.tar.gz ...
+2022-08-12 15:31:49 : Compress of :
+2022-08-12 15:31:49 :   -> /home/lordpax/.config_backup/
+2022-08-12 15:31:49 :   -> /home/lordpax/Images
+2022-08-12 15:31:49 :   -> /home/lordpax/programme
+2022-08-12 15:31:49 :   -> /home/lordpax/recovery-code
+2022-08-12 15:31:49 :   -> /home/lordpax/Applications
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Banque
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Archlinux
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Cours
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Crypto
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Doc
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Jeux
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Stage
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/poursuite
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Pentest
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Alternance
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/ESGI
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/Challenge
+2022-08-12 15:31:49 :   -> /home/lordpax/Documents/marionnet
+2022-08-12 15:31:49 : Backup /save/backup_compute-2.2022-08-12.tar.gz in progress ...
+2022-08-12 15:31:59 : Compress of :
+2022-08-12 15:31:59 :   -> /home/lordpax/Documents/keyboard
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/i3
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/rofi
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/polybar
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/kdeconnect
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/Kvantum
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/latte
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/picom
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/thunar-script
+2022-08-12 15:31:59 :   -> /home/lordpax/.config/warpd
+2022-08-12 15:31:59 :   -> /home/lordpax/.ssh
+2022-08-12 15:31:59 :   -> /home/lordpax/.gnupg
+2022-08-12 15:31:59 :   -> /home/lordpax/.vscode-oss
+2022-08-12 15:31:59 :   -> /home/lordpax/.config_backup
+2022-08-12 15:31:59 :   -> /home/lordpax/.themes
+2022-08-12 15:31:59 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-12 15:31:59 :   -> /home/lordpax/.Xresources
+2022-08-12 15:31:59 :   -> /home/lordpax/.bashrc
+2022-08-12 15:31:59 :   -> /home/lordpax/.conkyrc
+2022-08-12 15:31:59 :   -> /home/lordpax/.vimrc
+2022-08-12 15:31:59 :   -> /home/lordpax/.tmux.conf
+2022-08-12 15:31:59 :   -> /home/lordpax/.gitconfig
+2022-08-12 15:31:59 :   -> /home/lordpax/.vim-vixen.json
+2022-08-12 15:31:59 : Backup /save/dotfile.2022-08-12.tar.gz in progress ...
+2022-08-12 15:32:07 : Backup /save/dotfile.2022-08-12.tar.gz end
+2022-08-12 15:32:07 : Deleting 1 old backup : 
+2022-08-12 15:32:07 :   -> Deleting /save/dotfile.2022-08-09.tar.gz ...
+2022-08-12 15:35:04 : Backup /save/backup_compute-2.2022-08-12.tar.gz end
+2022-08-12 15:35:04 : Deleting 1 old backup : 
+2022-08-12 15:35:04 :   -> Deleting /save/backup_compute-2.2022-08-09.tar.gz ...
+2022-08-13 15:00:01 : Compress of :
+2022-08-13 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-13 15:00:01 :   -> /home/lordpax/Images
+2022-08-13 15:00:01 :   -> /home/lordpax/programme
+2022-08-13 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-13 15:00:01 :   -> /home/lordpax/Applications
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-13 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-13 15:00:01 : Backup /save/backup_compute-2.2022-08-13.tar.gz in progress ...
+2022-08-13 15:03:01 : Compress of :
+2022-08-13 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-13 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-13 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-13 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-13 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-13 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-13 15:03:01 :   -> /home/lordpax/.themes
+2022-08-13 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-13 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-13 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-13 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-13 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-13 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-13 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-13 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-13 15:03:01 : Backup /save/dotfile.2022-08-13.tar.gz in progress ...
+2022-08-13 15:03:10 : Backup /save/dotfile.2022-08-13.tar.gz end
+2022-08-13 15:03:10 : Deleting 1 old backup : 
+2022-08-13 15:03:10 :   -> Deleting /save/dotfile.2022-08-10.tar.gz ...
+2022-08-13 15:03:18 : Backup /save/backup_compute-2.2022-08-13.tar.gz end
+2022-08-13 15:03:18 : Deleting 1 old backup : 
+2022-08-13 15:03:18 :   -> Deleting /save/backup_compute-2.2022-08-10.tar.gz ...
+2022-08-15 15:00:01 : Compress of :
+2022-08-15 15:00:01 :   -> /home/lordpax/.config_backup/
+2022-08-15 15:00:01 :   -> /home/lordpax/Images
+2022-08-15 15:00:01 :   -> /home/lordpax/programme
+2022-08-15 15:00:01 :   -> /home/lordpax/recovery-code
+2022-08-15 15:00:01 :   -> /home/lordpax/Applications
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Banque
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Cours
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Doc
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Stage
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2022-08-15 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2022-08-15 15:00:01 : Backup /save/backup_compute-2.2022-08-15.tar.gz in progress ...
+2022-08-15 15:03:01 : Compress of :
+2022-08-15 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/i3
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/rofi
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/polybar
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/latte
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/picom
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/thunar-script
+2022-08-15 15:03:01 :   -> /home/lordpax/.config/warpd
+2022-08-15 15:03:01 :   -> /home/lordpax/.ssh
+2022-08-15 15:03:01 :   -> /home/lordpax/.gnupg
+2022-08-15 15:03:01 :   -> /home/lordpax/.vscode-oss
+2022-08-15 15:03:01 :   -> /home/lordpax/.config_backup
+2022-08-15 15:03:01 :   -> /home/lordpax/.themes
+2022-08-15 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2022-08-15 15:03:01 :   -> /home/lordpax/.Xresources
+2022-08-15 15:03:01 :   -> /home/lordpax/.bashrc
+2022-08-15 15:03:01 :   -> /home/lordpax/.conkyrc
+2022-08-15 15:03:01 :   -> /home/lordpax/.vimrc
+2022-08-15 15:03:01 :   -> /home/lordpax/.tmux.conf
+2022-08-15 15:03:01 :   -> /home/lordpax/.gitconfig
+2022-08-15 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2022-08-15 15:03:01 : Backup /save/dotfile.2022-08-15.tar.gz in progress ...
+2022-08-15 15:03:10 : Backup /save/dotfile.2022-08-15.tar.gz end
+2022-08-15 15:03:10 : Deleting 1 old backup : 
+2022-08-15 15:03:10 :   -> Deleting /save/dotfile.2022-08-11.tar.gz ...
+2022-08-15 15:03:25 : Backup /save/backup_compute-2.2022-08-15.tar.gz end
+2022-08-15 15:03:25 : Deleting 1 old backup : 
+2022-08-15 15:03:25 :   -> Deleting /save/backup_compute-2.2022-08-11.tar.gz ...

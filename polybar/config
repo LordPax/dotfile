@@ -71,7 +71,7 @@ modules-left = i3 xwindow
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date pulseaudio-control updates-pacman xkeyboard powermenu
+modules-right = ticker-crypto date pulseaudio-control updates-pacman xkeyboard info-pingrtt powermenu
 
 tray-position = right
 tray-padding = 2
@@ -513,11 +513,22 @@ menu-2-1-exec = menu-open-0
 [module/updates-pacman]
 type = custom/script
 format-prefix = " "
-label-indicator-padding = 2
-label-indicator-margin = 1
 exec = ~/.config/polybar/script/updates-pacman-aurhelper.sh
 click-left = ~/.config/polybar/script/script-update-show
 interval = 10
+; label-indicator-padding = 2
+; label-indicator-margin = 1
+
+[module/info-pingrtt]
+type = custom/script
+exec = ~/.config/polybar/script/info-pingrtt.sh
+interval = 10
+
+[module/ticker-crypto]
+type = custom/script
+format-prefix = " "
+exec = ~/.config/polybar/script/ticker-crypto.sh
+interval = 600
 
 [settings]
 screenchange-reload = true

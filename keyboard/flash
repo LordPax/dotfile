@@ -38,6 +38,7 @@ function timer() {
         sleep 1
     done
 }
+
 function flash() {
     dfu-programmer $mcu erase --force || exit 1
     dfu-programmer $mcu flash --force $file || exit 1
