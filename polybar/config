@@ -67,7 +67,7 @@ modules-left = i3 title
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = date pulseaudio-control xkeyboard updates-pacman battery battery-time luminosity powermenu
+modules-right = ticker-crypto date pulseaudio-control xkeyboard updates-pacman battery battery-time luminosity info-pingrtt powermenu
 
 tray-position = right
 tray-padding = 2
@@ -519,6 +519,17 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 click-left = ~/.config/polybar/script/keyboard
+
+[module/info-pingrtt]
+type = custom/script
+exec = ~/.config/polybar/script/info-pingrtt.sh
+interval = 10
+
+[module/ticker-crypto]
+type = custom/script
+format-prefix = " "
+exec = ~/.config/polybar/script/ticker-crypto.sh
+interval = 600
 
 [settings]
 screenchange-reload = true

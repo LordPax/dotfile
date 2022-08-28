@@ -23,6 +23,9 @@ Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
 Plug 'prettier/vim-prettier'
+Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
+" Plug 'nickspoons/vim-sharpenup'
+" Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'LordPax/vim-encrypt'
 
@@ -82,6 +85,7 @@ for i in range(97,122)
     exec "map \e".c." <M-".c.">"
 endfor
 
+let mapleader = ","
 syntax on
 set nu
 set rnu
@@ -97,7 +101,7 @@ set smartindent
 set cursorline
 set hlsearch
 set title
-set timeoutlen=1000 
+set timeoutlen=1000
 set ttimeoutlen=0
 set updatetime=100
 set nobackup
@@ -107,9 +111,14 @@ set signcolumn="yes"
 set listchars=tab:>-,trail:. ",eol:↲
 set invlist
 set re=0
+set encoding=utf-8
+scriptencoding utf-8
+" set completeopt=menuone,noinsert,noselect,popuphidden
+" set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
+autocmd FileType cs set makeprg=dotnet\ build
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -165,6 +174,7 @@ let b:ale_linters = {
     \'sh': ['shellcheck', 'sh'],
     \'c': ['gcc'],
     \'php': ['php'],
+    \'cs': ['OmniSharp'],
     \'ruby': ['mri']
 \}
 
