@@ -15,7 +15,7 @@ exec --no-startup-id /home/lordpax/programme/startup
 # exec xrdb /home/lordpax/.Xresources
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
-exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
+# exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
 # exec --no-startup-id xfce4-clipman
 # exec_always --no-startup-id setxkbmap -option caps:escape 
 
@@ -181,6 +181,9 @@ bindsym $mod+s exec --no-startup-id thunar
 bindsym $mod+u exec --no-startup-id xfce4-screenshooter 
 # bindsym $mod+w exec /home/lordpax/programme/keyboard
 
+bindsym $mod+x exec warpd --hint
+bindsym $mod+c exec warpd --normal
+bindsym $mod+g exec warpd --grid
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
