@@ -80,12 +80,12 @@ let s:back2 = 234
 let s:back3 = 235
 let s:front = 240
 
-for i in range(97,122)
-    let c = nr2char(i)
-    exec "map \e".c." <M-".c.">"
-endfor
+" for i in range(97,122)
+"     let c = nr2char(i)
+"     exec "map \e".c." <M-".c.">"
+" endfor
 
-let mapleader = ","
+let mapleader = " "
 syntax on
 set nu
 set rnu
@@ -125,9 +125,9 @@ nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
-nmap <C-n> :nohlsearch<CR>
-nmap <C-l> :bel term<CR>
-nmap <C-m> :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
+nmap <leader>n :nohlsearch<CR>
+nmap <leader>l :bel term<CR>
+nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 noremap <ESC> <C-c>
 
 vmap h "+y
@@ -142,10 +142,10 @@ nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
 
-map <M-j> <C-w>5<
-map <M-k> <C-w>5-
-map <M-l> <C-w>5+
-map <M-m> <C-w>5>
+" map <M-j> <C-w>5<
+" map <M-k> <C-w>5-
+" map <M-l> <C-w>5+
+" map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j

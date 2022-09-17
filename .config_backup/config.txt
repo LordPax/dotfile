@@ -18,4 +18,5 @@
 /home/lordpax/Documents/ESGI
 /home/lordpax/Documents/Challenge
 /home/lordpax/Documents/marionnet
+/home/lordpax/Documents/Osint
 
