@@ -80,10 +80,10 @@ let s:back2 = 234
 let s:back3 = 235
 let s:front = 240
 
-" for i in range(97,122)
-"     let c = nr2char(i)
-"     exec "map \e".c." <M-".c.">"
-" endfor
+for i in range(97,122)
+    let c = nr2char(i)
+    exec "map \e".c." <M-".c.">"
+endfor
 
 let mapleader = " "
 syntax on
@@ -142,10 +142,10 @@ nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
 
-" map <M-j> <C-w>5<
-" map <M-k> <C-w>5-
-" map <M-l> <C-w>5+
-" map <M-m> <C-w>5>
+map <M-j> <C-w>5<
+map <M-k> <C-w>5-
+map <M-l> <C-w>5+
+map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
