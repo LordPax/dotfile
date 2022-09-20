@@ -173,7 +173,6 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# bindsym $mod+p exec shutdown -P now
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec /home/lordpax/programme/betterlockscreen -l
