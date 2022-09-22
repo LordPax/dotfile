@@ -8,12 +8,11 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
-" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
@@ -24,6 +23,11 @@ Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
 Plug 'prettier/vim-prettier'
 Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-repeat'
+Plug 'glts/vim-radical'
+Plug 'glts/vim-magnum'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
@@ -45,6 +49,7 @@ fun HelpKey()
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Generate doc for a function"
+    echo "F10 ......... Find all TODO in project"
 endfun
 
 fun ToggleExpandTab()
@@ -125,6 +130,7 @@ nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
+
 nmap <leader>n :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
@@ -141,6 +147,7 @@ nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
+nmap <F10> :Ack! TODO<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
