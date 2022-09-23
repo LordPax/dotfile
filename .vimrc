@@ -21,7 +21,10 @@ Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'prettier/vim-prettier', {
+" \ 'do': 'yarn install',
+" \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
@@ -131,10 +134,11 @@ nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
 
-nmap <leader>n :nohlsearch<CR>
+nmap <leader>j :Prettier<CR>
+nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
-noremap <ESC> <C-c>
+" map <ESC> <C-c>
 
 vmap h "+y
 
@@ -168,6 +172,8 @@ map j <Left>
 map k <Down>
 map l <Up>
 map m <Right>
+
+let g:prettier#config#parser = 'babylon'
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build|dist)$',

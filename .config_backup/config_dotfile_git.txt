@@ -6,6 +6,7 @@
 /home/lordpax/.config_backup
 /home/lordpax/.config/thunar-script
 /home/lordpax/.config/warpd
+/home/lordpax/.config/ranger
 /home/lordpax/.vim/UltiSnips
 /home/lordpax/.bashrc
 /home/lordpax/.conkyrc

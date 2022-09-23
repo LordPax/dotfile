@@ -8,6 +8,7 @@
 /home/lordpax/.config/picom
 /home/lordpax/.config/thunar-script
 /home/lordpax/.config/warpd
+/home/lordpax/.config/ranger
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
 /home/lordpax/.vscode-oss

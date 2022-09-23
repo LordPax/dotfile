@@ -112,7 +112,7 @@ alias backup_log="bat ~/.config_backup/backup.log"
 alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
 alias dust="dust -r"
-alias ctagsNode="ctags --exclude=node_modules --exclude=dist"
+alias ctagsx="ctags --exclude=node_modules --exclude=dist"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
