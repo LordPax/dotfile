@@ -8,12 +8,11 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
-" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher 
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
@@ -22,8 +21,16 @@ Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'prettier/vim-prettier', {
+" \ 'do': 'yarn install',
+" \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
+Plug 'raimondi/delimitmate'
+Plug 'tpope/vim-repeat'
+Plug 'glts/vim-radical'
+Plug 'glts/vim-magnum'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
@@ -45,6 +52,7 @@ fun HelpKey()
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Generate doc for a function"
+    echo "F10 ......... Find all TODO in project"
 endfun
 
 fun ToggleExpandTab()
@@ -85,7 +93,7 @@ for i in range(97,122)
     exec "map \e".c." <M-".c.">"
 endfor
 
-let mapleader = ","
+let mapleader = " "
 syntax on
 set nu
 set rnu
@@ -125,10 +133,12 @@ nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-j> :tabp<CR>
 nmap <C-k> :tabn<CR>
-nmap <C-n> :nohlsearch<CR>
-nmap <C-l> :bel term<CR>
-nmap <C-m> :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
-noremap <ESC> <C-c>
+
+nmap <leader>j :Prettier<CR>
+nmap <leader>k :nohlsearch<CR>
+nmap <leader>l :bel term<CR>
+nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
+" map <ESC> <C-c>
 
 vmap h "+y
 
@@ -141,6 +151,7 @@ nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
+nmap <F10> :Ack! TODO<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -161,6 +172,8 @@ map j <Left>
 map k <Down>
 map l <Up>
 map m <Right>
+
+let g:prettier#config#parser = 'babylon'
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build|dist)$',

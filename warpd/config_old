@@ -2,13 +2,8 @@ activation_key: A-c
 hint_activation_key: A-x
 grid_activation_key: A-g
 buttons: i o p
-grid_keys: e r d f
-grid_up: l
-grid_left: j
-grid_down: k
-grid_right: m
+grid_keys: y u h j
 left: j
 down: k
 up: l
 right: m
-history: z
