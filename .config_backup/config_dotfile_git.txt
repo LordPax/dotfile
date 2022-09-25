@@ -14,4 +14,5 @@
 /home/lordpax/.tmux.conf
 /home/lordpax/.gitconfig
 /home/lordpax/.vim-vixen.json
+/home/lordpax/.Xresources
 

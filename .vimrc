@@ -173,7 +173,7 @@ map k <Down>
 map l <Up>
 map m <Right>
 
-let g:prettier#config#parser = 'babylon'
+" let g:prettier#config#parser = 'babylon'
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build|dist)$',
