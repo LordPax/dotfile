@@ -18,8 +18,10 @@
 *.color9: #fa3935
 
 ! green
-*.color2: #819400
-*.color10: #a4bd00
+!*.color2: #819400
+!*.color10: #a4bd00
+*.color2: #19cb00
+*.color10: #23fd00
 
 ! yellow
 *.color3: #b08500
