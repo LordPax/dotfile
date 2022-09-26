@@ -30,6 +30,7 @@ Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
 Plug 'glts/vim-magnum'
+Plug 'github/copilot.vim'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
@@ -173,7 +174,7 @@ map k <Down>
 map l <Up>
 map m <Right>
 
-let g:prettier#config#parser = 'babylon'
+" let g:prettier#config#parser = 'babylon'
 
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build|dist)$',
