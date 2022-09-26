@@ -1,12 +1,13 @@
 ! ============
 !   Couleurs
 ! ============
-*secondary:  #444B6A
-*active:     #C0CAF5
+*secondary: #444B6A
+*active: #FFFFFF
 
-*.foreground:   #C0CAF5
-*.background:   #14161b
-*.cursorColor:  #C0CAF5
+!*.foreground: #C0CAF5
+*.foreground: #FFFFFF
+*.background: #14161b
+*.cursorColor: #FFFFFF
 
 ! black
 *.color0: #263640
