@@ -50,7 +50,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec xfce4-terminal
+# bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -235,6 +236,7 @@ exec --no-startup-id thunderbird
 assign [class="firefox"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="Xfce4-terminal"] $ws3
+assign [class="URxvt"] $ws3
 assign [class="discord"] $ws6
 assign [class="Thunderbird"] $ws6
 assign [class="Steam"] $ws6
