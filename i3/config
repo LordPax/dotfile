@@ -54,7 +54,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id /home/lordpax/.config/polybar
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+# bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -235,6 +236,7 @@ exec --no-startup-id discord
 assign [class="firefox"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="xfce4-terminal|Xfce4-terminal"] $ws3
+assign [class="URxvt"] $ws3
 assign [class="discord"] $ws4
 assign [class="thunderbird"] $ws4
 assign [class="KeePassXC|keepassxc"] $ws4

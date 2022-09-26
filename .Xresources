@@ -41,18 +41,20 @@
 *.color15: #fdf6e3
 
 URxvt*scrollBar: false
-URxvt*letterSpace: -4
+URxvt*letterSpace: 0
 URxvt*internalBorder: 1
-URxvt*font: xft:DejaVu Mono:Book:size=9
-URxvt*boldFont: xft:DejaVu Mono:Bold:size=9
-!URxvt*italicFont: xft:DejaVu Mono:style=italic:size=9
-!URxvt*boldItalicFont: xft:DejaVu Mono:style=bold italic:size=9
+URxvt*font: xft:DejaVu Sans Mono:Book:size=9
+URxvt*boldFont: xft:DejaVu Sans Mono:Bold:size=9
+URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=9
+URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=9
 URxvt*cursorBlink: true
-!URxvt.iso14755: false
+URxvt.iso14755: false
 URxvt*utf8: true
-!URxvt*keysym.C-equal: resize-font:bigger
-!URxvt*keysym.C-parenright: resize-font:smaller
-URxvt.keysym.C-minus:     resize-font:smaller
-URxvt.keysym.C-plus:      resize-font:bigger
-URxvt.keysym.C-equal:     resize-font:reset
-URxvt.keysym.C-question:  resize-font:show
+URxvt.keysym.C-equal: resize-font:bigger
+URxvt.keysym.C-parenright: resize-font:smaller
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!URxvt.keysym.Control-minus: resize-font:smaller
+!URxvt.keysym.Control-plus: resize-font:bigger
+!URxvt.keysym.Control-equal: resize-font:reset
+!URxvt.keysym.Control-question: resize-font:show
