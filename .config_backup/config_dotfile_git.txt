@@ -4,6 +4,7 @@
 /home/lordpax/.conkyrc
 /home/lordpax/.bashrc
 /home/lordpax/.gitconfig
+/home/lordpax/.Xresources
 /home/lordpax/.vim/UltiSnips
 /home/lordpax/.config_backup
 /home/lordpax/.config/i3
@@ -12,5 +13,6 @@
 /home/lordpax/.config/thunar-script
 /home/lordpax/.config/warpd
 /home/lordpax/.config/picom
+/home/lordpax/.config/ranger
 /home/lordpax/service/
 

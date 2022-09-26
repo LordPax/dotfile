@@ -1,0 +1,58 @@
+! ============
+!   Couleurs
+! ============
+*secondary:  #444B6A
+*active:     #C0CAF5
+
+*.foreground:   #C0CAF5
+*.background:   #14161b
+*.cursorColor:  #C0CAF5
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #819400
+*.color10: #a4bd00
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
+
+URxvt*scrollBar: false
+URxvt*letterSpace: -4
+URxvt*internalBorder: 1
+URxvt*font: xft:DejaVu Mono:Book:size=9
+URxvt*boldFont: xft:DejaVu Mono:Bold:size=9
+!URxvt*italicFont: xft:DejaVu Mono:style=italic:size=9
+!URxvt*boldItalicFont: xft:DejaVu Mono:style=bold italic:size=9
+URxvt*cursorBlink: true
+!URxvt.iso14755: false
+URxvt*utf8: true
+!URxvt*keysym.C-equal: resize-font:bigger
+!URxvt*keysym.C-parenright: resize-font:smaller
+URxvt.keysym.C-minus:     resize-font:smaller
+URxvt.keysym.C-plus:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-question:  resize-font:show

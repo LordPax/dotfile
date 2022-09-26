@@ -11,7 +11,7 @@
 
 set $mod Mod4
 
-# exec_always xrdb /home/lordpax/.Xresources
+exec_always xrdb /home/lordpax/.Xresources
 # exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.8
 # exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.4
 exec_always --no-startup-id ~/.config/polybar/script/brightness -s 0.5

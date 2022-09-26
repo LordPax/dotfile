@@ -7,6 +7,7 @@
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
 /home/lordpax/.bashrc
+/home/lordpax/.Xresources
 /home/lordpax/Mots_de_passe.kdbx
 /home/lordpax/.vim/UltiSnips
 /home/lordpax/.config/i3
@@ -15,5 +16,6 @@
 /home/lordpax/.config/thunar-script
 /home/lordpax/.config/warpd
 /home/lordpax/.config/picom
+/home/lordpax/.config/ranger
 /home/lordpax/service/
 
