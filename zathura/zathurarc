@@ -16,3 +16,4 @@ map <C-o> zoom out
 
 set selection-clipboard clipboard
 set page-padding 5
+set default-bg \#14161b
