@@ -31,6 +31,7 @@ Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
 Plug 'glts/vim-magnum'
 Plug 'github/copilot.vim'
+Plug 'bfrg/vim-jqplay'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
@@ -153,6 +154,8 @@ nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
 nmap <F10> :Ack! TODO<CR>
+nmap <F11> :Jqplay<CR>
+nmap <F12> :JqplayClose!<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
