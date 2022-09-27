@@ -55,6 +55,8 @@ fun HelpKey()
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
+    echo "F11 ......... Acitve Jqplay"
+    echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
 
 fun ToggleExpandTab()
