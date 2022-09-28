@@ -32,6 +32,7 @@ Plug 'glts/vim-radical'
 Plug 'glts/vim-magnum'
 Plug 'github/copilot.vim'
 Plug 'bfrg/vim-jqplay'
+Plug 'lumiliet/vim-twig'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'

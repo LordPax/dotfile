@@ -4,14 +4,15 @@
 *secondary: #444B6A
 *active: #FFFFFF
 
-!*.foreground: #C0CAF5
 *.foreground: #FFFFFF
 *.background: #14161b
-*.cursorColor: #FFFFFF
+!*.cursorColor: #FFFFFF
 
 ! black
-*.color0: #263640
-*.color8: #4a697d
+!*.color0: #282a2e
+!*.color8: #373b41
+*.color0: #14161b
+*.color8: #373b41
 
 ! red
 *.color1: #d12f2c
