@@ -9,6 +9,7 @@
 /home/lordpax/.config/warpd
 /home/lordpax/.config/ranger
 /home/lordpax/.config/zathura
+/home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
 /home/lordpax/.vscode-oss

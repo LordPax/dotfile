@@ -117,6 +117,7 @@ alias ctagsx="ctags --exclude=node_modules --exclude=dist"
 alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.vimrc"
 alias get_tmux="mv ~/.tmux.conf ~/.tmux_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.tmux.conf"
 alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/picom/picom.conf -P ~/.config/picom/"
+alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.Xresources"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1

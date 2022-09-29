@@ -52,10 +52,10 @@ URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=9
 URxvt*cursorBlink: true
 URxvt.iso14755: false
 URxvt*utf8: true
-URxvt.keysym.C-equal: resize-font:bigger
-URxvt.keysym.C-parenright: resize-font:smaller
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+!URxvt.keysym.C-equal: resize-font:bigger
+!URxvt.keysym.C-parenright: resize-font:smaller
 !URxvt.keysym.Control-minus: resize-font:smaller
 !URxvt.keysym.Control-plus: resize-font:bigger
 !URxvt.keysym.Control-equal: resize-font:reset

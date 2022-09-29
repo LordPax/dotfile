@@ -7,6 +7,7 @@
 /home/lordpax/.config/warpd
 /home/lordpax/.config/ranger
 /home/lordpax/.config/zathura
+/home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.vim/UltiSnips
 /home/lordpax/.bashrc
 /home/lordpax/.conkyrc
