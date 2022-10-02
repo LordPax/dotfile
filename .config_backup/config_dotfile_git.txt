@@ -10,6 +10,7 @@
 /home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.config/qutebrowser/autoconfig.yml
 /home/lordpax/.vim/UltiSnips
+/home/lordpax/service/
 /home/lordpax/.bashrc
 /home/lordpax/.conkyrc
 /home/lordpax/.vimrc
@@ -17,4 +18,6 @@
 /home/lordpax/.gitconfig
 /home/lordpax/.vim-vixen.json
 /home/lordpax/.Xresources
+/home/lordpax/.muttrc.example
+/home/lordpax/.colors.muttrc
 

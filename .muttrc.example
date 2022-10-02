@@ -1,0 +1,44 @@
+# About me
+set from = "user@domain.com"
+set realname = "User Name"
+
+# My credentials
+set smtp_url = "smtp://user@domain.com@smtp-mail.domain.com:587/"
+# set smtp_pass = ""
+set imap_user = "user@domain.com"
+# set imap_pass = ""
+
+# My mailbox
+set folder = "imaps://domain.com:993"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set ssl_force_tls = yes
+mailboxes =INBOX =Sent =Trash =Drafts =Junk =Other =Archive/ESGI =Archive/IUT =Archive/crous =Archive/doc =Archive/ownest =Archive/école
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/header"
+set message_cachedir = "~/.mutt/cache/message"
+set certificate_file = "~/.mutt/cache/certificates"
+
+# Etc
+set mail_check = 30
+set move = no
+set imap_keepalive = 900
+set sort = "threads"
+set editor = "vim"
+set sidebar_visible = yes
+
+# Bindings
+bind index,pager k next-undeleted
+bind index,pager l previous-undeleted
+bind index,pager \Cu half-up
+bind index,pager \Cd half-down
+bind index,pager \Ck sidebar-next
+bind index,pager \Cl sidebar-prev
+bind index,pager \Co sidebar-open
+bind index,pager <F2> sidebar-toggle-visible
+
+# Colors
+source .colors.muttrc

@@ -1,0 +1,8 @@
+[Unit]
+Description=Deamon ipfs
+
+[Service]
+Type=simple
+User=lordpax
+Group=wheel
+ExecStart=/usr/bin/ipfs daemon

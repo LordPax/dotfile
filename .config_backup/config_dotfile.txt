@@ -11,6 +11,7 @@
 /home/lordpax/.config/zathura
 /home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.config/qutebrowser/autoconfig.yml
+/home/lordpax/service/
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
 /home/lordpax/.vscode-oss
@@ -24,4 +25,6 @@
 /home/lordpax/.tmux.conf
 /home/lordpax/.gitconfig
 /home/lordpax/.vim-vixen.json
+/home/lordpax/.muttrc.example
+/home/lordpax/.colors.muttrc
 

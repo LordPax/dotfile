@@ -1,0 +1,8 @@
+[Unit]
+Description=Deamon syncthing
+
+[Service]
+Type=simple
+User=lordpax
+Group=wheel
+ExecStart=/usr/bin/syncthing serve
