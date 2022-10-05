@@ -33,6 +33,7 @@ Plug 'glts/vim-magnum'
 Plug 'github/copilot.vim'
 Plug 'bfrg/vim-jqplay'
 Plug 'lumiliet/vim-twig'
+Plug 'mbbill/undotree'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
@@ -56,8 +57,7 @@ fun HelpKey()
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
-    echo "F11 ......... Acitve Jqplay"
-    echo "F12 ......... Deactive Jqplay with JqplayClose!"
+    echo "F11 ......... Toggle undotree"
 endfun
 
 fun ToggleExpandTab()
@@ -157,8 +157,7 @@ nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
 nmap <F10> :Ack! TODO<CR>
-nmap <F11> :Jqplay<CR>
-nmap <F12> :JqplayClose!<CR>
+nmap <F11> :UndotreeToggle<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -180,8 +179,6 @@ map k <Down>
 map l <Up>
 map m <Right>
 
-" let g:prettier#config#parser = 'babylon'
-
 let g:ctrlp_custom_ignore = {
 \ 'dir':  '\v(\.git|node_modules|build|dist)$',
 \ 'file': '\v\.(swp|o|so)$',
@@ -202,7 +199,7 @@ let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 
-let g:UltiSnipsExpandTrigger="<leader><tab>"
+let g:UltiSnipsExpandTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-n>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
