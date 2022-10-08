@@ -22,9 +22,6 @@ Plug 'ap/vim-css-color'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'tpope/vim-rhubarb'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" Plug 'prettier/vim-prettier', {
-" \ 'do': 'yarn install',
-" \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
 Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
@@ -34,6 +31,9 @@ Plug 'github/copilot.vim'
 Plug 'bfrg/vim-jqplay'
 Plug 'lumiliet/vim-twig'
 Plug 'mbbill/undotree'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'puremourning/vimspector'
+Plug 'mg979/vim-visual-multi'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
@@ -144,6 +144,17 @@ nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>p :Copilot panel<CR>
+nmap <leader>f :Lex<CR>:vertical resize 30<CR>
+
+nnoremap <Leader>dd :call vimspector#Launch()<CR>
+nnoremap <Leader>de :call vimspector#Reset()<CR>
+nnoremap <Leader>dc :call vimspector#Continue()<CR>
+nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+nmap <Leader>dk <Plug>VimspectorRestart
+nmap <Leader>dh <Plug>VimspectorStepOut
+nmap <Leader>dl <Plug>VimspectorStepInto
+nmap <Leader>dj <Plug>VimspectorStepOver
 
 vmap h "+y
 

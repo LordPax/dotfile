@@ -20,4 +20,5 @@
 /home/lordpax/.Xresources
 /home/lordpax/.muttrc.example
 /home/lordpax/.colors.muttrc
+/home/lordpax/.account.muttrc.example
 

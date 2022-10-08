@@ -1,0 +1,23 @@
+# About me
+set from = "user@domain.com"
+set realname = "User Name"
+
+# My credentials
+set smtp_url = "smtp://user@domain.com@smtp-mail.outlook.com:587/"
+# set smtp_pass = ""
+set imap_user = "user@domain.com"
+# set imap_pass = ""
+
+# My mailbox
+set folder = "imaps://$imap_user@outlook.office365.com:993"
+set spoolfile = "+INBOX"
+set record = "+Sent"
+set trash = "+Trash"
+set postponed = "+Drafts"
+set ssl_force_tls = yes
+mailboxes =INBOX =Sent =Trash =Drafts =Junk =Other
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/header"
+set message_cachedir = "~/.mutt/cache/message"
+set certificate_file = "~/.mutt/certificates"

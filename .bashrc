@@ -6,33 +6,6 @@
 
 PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
-function colors() {
-    local fgc bgc vals seq0
-
-    printf "Color escapes are %s\n" '\e[${value};...;${value}m'
-    printf "Values 30..37 are \e[33mforeground colors\e[m\n"
-    printf "Values 40..47 are \e[43mbackground colors\e[m\n"
-    printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"
-
-    # foreground colors
-    for fgc in {30..37}; do
-        # background colors
-        for bgc in {40..47}; do
-            fgc=${fgc#37} # white
-            bgc=${bgc#40} # black
-
-            vals="${fgc:+$fgc;}${bgc}"
-            vals=${vals%%;}
-
-            seq0="${vals:+\e[${vals}m}"
-            printf "  %-9s" "${seq0:-(default)}"
-            printf " ${seq0}TEXT\e[m"
-            printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"
-        done
-        echo; echo
-    done
-}
-
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
 alias df='df -h'                          # human-readable sizes
@@ -58,29 +31,6 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-# ex - archive extractor
-# usage: ex <file>
-function ext () {
-    if [ -f $1 ] ; then
-        case $1 in
-            *.tar.bz2)   tar xjf $1   ;;
-            *.tar.gz)    tar xzf $1   ;;
-            *.bz2)       bunzip2 $1   ;;
-            *.rar)       unrar x $1     ;;
-            *.gz)        gunzip $1    ;;
-            *.tar)       tar xf $1    ;;
-            *.tbz2)      tar xjf $1   ;;
-            *.tgz)       tar xzf $1   ;;
-            *.zip)       unzip $1     ;;
-            *.Z)         uncompress $1;;
-            *.7z)        7z x $1      ;;
-            *)           echo "'$1' cannot be extracted via ex()" ;;
-        esac
-    else
-        echo "'$1' is not a valid file"
-    fi
-}
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -102,10 +52,10 @@ alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_g
 
 # alias save_mdp="keepassxc-cli merge /save/Mots_de_passe.kdbx Mots_de_passe.kdbx"
 # alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
-alias save_mdp="cp ~/Mots_de_passe.kdbx /save"
-alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/"
-alias save_mdp_usb="keepassxc-cli merge /mnt/veracrypt1/Mots_de_passe.kdbx Mots_de_passe.kdbx"
-alias restore_mdp_usb="keepassxc-cli merge Mots_de_passe.kdbx /mnt/veracrypt1/Mots_de_passe.kdbx"
+alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
+alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"
+alias save_mdp_usb="keepassxc-cli merge /mnt/veracrypt1/Mots_de_passe.kdbx ~/Perso/Mots_de_passe.kdbx"
+alias restore_mdp_usb="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /mnt/veracrypt1/Mots_de_passe.kdbx"
 
 alias backup_log="bat ~/.config_backup/backup.log"
 
@@ -135,6 +85,6 @@ function vimack() {
 }
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
-PATH=$PATH:/home/lordpax/programme:/home/lordpax/.local/share/gem/ruby/3.0.0/bin
+PATH=$PATH:/home/lordpax/programme:/home/lordpax/.local/bin:/home/lordpax/.local/share/gem/ruby/3.0.0/bin
 export EDITOR=vim
 [ -z $TMUX ] && tmux
