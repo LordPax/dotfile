@@ -44,6 +44,7 @@ call plug#end()
 
 let g:useSpace = 1
 let g:length = 4
+let g:fileMan = 0
 
 fun HelpKey()
     echo "Help : "
@@ -84,9 +85,20 @@ fun ToggleLength()
     exe "set shiftwidth="..g:length
 endfun
 
+fun ToggleFileManager()
+    if g:fileMan == 0
+        let g:fileMan = 1
+        exe "Lex | vertical resize 30"
+    else
+        let g:fileMan = 0
+        exe "Lex"
+    endif
+endfun
+
 command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
+command ToggleFileManager call ToggleFileManager()
 
 let s:back = 233
 let s:back2 = 234
@@ -144,7 +156,7 @@ nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>p :Copilot panel<CR>
-nmap <leader>f :Lex<CR>:vertical resize 30<CR>
+nmap <leader>f :ToggleFileManager<CR>
 
 nnoremap <Leader>dd :call vimspector#Launch()<CR>
 nnoremap <Leader>de :call vimspector#Reset()<CR>
