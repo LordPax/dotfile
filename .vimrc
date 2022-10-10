@@ -88,7 +88,7 @@ endfun
 fun ToggleFileManager()
     if g:fileMan == 0
         let g:fileMan = 1
-        exe "Lex | vertical resize 30"
+        exe "Lex | vertical resize 40"
     else
         let g:fileMan = 0
         exe "Lex"
