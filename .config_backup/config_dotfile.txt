@@ -11,7 +11,8 @@
 /home/lordpax/.config/zathura
 /home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.config/qutebrowser/autoconfig.yml
-/home/lordpax/service/
+/home/lordpax/service
+/home/lordpax/.newsboat
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
 /home/lordpax/.vscode-oss
