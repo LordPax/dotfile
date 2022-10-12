@@ -7,7 +7,8 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-Plug 'tomasiser/vim-code-dark'
+" Plug 'tomasiser/vim-code-dark'
+Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -34,7 +35,6 @@ Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'puremourning/vimspector'
 Plug 'mg979/vim-visual-multi'
-" Plug 'LordPax/vim-code-dark', { 'branch': 'improve.diffReadability' }
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
@@ -88,7 +88,7 @@ endfun
 fun ToggleFileManager()
     if g:fileMan == 0
         let g:fileMan = 1
-        exe "Lex | vertical resize 35"
+        exe "Lex | vertical resize 30"
     else
         let g:fileMan = 0
         exe "Lex"
@@ -229,6 +229,9 @@ let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
 exe "highlight nontext ctermbg="..s:back
@@ -238,6 +241,7 @@ exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-exe "highlight SpecialKey ctermfg=237"
+highlight SpecialKey ctermfg=237
+" highlight Directory ctermfg=75 ctermbg=NONE
 highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
