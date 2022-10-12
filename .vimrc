@@ -88,7 +88,7 @@ endfun
 fun ToggleFileManager()
     if g:fileMan == 0
         let g:fileMan = 1
-        exe "Lex | vertical resize 40"
+        exe "Lex | vertical resize 35"
     else
         let g:fileMan = 0
         exe "Lex"
@@ -157,6 +157,7 @@ nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>p :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
+nmap <leader>u :UndotreeToggle<CR>
 
 nnoremap <Leader>dd :call vimspector#Launch()<CR>
 nnoremap <Leader>de :call vimspector#Reset()<CR>
