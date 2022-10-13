@@ -7,8 +7,8 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-" Plug 'tomasiser/vim-code-dark'
-Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
+Plug 'tomasiser/vim-code-dark'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
