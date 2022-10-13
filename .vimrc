@@ -58,7 +58,8 @@ fun HelpKey()
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
-    echo "F11 ......... Toggle undotree"
+    echo "F11 ......... Acitve Jqplay"
+    echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
 
 fun ToggleExpandTab()
@@ -181,7 +182,8 @@ nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 let g:doge_mapping="<F9>"
 nmap <F10> :Ack! TODO<CR>
-nmap <F11> :UndotreeToggle<CR>
+nmap <F11> :Jqplay<CR>
+nmap <F12> :JqplayClose!<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
