@@ -96,6 +96,18 @@ fun ToggleFileManager()
     endif
 endfun
 
+if has("persistent_undo")
+    let target_path = expand('~/.undodir')
+
+    " create the directory and any parent directories
+    if !isdirectory(target_path)
+        call mkdir(target_path, "p", 0700)
+    endif
+
+    let &undodir=target_path
+    set undofile
+endif
+
 command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
@@ -244,6 +256,5 @@ exe "highlight VertSplit ctermbg="..s:back3
 exe "highlight VertSplit ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 highlight SpecialKey ctermfg=237
-" highlight Directory ctermfg=75 ctermbg=NONE
 highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
