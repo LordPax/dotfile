@@ -94,6 +94,6 @@ function vimack() {
 }
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
-PATH=$PATH:/home/lordpax/programme:/home/lordpax/.local/bin:/home/lordpax/.local/share/gem/ruby/3.0.0/bin
+PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
 export EDITOR=vim
 [ -z $TMUX ] && tmux
