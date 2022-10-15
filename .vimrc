@@ -138,6 +138,7 @@ set autoindent
 set smartindent
 set cursorline
 set hlsearch
+set incsearch
 set title
 set timeoutlen=1000
 set ttimeoutlen=0
@@ -232,6 +233,8 @@ let b:ale_linters = {
     \'cs': ['OmniSharp'],
     \'ruby': ['mri']
 \}
+
+let g:undotree_WindowLayout = 3
 
 let g:ackprg = "ag --vimgrep"
 let g:airline#extensions#tabline#enabled = 1
