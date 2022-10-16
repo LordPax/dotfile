@@ -67,7 +67,7 @@ modules-left = i3 title
 ;modules-center = mpd
 ; modules-center = date 
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = ticker-crypto date pulseaudio-control xkeyboard updates-pacman battery battery-time luminosity info-pingrtt powermenu
+modules-right = ticker-crypto date pulseaudio-control xkeyboard updates-pacman battery battery-time luminosity networkspeeddown networkspeedup powermenu
 
 tray-position = right
 tray-padding = 2
@@ -530,6 +530,22 @@ type = custom/script
 format-prefix = " "
 exec = ~/.config/polybar/script/ticker-crypto.sh
 interval = 600
+
+[module/networkspeedup]
+type = internal/network
+interface = wlo1
+label-connected = "%upspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground}
+
+[module/networkspeeddown]
+type = internal/network
+interface = wlo1
+label-connected = "%downspeed:7%"
+format-connected = <label-connected>
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground}
 
 [settings]
 screenchange-reload = true

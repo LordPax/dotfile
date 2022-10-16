@@ -11,6 +11,15 @@ alias ls='ls --color=auto'
 # PS1='[\u@\h \W]\$ '
 PS1="\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] "
 
+set -o vi
+bind 'set show-mode-in-prompt on'
+bind 'set vi-cmd-mode-string \e[01;34m(cmd)'
+bind 'set vi-ins-mode-string \e[01;33m(ins)'
+bind -m vi 'j':'backward-char'
+bind -m vi 'k':'history-search-forward'
+bind -m vi 'l':'history-search-backward'
+bind -m vi 'm':'forward-char'
+
 # alias connect='~/programme/connect/connect_univ.sh'
 
 export NVM_DIR="$HOME/.nvm"
