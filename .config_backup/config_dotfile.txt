@@ -1,4 +1,6 @@
 /home/lordpax/Documents/keyboard
+/home/lordpax/service
+/home/lordpax/programme
 /home/lordpax/.config/i3
 /home/lordpax/.config/rofi
 /home/lordpax/.config/polybar
@@ -11,7 +13,6 @@
 /home/lordpax/.config/zathura
 /home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.config/qutebrowser/autoconfig.yml
-/home/lordpax/service
 /home/lordpax/.newsboat
 /home/lordpax/.ssh
 /home/lordpax/.gnupg
