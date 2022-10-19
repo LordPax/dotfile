@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# mountable=$(lsblk -lp | grep "part $" | awk '{print $1, "(" $4 ")"}')
+mountable="/dev/sdb1 (4MB)\n/dev/sdb2 (2GB)\n/dev/sdb3 (1.5GB)" # for testing
+[ "$mountable" = "" ] && echo "No mountable disks found" && exit 1
+diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
+[ "$diskToMount" = "" ] && exit 1
+mountpoint=$(echo -e "/mnt\n/media" | dmenu -i -p "Mount to which directory")
+[ "$mountpoint" = "" ] && exit 1
+
+echo "Mounting $diskToMount to $mountpoint"

@@ -1,6 +1,7 @@
 /home/lordpax/Documents/keyboard
 /home/lordpax/service
 /home/lordpax/programme
+/home/lordpax/.script
 /home/lordpax/.config/i3
 /home/lordpax/.config/rofi
 /home/lordpax/.config/polybar
