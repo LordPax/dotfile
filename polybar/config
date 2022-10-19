@@ -513,8 +513,8 @@ menu-2-1-exec = menu-open-0
 [module/updates-pacman]
 type = custom/script
 format-prefix = " "
-exec = ~/.script/updates-pacman-aurhelper.sh
-click-left = ~/.script/script-update-show
+exec = ~/.script/update --nb-package
+click-left = ~/.script/update --update-package
 interval = 10
 ; label-indicator-padding = 2
 ; label-indicator-margin = 1

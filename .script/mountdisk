@@ -1,11 +1,76 @@
 #!/bin/bash
 
-# mountable=$(lsblk -lp | grep "part $" | awk '{print $1, "(" $4 ")"}')
-mountable="/dev/sdb1 (4MB)\n/dev/sdb2 (2GB)\n/dev/sdb3 (1.5GB)" # for testing
-[ "$mountable" = "" ] && echo "No mountable disks found" && exit 1
-diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
-[ "$diskToMount" = "" ] && exit 1
-mountpoint=$(echo -e "/mnt\n/media" | dmenu -i -p "Mount to which directory")
-[ "$mountpoint" = "" ] && exit 1
+mountPointDir="/mnt\n/media"
+noUmountRegex="(/$|/boot|/home|/perso|/save)"
 
-echo "Mounting $diskToMount to $mountpoint"
+# info <msg>
+function info() {
+    [ "$1" == "" ] && exit 1
+    zenity --error --text="$1" --title="ERROR"
+}
+
+function helpFunc() {
+    echo "Usage: $(basename $0) [options]
+
+Option:
+-h, --help .................... Show this help message and exit
+--mount ....................... Mount the disk
+--umount ...................... Unmount the disk"
+}
+
+function mountDisk() {
+    mountable=$(lsblk -lp | \
+        grep "part $" | \
+        awk '{print $1, "(" $4 ")"}'
+    )
+    [ "$mountable" = "" ] && info "No mountable disks found" && exit 1
+
+    diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
+    mountPoint=$(echo -e "$mountPointDir" | dmenu -i -p "Mount to which directory")
+
+    # [ ! -d $mountPoint ] && mkdir -p $mountPoint
+
+    if sudo mount $diskToMount $mountPoint 2> /dev/null; then
+        # chmown -R $USER:$USER $mountPoint
+        info "Disk mounted to \"$mountPoint\""
+    else
+        info "Failed to mount disk"
+        exit 1
+    fi
+}
+
+function umountDisk() {
+    mounted=$(lsblk -lp | \
+        grep "part /" | \
+        grep -Ev "$noUmountRegex" | \
+        awk '{print $1, "(" $4 ")"}'
+    )
+    [ "$mounted" = "" ] && info "No mounted disks found" && exit 1
+
+    diskToUmount=$(echo -e "$mounted" | dmenu -i -p "Umount which disk" | awk '{print $1}')
+
+    if sudo umount $diskToUmount 2> /dev/null; then
+        info "Disk unmounted"
+    else
+        info "Failed to unmount disk"
+        exit 1
+    fi
+}
+
+if [ $# -eq 1 ]; then
+    case $1 in
+        -h | --help)
+            helpFunc
+            exit 0 ;;
+        --mount)
+            mountDisk
+            exit 0;;
+        --umount)
+            umountDisk
+            exit 0;;
+        *)
+            info "Unknown paramater \"$1\""
+            exit 1 ;;
+    esac
+fi
+
