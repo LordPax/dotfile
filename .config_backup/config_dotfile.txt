@@ -1,3 +1,7 @@
+/home/lordpax/service
+/home/lordpax/programme
+/home/lordpax/.script
+/home/lordpax/Mots_de_passe.kdbx
 /home/lordpax/.vimrc
 /home/lordpax/.gitconfig
 /home/lordpax/.tmux.conf
@@ -8,7 +12,6 @@
 /home/lordpax/.gnupg
 /home/lordpax/.bashrc
 /home/lordpax/.Xresources
-/home/lordpax/Mots_de_passe.kdbx
 /home/lordpax/.vim/UltiSnips
 /home/lordpax/.config/i3
 /home/lordpax/.config/polybar
@@ -18,5 +21,4 @@
 /home/lordpax/.config/picom
 /home/lordpax/.config/ranger
 /home/lordpax/.config/Vieb/viebrc
-/home/lordpax/service/
 

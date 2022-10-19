@@ -1,3 +1,6 @@
+/home/lordpax/service
+# /home/lordpax/programme
+/home/lordpax/.script
 /home/lordpax/.vimrc
 /home/lordpax/.emacs
 /home/lordpax/.tmux.conf
@@ -15,5 +18,4 @@
 /home/lordpax/.config/picom
 /home/lordpax/.config/ranger
 /home/lordpax/.config/Vieb/viebrc
-/home/lordpax/service/
 

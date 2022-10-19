@@ -29,9 +29,11 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-PATH=$PATH:/home/lordpax/programme:/home/lordpax/programme/emsdk:/home/lordpax/programme/emsdk/node/14.18.2_64bit/bin:/home/lordpax/programme/emsdk/upstream/emscripten
+PATH=$PATH:$HOME/programme:$HOME/programme/emsdk:$HOME/programme/emsdk/node/14.18.2_64bit/bin:$HOME/programme/emsdk/upstream/emscripten:$HOME/go/bin
 
 export EDITOR=vim
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
 
 [ -z $TMUX ] && tmux
 
@@ -44,11 +46,14 @@ alias restore_mdp="cp /mnt/veracrypt1/Mots_de_passe.kdbx ~/Perso/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
 alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.vimrc"
 alias get_tmux="mv ~/.tmux.conf ~/.tmux-old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.tmux.conf"
+alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/picom/picom.conf -P ~/.config/picom/"
+alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.Xresources"
 alias emacs="emacs -nw"
 alias dust="dust -r"
 
 alias copy="xsel --clipboard -i"
 alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
+
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
