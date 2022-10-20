@@ -162,6 +162,9 @@ bindsym $mod+x exec warpd --hint
 bindsym $mod+c exec warpd --normal
 bindsym $mod+g exec warpd --grid
 
+bindsym $mod+n exec ~/.script/mountdisk --mount
+bindsym $mod+Shift+n exec ~/.script/mountdisk --umount
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
