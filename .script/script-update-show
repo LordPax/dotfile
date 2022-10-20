@@ -1,7 +1,0 @@
-#!/bin/bash
-checkupdates | awk 'OFS="\n" {print $1, $2, $4; fflush()}' | zenity --list \
---title="Update" \
---text="Mise à jour disponible" \
---column="Package" --column="Old version" --column="New version"
-
-[ $? -eq 0 ] && xfce4-terminal -x sudo pacman -Syu archlinux-keyring

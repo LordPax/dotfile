@@ -1,0 +1,61 @@
+#!/bin/bash
+
+# info <msg>
+function info() {
+    [ "$1" == "" ] && exit 1
+    zenity --info --text="$1" --title="Info"
+}
+
+# error <msg>
+function error() {
+    [ "$1" == "" ] && exit 1
+    zenity --error --text="$1" --title="Error"
+}
+
+function helpFunc() {
+    echo "Usage: $(basename $0) <options> <files>
+
+Option:
+-h, --help .................... Show this help message and exit
+-e or --encrypt ............... Encrypt files
+-d or --decrypt ............... Decrypt files"
+}
+
+function encrypt() {
+    firstPass=$(zenity --password --title="Mot de passe")
+    secondPass=$(zenity --password --title="Confirmation mot de passe")
+
+    if [ $firstPass == $secondPass ]; then
+        aescrypt -e -p $firstPass $@ &> /dev/null && shred -zu $@ || error "Une erreur s'est produite"
+    else
+        error "Les mots de passe sont différents"
+    fi
+
+    unset firstPass
+    unset secondPass
+}
+
+function decrypt() {
+    password=$(zenity --password --title="Mot de passe")
+    aescrypt -d -p $password $@ &> /dev/null && rm $@ || error "Une erreur s'est produite"
+    unset password
+}
+
+if [ $# -ge 1 ]; then
+    case $1 in
+        -h | --help)
+            helpFunc
+            exit 0 ;;
+        -e | --encrypt)
+            shift
+            encrypt $@
+            exit 0;;
+        -d | --decrypt)
+            shift
+            decrypt $@
+            exit 0;;
+        *)
+            error "Unknown paramater \"$1\""
+            exit 1 ;;
+    esac
+fi

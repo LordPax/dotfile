@@ -1,12 +1,19 @@
 #!/bin/bash
 
-mountPointDir="/mnt\n/media"
+UID=$(id -u)
+GID=$(id -g)
 noUmountRegex="(/$|/boot|/home|/perso|/save)"
 
 # info <msg>
 function info() {
     [ "$1" == "" ] && exit 1
-    zenity --error --text="$1" --title="ERROR"
+    zenity --info --text="$1" --title="Info"
+}
+
+# error <msg>
+function error() {
+    [ "$1" == "" ] && exit 1
+    zenity --error --text="$1" --title="Error"
 }
 
 function helpFunc() {
@@ -23,18 +30,19 @@ function mountDisk() {
         grep "part $" | \
         awk '{print $1, "(" $4 ")"}'
     )
-    [ "$mountable" = "" ] && info "No mountable disks found" && exit 1
+    [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
 
     diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
-    mountPoint=$(echo -e "$mountPointDir" | dmenu -i -p "Mount to which directory")
+    [ "$diskToMount" = "" ] && exit 1
+    mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | dmenu -i -p "Mount to which directory")
+    [ "$mountPoint" = "" ] && exit 1
 
-    # [ ! -d $mountPoint ] && mkdir -p $mountPoint
+    [ ! -d $mountPoint ] && mkdir -p $mountPoint
 
-    if sudo mount $diskToMount $mountPoint 2> /dev/null; then
-        # chmown -R $USER:$USER $mountPoint
+    if sudo mount -o uid=$UID,gid=$GID $diskToMount $mountPoint 2> /dev/null; then
         info "Disk mounted to \"$mountPoint\""
     else
-        info "Failed to mount disk"
+        error "Failed to mount disk"
         exit 1
     fi
 }
@@ -45,14 +53,15 @@ function umountDisk() {
         grep -Ev "$noUmountRegex" | \
         awk '{print $1, "(" $4 ")"}'
     )
-    [ "$mounted" = "" ] && info "No mounted disks found" && exit 1
+    [ "$mounted" = "" ] && error "No mounted disks found" && exit 1
 
     diskToUmount=$(echo -e "$mounted" | dmenu -i -p "Umount which disk" | awk '{print $1}')
+    [ "$diskToUmount" = "" ] && exit 1
 
     if sudo umount $diskToUmount 2> /dev/null; then
         info "Disk unmounted"
     else
-        info "Failed to unmount disk"
+        error "Failed to unmount disk"
         exit 1
     fi
 }
@@ -69,7 +78,7 @@ if [ $# -eq 1 ]; then
             umountDisk
             exit 0;;
         *)
-            info "Unknown paramater \"$1\""
+            error "Unknown paramater \"$1\""
             exit 1 ;;
     esac
 fi

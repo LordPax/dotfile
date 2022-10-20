@@ -15,7 +15,7 @@ class encrypt(Command):
             self.fm.notify("No file specified", bad=True)
             return
 
-        command = ['chiffrer']
+        command = ['crypt', '-e']
 
         for file in filename:
             command.append(file.path)
@@ -35,7 +35,7 @@ class decrypt(Command):
             self.fm.notify("No file specified", bad=True)
             return
 
-        command = ['dechiffrer']
+        command = ['crypt', '-d']
 
         for file in filename:
             command.append(file.path)
