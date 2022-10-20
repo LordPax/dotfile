@@ -1,0 +1,42 @@
+#!/bin/bash
+
+function echoErr() {
+    [ "$1" == "" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    echo "Usage: $(basename $0) <options>
+
+Options:
+-h, --help ..................... Show this help message and exit
+--update-package ............... Update package
+--nb-package ................... Number of package to update"
+}
+
+function update() {
+    checkupdates | awk 'OFS="\n" {print $1, $2, $4; fflush()}' | zenity --list \
+        --title="Update" \
+        --text="Mise à jour disponible" \
+        --column="Package" --column="Old version" --column="New version" &> /dev/null
+
+    [ $? -eq 0 ] && xfce4-terminal -x sudo pacman -Syu archlinux-keyring
+}
+
+if [ $# -ge 1 ]; then
+    case $1 in
+        -h | --help)
+            helpFunc
+            exit 0;;
+        --nb-package)
+            checkupdates 2> /dev/null | wc -l
+            exit 0;;
+        --update-package)
+            update
+            exit 0;;
+        *)
+            echoErr "Unknown parameter \"$1\""
+            exit 1;;
+    esac
+    shift
+fi

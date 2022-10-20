@@ -505,8 +505,8 @@ type = custom/script
 format-prefix = " "
 label-indicator-padding = 2
 label-indicator-margin = 1
-exec = ~/.script/updates-pacman-aurhelper.sh
-click-left = ~/.script/script-update-show
+exec = ~/.script/update --nb-package
+click-left = ~/.script/update --update-package
 interval = 10
 
 [module/xkeyboard]
