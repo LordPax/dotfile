@@ -48,6 +48,7 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+alias syncdash="firefox-developer-edition localhost:8384"
 alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s 3"
 alias backup_file_usb="backup -c /home/lordpax/.config_backup/config.txt -o /mnt/veracrypt1/Backup -n backup_compute2 -s 3"
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"
