@@ -164,7 +164,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
-bindsym $mod+o exec /home/lordpax/programme/betterlockscreen -l
+bindsym $mod+o exec ~/programme/betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
 bindsym $mod+u exec --no-startup-id xfce4-screenshooter 
 # bindsym $mod+w exec /home/lordpax/programme/keyboard
@@ -175,6 +175,7 @@ bindsym $mod+g exec warpd --grid
 
 bindsym $mod+n exec ~/.script/mountdisk --mount
 bindsym $mod+Shift+n exec ~/.script/mountdisk --umount
+bindsym $mod+y exec ~/.script/update --update-package
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
