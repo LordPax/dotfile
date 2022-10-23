@@ -175,7 +175,8 @@ bindsym $mod+g exec warpd --grid
 
 bindsym $mod+n exec ~/.script/mountdisk --mount
 bindsym $mod+Shift+n exec ~/.script/mountdisk --umount
-bindsym $mod+y exec ~/.script/update --update-package
+bindsym $mod+y exec ~/.script/update --update-pacman
+bindsym $mod+Shift+y exec ~/.script/update --update-aur
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

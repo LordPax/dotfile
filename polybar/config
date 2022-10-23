@@ -17,25 +17,16 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-; background = #222
-; background = #1C1B22
 background = #14161B
 background-alt = #444
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
-; primary = #ffb52a
-; primary = #2ecc71
 primary = #3498DB 
 secondary = #e60053
 alert = #bd2c40
 
 [bar/barLeft]
-;monitor = ${env:MONITOR:HDMI-1}
-;monitor = ${env:MONITOR:HDMI-A-0}
 monitor = ${env:MONITOR:DVI-D-0}
-;monitor = ${env:MONITOR:}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -68,25 +59,22 @@ font-4 = "Font Awesome 6 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = i3 xwindow
-;modules-center = mpd
-; modules-center = date 
-;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
 modules-right = ticker-crypto date pulseaudio-control updates-pacman xkeyboard networkspeeddown networkspeedup powermenu
 
 tray-position = right
 tray-padding = 2
-;tray-background = #0063ff
+; tray-background = #0063ff
 
 ;wm-restack = bspwm
-;wm-restack = i3
+; wm-restack = i3
 
 ;override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+; scroll-up = i3wm-wsnext
+; scroll-down = i3wm-wsprev
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -124,6 +112,7 @@ modules-left = i3
 
 tray-position = right
 tray-padding = 2
+; tray-background = #0063ff
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -187,25 +176,6 @@ mount-0 = /
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
-
-[module/bspwm]
-type = internal/bspwm
-
-label-focused = %index%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
-label-focused-padding = 2
-
-label-occupied = %index%
-label-occupied-padding = 2
-
-label-urgent = %index%!
-label-urgent-background = ${colors.alert}
-label-urgent-padding = 2
-
-label-empty = %index%
-label-empty-foreground = ${colors.foreground-alt}
-label-empty-padding = 2
 
 ; Separator in between workspaces
 ; label-separator = |
@@ -512,12 +482,10 @@ menu-2-1-exec = menu-open-0
 
 [module/updates-pacman]
 type = custom/script
-format-prefix = " "
-exec = ~/.script/update --nb-package
-click-left = ~/.script/update --update-package
-interval = 10
-; label-indicator-padding = 2
-; label-indicator-margin = 1
+exec = ~/.script/update --format
+click-left = ~/.script/update --update-pacman
+click-right = ~/.script/update --update-aur
+interval = 60
 
 [module/info-pingrtt]
 type = custom/script
