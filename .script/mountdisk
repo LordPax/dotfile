@@ -32,9 +32,11 @@ function mountDisk() {
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
 
-    diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
+    # diskToMount=$(echo -e "$mountable" | dmenu -i -p "Mount which disk" | awk '{print $1}')
+    diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which disk" | awk '{print $1}')
     [ "$diskToMount" = "" ] && exit 1
-    mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | dmenu -i -p "Mount to which directory")
+    # mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | dmenu -i -p "Mount to which directory")
+    mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
     [ "$mountPoint" = "" ] && exit 1
 
     [ ! -d $mountPoint ] && mkdir -p $mountPoint
@@ -55,7 +57,8 @@ function umountDisk() {
     )
     [ "$mounted" = "" ] && error "No mounted disks found" && exit 1
 
-    diskToUmount=$(echo -e "$mounted" | dmenu -i -p "Umount which disk" | awk '{print $1}')
+    # diskToUmount=$(echo -e "$mounted" | dmenu -i -p "Umount which disk" | awk '{print $1}')
+    diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
     [ "$diskToUmount" = "" ] && exit 1
 
     if sudo umount $diskToUmount 2> /dev/null; then

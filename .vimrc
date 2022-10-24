@@ -172,7 +172,7 @@ nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
-nmap <leader>p :Copilot panel<CR>
+nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 
@@ -186,7 +186,18 @@ nmap <Leader>dh <Plug>VimspectorStepOut
 nmap <Leader>dl <Plug>VimspectorStepInto
 nmap <Leader>dj <Plug>VimspectorStepOver
 
-vmap h "+y
+" vmap h "+y
+vmap <leader>y "+y
+map <leader>p "+p
+map <leader>P "+P
+
+vmap <leader>ay "ay
+map <leader>ap "ap
+map <leader>aP "aP
+
+vmap <leader>by "by
+map <leader>bp "bp
+map <leader>bP "bP
 
 nmap <F1> :HelpKey<CR>
 nmap <F2> :Ack! 

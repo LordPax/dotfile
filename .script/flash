@@ -1,0 +1,78 @@
+#!/bin/bash
+
+mcu="atmega32u4"
+file=""
+timing=0
+version="v2.0"
+
+# echo_err <msg>
+function echo_err() {
+    [ "$1" == "" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    echo "Usage : $(basename $0) [option]
+
+Option :
+-h or --help ...................... Show this help
+-v or --version ................... Show version
+-f <file> ......................... Firmware file (.hex)
+-m <mcu> .......................... Microcontroller (default : atmega32u4)
+-t <time> ......................... Timer in seconde"
+
+    exit 0
+}
+
+function verification() {
+    [ "$file" == "" ] && echo_err "Parameter file can't be empty" && exit 1
+    [ ! -f $file ] && echo_err "File \"$file\" does not exist or is not a file" && exit 1
+    [ "$mcu" == "" ] && echo_err "MCU can't be empty" && exit 1
+}
+
+function timer() {
+    local timer=0
+    for sec in $(seq 0 $timing); do
+        timer=$(date -d@$((timing - sec)) -u +%M:%S | awk -F : '{print $1, "min", $2, "s"}')
+        echo -en "$timer left ...\r"
+        sleep 1
+    done
+}
+
+function flash() {
+    dfu-programmer $mcu erase --force || exit 1
+    dfu-programmer $mcu flash --force $file || exit 1
+    dfu-programmer $mcu reset || exit 1
+
+    [ $? -eq 0 ] && echo "Flash done"
+}
+
+if [ $# -ge 1 ]; then
+    for i in $(seq 1 $#); do
+        case $1 in
+            --help | -h)
+                helpFunc;;
+            --version | -v)
+                echo $version
+                exit 0;;
+            -f)
+                file="$2"
+                shift;;
+            -m)
+                mcu="$2"
+                shift;;
+            -t)
+                timing=$2
+                shift;;
+            "") ;;
+            *)
+                echo_err "Unknown parameter \"$1\""
+                exit 1
+        esac
+        shift
+    done
+fi
+
+verification
+[ $timing -gt 0 ] && timer
+flash
