@@ -8,22 +8,20 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
-" Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'skanehira/gh.vim'
+" Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
-Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
-Plug 'tpope/vim-rhubarb'
+" Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } } " plugin lent
+" Plug 'tpope/vim-rhubarb'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
+" Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
@@ -33,10 +31,13 @@ Plug 'bfrg/vim-jqplay'
 Plug 'lumiliet/vim-twig'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'puremourning/vimspector'
-Plug 'mg979/vim-visual-multi'
+" Plug 'puremourning/vimspector'
+" Plug 'mg979/vim-visual-multi'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
+
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 " Plug 'jalvesaq/Nvim-R'
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
