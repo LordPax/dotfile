@@ -244,6 +244,7 @@ let b:ale_linters = {
     \'typescript': ['eslint'],
     \'sh': ['shellcheck', 'sh'],
     \'c': ['gcc'],
+    \'cpp': ['clang', 'g++'],
     \'php': ['php'],
     \'cs': ['OmniSharp'],
     \'ruby': ['mri']
