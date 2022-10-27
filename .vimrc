@@ -60,7 +60,8 @@ fun HelpKey()
     echo "F6 .......... Toggle with space and tab"
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
-    echo "F9 .......... Generate doc for a function"
+    echo "F9 .......... Find all git conflict"
+    " echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
     echo "F11 ......... Acitve Jqplay"
     echo "F12 ......... Deactive Jqplay with JqplayClose!"
@@ -208,7 +209,8 @@ nmap <F5> :source ~/.vimrc<CR>
 nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
-let g:doge_mapping="<F9>"
+" let g:doge_mapping="<F9>"
+nmap <F9> :Ack! "<<<<<<< HEAD"
 nmap <F10> :Ack! TODO<CR>
 nmap <F11> :Jqplay<CR>
 nmap <F12> :JqplayClose!<CR>
@@ -267,13 +269,14 @@ let g:netrw_liststyle = 3
 
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
-exe "highlight nontext ctermbg="..s:back
+exe "highlight NonText ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
 exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight VertSplit ctermbg="..s:back3
-exe "highlight VertSplit ctermfg="..s:front
+exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+highlight ModeMsg ctermbg=NONE
+highlight MoreMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color

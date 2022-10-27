@@ -58,6 +58,7 @@ if [ $# -ge 1 ]; then
             exit 0;;
         --format)
             echo "$(yay -Qum 2> /dev/null | wc -l)  $(checkupdates 2> /dev/null | wc -l)"
+            # echo "$(yay -Qum 2> /dev/null | wc -l) %{F#d60606}%{F-} $(checkupdates 2> /dev/null | wc -l)"
             exit 0;;
         *)
             echoErr "Unknown parameter \"$1\""
