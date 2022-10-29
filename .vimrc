@@ -63,8 +63,9 @@ fun HelpKey()
     echo "F9 .......... Find all git conflict"
     " echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
-    echo "F11 ......... Acitve Jqplay"
-    echo "F12 ......... Deactive Jqplay with JqplayClose!"
+    echo "F11 ......... Toggle spell check"
+    " echo "F11 ......... Acitve Jqplay"
+    " echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
 
 fun ToggleExpandTab()
@@ -158,6 +159,7 @@ set invlist
 set re=0
 set encoding=utf-8
 scriptencoding utf-8
+set spelllang=fr
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -183,8 +185,10 @@ nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
 nmap <leader>gpu :Git push origin
 nmap <leader>gpum :Git push origin master<CR>
+nmap <leader>gpud :Git push origin develop<CR>
 nmap <leader>gpl :Git pull origin
 nmap <leader>gplm :Git pull origin master<CR>
+nmap <leader>gpld :Git pull origin develop<CR>
 nmap <leader>gs :Git status<CR>
 nmap <leader>gch :Git checkout
 nmap <leader>gco :Git commit
@@ -227,8 +231,9 @@ nmap <F8> :ALEToggleBuffer<CR>
 " let g:doge_mapping="<F9>"
 nmap <F9> :Ack! "<<<<<<< HEAD"
 nmap <F10> :Ack! TODO<CR>
-nmap <F11> :Jqplay<CR>
-nmap <F12> :JqplayClose!<CR>
+nmap <F11> :set spell!<CR>
+" nmap <F11> :Jqplay<CR>
+" nmap <F12> :JqplayClose!<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -292,6 +297,7 @@ exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 highlight ModeMsg ctermbg=NONE
 highlight MoreMsg ctermbg=NONE
+highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color
