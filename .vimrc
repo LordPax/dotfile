@@ -142,6 +142,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set cursorline
+set cursorcolumn
 set hlsearch
 set incsearch
 set title
@@ -178,6 +179,18 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 
+nmap <leader>ga :Git add
+nmap <leader>gaa :Git add *<CR>
+nmap <leader>gpu :Git push origin
+nmap <leader>gpum :Git push origin master<CR>
+nmap <leader>gpl :Git pull origin
+nmap <leader>gplm :Git pull origin master<CR>
+nmap <leader>gs :Git status<CR>
+nmap <leader>gch :Git checkout
+nmap <leader>gco :Git commit
+nmap <leader>gl :Git log<CR>
+nmap <leader>gb :Git branch
+
 nnoremap <Leader>dd :call vimspector#Launch()<CR>
 nnoremap <Leader>de :call vimspector#Reset()<CR>
 nnoremap <Leader>dc :call vimspector#Continue()<CR>
@@ -188,16 +201,18 @@ nmap <Leader>dh <Plug>VimspectorStepOut
 nmap <Leader>dl <Plug>VimspectorStepInto
 nmap <Leader>dj <Plug>VimspectorStepOver
 
-" vmap h "+y
 vmap <leader>y "+y
+map <leader>yy "+yy
 map <leader>p "+p
 map <leader>P "+P
 
 vmap <leader>ay "ay
+map <leader>ayy "ayy
 map <leader>ap "ap
 map <leader>aP "aP
 
 vmap <leader>by "by
+map <leader>byy "byy
 map <leader>bp "bp
 map <leader>bP "bP
 

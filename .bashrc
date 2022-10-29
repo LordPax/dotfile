@@ -74,11 +74,24 @@ alias copy="xsel --clipboard -i"
 alias emacs="emacs -nw"
 alias dust="dust -r"
 alias ctagsx="ctags --exclude=node_modules --exclude=dist"
+alias ll="ls -l"
 
 alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.vimrc"
 alias get_tmux="mv ~/.tmux.conf ~/.tmux_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.tmux.conf"
 alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/picom/picom.conf -P ~/.config/picom/"
 alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.Xresources"
+
+alias ga="git add"
+alias gaa="git add *"
+alias gpu="git push origin"
+alias gpum="git push origin master"
+alias gpl="git pull origin"
+alias gplm="git pull origin master"
+alias gs="git status"
+alias gch="git checkout"
+alias gco="git commit"
+alias gl="git log"
+alias gb="git branch"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1

@@ -1,13 +1,13 @@
 [user]
-	email = teddy.gauthier@outlook.com
-	name = teddy
+    email = teddy.gauthier@outlook.com
+    name = teddy
     signingKey = 9EE1CA666FFB5B77
 [init]
-	defaultBranch = master
+    defaultBranch = master
 [commit]
     gpgSign = true
 [alias]
-	hub = !gh
+    hub = !gh
     file = !git show --pretty="" --name-status
 [core]
     editor = vim
