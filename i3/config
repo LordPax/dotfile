@@ -17,7 +17,7 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
 # exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
 # exec --no-startup-id xfce4-clipman
-# exec_always --no-startup-id setxkbmap -option caps:escape 
+# exec_always --no-startup-id setxkbmap -option caps:escape
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -166,7 +166,7 @@ bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shu
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec ~/programme/betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
-bindsym $mod+u exec --no-startup-id xfce4-screenshooter 
+bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 # bindsym $mod+w exec /home/lordpax/programme/keyboard
 
 bindsym $mod+x exec warpd --hint
@@ -215,8 +215,8 @@ exec_always --no-startup-id "killall polybar; polybar -r barLeft; polybar -r bar
 exec_always --no-startup-id "killall picom; picom"
 exec_always --no-startup-id "killall conky; conky"
 
-# exec --no-startup-id firefox 
-exec --no-startup-id discord 
+exec --no-startup-id firefox-developer-edition
+exec --no-startup-id discord
 exec --no-startup-id keepassxc
 exec --no-startup-id thunderbird
 
