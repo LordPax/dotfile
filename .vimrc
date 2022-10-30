@@ -8,22 +8,16 @@ Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
-" Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'mileszs/ack.vim' " need the_silver_searcher 
+Plug 'mileszs/ack.vim' " need the_silver_searcher
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'skanehira/gh.vim'
 Plug 'ap/vim-css-color'
-Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
-Plug 'tpope/vim-rhubarb'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
@@ -33,10 +27,18 @@ Plug 'bfrg/vim-jqplay'
 Plug 'lumiliet/vim-twig'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'puremourning/vimspector'
-Plug 'mg979/vim-visual-multi'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
+
+" Plug 'skanehira/gh.vim'
+" Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+" Plug 'tpope/vim-rhubarb'
+" Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
+" Plug 'puremourning/vimspector'
+" Plug 'mg979/vim-visual-multi'
+" Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
+" Plug 'jalvesaq/Nvim-R'
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
@@ -58,10 +60,12 @@ fun HelpKey()
     echo "F6 .......... Toggle with space and tab"
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
-    echo "F9 .......... Generate doc for a function"
+    echo "F9 .......... Find all git conflict"
+    " echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
-    echo "F11 ......... Acitve Jqplay"
-    echo "F12 ......... Deactive Jqplay with JqplayClose!"
+    echo "F11 ......... Toggle spell check"
+    " echo "F11 ......... Acitve Jqplay"
+    " echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
 
 fun ToggleExpandTab()
@@ -139,6 +143,7 @@ set shiftwidth=4
 set autoindent
 set smartindent
 set cursorline
+set cursorcolumn
 set hlsearch
 set incsearch
 set title
@@ -154,6 +159,7 @@ set invlist
 set re=0
 set encoding=utf-8
 scriptencoding utf-8
+set spelllang=fr
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -171,34 +177,63 @@ nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
-nmap <leader>p :Copilot panel<CR>
+nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 
-nnoremap <Leader>dd :call vimspector#Launch()<CR>
-nnoremap <Leader>de :call vimspector#Reset()<CR>
-nnoremap <Leader>dc :call vimspector#Continue()<CR>
-nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
-nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
-nmap <Leader>dk <Plug>VimspectorRestart
-nmap <Leader>dh <Plug>VimspectorStepOut
-nmap <Leader>dl <Plug>VimspectorStepInto
-nmap <Leader>dj <Plug>VimspectorStepOver
+nmap <leader>ga :Git add
+nmap <leader>gaa :Git add *<CR>
+nmap <leader>gpu :Git push origin
+nmap <leader>gpum :Git push origin master<CR>
+nmap <leader>gpud :Git push origin develop<CR>
+nmap <leader>gpl :Git pull origin
+nmap <leader>gplm :Git pull origin master<CR>
+nmap <leader>gpld :Git pull origin develop<CR>
+nmap <leader>gs :Git status<CR>
+nmap <leader>gch :Git checkout
+nmap <leader>gco :Git commit
+nmap <leader>gl :Git log<CR>
+nmap <leader>gb :Git branch
 
-vmap h "+y
+" nnoremap <Leader>dd :call vimspector#Launch()<CR>
+" nnoremap <Leader>de :call vimspector#Reset()<CR>
+" nnoremap <Leader>dc :call vimspector#Continue()<CR>
+" nnoremap <Leader>dt :call vimspector#ToggleBreakpoint()<CR>
+" nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+" nmap <Leader>dk <Plug>VimspectorRestart
+" nmap <Leader>dh <Plug>VimspectorStepOut
+" nmap <Leader>dl <Plug>VimspectorStepInto
+" nmap <Leader>dj <Plug>VimspectorStepOver
+
+vmap <leader>y "+y
+map <leader>yy "+yy
+map <leader>p "+p
+map <leader>P "+P
+
+vmap <leader>ay "ay
+map <leader>ayy "ayy
+map <leader>ap "ap
+map <leader>aP "aP
+
+vmap <leader>by "by
+map <leader>byy "byy
+map <leader>bp "bp
+map <leader>bP "bP
 
 nmap <F1> :HelpKey<CR>
-nmap <F2> :Ack! 
+nmap <F2> :Ack!
 nmap <F3> :AckFromSearch!<CR>
 nmap <F4> :UltiSnipsEdit<CR>
 nmap <F5> :source ~/.vimrc<CR>
 nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
-let g:doge_mapping="<F9>"
+" let g:doge_mapping="<F9>"
+nmap <F9> :Ack! "<<<<<<< HEAD"
 nmap <F10> :Ack! TODO<CR>
-nmap <F11> :Jqplay<CR>
-nmap <F12> :JqplayClose!<CR>
+nmap <F11> :set spell!<CR>
+" nmap <F11> :Jqplay<CR>
+" nmap <F12> :JqplayClose!<CR>
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -231,6 +266,7 @@ let b:ale_linters = {
     \'typescript': ['eslint'],
     \'sh': ['shellcheck', 'sh'],
     \'c': ['gcc'],
+    \'cpp': ['clang', 'g++'],
     \'php': ['php'],
     \'cs': ['OmniSharp'],
     \'ruby': ['mri']
@@ -253,13 +289,15 @@ let g:netrw_liststyle = 3
 
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
-exe "highlight nontext ctermbg="..s:back
+exe "highlight NonText ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
 exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight VertSplit ctermbg="..s:back3
-exe "highlight VertSplit ctermfg="..s:front
+exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+highlight ModeMsg ctermbg=NONE
+highlight MoreMsg ctermbg=NONE
+highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=white ctermbg=red
 set term=screen-256color

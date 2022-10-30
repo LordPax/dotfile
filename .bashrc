@@ -49,12 +49,26 @@ alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.co
 alias get_tmux="mv ~/.tmux.conf ~/.tmux-old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.tmux.conf"
 alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/picom/picom.conf -P ~/.config/picom/"
 alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.Xresources"
+
 alias emacs="emacs -nw"
 alias dust="dust -r"
-
+alias ll="ls -l"
 alias copy="xsel --clipboard -i"
 alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
 
+alias ga="git add"
+alias gaa="git add *"
+alias gpu="git push origin"
+alias gpum="git push origin master"
+alias gpud="git push origin develop"
+alias gpl="git pull origin"
+alias gplm="git pull origin master"
+alias gpld="git pull origin develop"
+alias gs="git status"
+alias gch="git checkout"
+alias gco="git commit"
+alias gl="git log"
+alias gb="git branch"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
