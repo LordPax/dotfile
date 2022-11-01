@@ -1,2 +1,5 @@
-/* @theme "/usr/share/rofi/themes/Pop-Dark.rasi" */
-@theme "/home/lordpax/.config/rofi/themes/nord.rasi"
+/* @theme "/usr/share/rofi/themes/android_notification.rasi" */
+/* @theme "/home/lordpax/.config/rofi/themes/nord.rasi" */
+/* @theme "/usr/share/rofi/themes/dmenu.rasi" */
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+/* @theme "/usr/share/rofi/themes/Adapta-Nokto.rasi" */
