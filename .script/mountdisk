@@ -7,13 +7,15 @@ noUmountRegex="(/$|/boot|/home|/perso|/save)"
 # info <msg>
 function info() {
     [ "$1" == "" ] && exit 1
-    zenity --info --text="$1" --title="Info"
+    # zenity --info --text="$1" --title="Info"
+    notify-send "Info" "$1"
 }
 
 # error <msg>
 function error() {
     [ "$1" == "" ] && exit 1
-    zenity --error --text="$1" --title="Error"
+    # zenity --error --text="$1" --title="Error"
+    notify-send "Error" "$1"
 }
 
 function helpFunc() {
@@ -59,7 +61,7 @@ function umountDisk() {
     [ "$diskToUmount" = "" ] && exit 1
 
     if sudo umount $diskToUmount 2> /dev/null; then
-        info "Disk unmounted"
+        info "Disk \"$diskToUmount\" unmounted"
     else
         error "Failed to unmount disk"
         exit 1
