@@ -3,6 +3,8 @@
 UID=$(id -u)
 GID=$(id -g)
 noUmountRegex="(/$|/boot|/home|/perso|/save)"
+veracrypt=0
+mode=0
 
 # info <msg>
 function info() {
@@ -22,26 +24,48 @@ function helpFunc() {
     echo "Usage: $(basename $0) [options]
 
 Option:
--h, --help .................... Show this help message and exit
---mount ....................... Mount the disk
---umount ...................... Unmount the disk"
+-h or --help .................... Show this help message and exit
+-v or --veracrypt ............... Use veracrypt
+-m or --mount ................... Mount the disk
+-u or --umount .................. Unmount the disk"
+}
+
+# mountFunc <diskToMount> <mountPoint>
+function mountFunc() {
+    ([ "$1" == "" ] || [ "$2" == "" ]) && exit 1
+    if [ $veracrypt -eq 1 ]; then
+        veracrypt $1 $2 2> /dev/null && return 0 || return 1
+    else
+        sudo mount -o uid=$UID,gid=$GID $1 $2 2> /dev/null && return 0 || return 1
+    fi
+}
+
+# umountFunc <diskToUmount>
+function umountFunc() {
+    [ "$1" == "" ] && exit 1
+    if [ $veracrypt -eq 1 ]; then
+        veracrypt -d $1 2> /dev/null && return 0 || return 1
+    else
+        sudo umount $1 2> /dev/null && return 0 || return 1
+    fi
 }
 
 function mountDisk() {
-    mountable=$(lsblk -lp | \
+    local mountable=$(lsblk -lp | \
         grep "part $" | \
         awk '{print $1, "(" $4 ")"}'
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
 
-    diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which disk" | awk '{print $1}')
+    local diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which disk" | awk '{print $1}')
     [ "$diskToMount" = "" ] && exit 1
-    mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
+    local mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
     [ "$mountPoint" = "" ] && exit 1
 
     [ ! -d $mountPoint ] && mkdir -p $mountPoint
 
-    if sudo mount -o uid=$UID,gid=$GID $diskToMount $mountPoint 2> /dev/null; then
+    # if sudo mount -o uid=$UID,gid=$GID $diskToMount $mountPoint 2> /dev/null; then
+    if mountFunc $diskToMount $mountPoint; then
         info "Disk mounted to \"$mountPoint\""
     else
         error "Failed to mount disk"
@@ -50,17 +74,25 @@ function mountDisk() {
 }
 
 function umountDisk() {
-    mounted=$(lsblk -lp | \
-        grep "part /" | \
-        grep -Ev "$noUmountRegex" | \
-        awk '{print $1, "(" $4 ")"}'
-    )
+    if [ $veracrypt -eq 0 ]; then
+        local mounted=$(lsblk -lp | \
+            grep "part /" | \
+            grep -Ev "$noUmountRegex" | \
+            awk '{print $1, "(" $4 ")"}'
+        )
+    else
+        local mounted=$(lsblk -lp | \
+            grep "dm   /" | \
+            awk '{print $7, "(" $4 ")"}'
+        )
+    fi
     [ "$mounted" = "" ] && error "No mounted disks found" && exit 1
 
-    diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
+    local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
     [ "$diskToUmount" = "" ] && exit 1
 
-    if sudo umount $diskToUmount 2> /dev/null; then
+    # if sudo umount $diskToUmount 2> /dev/null; then
+    if umountFunc $diskToUmount; then
         info "Disk \"$diskToUmount\" unmounted"
     else
         error "Failed to unmount disk"
@@ -68,20 +100,33 @@ function umountDisk() {
     fi
 }
 
-if [ $# -eq 1 ]; then
-    case $1 in
-        -h | --help)
-            helpFunc
-            exit 0 ;;
-        --mount)
-            mountDisk
-            exit 0;;
-        --umount)
-            umountDisk
-            exit 0;;
-        *)
-            error "Unknown paramater \"$1\""
-            exit 1 ;;
-    esac
+if [ $# -ge 1 ]; then
+    for i in $(seq 1 $#); do
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0;;
+            -v | --veracrypt)
+                veracrypt=1;;
+            -m | --mount)
+                mode=1;;
+            -u | --umount)
+                mode=2;;
+            "");;
+            *)
+                helpFunc
+                exit 1
+                ;;
+        esac
+        shift
+    done
 fi
 
+if [ $mode -eq 1 ]; then
+    mountDisk
+elif [ $mode -eq 2 ]; then
+    umountDisk
+else
+    helpFunc
+    exit 1
+fi
