@@ -32,7 +32,7 @@ function getFile() {
         echo "Old file renamed to $rename"
     fi
 
-    if ! wget "$repo/$1/$2" 2> /dev/null; then
+    if ! wget "$repo/$1/$2" -O "$2" 2> /dev/null; then
         echoErr "Something went wrong while downloading the file"
         if [ $backup -eq 1 ] && [ -f "$rename" ]; then
             mv "$rename" "$2"
