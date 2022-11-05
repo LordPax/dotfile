@@ -17,7 +17,7 @@ function helpFunc() {
 Options :
 -h or --help      Display this help
 -b or --branch    Branch to use (default: $branch)
--B or --rename    Enable backup of existing file"
+-B or --backup    Enable backup of existing file"
 }
 
 # getDotFile <branch> <file>
@@ -32,7 +32,7 @@ function getFile() {
         echo "Old file renamed to $rename"
     fi
 
-    if ! wget "$repo/$1/$2" 2> /dev/null; then
+    if ! wget "$repo/$1/$2" -O "$2" 2> /dev/null; then
         echoErr "Something went wrong while downloading the file"
         if [ $backup -eq 1 ] && [ -f "$rename" ]; then
             mv "$rename" "$2"
@@ -56,7 +56,7 @@ if [ $# -ge 1 ]; then
             -b | --branch)
                 branch="$2"
                 shift;;
-            -r | --rename)
+            -B | --rename)
                 backup=1;;
             "") ;;
             -*)
