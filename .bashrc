@@ -34,6 +34,7 @@ PATH=$PATH:$HOME/programme:$HOME/programme/emsdk:$HOME/programme/emsdk/node/14.1
 export EDITOR=vim
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+export DOTFILE_BRANCH=compute-2
 
 [ -z $TMUX ] && tmux
 
