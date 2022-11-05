@@ -1,0 +1,76 @@
+#!/bin/bash
+
+repo="https://raw.githubusercontent.com/LordPax/dotfile"
+branch="$DOTFILE_BRANCH"
+file=""
+backup=0
+
+# echoErr <msg>
+function echoErr() {
+    [ "$1" == "" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    echo "Usage: $(basename $0) [options] <file>
+
+Options :
+-h or --help      Display this help
+-b or --branch    Branch to use (default: $branch)
+-r or --rename    Enable backup of existing file"
+}
+
+# getDotFile <branch> <file>
+function getFile() {
+    ([ "$1" == "" ] || [ "$2" == "" ]) && echoErr "Parameter needed for \"getFile\"" && exit 1
+
+    echo "Downloading $2 from $1 branch ..."
+
+    local rename="$2_old"
+    if [ $backup -eq 1 ] && [ -f "$2" ]; then
+        mv "$2" "$rename"
+        echo "Old file renamed to $rename"
+    fi
+
+    if ! wget "$repo/$1/$2" 2> /dev/null; then
+        echoErr "Something went wrong while downloading the file"
+        if [ $backup -eq 1 ] && [ -f "$rename" ]; then 
+            mv "$rename" "$2"
+            echo "Old file restored"
+        fi
+        exit 1
+    fi
+}
+
+function verification() {
+    [ "$branch" == "" ] && echoErr "No branch specified" && exit 1
+    [ "$file" == "" ] && echoErr "No file specified" && exit 1
+}
+
+if [ $# -ge 1 ]; then
+    for i in $(seq 1 $#); do
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0;;
+            -b | --branch)
+                branch="$2"
+                shift;;
+            -r | --rename)
+                backup=1;;
+            "") ;;
+            -*)
+                echoErr $"Unknown parameter \"$1\""
+                exit 1;;
+            *)
+                file=$1
+                shift
+        esac
+        shift
+    done
+fi
+
+# echo "branch: $branch, file: $file, backup: $backup"
+
+verification
+getFile "$branch" "$file"

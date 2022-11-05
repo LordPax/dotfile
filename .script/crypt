@@ -16,7 +16,7 @@ function helpFunc() {
     echo "Usage: $(basename $0) <options> <files>
 
 Option:
--h, --help .................... Show this help message and exit
+-h or --help .................... Show this help message and exit
 -e or --encrypt ............... Encrypt files
 -d or --decrypt ............... Decrypt files"
 }
