@@ -19,7 +19,6 @@ bind -m vi 'm':'forward-char'
 
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias np='nano -w PKGBUILD'
 alias more=less
 alias ls='ls --color'
 alias grep='grep --color=auto'
@@ -47,6 +46,14 @@ export NVM_DIR="$HOME/.nvm"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+[[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
+PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
+LD_LIBRARY_PATH=/usr/include
+export EDITOR=vim
+export DOTFILE_BRANCH=compute-1
+
+[ -z $TMUX ] && tmux
 
 alias syncdash="firefox-developer-edition localhost:8384"
 alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s 3"
@@ -109,10 +116,3 @@ function vimack() {
     [ "$1" == "" ] && echo "Usage : vimack <command>" &> /dev/stderr && return 1
     vim -c "Ack! $1"
 }
-
-[[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
-PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
-LD_LIBRARY_PATH=/usr/include
-export EDITOR=vim
-export DOTFILE_BRANCH=compute-1
-[ -z $TMUX ] && tmux
