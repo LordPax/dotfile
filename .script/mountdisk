@@ -9,14 +9,12 @@ mode=0
 # info <msg>
 function info() {
     [ "$1" == "" ] && exit 1
-    # zenity --info --text="$1" --title="Info"
     notify-send "Info" "$1"
 }
 
 # error <msg>
 function error() {
     [ "$1" == "" ] && exit 1
-    # zenity --error --text="$1" --title="Error"
     notify-send "Error" "$1"
 }
 
@@ -64,7 +62,6 @@ function mountDisk() {
 
     [ ! -d $mountPoint ] && mkdir -p $mountPoint
 
-    # if sudo mount -o uid=$UID,gid=$GID $diskToMount $mountPoint 2> /dev/null; then
     if mountFunc $diskToMount $mountPoint; then
         info "Disk mounted to \"$mountPoint\""
     else
@@ -91,7 +88,6 @@ function umountDisk() {
     local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
     [ "$diskToUmount" = "" ] && exit 1
 
-    # if sudo umount $diskToUmount 2> /dev/null; then
     if umountFunc $diskToUmount; then
         info "Disk \"$diskToUmount\" unmounted"
     else
@@ -114,9 +110,8 @@ if [ $# -ge 1 ]; then
                 mode=2;;
             "");;
             *)
-                helpFunc
+                echo_err $"Unknown parameter \"$1\""
                 exit 1
-                ;;
         esac
         shift
     done
