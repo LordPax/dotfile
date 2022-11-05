@@ -164,8 +164,12 @@ bindsym $mod+g exec warpd --grid
 
 bindsym $mod+n exec ~/.script/mountdisk --mount
 bindsym $mod+Shift+n exec ~/.script/mountdisk --umount
+bindsym $mod+b exec ~/.script/mountdisk --mount --veracrypt
+bindsym $mod+Shift+b exec ~/.script/mountdisk --umount --veracrypt
 bindsym $mod+y exec ~/.script/update --update-pacman
 bindsym $mod+Shift+y exec ~/.script/update --update-aur
+bindsym $mod+i exec screenkey
+bindsym $mod+Shift+i exec killall screenkey
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

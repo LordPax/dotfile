@@ -5,7 +5,7 @@ import subprocess
 class encrypt(Command):
     """:encrypt
 
-    Encrypts the file with gpg
+    Encrypts the file with aescrypt
     """
 
     def execute(self):
@@ -25,7 +25,7 @@ class encrypt(Command):
 class decrypt(Command):
     """:decrypt
 
-    Decrypts the file with gpg
+    Decrypts the file with aescrypt
     """
 
     def execute(self):

@@ -221,7 +221,7 @@ map <leader>bp "bp
 map <leader>bP "bP
 
 nmap <F1> :HelpKey<CR>
-nmap <F2> :Ack!
+nmap <F2> :Ack! 
 nmap <F3> :AckFromSearch!<CR>
 nmap <F4> :UltiSnipsEdit<CR>
 nmap <F5> :source ~/.vimrc<CR>
@@ -229,7 +229,7 @@ nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
 " let g:doge_mapping="<F9>"
-nmap <F9> :Ack! "<<<<<<< HEAD"
+nmap <F9> :Ack! "<<<<<<< HEAD"<CR>
 nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
 " nmap <F11> :Jqplay<CR>
