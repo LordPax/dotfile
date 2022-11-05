@@ -4,6 +4,7 @@ repo="https://raw.githubusercontent.com/LordPax/dotfile"
 branch="$DOTFILE_BRANCH"
 file=""
 backup=0
+readfile=0
 
 # echoErr <msg>
 function echoErr() {
@@ -17,7 +18,8 @@ function helpFunc() {
 Options :
 -h or --help      Display this help
 -b or --branch    Branch to use (default: $branch)
--B or --backup    Enable backup of existing file"
+-B or --backup    Enable backup of existing file
+-r or --read      Output file to stdout"
 }
 
 # getDotFile <branch> <file>
@@ -42,6 +44,15 @@ function getFile() {
     fi
 }
 
+function readFile() {
+    ([ "$1" == "" ] || [ "$2" == "" ]) && echoErr "Parameter needed for \"readFile\"" && exit 1
+
+    if ! wget "$repo/$1/$2" -O - 2> /dev/null; then
+        echoErr "Something went wrong while reading the file"
+        exit 1
+    fi
+}
+
 function verification() {
     [ "$branch" == "" ] && echoErr "No branch specified" && exit 1
     [ "$file" == "" ] && echoErr "No file specified" && exit 1
@@ -58,6 +69,8 @@ if [ $# -ge 1 ]; then
                 shift;;
             -B | --rename)
                 backup=1;;
+            -r | --read)
+                readfile=1;;
             "") ;;
             -*)
                 echoErr $"Unknown parameter \"$1\""
@@ -71,4 +84,9 @@ if [ $# -ge 1 ]; then
 fi
 
 verification
-getFile "$branch" "$file"
+
+if [ $readfile -eq 0 ]; then
+    getFile "$branch" "$file"
+else
+    readFile "$branch" "$file" | bat
+fi
