@@ -4,6 +4,8 @@ repo="https://raw.githubusercontent.com/LordPax/dotfile"
 branch="$DOTFILE_BRANCH"
 file=""
 backup=0
+readfile=0
+output=""
 
 # echoErr <msg>
 function echoErr() {
@@ -17,7 +19,9 @@ function helpFunc() {
 Options :
 -h or --help      Display this help
 -b or --branch    Branch to use (default: $branch)
--B or --backup    Enable backup of existing file"
+-B or --backup    Enable backup of existing file
+-r or --read      Output file to stdout
+-o or --output    Output directory"
 }
 
 # getDotFile <branch> <file>
@@ -26,18 +30,29 @@ function getFile() {
 
     echo "Downloading $2 from $1 branch ..."
 
-    local rename="$2_old"
-    if [ $backup -eq 1 ] && [ -f "$2" ]; then
-        mv "$2" "$rename"
+    local out=$([ "$output" == "" ] && echo "$2" || echo "$output/$2")
+    local rename="${out}_old"
+
+    if [ $backup -eq 1 ] && [ -f "$out" ]; then
+        mv "$out" "$rename"
         echo "Old file renamed to $rename"
     fi
 
-    if ! wget "$repo/$1/$2" -O "$2" 2> /dev/null; then
+    if ! wget "$repo/$1/$2" -O "$out" 2> /dev/null; then
         echoErr "Something went wrong while downloading the file"
         if [ $backup -eq 1 ] && [ -f "$rename" ]; then
-            mv "$rename" "$2"
+            mv "$rename" "$out"
             echo "Old file restored"
         fi
+        exit 1
+    fi
+}
+
+function readFile() {
+    ([ "$1" == "" ] || [ "$2" == "" ]) && echoErr "Parameter needed for \"readFile\"" && exit 1
+
+    if ! wget "$repo/$1/$2" -O - 2> /dev/null; then
+        echoErr "Something went wrong while reading the file"
         exit 1
     fi
 }
@@ -58,6 +73,11 @@ if [ $# -ge 1 ]; then
                 shift;;
             -B | --rename)
                 backup=1;;
+            -r | --read)
+                readfile=1;;
+            -o | --output)
+                output="$2"
+                shift;;
             "") ;;
             -*)
                 echoErr $"Unknown parameter \"$1\""
@@ -71,4 +91,9 @@ if [ $# -ge 1 ]; then
 fi
 
 verification
-getFile "$branch" "$file"
+
+if [ $readfile -eq 0 ]; then
+    getFile "$branch" "$file"
+else
+    readFile "$branch" "$file" | bat
+fi
