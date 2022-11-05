@@ -95,5 +95,5 @@ verification
 if [ $readfile -eq 0 ]; then
     getFile "$branch" "$file"
 else
-    readFile "$branch" "$file" | bat
+    readFile "$branch" "$file"
 fi

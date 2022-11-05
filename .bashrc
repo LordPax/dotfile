@@ -82,6 +82,7 @@ alias emacs="emacs -nw"
 alias dust="dust -r"
 alias ctagsx="ctags --exclude=node_modules --exclude=dist"
 alias ll="ls -l"
+alias vimex="vim -c Ex"
 
 # alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.vimrc"
 # alias get_tmux="mv ~/.tmux.conf ~/.tmux_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.tmux.conf"
