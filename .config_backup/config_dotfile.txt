@@ -21,4 +21,5 @@
 /home/lordpax/.config/picom
 /home/lordpax/.config/ranger
 /home/lordpax/.config/Vieb/viebrc
+/home/lordpax/.newsboat
 
