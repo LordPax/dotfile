@@ -106,9 +106,3 @@ for file in $files; do
         getFile "$branch" "$file"
     fi
 done
-
-# if [ $readfile -eq 0 ]; then
-#     getFile "$branch" "$file"
-# else
-#     readFile "$branch" "$file"
-# fi
