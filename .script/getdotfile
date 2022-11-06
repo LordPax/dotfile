@@ -25,6 +25,7 @@ Options :
 
 Example :
 $(basename $0) .vimrc
+$(basename $0) .vimrc .tmux.conf
 $(basename $0) -B .vimrc
 $(basename $0) -o .config i3/config
 $(basename $0) -B -o .config i3/config"
