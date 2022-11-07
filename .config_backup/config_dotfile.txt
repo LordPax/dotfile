@@ -20,6 +20,7 @@
 /home/lordpax/.config/warpd
 /home/lordpax/.config/picom
 /home/lordpax/.config/ranger
+/home/lordpax/.config/zathura
 /home/lordpax/.config/Vieb/viebrc
 /home/lordpax/.newsboat
 
