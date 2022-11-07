@@ -80,7 +80,7 @@ if [ $# -ge 1 ]; then
             -b | --branch)
                 branch="$2"
                 shift;;
-            -B | --rename)
+            -B | --backup)
                 backup=1;;
             -r | --read)
                 readfile=1;;
