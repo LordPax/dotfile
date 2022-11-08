@@ -59,3 +59,28 @@ class fzf(Command):
                 self.fm.select_file(fzf_file)
             else:
                 self.fm.cd(fzf_file)
+
+class extract(Command):
+    """:extract
+
+    Extracts the selected archive
+    """
+
+    def execute(self):
+        filename = self.fm.thisdir.get_selection()
+
+        if len(filename) == 0:
+            self.fm.notify("No file specified", bad=True)
+            return
+
+        command = ['ext']
+
+        for file in filename:
+            command.append(file.path)
+
+        ext = self.fm.run(" ".join(command))
+
+        if ext.returncode == 0:
+            self.fm.notify("Extracted {}".format(filename[0].basename))
+        else:
+            self.fm.notify("Failed to extract {}".format(filename[0].basename), bad=True)
