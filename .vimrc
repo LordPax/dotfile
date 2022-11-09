@@ -29,6 +29,7 @@ Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
+Plug 'peterhoeg/vim-qml'
 
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
