@@ -59,9 +59,11 @@ modules-right = ticker-crypto date pulseaudio-control updates xkeyboard networks
 
 tray-position = right
 tray-padding = 2
+; enable-ipc = true
 ; tray-background = #0063ff
 ; wm-restack = i3
-;override-redirect = true
+; override-redirect = true
+; bottom = false
 ; scroll-up = i3wm-wsnext
 ; scroll-down = i3wm-wsprev
 

@@ -181,6 +181,7 @@ nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
+nmap <leader>z zfiB<CR>
 
 nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
