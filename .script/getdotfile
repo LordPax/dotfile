@@ -20,7 +20,7 @@ function helpFunc() {
 Options :
 -h or --help      Display this help
 -b or --branch    Branch to use (default: $branch)
--B or --backup    Enable backup of an existing file with \"_old\" at the end
+-B or --backup    Backup of an existing file and add \"_old\" at the end
 -r or --read      Output file to stdout
 -o or --output    Output directory
 

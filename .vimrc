@@ -156,12 +156,13 @@ set nobackup
 set noswapfile
 set autoread
 set signcolumn="yes"
-set listchars=tab:>-,trail:. ",eol:↲
+set listchars=tab:>-,space:.,trail:. ",eol:↲
 set invlist
 set re=0
 set encoding=utf-8
 scriptencoding utf-8
 set spelllang=fr
+set term=screen-256color
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -249,9 +250,9 @@ map l <Up>
 map m <Right>
 
 let g:ctrlp_custom_ignore = {
-\ 'dir':  '\v(\.git|node_modules|build|dist)$',
-\ 'file': '\v\.(swp|o|so)$',
-\ }
+    \'dir':  '\v(\.git|node_modules|build|dist)$',
+    \'file': '\v\.(swp|o|so)$',
+\}
 
 let g:gitgutter_sign_priority = 1
 let b:ale_linters = {
@@ -295,4 +296,3 @@ highlight MoreMsg ctermbg=NONE
 highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=white ctermbg=red
-set term=screen-256color
