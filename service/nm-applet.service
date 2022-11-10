@@ -1,0 +1,11 @@
+[Unit]
+Description=applet for network manager
+
+[Service]
+Type=simple
+User=lordpax
+Group=wheel
+ExecStart=/usr/bin/nm-applet
+
+[Install]
+WantedBy=multi-user.target
