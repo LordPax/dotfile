@@ -119,6 +119,7 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
+command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 
 let s:back = 233
 let s:back2 = 234
