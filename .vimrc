@@ -1,4 +1,3 @@
-" test
 call plug#begin()
 
 Plug 'vim-airline/vim-airline'
