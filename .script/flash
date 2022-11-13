@@ -1,9 +1,9 @@
 #!/bin/bash
 
-mcu="atmega32u4"
+mcu="atmega32u4" # atmega32u4 or atmega32a
 file=""
 timing=0
-version="v2.0"
+version="v2.1"
 
 # echo_err <msg>
 function echo_err() {
@@ -19,7 +19,11 @@ Option :
 -v or --version ................... Show version
 -f <file> ......................... Firmware file (.hex)
 -m <mcu> .......................... Microcontroller (default : atmega32u4)
--t <time> ......................... Timer in seconde"
+-t <time> ......................... Timer in seconde
+
+Microcontroller :
+atmega32u4
+atmega32a"
 
     exit 0
 }
