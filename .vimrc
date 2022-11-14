@@ -29,6 +29,7 @@ Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
+Plug 'peterhoeg/vim-qml'
 
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
@@ -118,6 +119,7 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
+command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 
 let s:back = 233
 let s:back2 = 234
@@ -154,12 +156,13 @@ set nobackup
 set noswapfile
 set autoread
 set signcolumn="yes"
-set listchars=tab:>-,trail:. ",eol:↲
+set listchars=tab:>-,space:.,trail:. ",eol:↲
 set invlist
 set re=0
 set encoding=utf-8
 scriptencoding utf-8
 set spelllang=fr
+set term=screen-256color
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -180,6 +183,7 @@ nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
+nmap <leader>z zfiB<CR>
 
 nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
@@ -246,9 +250,9 @@ map l <Up>
 map m <Right>
 
 let g:ctrlp_custom_ignore = {
-\ 'dir':  '\v(\.git|node_modules|build|dist)$',
-\ 'file': '\v\.(swp|o|so)$',
-\ }
+    \'dir':  '\v(\.git|node_modules|build|dist)$',
+    \'file': '\v\.(swp|o|so)$',
+\}
 
 let g:gitgutter_sign_priority = 1
 let b:ale_linters = {
@@ -270,8 +274,10 @@ let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-n>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" let g:UltiSnipsJumpForwardTrigger="<c-tab>"
+" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 let g:netrw_banner = 0
@@ -290,4 +296,3 @@ highlight MoreMsg ctermbg=NONE
 highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=white ctermbg=red
-set term=screen-256color

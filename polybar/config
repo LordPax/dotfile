@@ -401,9 +401,6 @@ format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-; ramp-capacity-0 = %{F#ff5555}%{F-}
-; ramp-capacity-1 = %{F#f5a70a}%{F-}
-; ramp-capacity-2 = %{F#55aa55}%{F-}
 ramp-capacity-0 = %{F#ff5555}%{F-}
 ramp-capacity-1 = %{F#ff5555}%{F-}
 ramp-capacity-2 = %{F#f5a70a}%{F-}
@@ -412,9 +409,6 @@ ramp-capacity-4 = %{F#55aa55}%{F-}
 ramp-capacity-framerate = 750
 ; ramp-capacity-foreground = ${colors.foreground-alt}
 
-; animation-charging-0 = 
-; animation-charging-1 = 
-; animation-charging-2 = 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
