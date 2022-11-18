@@ -117,3 +117,15 @@ function vimack() {
     [ "$1" == "" ] && echo "Usage : vimack <command>" &> /dev/stderr && return 1
     vim -c "Ack! $1"
 }
+
+psgrep() {
+    [ "$1" == "" ] && echo "Usage : psgrep <process>" &> /dev/stderr && return 1
+	ps -aux | grep $1 | grep -v grep
+}
+
+function chmog() {
+    [ $# -ne 4 ] && echo "Usage : chmog <user> <group> <mode> <file>" &> /dev/stderr && return 1
+    chmod $1 $4
+    chown $2 $4
+    chgrp $3 $4
+}
