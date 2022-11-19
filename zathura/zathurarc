@@ -8,7 +8,7 @@ map u scroll half-up
 map d scroll half-down
 map b scroll full-up
 map f scroll full-down
-map F display_link
+map F follow
 map D toggle_page_mode
 
 map <C-i> zoom in
