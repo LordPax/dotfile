@@ -263,7 +263,9 @@ let b:ale_linters = {
     \'cpp': ['clang', 'g++'],
     \'php': ['php'],
     \'cs': ['OmniSharp'],
-    \'ruby': ['mri']
+    \'ruby': ['mri'],
+    \'css': ['stylelint'],
+    \'scss': ['stylelint']
 \}
 
 let g:undotree_WindowLayout = 3
