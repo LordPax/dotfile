@@ -118,9 +118,9 @@ function vimack() {
     vim -c "Ack! $1"
 }
 
-psgrep() {
+function psgrep() {
     [ "$1" == "" ] && echo "Usage : psgrep <process>" &> /dev/stderr && return 1
-	ps -aux | grep $1 | grep -v grep
+    ps -aux | grep $1 | grep -v grep
 }
 
 function chmog() {
