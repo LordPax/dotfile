@@ -55,7 +55,7 @@ font-4 = "Font Awesome 6 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = i3 xwindow
-modules-right = ticker-crypto date pulseaudio-control updates xkeyboard networkspeeddown networkspeedup powermenu
+modules-right = crypto-BTC crypto-ETH date pulseaudio-control updates xkeyboard networkspeeddown networkspeedup powermenu
 
 tray-position = right
 tray-padding = 2
@@ -285,10 +285,17 @@ type = custom/script
 exec = ~/.script/info-pingrtt.sh
 interval = 10
 
-[module/ticker-crypto]
+[module/crypto-BTC]
 type = custom/script
 format-prefix = "%{F#f69218}%{F-} "
-exec = ~/.script/ticker-crypto.sh
+; format-prefix = "%{F#f69218}%{F-} "
+exec = ~/.script/crypto BTC
+interval = 600
+
+[module/crypto-ETH]
+type = custom/script
+format-prefix = "%{F#3498db}ETH%{F-} "
+exec = ~/.script/crypto ETH XETHZEUR
 interval = 600
 
 [module/networkspeedup]
