@@ -16,7 +16,7 @@ exec_always xrdb /home/lordpax/.Xresources
 # exec_always --no-startup-id xrandr --output eDP-1 --brightness 0.4
 exec_always --no-startup-id ~/.script/brightness -s 0.5
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
-exec --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option caps:escape
 # exec --no-startup-id setxkbmap -option altwin:swap_alt_win
 # exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
 

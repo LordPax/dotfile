@@ -29,7 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-PATH=$PATH:$HOME/programme:$HOME/programme/emsdk:$HOME/programme/emsdk/node/14.18.2_64bit/bin:$HOME/programme/emsdk/upstream/emscripten:$HOME/go/bin
+PATH=$PATH:$HOME/.local/bin:$HOME/programme:$HOME/programme/emsdk:$HOME/programme/emsdk/node/14.18.2_64bit/bin:$HOME/programme/emsdk/upstream/emscripten:$HOME/go/bin
 
 export EDITOR=vim
 export GOPATH=$HOME/go
