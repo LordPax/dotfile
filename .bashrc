@@ -52,6 +52,9 @@ PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bi
 # LD_LIBRARY_PATH=/usr/include
 export EDITOR=vim
 export DOTFILE_BRANCH=compute-1
+export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+# export GOROOT=$HOME/Documents/Programmation/Go
 
 [ -z $TMUX ] && tmux
 
@@ -102,6 +105,16 @@ alias gch="git checkout"
 alias gco="git commit"
 alias gl="git log"
 alias gb="git branch"
+
+alias dp="docker ps"
+alias di="docker images"
+alias de="docker exec"
+alias dpa="docker ps -a"
+alias dc="docker compose"
+alias dcu="docker compose up -d"
+alias dcd="docker compose down"
+alias dcl="docker compose logs"
+alias dce="docker compose exec"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
