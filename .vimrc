@@ -278,8 +278,6 @@ let g:UltiSnipsExpandTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-n>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-" let g:UltiSnipsJumpForwardTrigger="<c-tab>"
-" let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsEditSplit="vertical"
 
 let g:netrw_banner = 0
@@ -297,4 +295,6 @@ highlight ModeMsg ctermbg=NONE
 highlight MoreMsg ctermbg=NONE
 highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
-highlight ALEErrorSign ctermfg=white ctermbg=red
+highlight ALEErrorSign ctermfg=red ctermbg=NONE
+highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
+highlight SignColumn ctermbg=NONE ctermfg=NONE

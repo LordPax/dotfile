@@ -107,14 +107,15 @@ alias gl="git log"
 alias gb="git branch"
 
 alias dp="docker ps"
+alias dpa="docker ps -a"
 alias di="docker images"
 alias de="docker exec"
-alias dpa="docker ps -a"
 alias dc="docker compose"
-alias dcu="docker compose up -d"
+alias dcu="docker compose up"
 alias dcd="docker compose down"
 alias dcl="docker compose logs"
 alias dce="docker compose exec"
+alias dcb="docker compose build"
 
 function vimf() {
     [ "$1" == "" ] && echo "Usage : vimf <file>" &> /dev/stderr && return 1
