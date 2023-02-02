@@ -1,9 +1,9 @@
+[user]
+    email = teddy.gauthier@outlook.com
+    name = teddy
+    signingKey = 9EE1CA666FFB5B77
 [init]
     defaultBranch = master
-[user]
-    name = Teddy
-    email = teddy.gauthier@outlook.com
-    signingKey = 9EE1CA666FFB5B77
 [commit]
     gpgSign = true
 [alias]
