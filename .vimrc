@@ -298,4 +298,8 @@ highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=red ctermbg=NONE
 highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
+highlight ALEError ctermfg=red ctermbg=NONE
+highlight ALEWarning ctermfg=yellow ctermbg=NONE
+highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
+highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
