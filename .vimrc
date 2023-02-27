@@ -180,6 +180,7 @@ nmap <C-k> :tabn<CR>
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
+nmap <leader>L :bel term ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
@@ -298,4 +299,8 @@ highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight ALEErrorSign ctermfg=red ctermbg=NONE
 highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
+highlight ALEError ctermfg=red ctermbg=NONE
+highlight ALEWarning ctermfg=yellow ctermbg=NONE
+highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
+highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
