@@ -20,7 +20,6 @@ function ext () {
         esac
     else
         echo "'$1' is not a valid file"
-        exit 1
     fi
 }
 
