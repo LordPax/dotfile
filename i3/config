@@ -166,7 +166,8 @@ bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shu
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec ~/programme/betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
-bindsym $mod+u exec --no-startup-id xfce4-screenshooter
+# bindsym $mod+u exec --no-startup-id xfce4-screenshooter
+bindsym $mod+u exec --no-startup-id flameshot gui
 # bindsym $mod+w exec /home/lordpax/programme/keyboard
 
 bindsym $mod+x exec warpd --hint

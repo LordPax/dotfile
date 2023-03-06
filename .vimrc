@@ -30,6 +30,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
+Plug 'rstacruz/sparkup'
 
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
