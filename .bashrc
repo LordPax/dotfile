@@ -81,6 +81,7 @@ alias restore_mdp_usb="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /media/ver
 alias backup_log="bat ~/.config_backup/backup.log"
 
 alias copy="xsel --clipboard -i"
+alias paste="xsel --clipboard -o"
 alias emacs="emacs -nw"
 alias dust="dust -r"
 alias ctagsx="ctags --exclude=node_modules --exclude=dist"
