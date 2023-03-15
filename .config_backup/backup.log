@@ -7636,3 +7636,323 @@
 2023-03-09 15:05:49 : Backup /save/backup_compute-2.2023-03-09.tar.gz end
 2023-03-09 15:05:49 : Deleting 1 old backup : 
 2023-03-09 15:05:49 :   -> Deleting /save/backup_compute-2.2023-03-06.tar.gz ...
+2023-03-10 15:00:01 : Compress of :
+2023-03-10 15:00:01 :   -> /home/lordpax/.config_backup/
+2023-03-10 15:00:01 :   -> /home/lordpax/Images
+2023-03-10 15:00:01 :   -> /home/lordpax/programme
+2023-03-10 15:00:01 :   -> /home/lordpax/recovery-code
+2023-03-10 15:00:01 :   -> /home/lordpax/Applications
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Banque
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Cours
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Doc
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Stage
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2023-03-10 15:00:01 :   -> /home/lordpax/Documents/Osint
+2023-03-10 15:00:01 : Backup /save/backup_compute-2.2023-03-10.tar.gz in progress ...
+2023-03-10 15:03:01 : Compress of :
+2023-03-10 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2023-03-10 15:03:01 :   -> /home/lordpax/service
+2023-03-10 15:03:01 :   -> /home/lordpax/programme
+2023-03-10 15:03:01 :   -> /home/lordpax/.script
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/i3
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/rofi
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/polybar
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/latte
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/picom
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/warpd
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/ranger
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/zathura
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/Vieb/viebrc
+2023-03-10 15:03:01 :   -> /home/lordpax/.config/qutebrowser/autoconfig.yml
+2023-03-10 15:03:01 :   -> /home/lordpax/.newsboat
+2023-03-10 15:03:01 :   -> /home/lordpax/.ssh
+2023-03-10 15:03:01 :   -> /home/lordpax/.gnupg
+2023-03-10 15:03:01 :   -> /home/lordpax/.vscode-oss
+2023-03-10 15:03:01 :   -> /home/lordpax/.config_backup
+2023-03-10 15:03:01 :   -> /home/lordpax/.themes
+2023-03-10 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2023-03-10 15:03:01 :   -> /home/lordpax/.Xresources
+2023-03-10 15:03:01 :   -> /home/lordpax/.bashrc
+2023-03-10 15:03:01 :   -> /home/lordpax/.conkyrc
+2023-03-10 15:03:01 :   -> /home/lordpax/.vimrc
+2023-03-10 15:03:01 :   -> /home/lordpax/.tmux.conf
+2023-03-10 15:03:01 :   -> /home/lordpax/.gitconfig
+2023-03-10 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2023-03-10 15:03:01 :   -> /home/lordpax/.muttrc.example
+2023-03-10 15:03:01 :   -> /home/lordpax/.colors.muttrc
+2023-03-10 15:03:01 :   -> /home/lordpax/.account.muttrc.example
+2023-03-10 15:03:01 : Backup /save/dotfile.2023-03-10.tar.gz in progress ...
+2023-03-10 15:03:17 : Backup /save/dotfile.2023-03-10.tar.gz end
+2023-03-10 15:03:17 : Deleting 1 old backup : 
+2023-03-10 15:03:17 :   -> Deleting /save/dotfile.2023-03-07.tar.gz ...
+2023-03-10 15:05:40 : Backup /save/backup_compute-2.2023-03-10.tar.gz end
+2023-03-10 15:05:40 : Deleting 1 old backup : 
+2023-03-10 15:05:40 :   -> Deleting /save/backup_compute-2.2023-03-07.tar.gz ...
+2023-03-11 15:00:01 : Compress of :
+2023-03-11 15:00:01 :   -> /home/lordpax/.config_backup/
+2023-03-11 15:00:01 :   -> /home/lordpax/Images
+2023-03-11 15:00:01 :   -> /home/lordpax/programme
+2023-03-11 15:00:01 :   -> /home/lordpax/recovery-code
+2023-03-11 15:00:01 :   -> /home/lordpax/Applications
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Banque
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Cours
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Doc
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Stage
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2023-03-11 15:00:01 :   -> /home/lordpax/Documents/Osint
+2023-03-11 15:00:01 : Backup /save/backup_compute-2.2023-03-11.tar.gz in progress ...
+2023-03-11 15:03:01 : Compress of :
+2023-03-11 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2023-03-11 15:03:01 :   -> /home/lordpax/service
+2023-03-11 15:03:01 :   -> /home/lordpax/programme
+2023-03-11 15:03:01 :   -> /home/lordpax/.script
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/i3
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/rofi
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/polybar
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/latte
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/picom
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/warpd
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/ranger
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/zathura
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/Vieb/viebrc
+2023-03-11 15:03:01 :   -> /home/lordpax/.config/qutebrowser/autoconfig.yml
+2023-03-11 15:03:01 :   -> /home/lordpax/.newsboat
+2023-03-11 15:03:01 :   -> /home/lordpax/.ssh
+2023-03-11 15:03:01 :   -> /home/lordpax/.gnupg
+2023-03-11 15:03:01 :   -> /home/lordpax/.vscode-oss
+2023-03-11 15:03:01 :   -> /home/lordpax/.config_backup
+2023-03-11 15:03:01 :   -> /home/lordpax/.themes
+2023-03-11 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2023-03-11 15:03:01 :   -> /home/lordpax/.Xresources
+2023-03-11 15:03:01 :   -> /home/lordpax/.bashrc
+2023-03-11 15:03:01 :   -> /home/lordpax/.conkyrc
+2023-03-11 15:03:01 :   -> /home/lordpax/.vimrc
+2023-03-11 15:03:01 :   -> /home/lordpax/.tmux.conf
+2023-03-11 15:03:01 :   -> /home/lordpax/.gitconfig
+2023-03-11 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2023-03-11 15:03:01 :   -> /home/lordpax/.muttrc.example
+2023-03-11 15:03:01 :   -> /home/lordpax/.colors.muttrc
+2023-03-11 15:03:01 :   -> /home/lordpax/.account.muttrc.example
+2023-03-11 15:03:01 : Backup /save/dotfile.2023-03-11.tar.gz in progress ...
+2023-03-11 15:03:18 : Backup /save/dotfile.2023-03-11.tar.gz end
+2023-03-11 15:03:18 : Deleting 1 old backup : 
+2023-03-11 15:03:18 :   -> Deleting /save/dotfile.2023-03-08.tar.gz ...
+2023-03-11 15:05:51 : Backup /save/backup_compute-2.2023-03-11.tar.gz end
+2023-03-11 15:05:51 : Deleting 1 old backup : 
+2023-03-11 15:05:51 :   -> Deleting /save/backup_compute-2.2023-03-08.tar.gz ...
+2023-03-13 15:00:01 : Compress of :
+2023-03-13 15:00:01 :   -> /home/lordpax/.config_backup/
+2023-03-13 15:00:01 :   -> /home/lordpax/Images
+2023-03-13 15:00:01 :   -> /home/lordpax/programme
+2023-03-13 15:00:01 :   -> /home/lordpax/recovery-code
+2023-03-13 15:00:01 :   -> /home/lordpax/Applications
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Banque
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Cours
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Doc
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Stage
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2023-03-13 15:00:01 :   -> /home/lordpax/Documents/Osint
+2023-03-13 15:00:01 : Backup /save/backup_compute-2.2023-03-13.tar.gz in progress ...
+2023-03-13 15:03:01 : Compress of :
+2023-03-13 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2023-03-13 15:03:01 :   -> /home/lordpax/service
+2023-03-13 15:03:01 :   -> /home/lordpax/programme
+2023-03-13 15:03:01 :   -> /home/lordpax/.script
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/i3
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/rofi
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/polybar
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/latte
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/picom
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/warpd
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/ranger
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/zathura
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/Vieb/viebrc
+2023-03-13 15:03:01 :   -> /home/lordpax/.config/qutebrowser/autoconfig.yml
+2023-03-13 15:03:01 :   -> /home/lordpax/.newsboat
+2023-03-13 15:03:01 :   -> /home/lordpax/.ssh
+2023-03-13 15:03:01 :   -> /home/lordpax/.gnupg
+2023-03-13 15:03:01 :   -> /home/lordpax/.vscode-oss
+2023-03-13 15:03:01 :   -> /home/lordpax/.config_backup
+2023-03-13 15:03:01 :   -> /home/lordpax/.themes
+2023-03-13 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2023-03-13 15:03:01 :   -> /home/lordpax/.Xresources
+2023-03-13 15:03:01 :   -> /home/lordpax/.bashrc
+2023-03-13 15:03:01 :   -> /home/lordpax/.conkyrc
+2023-03-13 15:03:01 :   -> /home/lordpax/.vimrc
+2023-03-13 15:03:01 :   -> /home/lordpax/.tmux.conf
+2023-03-13 15:03:01 :   -> /home/lordpax/.gitconfig
+2023-03-13 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2023-03-13 15:03:01 :   -> /home/lordpax/.muttrc.example
+2023-03-13 15:03:01 :   -> /home/lordpax/.colors.muttrc
+2023-03-13 15:03:01 :   -> /home/lordpax/.account.muttrc.example
+2023-03-13 15:03:01 : Backup /save/dotfile.2023-03-13.tar.gz in progress ...
+2023-03-13 15:03:17 : Backup /save/dotfile.2023-03-13.tar.gz end
+2023-03-13 15:03:17 : Deleting 1 old backup : 
+2023-03-13 15:03:17 :   -> Deleting /save/dotfile.2023-03-09.tar.gz ...
+2023-03-13 15:08:51 : Backup /save/backup_compute-2.2023-03-13.tar.gz end
+2023-03-13 15:08:51 : Deleting 1 old backup : 
+2023-03-13 15:08:51 :   -> Deleting /save/backup_compute-2.2023-03-09.tar.gz ...
+2023-03-14 15:00:01 : Compress of :
+2023-03-14 15:00:01 :   -> /home/lordpax/.config_backup/
+2023-03-14 15:00:01 :   -> /home/lordpax/Images
+2023-03-14 15:00:02 :   -> /home/lordpax/programme
+2023-03-14 15:00:02 :   -> /home/lordpax/recovery-code
+2023-03-14 15:00:02 :   -> /home/lordpax/Applications
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Banque
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Archlinux
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Cours
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/CoursESGI
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Crypto
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Doc
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Jeux
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Stage
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/poursuite
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/ParcourSup
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Pentest
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Alternance
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/ESGI
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Challenge
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/marionnet
+2023-03-14 15:00:02 :   -> /home/lordpax/Documents/Osint
+2023-03-14 15:00:02 : Backup /save/backup_compute-2.2023-03-14.tar.gz in progress ...
+2023-03-14 15:03:01 : Compress of :
+2023-03-14 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2023-03-14 15:03:01 :   -> /home/lordpax/service
+2023-03-14 15:03:01 :   -> /home/lordpax/programme
+2023-03-14 15:03:01 :   -> /home/lordpax/.script
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/i3
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/rofi
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/polybar
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/latte
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/picom
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/warpd
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/ranger
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/zathura
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/Vieb/viebrc
+2023-03-14 15:03:01 :   -> /home/lordpax/.config/qutebrowser/autoconfig.yml
+2023-03-14 15:03:01 :   -> /home/lordpax/.newsboat
+2023-03-14 15:03:01 :   -> /home/lordpax/.ssh
+2023-03-14 15:03:01 :   -> /home/lordpax/.gnupg
+2023-03-14 15:03:01 :   -> /home/lordpax/.vscode-oss
+2023-03-14 15:03:01 :   -> /home/lordpax/.config_backup
+2023-03-14 15:03:01 :   -> /home/lordpax/.themes
+2023-03-14 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2023-03-14 15:03:01 :   -> /home/lordpax/.Xresources
+2023-03-14 15:03:01 :   -> /home/lordpax/.bashrc
+2023-03-14 15:03:01 :   -> /home/lordpax/.conkyrc
+2023-03-14 15:03:01 :   -> /home/lordpax/.vimrc
+2023-03-14 15:03:01 :   -> /home/lordpax/.tmux.conf
+2023-03-14 15:03:01 :   -> /home/lordpax/.gitconfig
+2023-03-14 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2023-03-14 15:03:01 :   -> /home/lordpax/.muttrc.example
+2023-03-14 15:03:01 :   -> /home/lordpax/.colors.muttrc
+2023-03-14 15:03:01 :   -> /home/lordpax/.account.muttrc.example
+2023-03-14 15:03:01 : Backup /save/dotfile.2023-03-14.tar.gz in progress ...
+2023-03-14 15:03:18 : Backup /save/dotfile.2023-03-14.tar.gz end
+2023-03-14 15:03:18 : Deleting 1 old backup : 
+2023-03-14 15:03:18 :   -> Deleting /save/dotfile.2023-03-10.tar.gz ...
+2023-03-14 15:09:33 : Backup /save/backup_compute-2.2023-03-14.tar.gz end
+2023-03-14 15:09:33 : Deleting 1 old backup : 
+2023-03-14 15:09:33 :   -> Deleting /save/backup_compute-2.2023-03-10.tar.gz ...
+2023-03-15 15:00:01 : Compress of :
+2023-03-15 15:00:01 :   -> /home/lordpax/.config_backup/
+2023-03-15 15:00:01 :   -> /home/lordpax/Images
+2023-03-15 15:00:01 :   -> /home/lordpax/programme
+2023-03-15 15:00:01 :   -> /home/lordpax/recovery-code
+2023-03-15 15:00:01 :   -> /home/lordpax/Applications
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Banque
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Archlinux
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Cours
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/CoursESGI
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Crypto
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Doc
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Jeux
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Stage
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/poursuite
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/ParcourSup
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Pentest
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Alternance
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/ESGI
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Challenge
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/marionnet
+2023-03-15 15:00:01 :   -> /home/lordpax/Documents/Osint
+2023-03-15 15:00:01 : Backup /save/backup_compute-2.2023-03-15.tar.gz in progress ...
+2023-03-15 15:03:01 : Compress of :
+2023-03-15 15:03:01 :   -> /home/lordpax/Documents/keyboard
+2023-03-15 15:03:01 :   -> /home/lordpax/service
+2023-03-15 15:03:01 :   -> /home/lordpax/programme
+2023-03-15 15:03:01 :   -> /home/lordpax/.script
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/i3
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/rofi
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/polybar
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/kdeconnect
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/Kvantum
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/latte
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/picom
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/warpd
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/ranger
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/zathura
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/Vieb/viebrc
+2023-03-15 15:03:01 :   -> /home/lordpax/.config/qutebrowser/autoconfig.yml
+2023-03-15 15:03:01 :   -> /home/lordpax/.newsboat
+2023-03-15 15:03:01 :   -> /home/lordpax/.ssh
+2023-03-15 15:03:01 :   -> /home/lordpax/.gnupg
+2023-03-15 15:03:01 :   -> /home/lordpax/.vscode-oss
+2023-03-15 15:03:01 :   -> /home/lordpax/.config_backup
+2023-03-15 15:03:01 :   -> /home/lordpax/.themes
+2023-03-15 15:03:01 :   -> /home/lordpax/.vim/autoload/plug.vim
+2023-03-15 15:03:01 :   -> /home/lordpax/.Xresources
+2023-03-15 15:03:01 :   -> /home/lordpax/.bashrc
+2023-03-15 15:03:01 :   -> /home/lordpax/.conkyrc
+2023-03-15 15:03:01 :   -> /home/lordpax/.vimrc
+2023-03-15 15:03:01 :   -> /home/lordpax/.tmux.conf
+2023-03-15 15:03:01 :   -> /home/lordpax/.gitconfig
+2023-03-15 15:03:01 :   -> /home/lordpax/.vim-vixen.json
+2023-03-15 15:03:01 :   -> /home/lordpax/.muttrc.example
+2023-03-15 15:03:01 :   -> /home/lordpax/.colors.muttrc
+2023-03-15 15:03:01 :   -> /home/lordpax/.account.muttrc.example
+2023-03-15 15:03:01 : Backup /save/dotfile.2023-03-15.tar.gz in progress ...
+2023-03-15 15:03:17 : Backup /save/dotfile.2023-03-15.tar.gz end
+2023-03-15 15:03:17 : Deleting 1 old backup : 
+2023-03-15 15:03:17 :   -> Deleting /save/dotfile.2023-03-11.tar.gz ...
+2023-03-15 15:09:15 : Backup /save/backup_compute-2.2023-03-15.tar.gz end
+2023-03-15 15:09:15 : Deleting 1 old backup : 
+2023-03-15 15:09:15 :   -> Deleting /save/backup_compute-2.2023-03-11.tar.gz ...

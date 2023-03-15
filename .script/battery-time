@@ -17,7 +17,7 @@ function getTime() {
         minute=$(echo $batTime | cut -d , -f 1)
     fi
 
-    echo "( $hour h $minute min )"
+    echo "[ $hour h $minute min ]"
 }
 
 [ "$data" != "" ] && getTime
