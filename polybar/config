@@ -26,7 +26,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/barLeft]
-monitor = ${env:MONITOR:DVI-D-0}
+monitor = ${env:MONITOR:DP-1}
 width = 100%
 height = 27
 radius = 0
@@ -71,7 +71,7 @@ cursor-click = pointer
 cursor-scroll = ns-resize
 
 [bar/barRight]
-monitor = ${env:MONITOR:HDMI-A-0}
+monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
 radius = 0
