@@ -144,3 +144,4 @@ function chmog() {
     chown $2 $4
     chgrp $3 $4
 }
+alias a='arsenal'

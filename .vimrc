@@ -32,6 +32,7 @@ Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
 
+" Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
