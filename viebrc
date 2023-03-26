@@ -201,7 +201,7 @@ set vimcommand=gvim
 set windowtitle='%app - %title'
 
 " Commands
-colorscheme default
+colorscheme matcha-dark
 
 unmap m<Any>
 unmap M<Any>

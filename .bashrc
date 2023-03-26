@@ -50,7 +50,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
 # LD_LIBRARY_PATH=/usr/include
-export EDITOR=vim
+export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-1
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
@@ -75,8 +75,10 @@ alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_g
 # alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"
-alias save_mdp_usb="keepassxc-cli merge /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/Mots_de_passe.kdbx"
-alias restore_mdp_usb="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/Mots_de_passe.kdbx"
+alias save_mdp_usb="cp ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/"
+alias restore_mdp_usb="cp /media/veracrypt1/Mots_de_passe.kdbx ~/Perso"
+alias save_mdp_usb_merge="keepassxc-cli merge /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/Mots_de_passe.kdbx"
+alias restore_mdp_usb_merge="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/Mots_de_passe.kdbx"
 
 alias backup_log="bat ~/.config_backup/backup.log"
 
