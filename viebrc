@@ -116,7 +116,7 @@ set nonotificationforpermissions
 set notificationforsystemcommands=errors
 set notificationposition=bottomright
 set permissioncamera=block
-set permissioncertificateerror=block
+set permissioncertificateerror=allow
 set permissionclipboardread=block
 set permissionclosepage=allow
 set permissiondisplaycapture=block
@@ -201,7 +201,7 @@ set vimcommand=gvim
 set windowtitle='%app - %title'
 
 " Commands
-colorscheme default
+colorscheme matcha-dark
 
 unmap m<Any>
 unmap M<Any>

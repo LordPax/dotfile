@@ -193,6 +193,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 bindsym $mod+u exec --no-startup-id xfce4-screenshooter
+# bindsym $mod+u exec --no-startup-id deepin-screenshot
 
 gaps inner 10
 smart_borders on

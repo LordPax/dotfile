@@ -9,8 +9,6 @@
 !*.cursorColor: #FFFFFF
 
 ! black
-!*.color0: #282a2e
-!*.color8: #373b41
 *.color0: #14161b
 *.color8: #373b41
 
@@ -42,10 +40,11 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
 URxvt*scrollBar: false
 URxvt*letterSpace: 0
 URxvt*internalBorder: 1
-URxvt*font: xft:DejaVu Sans Mono:Book:size=9,xft:Font Awesome 6 Free:style=Regular:pixelsize=10
+URxvt*font: xft:DejaVu Sans Mono:Book:size=9
 URxvt*boldFont: xft:DejaVu Sans Mono:Bold:size=9
 URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=9
 URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=9
@@ -54,9 +53,8 @@ URxvt.iso14755: false
 URxvt*utf8: true
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-!URxvt.keysym.C-equal: resize-font:bigger
-!URxvt.keysym.C-parenright: resize-font:smaller
-!URxvt.keysym.Control-minus: resize-font:smaller
-!URxvt.keysym.Control-plus: resize-font:bigger
-!URxvt.keysym.Control-equal: resize-font:reset
-!URxvt.keysym.Control-question: resize-font:show
+URxvt.resize-font.step: 2
+URxvt.keysym.C-minus: resize-font:smaller
+URxvt.keysym.C-plus: resize-font:bigger
+URxvt.keysym.C-equal: resize-font:reset
+URxvt.keysym.C-question: resize-font:show
