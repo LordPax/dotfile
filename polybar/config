@@ -67,7 +67,7 @@ modules-left = i3 title
 ;modules-center = mpd
 ; modules-center = date
 ;modules-right = filesystem xbacklight alsa pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu
-modules-right = ticker-crypto date pulseaudio-control xkeyboard updates battery battery-time luminosity networkspeeddown networkspeedup powermenu
+modules-right = ticker-crypto pulseaudio-control xkeyboard updates battery battery-time luminosity networkspeeddown networkspeedup date powermenu
 
 tray-position = right
 tray-padding = 2
