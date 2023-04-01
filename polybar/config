@@ -56,7 +56,7 @@ font-4 = "Font Awesome 6 Free:style=Solid:pixelsize=10;1"
 font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = i3 xwindow
-modules-right = crypto-BTC crypto-ETH date pulseaudio-control updates xkeyboard networkspeeddown networkspeedup powermenu
+modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard networkspeeddown networkspeedup date powermenu
 
 tray-position = right
 tray-padding = 2
