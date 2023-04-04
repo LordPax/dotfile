@@ -17,12 +17,6 @@ bind -m vi 'k':'history-search-forward'
 bind -m vi 'l':'history-search-backward'
 bind -m vi 'm':'forward-char'
 
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
-alias more=less
-alias ls='ls --color'
-alias grep='grep --color=auto'
-
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -49,12 +43,10 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 PATH=$PATH:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin
-# LD_LIBRARY_PATH=/usr/include
 export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-1
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-# export GOROOT=$HOME/Documents/Programmation/Go
 
 [ -z $TMUX ] && tmux
 
@@ -68,11 +60,8 @@ alias restore_file_usb="backup -r /media/veracrypt1/Backup -o / -n backup_comput
 alias restore_dotfile="backup -r /save -o / -n dotfile"
 alias restore_dotfile_usb="backup -r /media/veracrypt1/Backup -o / -n dotfile_compute2"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
-# alias save_rapport="cp /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt /save"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 
-# alias save_mdp="keepassxc-cli merge /save/Mots_de_passe.kdbx Mots_de_passe.kdbx"
-# alias restore_mdp="keepassxc-cli merge Mots_de_passe.kdbx /save/Mots_de_passe.kdbx"
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"
 alias save_mdp_usb="cp ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/"
@@ -82,6 +71,11 @@ alias restore_mdp_usb_merge="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /med
 
 alias backup_log="bat ~/.config_backup/backup.log"
 
+alias df='df -h'                          # human-readable sizes
+alias free='free -m'                      # show sizes in MB
+alias more=less
+alias ls='ls --color'
+alias grep='grep --color=auto'
 alias copy="xsel --clipboard -i"
 alias paste="xsel --clipboard -o"
 alias emacs="emacs -nw"
@@ -89,11 +83,8 @@ alias dust="dust -r"
 alias ctagsx="ctags --exclude=node_modules --exclude=dist"
 alias ll="ls -l"
 alias vimex="vim -c Ex"
-
-# alias get_vimrc="mv ~/.vimrc ~/.vimrc_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.vimrc"
-# alias get_tmux="mv ~/.tmux.conf ~/.tmux_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.tmux.conf"
-# alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/picom/picom.conf -P ~/.config/picom/"
-# alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-1/.Xresources"
+alias myip="curl ifconfig.me"
+alias a='arsenal'
 
 alias ga="git add"
 alias gaa="git add *"
@@ -146,4 +137,3 @@ function chmog() {
     chown $2 $4
     chgrp $3 $4
 }
-alias a='arsenal'

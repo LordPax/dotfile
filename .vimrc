@@ -31,6 +31,8 @@ Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
+Plug 'easymotion/vim-easymotion'
+
 
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
@@ -187,9 +189,11 @@ nmap <leader>n :vert term ++close ranger<CR>
 nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
-nmap <leader>f :ToggleFileManager<CR>
+nmap <leader>F :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
+nmap <leader>s ]s
+nmap <leader>S [s
 
 nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
@@ -219,6 +223,27 @@ vmap <leader>by "by
 map <leader>byy "byy
 map <leader>bp "bp
 map <leader>bP "bP
+
+" <Leader>f{char} to move to {char}
+map <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+
+" s{char}{char} to move to {char}{char}
+" nmap <leader>s <Plug>(easymotion-overwin-f2)
+
+" Move to word
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" Gif config
+" map  / <Plug>(easymotion-sn)
+" omap / <Plug>(easymotion-tn)
+
+" These `n` & `N` mappings are options. You do not have to map `n` & `N` to EasyMotion.
+" Without these mappings, `n` & `N` works fine. (These mappings just provide
+" different highlight method and have some other features )
+" map  n <Plug>(easymotion-next)
+" map  N <Plug>(easymotion-prev)
 
 nmap <F1> :HelpKey<CR>
 nmap <F2> :Ack! 

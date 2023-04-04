@@ -26,7 +26,7 @@ function encrypt() {
     secondPass=$(zenity --password --title="Confirmation mot de passe")
 
     if [ $firstPass == $secondPass ]; then
-        aescrypt -e -p $firstPass $@ &> /dev/null && shred -zu $@ || error "Une erreur s'est produite"
+        aescrypt -e -p $firstPass "$@" &> /dev/null && shred -zu "$@" || error "Une erreur s'est produite"
     else
         error "Les mots de passe sont différents"
     fi
@@ -37,7 +37,7 @@ function encrypt() {
 
 function decrypt() {
     password=$(zenity --password --title="Mot de passe")
-    aescrypt -d -p $password $@ &> /dev/null && rm $@ || error "Une erreur s'est produite"
+    aescrypt -d -p $password "$@" &> /dev/null && rm "$@" || error "Une erreur s'est produite"
     unset password
 }
 
@@ -48,11 +48,11 @@ if [ $# -ge 1 ]; then
             exit 0 ;;
         -e | --encrypt)
             shift
-            encrypt $@
+            encrypt "$@"
             exit 0;;
         -d | --decrypt)
             shift
-            decrypt $@
+            decrypt "$@"
             exit 0;;
         *)
             error "Unknown paramater \"$1\""
