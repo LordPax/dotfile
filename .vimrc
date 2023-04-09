@@ -33,7 +33,6 @@ Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
 Plug 'easymotion/vim-easymotion'
 
-
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
@@ -178,8 +177,8 @@ autocmd FileType cs set makeprg=dotnet\ build
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
-nmap <C-j> :tabp<CR>
-nmap <C-k> :tabn<CR>
+nmap <C-k> :tabp<CR>
+nmap <C-l> :tabn<CR>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>

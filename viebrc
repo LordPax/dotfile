@@ -199,6 +199,7 @@ set useragent=
 set nouserstyle
 set vimcommand=gvim
 set windowtitle='%app - %title'
+set userscript
 
 " Commands
 colorscheme matcha-dark
