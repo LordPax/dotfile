@@ -125,7 +125,7 @@ command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 
-let s:back = 233
+let s:back = 232
 let s:back2 = 234
 let s:back3 = 235
 let s:front = 240

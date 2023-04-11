@@ -1,0 +1,16 @@
+#!/bin/bash
+
+randomString=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1) # Génère une chaîne de caractères aléatoire de 20 caractères
+
+while true; do # Boucle infinie
+    userInput=$(zenity --entry \
+        --text "Il est 1 heure du matin, il est temps d'aller dormir !\n\nPour désactiver le script, réécrivez cette chaîne de caractères :\n\n$randomString\n\nEntrez la chaîne de caractères pour désactiver le script : "
+    ) # Affiche la chaîne de caractères aléatoire et demande à l'utilisateur de saisir la chaîne de caractères pour désactiver le script
+
+    if [ "$userInput" == "$randomString" ]; then # Vérifie si la chaîne de caractères saisie est correcte
+        zenity --info --text "Le script est désactivé."
+        exit 0 # Termine le script avec succès
+    else
+        zenity --error --text "La chaîne de caractères saisie est incorrecte. Veuillez réessayer." # Message d'erreur si la chaîne de caractères est incorrecte
+    fi
+done
