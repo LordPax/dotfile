@@ -32,6 +32,8 @@ Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
 Plug 'easymotion/vim-easymotion'
+Plug 'romainl/vim-qf'
+Plug 'tpope/vim-vinegar'
 
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
@@ -53,6 +55,10 @@ call plug#end()
 let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
+let s:back = 232
+let s:back2 = 234
+let s:back3 = 235
+let s:front = 240
 
 fun HelpKey()
     echo "Help : "
@@ -125,11 +131,6 @@ command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 
-let s:back = 232
-let s:back2 = 234
-let s:back3 = 235
-let s:front = 240
-
 for i in range(97,122)
     let c = nr2char(i)
     exec "map \e".c." <M-".c.">"
@@ -193,6 +194,9 @@ nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
 nmap <leader>s ]s
 nmap <leader>S [s
+
+nmap <leader>Jp :Jqplay<CR>
+nmap <leader>Jc :JqplayClose!<CR>
 
 nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
@@ -280,6 +284,7 @@ let b:ale_linters = {
 let g:undotree_WindowLayout = 3
 
 let g:ackprg = "ag --vimgrep"
+set grepprg=ag\ --vimgrep
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 
@@ -302,8 +307,10 @@ exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 highlight ModeMsg ctermbg=NONE
 highlight MoreMsg ctermbg=NONE
+highlight Question ctermbg=NONE
 highlight ErrorMsg ctermbg=NONE
 highlight SpecialKey ctermfg=237
+highlight Visual ctermfg=NONE ctermbg=239
 highlight ALEErrorSign ctermfg=red ctermbg=NONE
 highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
 highlight ALEError ctermfg=red ctermbg=NONE
