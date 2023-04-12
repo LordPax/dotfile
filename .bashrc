@@ -61,6 +61,7 @@ alias restore_dotfile="backup -r /save -o / -n dotfile"
 alias restore_dotfile_usb="backup -r /media/veracrypt1/Backup -o / -n dotfile_compute2"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
+alias backup_log="bat ~/.config_backup/backup.log"
 
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"
@@ -69,7 +70,8 @@ alias restore_mdp_usb="cp /media/veracrypt1/Mots_de_passe.kdbx ~/Perso"
 alias save_mdp_usb_merge="keepassxc-cli merge /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/Mots_de_passe.kdbx"
 alias restore_mdp_usb_merge="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/Mots_de_passe.kdbx"
 
-alias backup_log="bat ~/.config_backup/backup.log"
+alias viminstall="vimc PlugInstall"
+alias vimclean="vimc PlugClean"
 
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
@@ -85,6 +87,7 @@ alias ll="ls -l"
 alias vimex="vim -c Ex"
 alias myip="curl ifconfig.me"
 alias a='arsenal'
+alias scim="sc-im"
 
 alias ga="git add"
 alias gaa="git add *"

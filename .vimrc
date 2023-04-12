@@ -4,7 +4,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
@@ -31,17 +30,19 @@ Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
-Plug 'easymotion/vim-easymotion'
 Plug 'romainl/vim-qf'
 Plug 'tpope/vim-vinegar'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'mg979/vim-visual-multi'
 
+" Plug 'easymotion/vim-easymotion'
+" Plug 'preservim/tagbar'
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 " Plug 'puremourning/vimspector'
-" Plug 'mg979/vim-visual-multi'
 " Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 " Plug 'jalvesaq/Nvim-R'
@@ -168,6 +169,7 @@ set encoding=utf-8
 scriptencoding utf-8
 set spelllang=fr
 set term=screen-256color
+set statusline+=%{gutentags#statusline()}
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -266,6 +268,12 @@ let g:ctrlp_custom_ignore = {
     \'dir':  '\v(\.git|node_modules|build|dist)$',
     \'file': '\v\.(swp|o|so)$',
 \}
+let g:gutentags_ctags_exclude = [
+    \'node_modules',
+    \'build',
+    \'dist',
+    \'vendor'
+\]
 
 let g:gitgutter_sign_priority = 1
 let b:ale_linters = {
