@@ -1,7 +1,7 @@
 source ~/.account.muttrc
 folder-hook 'account' 'source ~/.account.muttrc'
 
-macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account<enter><change-folder>!<enter>'
+# macro index,pager <f2> '<sync-mailbox><enter-command>source ~/.config/neomutt/accounts/account<enter><change-folder>!<enter>'
 
 # Etc
 set mail_check = 30
