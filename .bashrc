@@ -12,10 +12,12 @@ set -o vi
 bind 'set show-mode-in-prompt on'
 bind 'set vi-cmd-mode-string \e[01;34m(cmd)\e[0m'
 bind 'set vi-ins-mode-string \e[01;33m(ins)\e[0m'
-bind -m vi 'j':'backward-char'
-bind -m vi 'k':'history-search-forward'
-bind -m vi 'l':'history-search-backward'
-bind -m vi 'm':'forward-char'
+bind -m vi 'j: backward-char'
+bind -m vi 'k: history-search-forward'
+bind -m vi 'l: history-search-backward'
+bind -m vi 'm: forward-char'
+# bind -m vi-command 'Control-l: clear-screen'
+# bind -m vi-insert 'Control-l: clear-screen'
 
 xhost +local:root > /dev/null 2>&1
 
