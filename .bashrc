@@ -121,7 +121,7 @@ function vimf() {
 
 function vimc() {
     [ "$1" == "" ] && echo "Usage : vimc <command>" &> /dev/stderr && return 1
-    vim -c $1
+    vim -c "$1"
 }
 
 function vimack() {
@@ -131,16 +131,18 @@ function vimack() {
 
 function psgrep() {
     [ "$1" == "" ] && echo "Usage : psgrep <process>" &> /dev/stderr && return 1
-    ps -aux | grep $1 | grep -v grep
+    ps -aux | grep "$1" | grep -v grep
 }
 
 function chmog() {
     [ $# -ne 4 ] && echo "Usage : chmog <user> <group> <mode> <file>" &> /dev/stderr && return 1
-    chmod $1 $4
-    chown $2 $4
-    chgrp $3 $4
+    chmod "$1" "$4"
+    chown "$2" "$4"
+    chgrp "$3" "$4"
 }
 
 function cdf() {
-    cd "$(dirname $(fzf))"
+    local file=$(fzf)
+    [ -z "$file" ] && return 1
+    cd "$(dirname "$file")" || return 1
 }
