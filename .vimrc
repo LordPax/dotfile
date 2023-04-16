@@ -34,6 +34,7 @@ Plug 'romainl/vim-qf'
 Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mg979/vim-visual-multi'
+Plug 'bfrg/vim-cpp-modern'
 
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
@@ -182,6 +183,8 @@ nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-k> :tabp<CR>
 nmap <C-l> :tabn<CR>
+nmap <C-j> ]s
+nmap <C-m> [s
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -194,8 +197,8 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
-nmap <leader>s ]s
-nmap <leader>S [s
+" nmap <leader>s ]s
+" nmap <leader>S [s
 
 nmap <leader>Jp :Jqplay<CR>
 nmap <leader>Jc :JqplayClose!<CR>
@@ -286,8 +289,11 @@ let b:ale_linters = {
     \'cs': ['OmniSharp'],
     \'ruby': ['mri'],
     \'css': ['stylelint'],
-    \'scss': ['stylelint']
+    \'scss': ['stylelint'],
+    \'go': ['golint', 'gofmt', 'govet']
 \}
+
+let g:go_list_type = "quickfix"
 
 let g:undotree_WindowLayout = 3
 
