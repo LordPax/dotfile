@@ -183,8 +183,8 @@ nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
 nmap <C-k> :tabp<CR>
 nmap <C-l> :tabn<CR>
-nmap <C-j> ]s
-nmap <C-m> [s
+nmap <C-j> [s
+nmap <C-m> ]s
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
