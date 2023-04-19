@@ -73,6 +73,7 @@ alias save_mdp_usb_merge="keepassxc-cli merge /media/veracrypt1/Mots_de_passe.kd
 alias restore_mdp_usb_merge="keepassxc-cli merge ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/Mots_de_passe.kdbx"
 
 alias viminstall="vimc PlugInstall"
+alias vimupdate="vimc PlugUpdate"
 alias vimclean="vimc PlugClean"
 
 alias df='df -h'                          # human-readable sizes
