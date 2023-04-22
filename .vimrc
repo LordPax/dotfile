@@ -36,6 +36,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
+Plug 'LordPax/vim-encrypt'
 
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
@@ -51,7 +52,6 @@ Plug 'LordPax/vim-cligpt'
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
-" Plug 'LordPax/vim-encrypt'
 
 call plug#end()
 

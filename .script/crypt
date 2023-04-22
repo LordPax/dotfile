@@ -17,8 +17,8 @@ function helpFunc() {
 
 Option:
 -h or --help .................... Show this help message and exit
--e or --encrypt ............... Encrypt files
--d or --decrypt ............... Decrypt files"
+-e or --encrypt ................. Encrypt files
+-d or --decrypt ................. Decrypt files"
 }
 
 function encrypt() {
