@@ -1,4 +1,4 @@
 #!/bin/bash
 
-xrandr --output DVI-D-0 --mode 1920x1080 --primary
-xrandr --output HDMI-A-0 --mode 1366x768 --right-of DVI-D-0
+xrandr --output DP-3 --mode 1920x1080 --primary
+xrandr --output HDMI-1 --mode 1366x768 --right-of DP-3

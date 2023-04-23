@@ -4,7 +4,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'preservim/tagbar'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 Plug 'tomasiser/vim-code-dark'
@@ -31,27 +30,38 @@ Plug 'posva/vim-vue'
 Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
+Plug 'romainl/vim-qf'
+Plug 'tpope/vim-vinegar'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'mg979/vim-visual-multi'
+Plug 'bfrg/vim-cpp-modern'
+Plug 'LordPax/vim-cligpt'
+Plug 'LordPax/vim-encrypt'
 
+" Plug 'easymotion/vim-easymotion'
+" Plug 'preservim/tagbar'
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
 " Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 " Plug 'puremourning/vimspector'
-" Plug 'mg979/vim-visual-multi'
 " Plug 'rafi/awesome-vim-colorschemes'
 " Plug 'LordPax/vim-code-dark', { 'branch': 'feat.netrwMarkFile' }
 " Plug 'jalvesaq/Nvim-R'
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
-" Plug 'LordPax/vim-encrypt'
 
 call plug#end()
 
 let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
+let s:back = 232
+let s:back2 = 234
+let s:back3 = 235
+let s:front = 240
 
 fun HelpKey()
     echo "Help : "
@@ -124,11 +134,6 @@ command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 
-let s:back = 233
-let s:back2 = 234
-let s:back3 = 235
-let s:front = 240
-
 for i in range(97,122)
     let c = nr2char(i)
     exec "map \e".c." <M-".c.">"
@@ -166,6 +171,7 @@ set encoding=utf-8
 scriptencoding utf-8
 set spelllang=fr
 set term=screen-256color
+set statusline+=%{gutentags#statusline()}
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -176,8 +182,10 @@ autocmd FileType cs set makeprg=dotnet\ build
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
-nmap <C-j> :tabp<CR>
-nmap <C-k> :tabn<CR>
+nmap <C-k> :tabp<CR>
+nmap <C-l> :tabn<CR>
+nmap <C-j> [s
+nmap <C-m> ]s
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -190,6 +198,11 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
+" nmap <leader>s ]s
+" nmap <leader>S [s
+
+nmap <leader>Jp :Jqplay<CR>
+nmap <leader>Jc :JqplayClose!<CR>
 
 nmap <leader>ga :Git add
 nmap <leader>gaa :Git add *<CR>
@@ -259,6 +272,12 @@ let g:ctrlp_custom_ignore = {
     \'dir':  '\v(\.git|node_modules|build|dist)$',
     \'file': '\v\.(swp|o|so)$',
 \}
+let g:gutentags_ctags_exclude = [
+    \'node_modules',
+    \'build',
+    \'dist',
+    \'vendor'
+\]
 
 let g:gitgutter_sign_priority = 1
 let b:ale_linters = {
@@ -271,12 +290,16 @@ let b:ale_linters = {
     \'cs': ['OmniSharp'],
     \'ruby': ['mri'],
     \'css': ['stylelint'],
-    \'scss': ['stylelint']
+    \'scss': ['stylelint'],
+    \'go': ['golint', 'gofmt', 'govet']
 \}
+
+let g:go_list_type = "quickfix"
 
 let g:undotree_WindowLayout = 3
 
 let g:ackprg = "ag --vimgrep"
+set grepprg=ag\ --vimgrep
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 
@@ -297,10 +320,16 @@ exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+" highlight EndOfBuffer ctermbg=NONE
 highlight ModeMsg ctermbg=NONE
 highlight MoreMsg ctermbg=NONE
 highlight ErrorMsg ctermbg=NONE
+highlight Error ctermbg=NONE
+highlight WarningMsg ctermbg=NONE
+" highlight Normal ctermbg=NONE
+highlight Question ctermbg=NONE
 highlight SpecialKey ctermfg=237
+highlight Visual ctermfg=NONE ctermbg=239
 highlight ALEErrorSign ctermfg=red ctermbg=NONE
 highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
 highlight ALEError ctermfg=red ctermbg=NONE

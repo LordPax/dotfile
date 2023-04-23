@@ -1,9 +1,0 @@
-/home/lordpax/Applications
-/home/lordpax/Lucas
-/home/lordpax/Images
-/home/lordpax/programme
-/home/lordpax/Documents/Archlinux
-/home/lordpax/Documents/CoursESGI
-/home/lordpax/Documents/Pentest
-/home/lordpax/Documents/lkmpg.pdf
-

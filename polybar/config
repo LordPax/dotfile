@@ -516,7 +516,7 @@ interval = 10
 [module/ticker-crypto]
 type = custom/script
 format-prefix = "%{F#f69218}%{F-} "
-exec = ~/.script/ticker-crypto.sh
+exec = ~/.script/crypto
 interval = 600
 
 [module/networkspeedup]

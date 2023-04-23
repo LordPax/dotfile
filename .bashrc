@@ -52,6 +52,10 @@ alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt
 # alias get_picom="mv ~/.config/picom/picom.conf ~/.config/picom/picom_old.conf; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/picom/picom.conf -P ~/.config/picom/"
 # alias get_Xresources="mv ~/.Xresources ~/.Xresources_old; wget https://raw.githubusercontent.com/LordPax/dotfile/compute-2/.Xresources"
 
+alias viminstall="vimc PlugInstall"
+alias vimupdate="vimc PlugUpdate"
+alias vimclean="vimc PlugClean"
+
 alias emacs="emacs -nw"
 alias dust="dust -r"
 alias ll="ls -l"
