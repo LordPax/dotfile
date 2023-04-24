@@ -116,3 +116,9 @@ function chmog() {
     chown $2 $4
     chgrp $3 $4
 }
+
+function cdf() {
+    local file=$(fzf)
+    [ -z "$file" ] && return 1
+    cd "$(dirname "$file")" || return 1
+}
