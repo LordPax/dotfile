@@ -62,6 +62,7 @@ alias ll="ls -l"
 alias copy="xsel --clipboard -i"
 alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
 alias vimex="vim -c Ex"
+alias scim="sc-im"
 
 alias ga="git add"
 alias gaa="git add *"
