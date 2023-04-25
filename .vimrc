@@ -37,6 +37,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
+Plug 'junegunn/vader.vim'
 
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
