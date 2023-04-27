@@ -40,11 +40,11 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
-URxvt.perl-ext-common: default,tabbed,matcher,resize-font,-tabbed
+URxvt.perl-ext-common: default,matcher,resize-font,-tabbed
 URxvt*scrollBar: false
 URxvt*letterSpace: 0
 URxvt*internalBorder: 1
-URxvt*font: xft:DejaVu Sans Mono:Book:size=9
+URxvt*font: xft:DejaVu Sans Mono:Book:size=9,xft:Symbols Nerd Font:style=1000-em:size=9
 URxvt*boldFont: xft:DejaVu Sans Mono:Bold:size=9
 URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=9
 URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=9
@@ -53,7 +53,8 @@ URxvt.iso14755: false
 URxvt*utf8: true
 URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
-URxvt.resize-font.step: 2
+! intall urxvt-resize-font-git from AUR
+URxvt.resize-font.step: 1
 URxvt.keysym.C-minus: resize-font:smaller
 URxvt.keysym.C-plus: resize-font:bigger
 URxvt.keysym.C-equal: resize-font:reset

@@ -37,6 +37,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
+" Plug 'ryanoasis/vim-devicons'
 
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
@@ -172,6 +173,7 @@ scriptencoding utf-8
 set spelllang=fr
 set term=screen-256color
 set statusline+=%{gutentags#statusline()}
+set encoding=UTF-8
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 

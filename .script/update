@@ -25,7 +25,7 @@ function updatePacman() {
         --column="Old version" \
         --column="New version" &> /dev/null
 
-    [ $? -eq 0 ] && xfce4-terminal -x sudo pacman -Syu archlinux-keyring
+    [ $? -eq 0 ] && urxvt -e sh -c 'sudo pacman -Syu archlinux-keyring'
 }
 
 function updateAur() {
@@ -36,7 +36,7 @@ function updateAur() {
         --column="Old version" \
         --column="New version" &> /dev/null
 
-    [ $? -eq 0 ] && xfce4-terminal -x yay -Syu --aur
+    [ $? -eq 0 ] && urxvt -e sh -c 'yay -Syu --aur'
 }
 
 if [ $# -ge 1 ]; then
