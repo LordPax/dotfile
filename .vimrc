@@ -38,13 +38,13 @@ Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
-" Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 " Plug 'puremourning/vimspector'
@@ -76,9 +76,9 @@ function! HelpKey()
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Find all git conflict"
-    " echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
     echo "F11 ......... Toggle spell check"
+    echo "F12 ......... Generate doc for a function"
     " echo "F11 ......... Acitve Jqplay"
     " echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
@@ -252,10 +252,10 @@ nmap <F5> :source ~/.vimrc<CR>
 nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
-" let g:doge_mapping="<F9>"
 nmap <F9> :Ack! "<<<<<<< HEAD"<CR>
 nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
+let g:doge_mapping="<F12>"
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -317,6 +317,8 @@ let g:UltiSnipsListSnippets="<c-n>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
+let g:doge_mapping_comment_jump_forward = "<c-l>"
+let g:doge_mapping_comment_jump_backward = "<c-k>"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
