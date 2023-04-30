@@ -37,13 +37,14 @@ Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
-" Plug 'ryanoasis/vim-devicons'
+Plug 'nicwest/vim-http'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
+" Plug 'ryanoasis/vim-devicons'
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
 " Plug 'madox2/vim-ai'
 " Plug 'skanehira/gh.vim'
-" Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 " Plug 'tpope/vim-rhubarb'
 " Plug 'OmniSharp/omnisharp-vim' " need mono-msbuild
 " Plug 'puremourning/vimspector'
@@ -64,7 +65,7 @@ let s:back2 = 234
 let s:back3 = 235
 let s:front = 240
 
-fun HelpKey()
+function! HelpKey()
     echo "Help : "
     echo "F1 .......... This help"
     echo "F2 .......... Search with Ack"
@@ -75,14 +76,14 @@ fun HelpKey()
     echo "F7 .......... Toggle with tab length 4 and 2"
     echo "F8 .......... Toggle ale for a buffer"
     echo "F9 .......... Find all git conflict"
-    " echo "F9 .......... Generate doc for a function"
     echo "F10 ......... Find all TODO in project"
     echo "F11 ......... Toggle spell check"
+    echo "F12 ......... Generate doc for a function"
     " echo "F11 ......... Acitve Jqplay"
     " echo "F12 ......... Deactive Jqplay with JqplayClose!"
 endfun
 
-fun ToggleExpandTab()
+function! ToggleExpandTab()
     if g:useSpace == 1
         let g:useSpace = 0
         set noexpandtab
@@ -94,7 +95,7 @@ fun ToggleExpandTab()
     endif
 endfun
 
-fun ToggleLength()
+function! ToggleLength()
     if g:length == 4
         let g:length = 2
         echo "length set to 2"
@@ -106,7 +107,7 @@ fun ToggleLength()
     exe "set shiftwidth="..g:length
 endfun
 
-fun ToggleFileManager()
+function! ToggleFileManager()
     if g:fileMan == 0
         let g:fileMan = 1
         exe "Lex | vertical resize 30"
@@ -114,6 +115,14 @@ fun ToggleFileManager()
         let g:fileMan = 0
         exe "Lex"
     endif
+endfun
+
+function! JsonPretty(is_selection) range
+    if !executable('jq')
+        echohl ErrorMsg | echo "jq is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
 if has("persistent_undo")
@@ -134,6 +143,7 @@ command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
+command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 
 for i in range(97,122)
     let c = nr2char(i)
@@ -200,8 +210,6 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
-" nmap <leader>s ]s
-" nmap <leader>S [s
 
 nmap <leader>Jp :Jqplay<CR>
 nmap <leader>Jc :JqplayClose!<CR>
@@ -219,6 +227,7 @@ nmap <leader>gch :Git checkout
 nmap <leader>gco :Git commit
 nmap <leader>gl :Git log<CR>
 nmap <leader>gb :Git branch
+nmap <leader>gbl :Git blame<CR>
 
 vmap <leader>y "+y
 map <leader>yy "+yy
@@ -243,12 +252,10 @@ nmap <F5> :source ~/.vimrc<CR>
 nmap <F6> :ToggleExpandTab<CR>
 nmap <F7> :ToggleLength<CR>
 nmap <F8> :ALEToggleBuffer<CR>
-" let g:doge_mapping="<F9>"
 nmap <F9> :Ack! "<<<<<<< HEAD"<CR>
 nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
-" nmap <F11> :Jqplay<CR>
-" nmap <F12> :JqplayClose!<CR>
+let g:doge_mapping="<F12>"
 
 map <M-j> <C-w>5<
 map <M-k> <C-w>5-
@@ -310,9 +317,14 @@ let g:UltiSnipsListSnippets="<c-n>"
 let g:UltiSnipsJumpForwardTrigger="<c-l>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
+let g:doge_mapping_comment_jump_forward = "<c-l>"
+let g:doge_mapping_comment_jump_backward = "<c-k>"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
+
+let g:vim_http_split_vertically = 1
+let g:vim_http_tempbuffer = 1
 
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
@@ -322,13 +334,12 @@ exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-" highlight EndOfBuffer ctermbg=NONE
 highlight ModeMsg ctermbg=NONE
-highlight MoreMsg ctermbg=NONE
-highlight ErrorMsg ctermbg=NONE
-highlight Error ctermbg=NONE
+highlight! link MoreMsg ModeMsg
+highlight Error ctermbg=NONE cterm=NONE
+highlight! link ErrorMsg Error
+highlight! link SpellBad Error
 highlight WarningMsg ctermbg=NONE
-" highlight Normal ctermbg=NONE
 highlight Question ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight Visual ctermfg=NONE ctermbg=239
@@ -339,3 +350,4 @@ highlight ALEWarning ctermfg=yellow ctermbg=NONE
 highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
+highlight Folded ctermfg=188 cterm=NONE
