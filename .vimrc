@@ -334,13 +334,12 @@ exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
-" highlight EndOfBuffer ctermbg=NONE
 highlight ModeMsg ctermbg=NONE
-highlight MoreMsg ctermbg=NONE
-highlight ErrorMsg ctermbg=NONE
-highlight Error ctermbg=NONE
+highlight! link MoreMsg ModeMsg
+highlight Error ctermbg=NONE cterm=NONE
+highlight! link ErrorMsg Error
+highlight! link SpellBad Error
 highlight WarningMsg ctermbg=NONE
-" highlight Normal ctermbg=NONE
 highlight Question ctermbg=NONE
 highlight SpecialKey ctermfg=237
 highlight Visual ctermfg=NONE ctermbg=239
