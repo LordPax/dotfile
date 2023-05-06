@@ -19,7 +19,8 @@ color listfocus_unread yellow default bold
 color info red black bold
 color article white default
 
-browser firefox-developer-edition
+# browser firefox-developer-edition
+browser firefox
 
 highlight all "---.*---" yellow
 highlight feedlist ".*(0/0))" black
