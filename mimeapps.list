@@ -1,0 +1,32 @@
+[Default Applications]
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/chrome=firefox.desktop
+text/html=firefox.desktop
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/xhtml+xml=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+x-scheme-handler/notion=notion-app.desktop
+x-scheme-handler/postman=Postman.desktop
+x-scheme-handler/msteams=teams.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+
+[Added Associations]
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+text/html=firefox.desktop;
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/xhtml+xml=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+text/x-scala=sc-usercreated-1.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+application/json=vim-usercreated-1.desktop;
+text/markdown=vim-usercreated-1.desktop;
+text/plain=vim-usercreated-1.desktop;

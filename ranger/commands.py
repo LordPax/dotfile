@@ -84,3 +84,13 @@ class extract(Command):
             self.fm.notify("Extracted {}".format(filename[0].basename))
         else:
             self.fm.notify("Failed to extract {}".format(filename[0].basename), bad=True)
+
+class openInTmuxWindow(Command):
+    """:openInOtherWindow
+
+    Opens the current directory in another window
+    """
+
+    def execute(self):
+        filename = self.fm.thisdir.get_selection()[0]
+        self.fm.run("tmux new-window 'mimeopen {}'".format(filename.path))
