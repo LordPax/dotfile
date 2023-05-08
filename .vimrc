@@ -211,6 +211,10 @@ nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
 
+nmap <leader>ss z=
+nmap <leader>sf :set spelllang=fr<CR>
+nmap <leader>se :set spelllang=en<CR>
+
 nmap <leader>Jp :Jqplay<CR>
 nmap <leader>Jc :JqplayClose!<CR>
 
