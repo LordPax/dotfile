@@ -229,7 +229,7 @@ exec --no-startup-id thunderbird
 # exec --no-startup-id electrum
 
 assign [class="firefox"] $ws1
-assign [class="com.fushra.browser.alpha"] $ws1
+assign [class="pulse-browser"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
