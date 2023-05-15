@@ -1,0 +1,11 @@
+[Unit]
+Description=Deamon kwallet
+
+[Service]
+Type=simple
+User=lordpax
+Group=lordpax
+ExecStart=/usr/bin/kwalletd5
+
+[Install]
+WantedBy=multi-user.target

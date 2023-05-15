@@ -30,3 +30,4 @@ application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
 application/json=vim-usercreated-1.desktop;
 text/markdown=vim-usercreated-1.desktop;
 text/plain=vim-usercreated-1.desktop;
+text/x-go=vim-usercreated-1.desktop;
