@@ -13,13 +13,15 @@ bind-key i open-in-browser
 
 # couleurs et style
 color listnormal cyan default
-color listfocus black yellow standout bold
+color listfocus black cyan standout bold
 color listnormal_unread blue default
-color listfocus_unread yellow default bold
-color info red black bold
+color listfocus_unread black blue standout bold
+color info blue black bold
 color article white default
 
-browser firefox-developer-edition
+# browser firefox-developer-edition
+# browser firefox
+browser pulse-browser
 
 highlight all "---.*---" yellow
 highlight feedlist ".*(0/0))" black

@@ -5,17 +5,15 @@ https://blog.asciinema.org/index.xml
 https://warisradji.com/atom.xml
 https://www.toolinux.com/spip.php?page=backend
 https://tutox.fr/feed/
+https://fetchrss.com/rss/64543e4f94b3e95325324892645ba844c20b4109923e2fd2.xml
 
 "--- Youtube ---"
 https://bridge.easter.fr/?action=display&bridge=YouTubeCommunityTabBridge&context=By+username&username=AstronoGeek&format=Mrss
 https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+custom+name&custom=AstronoGeek&duration_min=&duration_max=&format=Mrss
 https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+username&u=joueurdugrenier&duration_min=&duration_max=&format=Mrss
-https://bridge.easter.fr/?action=display&bridge=YouTubeCommunityTabBridge&context=By+username&username=psyhodelik&format=Mrss
-https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+username&u=psyhodelik&duration_min=&duration_max=&format=Mrss
 
-"--- Twitter ---"
-https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=AstronoGeek&format=Mrss
-https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=Frederic_Molas&format=Mrss
-https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=DIMENSION_YT&format=Mrss
+# "--- Twitter ---"
+# https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=AstronoGeek&format=Mrss
+# https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=Frederic_Molas&format=Mrss
 "--- ESGI ---"
 https://myges.fr/rss/news

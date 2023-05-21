@@ -219,6 +219,7 @@ exec --no-startup-id keepassxc
 exec --no-startup-id discord
 
 assign [class="firefox"] $ws1
+assign [class="pulse-browser"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="xfce4-terminal|Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
