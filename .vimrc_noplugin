@@ -1,0 +1,203 @@
+let g:useSpace = 1
+let g:length = 4
+let g:fileMan = 0
+let s:back = 232
+let s:back2 = 234
+let s:back3 = 235
+let s:front = 240
+
+function! HelpKey()
+    echo "Help : "
+    echo "F1 .......... This help"
+    echo "F2 .......... Search with grep"
+    echo "F5 .......... Refresh vimrc"
+    echo "F6 .......... Toggle with space and tab"
+    echo "F7 .......... Toggle with tab length 4 and 2"
+    echo "F9 .......... Find all git conflict"
+    echo "F10 ......... Find all TODO in project"
+    echo "F11 ......... Toggle spell check"
+endfun
+
+function! ToggleExpandTab()
+    if g:useSpace == 1
+        let g:useSpace = 0
+        set noexpandtab
+        echo "use tabulation"
+    else
+        let g:useSpace = 1
+        set expandtab
+        echo "use space"
+    endif
+endfun
+
+function! ToggleLength()
+    if g:length == 4
+        let g:length = 2
+        echo "length set to 2"
+    else
+        let g:length = 4
+        echo "length set to 4"
+    endif
+    exe "set tabstop="..g:length
+    exe "set shiftwidth="..g:length
+endfun
+
+function! ToggleFileManager()
+    if g:fileMan == 0
+        let g:fileMan = 1
+        exe "Lex | vertical resize 30"
+    else
+        let g:fileMan = 0
+        exe "Lex"
+    endif
+endfun
+
+function! JsonPretty(is_selection) range
+    if !executable('jq')
+        echohl ErrorMsg | echo "jq is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
+endfun
+
+command HelpKey call HelpKey()
+command ToggleExpandTab call ToggleExpandTab()
+command ToggleLength call ToggleLength()
+command ToggleFileManager call ToggleFileManager()
+command Sudow :w !sudo tee % >/dev/null
+command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+
+for i in range(97,122)
+    let c = nr2char(i)
+    exec "map \e".c." <M-".c.">"
+endfor
+
+let mapleader = " "
+syntax on
+set nocompatible
+set nu
+set rnu
+filetype plugin indent on
+set path+=**
+set wildmenu
+set mouse=a
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set autoindent
+set cursorline
+set cursorcolumn
+set smartindent
+set hlsearch
+set incsearch
+set title
+set timeoutlen=1000
+set ttimeoutlen=0
+set updatetime=100
+set nobackup
+set noswapfile
+set autoread
+set signcolumn="yes"
+set re=0
+set encoding=utf-8
+scriptencoding utf-8
+set spelllang=fr
+set term=screen-256color
+set encoding=UTF-8
+set grepprg=ag\ --vimgrep
+
+autocmd FileType javascript set makeprg=npm\ run\ test
+autocmd FileType typescript set makeprg=npm\ run\ build
+autocmd FileType cs set makeprg=dotnet\ build
+
+nmap <C-i> :bp<CR>
+nmap <C-o> :bn<CR>
+nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
+nmap <C-k> :tabp<CR>
+nmap <C-l> :tabn<CR>
+nmap <C-j> [s
+nmap <C-m> ]s
+
+nmap <leader>k :nohlsearch<CR>
+nmap <leader>l :bel term<CR>
+nmap <leader>L :vert rightb term<CR>
+nmap <leader>n :vert term ++close ranger<CR>
+nmap <leader>N :bel term ++close ranger<CR>
+nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
+nmap <leader>f :ToggleFileManager<CR>
+nmap <leader>z zfiB<CR>
+
+nmap <leader>ss z=
+nmap <leader>sf :set spelllang=fr<CR>
+nmap <leader>se :set spelllang=en<CR>
+
+nmap <leader>Jp :Jqplay<CR>
+nmap <leader>Jc :JqplayClose!<CR>
+
+vmap <leader>y "+y
+map <leader>yy "+yy
+map <leader>p "+p
+map <leader>P "+P
+
+vmap <leader>ay "ay
+map <leader>ayy "ayy
+map <leader>ap "ap
+map <leader>aP "aP
+
+vmap <leader>by "by
+map <leader>byy "byy
+map <leader>bp "bp
+map <leader>bP "bP
+
+nmap <F1> :HelpKey<CR>
+nmap <F2> :grep! 
+nmap <F5> :source ~/.vimrc<CR>
+nmap <F6> :ToggleExpandTab<CR>
+nmap <F7> :ToggleLength<CR>
+nmap <F9> :grep! "<<<<<<< HEAD"<CR>
+nmap <F10> :grep! TODO<CR>
+nmap <F11> :set spell!<CR>
+
+map <M-j> <C-w>5<
+map <M-k> <C-w>5-
+map <M-l> <C-w>5+
+map <M-m> <C-w>5>
+
+noremap <C-w>j <C-w>h
+noremap <C-w>k <C-w>j
+noremap <C-w>l <C-w>k
+noremap <C-w>m <C-w>l
+
+noremap <C-w>J <C-w>H
+noremap <C-w>K <C-w>J
+noremap <C-w>L <C-w>K
+noremap <C-w>M <C-w>L
+
+map j <Left>
+map k <Down>
+map l <Up>
+map m <Right>
+
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+
+colorscheme default
+exe "highlight Normal ctermbg="..s:back
+exe "highlight NonText ctermbg="..s:back
+exe "highlight EndOfBuffer ctermbg="..s:back
+exe "highlight CursorLine ctermbg="..s:back2.." cterm=NONE"
+exe "highlight CursorColumn ctermbg="..s:back2
+exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
+exe "highlight LineNr ctermbg="..s:back.." ctermfg="..s:front
+exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
+highlight ModeMsg ctermbg=NONE
+highlight! link MoreMsg ModeMsg
+highlight Error ctermbg=NONE cterm=NONE ctermfg=red
+highlight! link ErrorMsg Error
+highlight! link SpellBad Error
+highlight WarningMsg ctermbg=NONE ctermfg=yellow
+highlight Question ctermbg=NONE
+highlight SpecialKey ctermfg=237
+highlight Visual ctermfg=NONE ctermbg=239
+highlight SignColumn ctermbg=NONE ctermfg=NONE
+highlight Folded ctermfg=188 cterm=NONE

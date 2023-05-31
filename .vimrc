@@ -152,7 +152,7 @@ endfor
 
 let mapleader = " "
 syntax on
-" set nocompatible
+set nocompatible
 set nu
 set rnu
 filetype plugin indent on
