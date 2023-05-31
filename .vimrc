@@ -11,7 +11,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
@@ -40,6 +39,7 @@ Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
+" Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
@@ -152,6 +152,7 @@ endfor
 
 let mapleader = " "
 syntax on
+" set nocompatible
 set nu
 set rnu
 filetype plugin indent on
