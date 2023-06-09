@@ -144,6 +144,7 @@ command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -nargs=1 Fls :filter /<args>/ ls
 
 for i in range(97,122)
     let c = nr2char(i)
@@ -199,6 +200,7 @@ nmap <C-k> :tabp<CR>
 nmap <C-l> :tabn<CR>
 nmap <C-j> [s
 nmap <C-m> ]s
+nmap <C-p> :find<space>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -250,7 +252,7 @@ map <leader>bp "bp
 map <leader>bP "bP
 
 nmap <F1> :HelpKey<CR>
-nmap <F2> :Ack! 
+nmap <F2> :Ack!<space>
 nmap <F3> :AckFromSearch!<CR>
 nmap <F4> :UltiSnipsEdit<CR>
 nmap <F5> :source ~/.vimrc<CR>
