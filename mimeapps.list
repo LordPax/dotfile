@@ -13,6 +13,9 @@ x-scheme-handler/notion=notion-app.desktop
 x-scheme-handler/postman=Postman.desktop
 x-scheme-handler/msteams=teams.desktop
 x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-RQNL61.desktop
+message/rfc822=userapp-Thunderbird-RQNL61.desktop
+x-scheme-handler/mid=userapp-Thunderbird-RQNL61.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;
@@ -31,3 +34,5 @@ application/json=vim-usercreated-1.desktop;
 text/markdown=vim-usercreated-1.desktop;
 text/plain=vim-usercreated-1.desktop;
 text/x-go=vim-usercreated-1.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-RQNL61.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-RQNL61.desktop;

@@ -68,10 +68,10 @@ command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 
-for i in range(97,122)
-    let c = nr2char(i)
-    exec "map \e".c." <M-".c.">"
-endfor
+" for i in range(97,122)
+"     let c = nr2char(i)
+"     exec "map \e".c." <M-".c.">"
+" endfor
 
 let mapleader = " "
 syntax on
@@ -160,10 +160,10 @@ nmap <F9> :grep! "<<<<<<< HEAD"<CR>
 nmap <F10> :grep! TODO<CR>
 nmap <F11> :set spell!<CR>
 
-map <M-j> <C-w>5<
-map <M-k> <C-w>5-
-map <M-l> <C-w>5+
-map <M-m> <C-w>5>
+" map <M-j> <C-w>5<
+" map <M-k> <C-w>5-
+" map <M-l> <C-w>5+
+" map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j

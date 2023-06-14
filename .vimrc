@@ -146,10 +146,10 @@ command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 
-for i in range(97,122)
-    let c = nr2char(i)
-    exec "map \e".c." <M-".c.">"
-endfor
+" for i in range(97,122)
+"     let c = nr2char(i)
+"     " exec "map \e".c." <M-".c.">"
+" endfor
 
 let mapleader = " "
 syntax on
@@ -186,6 +186,7 @@ set spelllang=fr
 set term=screen-256color
 set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
+set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -201,6 +202,7 @@ nmap <C-l> :tabn<CR>
 nmap <C-j> [s
 nmap <C-m> ]s
 nmap <C-p> :find<space>
+" vmap <esc> <C-c>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -264,10 +266,10 @@ nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
 let g:doge_mapping="<F12>"
 
-map <M-j> <C-w>5<
-map <M-k> <C-w>5-
-map <M-l> <C-w>5+
-map <M-m> <C-w>5>
+" map <M-j> <C-w>5<
+" map <M-k> <C-w>5-
+" map <M-l> <C-w>5+
+" map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
