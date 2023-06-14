@@ -38,6 +38,7 @@ Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+runtime ftplugin/man.vim
 
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'
@@ -60,6 +61,7 @@ call plug#end()
 let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
+let g:resizeMode = 0
 let s:back = 232
 let s:back2 = 234
 let s:back3 = 235
@@ -125,6 +127,27 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
+function! ToggleReziseWindow()
+    if g:resizeMode == 0
+        let g:resizeMode = 1
+        map j <C-w>5<
+        map k <C-w>5-
+        map l <C-w>5+
+        map m <C-w>5>
+        map <silent> <esc> :ToggleReziseWindow<cr>
+        echo "-- RESIZE --"
+    else
+        let g:resizeMode = 0
+        map j <Left>
+        map k <Down>
+        map l <Up>
+        map m <Right>
+        unmap <esc>
+        echo ""
+    endif
+endfun
+
+
 if has("persistent_undo")
     let target_path = expand('~/.undodir')
 
@@ -145,6 +168,7 @@ command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
+command ToggleReziseWindow call ToggleReziseWindow()
 
 " for i in range(97,122)
 "     let c = nr2char(i)
@@ -187,6 +211,7 @@ set term=screen-256color
 set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
+set keywordprg=:Man
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
@@ -202,7 +227,6 @@ nmap <C-l> :tabn<CR>
 nmap <C-j> [s
 nmap <C-m> ]s
 nmap <C-p> :find<space>
-" vmap <esc> <C-c>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -215,6 +239,7 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
+nmap <leader>r :ToggleReziseWindow<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>

@@ -1,6 +1,9 @@
+runtime ftplugin/man.vim
+
 let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
+let g:resizeMode = 0
 let s:back = 232
 let s:back2 = 234
 let s:back3 = 235
@@ -60,6 +63,26 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
+function! ToggleReziseWindow()
+    if g:resizeMode == 0
+        let g:resizeMode = 1
+        map j <C-w>5<
+        map k <C-w>5-
+        map l <C-w>5+
+        map m <C-w>5>
+        map <silent> <esc> :ToggleReziseWindow<cr>
+        echo "-- RESIZE --"
+    else
+        let g:resizeMode = 0
+        map j <Left>
+        map k <Down>
+        map l <Up>
+        map m <Right>
+        unmap <esc>
+        echo ""
+    endif
+endfun
+
 command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
@@ -67,6 +90,7 @@ command ToggleFileManager call ToggleFileManager()
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
+command ToggleReziseWindow call ToggleReziseWindow()
 
 " for i in range(97,122)
 "     let c = nr2char(i)
@@ -106,6 +130,7 @@ set spelllang=fr
 set term=screen-256color
 set encoding=UTF-8
 set grepprg=ag\ --vimgrep
+set keywordprg=:Man
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
@@ -128,6 +153,7 @@ nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>z zfiB<CR>
+nmap <leader>r :ToggleReziseWindow<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
@@ -182,6 +208,7 @@ map m <Right>
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
+let g:ft_man_open_mode = 'vert'
 
 colorscheme default
 exe "highlight Normal ctermbg="..s:back
