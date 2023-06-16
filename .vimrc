@@ -127,14 +127,14 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
-function! ToggleReziseWindow()
+function! ResizeMode()
     if g:resizeMode == 0
         let g:resizeMode = 1
         map j <C-w>5<
         map k <C-w>5-
         map l <C-w>5+
         map m <C-w>5>
-        map <silent> <esc> :ToggleReziseWindow<cr>
+        map <silent> <esc> :ResizeMode<cr>
         echo "-- RESIZE --"
     else
         let g:resizeMode = 0
@@ -146,6 +146,14 @@ function! ToggleReziseWindow()
         echo ""
     endif
 endfun
+
+" function! ManJS(...)
+"     execute "new"
+"     setlocal buftype=nofile
+
+"     let l:content = system("~/.script/vim-cht ".a:000)
+"     call setline(1, split(l:content, "\n"))
+" endfun
 
 
 if has("persistent_undo")
@@ -168,7 +176,9 @@ command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
-command ToggleReziseWindow call ToggleReziseWindow()
+command ResizeMode call ResizeMode()
+command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht <args>"
+" command -nargs=* ManJS call ManJS(<args>)
 
 " for i in range(97,122)
 "     let c = nr2char(i)
@@ -216,6 +226,8 @@ set keywordprg=:Man
 " set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
+autocmd FileType javascript set keywordprg=:ManJS\ javascript
+
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
@@ -239,7 +251,7 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
-nmap <leader>r :ToggleReziseWindow<CR>
+nmap <leader>r :ResizeMode<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
