@@ -11,7 +11,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dense-analysis/ale'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
@@ -39,7 +38,9 @@ Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+runtime ftplugin/man.vim
 
+" Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'easymotion/vim-easymotion'
 " Plug 'preservim/tagbar'
@@ -60,6 +61,7 @@ call plug#end()
 let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
+let g:resizeMode = 0
 let s:back = 232
 let s:back2 = 234
 let s:back3 = 235
@@ -125,6 +127,35 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
+function! ResizeMode()
+    if g:resizeMode == 0
+        let g:resizeMode = 1
+        map j <C-w>5<
+        map k <C-w>5-
+        map l <C-w>5+
+        map m <C-w>5>
+        map <silent> <esc> :ResizeMode<cr>
+        echo "-- RESIZE --"
+    else
+        let g:resizeMode = 0
+        map j <Left>
+        map k <Down>
+        map l <Up>
+        map m <Right>
+        unmap <esc>
+        echo ""
+    endif
+endfun
+
+" function! ManJS(...)
+"     execute "new"
+"     setlocal buftype=nofile
+
+"     let l:content = system("~/.script/vim-cht ".a:000)
+"     call setline(1, split(l:content, "\n"))
+" endfun
+
+
 if has("persistent_undo")
     let target_path = expand('~/.undodir')
 
@@ -144,14 +175,19 @@ command ToggleFileManager call ToggleFileManager()
 command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -nargs=1 Fls :filter /<args>/ ls
+command ResizeMode call ResizeMode()
+command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht <args>"
+" command -nargs=* ManJS call ManJS(<args>)
 
-for i in range(97,122)
-    let c = nr2char(i)
-    exec "map \e".c." <M-".c.">"
-endfor
+" for i in range(97,122)
+"     let c = nr2char(i)
+"     " exec "map \e".c." <M-".c.">"
+" endfor
 
 let mapleader = " "
 syntax on
+set nocompatible
 set nu
 set rnu
 filetype plugin indent on
@@ -184,10 +220,14 @@ set spelllang=fr
 set term=screen-256color
 set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
+set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
+set keywordprg=:Man
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
+autocmd FileType javascript set keywordprg=:ManJS\ javascript
+
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
@@ -198,6 +238,7 @@ nmap <C-k> :tabp<CR>
 nmap <C-l> :tabn<CR>
 nmap <C-j> [s
 nmap <C-m> ]s
+nmap <C-p> :find<space>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -210,6 +251,7 @@ nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
+nmap <leader>r :ResizeMode<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
@@ -249,7 +291,7 @@ map <leader>bp "bp
 map <leader>bP "bP
 
 nmap <F1> :HelpKey<CR>
-nmap <F2> :Ack! 
+nmap <F2> :Ack!<space>
 nmap <F3> :AckFromSearch!<CR>
 nmap <F4> :UltiSnipsEdit<CR>
 nmap <F5> :source ~/.vimrc<CR>
@@ -261,10 +303,10 @@ nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
 let g:doge_mapping="<F12>"
 
-map <M-j> <C-w>5<
-map <M-k> <C-w>5-
-map <M-l> <C-w>5+
-map <M-m> <C-w>5>
+" map <M-j> <C-w>5<
+" map <M-k> <C-w>5-
+" map <M-l> <C-w>5+
+" map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
