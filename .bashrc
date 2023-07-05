@@ -50,7 +50,7 @@ export DOTFILE_BRANCH=compute-1
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
-[ -z $TMUX ] && tmux
+[ -z $TMUX ] && tmux && exit
 
 # alias syncdash="firefox-developer-edition localhost:8384"
 # alias syncdash="firefox localhost:8384"
