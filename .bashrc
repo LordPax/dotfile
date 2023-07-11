@@ -50,7 +50,7 @@ export DOTFILE_BRANCH=compute-2
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 
-[ -z $TMUX ] && tmux
+[ -z $TMUX ] && tmux && exit
 
 alias syncdash="firefox-developer-edition localhost:8384"
 alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /media/veracrypt1/Backup -n dotfile_compute1 -s 1"

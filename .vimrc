@@ -25,7 +25,7 @@ Plug 'bfrg/vim-jqplay'
 Plug 'lumiliet/vim-twig'
 Plug 'mbbill/undotree'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'posva/vim-vue'
+Plug 'othree/javascript-libraries-syntax.vim'
 Plug 'fatih/vim-go'
 Plug 'peterhoeg/vim-qml'
 Plug 'rstacruz/sparkup'
@@ -38,6 +38,8 @@ Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'azabiong/vim-highlighter'
+Plug 'prisma/vim-prisma'
 runtime ftplugin/man.vim
 
 " Plug 'ctrlpvim/ctrlp.vim'
@@ -55,6 +57,7 @@ runtime ftplugin/man.vim
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
+" Plug 'posva/vim-vue'
 
 call plug#end()
 
@@ -367,7 +370,7 @@ let g:doge_mapping_comment_jump_forward = "<c-l>"
 let g:doge_mapping_comment_jump_backward = "<c-k>"
 
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
+let g:netrw_liststyle = 0
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
