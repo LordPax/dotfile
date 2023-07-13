@@ -15,7 +15,8 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'ap/vim-css-color'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
@@ -38,6 +39,8 @@ Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'azabiong/vim-highlighter'
+Plug 'prisma/vim-prisma'
 runtime ftplugin/man.vim
 
 " Plug 'ctrlpvim/ctrlp.vim'
