@@ -36,3 +36,5 @@ text/plain=vim-usercreated-1.desktop;
 text/x-go=vim-usercreated-1.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-RQNL61.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-RQNL61.desktop;
+application/x-ms-dos-executable=wine.desktop;
+inode/directory=wine.desktop;
