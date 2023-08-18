@@ -93,6 +93,7 @@ alias vimex="vim -c Ex"
 alias myip="curl ifconfig.me"
 alias a='arsenal'
 alias scim="sc-im"
+alias me="curl https://ifconfig.me"
 
 alias ga="git add"
 alias gaa="git add *"
