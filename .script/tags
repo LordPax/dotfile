@@ -36,7 +36,6 @@ echo_err	flash	/^function echo_err() {$/;"	f
 encrypt	crypt	/^function encrypt() {$/;"	f
 error	crypt	/^function error() {$/;"	f
 error	mountdisk	/^function error() {$/;"	f
-ext	ext	/^function ext () {$/;"	f
 flash	flash	/^function flash() {$/;"	f
 getBrightness	brightness	/^function getBrightness() {$/;"	f
 getTime	battery-time	/^function getTime() {$/;"	f
