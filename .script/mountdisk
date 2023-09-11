@@ -50,7 +50,7 @@ function umountFunc() {
 
 function mountDisk() {
     local mountable=$(lsblk -lp | \
-        grep "part $" | \
+        grep "part *$" | \
         awk '{print $1, "(" $4 ")"}'
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
