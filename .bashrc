@@ -96,7 +96,7 @@ alias scim="sc-im"
 alias me="curl https://ifconfig.me"
 
 alias ga="git add"
-alias gaa="git add *"
+alias gaa="git add --all"
 alias gpu="git push origin"
 alias gpum="git push origin master"
 alias gpud="git push origin develop"
