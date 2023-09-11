@@ -73,8 +73,6 @@ ${color 98c379}${swapbar 5}$color
 ${font Open Sans Bold: size 12}${color 61afef}STORAGE$font ${hr 3}$color
 ${color 97A2B8}/ $color $alignr ${fs_used /}/${fs_size /}
 ${color 98c379}${fs_bar 5 /}$color
-${color 97A2B8}/home $color $alignr ${fs_used /home}/${fs_size /home}
-${color 98c379}${fs_bar 5 /home}$color
 
 ${font Open Sans Bold: size 12}${color 61afef}PROCESSES$font ${hr 3}$color
 ${color 97A2B8}Name                 PID     CPU     MEM$color

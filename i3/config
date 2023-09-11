@@ -156,7 +156,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # bindsym $mod+p exec shutdown -P now
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
-bindsym $mod+o exec /home/lordpax/programme/betterlockscreen -l
+bindsym $mod+o exec betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
 
 bindsym $mod+x exec warpd --hint

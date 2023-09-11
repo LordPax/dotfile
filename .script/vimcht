@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]; then
+    echo "Usage: cht <language> <query>"
+    exit 1
+fi
+
+language=$1
+query=$2
+
+curl -s "cht.sh/$language/${query// /+}"
+# read -p "Press enter to continue"
+# curl -s "cht.sh/$language/${query// /+}" | less -R
+# curl -s "cht.sh/$language/${query// /+}" | bat -p
