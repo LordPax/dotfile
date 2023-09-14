@@ -190,11 +190,11 @@ command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht <args>"
 " endfor
 
 let mapleader = " "
+filetype plugin indent on
 syntax on
 set nocompatible
 set nu
 set rnu
-filetype plugin indent on
 set path+=**
 set wildmenu
 set mouse=a
@@ -226,12 +226,13 @@ set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType javascript set keywordprg=:ManJS\ javascript
-
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 

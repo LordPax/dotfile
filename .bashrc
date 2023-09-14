@@ -140,3 +140,7 @@ function cdf() {
     [ -z "$file" ] && return 1
     cd "$(dirname "$file")" || return 1
 }
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH

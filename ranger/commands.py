@@ -73,17 +73,13 @@ class extract(Command):
             self.fm.notify("No file specified", bad=True)
             return
 
-        command = ['ext']
-
         for file in filename:
-            command.append(file.path)
+            ext = self.fm.run("ext \"{}\"".format(file.path))
 
-        ext = self.fm.run(" ".join(command))
-
-        if ext.returncode == 0:
-            self.fm.notify("Extracted {}".format(filename[0].basename))
-        else:
-            self.fm.notify("Failed to extract {}".format(filename[0].basename), bad=True)
+            if ext.returncode == 0:
+                self.fm.notify("Extracted {}".format(file.basename))
+            else:
+                self.fm.notify("Failed to extract {}".format(file.basename), bad=True)
 
 class openInTmuxWindow(Command):
     """:openInOtherWindow
@@ -94,3 +90,21 @@ class openInTmuxWindow(Command):
     def execute(self):
         filename = self.fm.thisdir.get_selection()[0]
         self.fm.run("tmux new-window 'mimeopen {}'".format(filename.path))
+
+class replaceSpaceWithUnderscore(Command):
+    """:replaceSpaceWithUnderscore
+
+    Replaces spaces in the filename with underscores
+    """
+
+    def execute(self):
+        filename = self.fm.thisdir.get_selection()
+
+        if len(filename) == 0:
+            self.fm.notify("No file specified", bad=True)
+            return
+
+        for file in filename:
+            os.rename(file.path, file.path.replace(' ', '_'))
+
+        self.fm.notify("Replaced spaces with underscores")
