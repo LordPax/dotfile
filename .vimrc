@@ -176,7 +176,7 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
-command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
+command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
