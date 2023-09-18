@@ -46,8 +46,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.script/brightness -i 0.1
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.script/brightness -d 0.1
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.script/brightness --screen eDP-1 -i 0.1
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.script/brightness --screen eDP-1 -d 0.1
 
 # bindsym
 
@@ -121,6 +121,21 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+
+set $monitor1 eDP-1
+set $monitor2 DP-1
+
+# Ecran associé à un workspace
+workspace $ws1 output $monitor1
+workspace $ws2 output $monitor1
+workspace $ws3 output $monitor1
+workspace $ws4 output $monitor1
+workspace $ws5 output $monitor1
+workspace $ws6 output $monitor2
+workspace $ws7 output $monitor2
+workspace $ws8 output $monitor2
+workspace $ws9 output $monitor2
+workspace $ws10 output $monitor2
 
 # switch to workspace
 bindsym $mod+ampersand workspace number $ws1
@@ -208,7 +223,8 @@ for_window [class=".*"] title_format " %title"
 # exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
 # exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/milky_way.jpg'
 exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/wp2618280-blackarch-wallpaper.png'
-exec_always --no-startup-id "killall polybar; polybar -r barLeft"
+# exec_always --no-startup-id "killall polybar; polybar -r bar1"
+exec_always --no-startup-id "killall polybar; polybar -r bar1; polybar -r bar2"
 exec_always --no-startup-id "killall picom; picom"
 exec_always --no-startup-id "killall conky; conky"
 # exec_always --no-startup-id "killall picom; picom"

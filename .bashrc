@@ -81,7 +81,8 @@ alias vimex="vim -c Ex"
 alias myip="curl ifconfig.me"
 alias a='arsenal'
 alias scim="sc-im"
-alias connect_HDMI="xrandr --output HDMI-1 --left-of eDP-1"
+alias connect_HDMI="xrandr --output HDMI-1-2 --mode 1920x1080 --right-of eDP-1"
+alias connect_DP="xrandr --output DP-1 --mode 2560x1440 --left-of eDP-1"
 
 alias ga="git add"
 alias gaa="git add --all"
