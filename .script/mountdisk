@@ -1,7 +1,7 @@
 #!/bin/bash
 
-UID=$(id -u)
-GID=$(id -g)
+uid=$(id -u)
+gid=$(id -g)
 noUmountRegex="(/$|/boot|/home|/perso|/save)"
 veracrypt=0
 mode=0
@@ -34,7 +34,7 @@ function mountFunc() {
     if [ $veracrypt -eq 1 ]; then
         veracrypt $1 $2 2> /dev/null && return 0 || return 1
     else
-        sudo mount -o uid=$UID,gid=$GID $1 $2 2> /dev/null && return 0 || return 1
+        sudo mount -o uid=$uid,gid=$gid $1 $2 2> /dev/null && return 0 || return 1
     fi
 }
 
@@ -50,7 +50,7 @@ function umountFunc() {
 
 function mountDisk() {
     local mountable=$(lsblk -lp | \
-        grep "part $" | \
+        grep "part *$" | \
         awk '{print $1, "(" $4 ")"}'
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1

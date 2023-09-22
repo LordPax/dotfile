@@ -34,7 +34,7 @@ function verification() {
 
 # getBrightness [%]
 function getBrightness() {
-    local brightness=$(xrandr --verbose | grep Brightness | sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g")
+    local brightness=$(xrandr --verbose | grep -A 5 "^$screen " | grep Brightness | sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g")
     [ "$1" == "%" ] && echo "$brightness * 100" | bc | cut -d '.' -f 1 || echo $brightness
 }
 

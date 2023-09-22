@@ -170,6 +170,8 @@ bindsym $mod+o exec betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
 # bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 bindsym $mod+u exec --no-startup-id flameshot gui
+bindsym $mod+w exec ~/.script/screen -c
+bindsym $mod+Shift+w exec ~/.script/screen -d
 # bindsym $mod+w exec /home/lordpax/programme/keyboard
 
 bindsym $mod+x exec warpd --hint

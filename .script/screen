@@ -1,0 +1,140 @@
+#!/bin/bash
+
+mode=0
+
+# info <msg>
+function info() {
+    [ "$1" == "" ] && exit 1
+    notify-send "Info" "$1"
+}
+
+# error <msg>
+function error() {
+    [ "$1" == "" ] && exit 1
+    notify-send "Error" "$1"
+}
+
+# echo_err <msg>
+function echo_err() {
+    [ -z "$1" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    echo "Usage: $(basename "$0") [options]
+
+Option:
+-h or --help .................... Show this help message and exit
+-c or --connect ................. Connect a screen
+-d or --disconnect .............. Disconnect a screen
+-s or --status .................. Show the status of the screen"
+}
+
+function verification() {
+    [ -z "$(which rofi 2> /dev/null)" ] && echo_err "\"rofi\" is required" && exit 1
+    [ -z "$(which notify-send 2> /dev/null)" ] && echo_err "\"notify-send\" is required" && exit 1
+}
+
+function getConnectedScreen() {
+    xrandr | grep " connected" | awk '{print $1}'
+}
+
+function getScreenMode() {
+    [ "$1" == "" ] && exit 1
+    xrandr \
+        | awk -v monitor="^HDMI-1 connected" '/connected/ {p = 0} $0 ~ monitor {p = 1} p' \
+        | grep -v " connected" \
+        | grep -oP '\d+x\d+'
+}
+
+function connectScreen() {
+    local sideList="none\nright-of\nleft-of\nabove\nbelow\nsame-as" 
+    local rotationList="none\nnormal\nleft\nright\ninverted"
+    local commande="xrandr"
+
+    local screens=$(getConnectedScreen)
+    [ "$screens" == "" ] && error "No screen found" && exit 1
+
+    local screen=$(echo "$screens" | rofi -dmenu -p "Connect a screen")
+    [ "$screen" == "" ] && exit 1
+
+    commande="$commande --output $screen"
+
+    local modeList=$(getScreenMode "$screen")
+    local mode=$(echo -e "auto\n$modeList" | rofi -dmenu -p "Choose mode")
+    [ "$mode" == "" ] && exit 1
+    local commande=$([ "$mode" != "auto" ] && echo "$commande --mode $mode" || echo "$commande --auto")
+
+    local side=$(echo -e "$sideList"| rofi -dmenu -p "Choose side")
+    [ "$side" == "" ] && exit 1
+    if [ "$side" != "none" ]; then
+        local otherScreens=$(echo "$screens" | grep -v "$screen")
+        [ "$otherScreens" == "" ] && exit 1
+
+        local otherScreen=$(echo "$otherScreens" | rofi -dmenu -p "Screen side")
+        [ "$otherScreen" == "" ]  && exit 1
+
+        commande="$commande --$side $otherScreen"
+    fi
+
+    local rotation=$(echo -e "$rotationList" | rofi -dmenu -p "Choose rotation")
+    [ "$rotation" == "" ] && exit 1
+    [ "$rotation" != "none" ] && commande="$commande --rotate $rotation"
+
+    # echo "$commande"
+    if $commande; then
+        info "Screen connected" 
+    else
+        error "Screen not connected"
+    fi
+}
+
+function disconnectScreen() {
+    local screens=$(getConnectedScreen)
+    [ "$screens" == "" ] && error "No screen found" && exit 1
+
+    local screen=$(echo "$screens" | rofi -dmenu -p "Disconnect a screen")
+    [ "$screen" == "" ] && exit 1
+
+    # echo "xrandr --output $screen --off"
+    if xrandr --output "$screen" --off; then
+        info "Screen disconnected"
+    else
+        error "Screen not disconnected"
+    fi
+}
+
+verification
+
+if [ $# -ge 1 ]; then
+    for i in $(seq 1 $#); do
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0;;
+            -c | --connect)
+                mode=1;;
+            -d | --disconnect)
+                mode=2;;
+            -s | --status)
+                mode=3;;
+            "");;
+            *)
+                echo_err "Unknown parameter $1"
+                exit 1;;
+        esac
+        shift
+    done
+fi
+
+case $mode in
+    1)
+        connectScreen;;
+    2)
+        disconnectScreen;;
+    3)
+        getConnectedScreen;;
+    *)
+        helpFunc
+        exit 1;;
+esac

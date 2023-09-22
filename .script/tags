@@ -29,23 +29,31 @@
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
 brightness	brightness	/^function brightness() {$/;"	f
 colors	colors	/^function colors() {$/;"	f
+connectScreen	screen	/^function connectScreen() {$/;"	f
 decrypt	crypt	/^function decrypt() {$/;"	f
+disconnectScreen	screen	/^function disconnectScreen() {$/;"	f
 echoErr	brightness	/^function echoErr() {$/;"	f
 echoErr	update	/^function echoErr() {$/;"	f
 echo_err	flash	/^function echo_err() {$/;"	f
+echo_err	screen	/^function echo_err() {$/;"	f
 encrypt	crypt	/^function encrypt() {$/;"	f
 error	crypt	/^function error() {$/;"	f
 error	mountdisk	/^function error() {$/;"	f
+error	screen	/^function error() {$/;"	f
 flash	flash	/^function flash() {$/;"	f
 getBrightness	brightness	/^function getBrightness() {$/;"	f
+getConnectedScreen	screen	/^function getConnectedScreen() {$/;"	f
+getScreenMode	screen	/^function getScreenMode() {$/;"	f
 getTime	battery-time	/^function getTime() {$/;"	f
 helpFunc	brightness	/^function helpFunc() {$/;"	f
 helpFunc	crypt	/^function helpFunc() {$/;"	f
 helpFunc	flash	/^function helpFunc() {$/;"	f
 helpFunc	mountdisk	/^function helpFunc() {$/;"	f
+helpFunc	screen	/^function helpFunc() {$/;"	f
 helpFunc	update	/^function helpFunc() {$/;"	f
 info	crypt	/^function info() {$/;"	f
 info	mountdisk	/^function info() {$/;"	f
+info	screen	/^function info() {$/;"	f
 mountDisk	mountdisk	/^function mountDisk() {$/;"	f
 mountFunc	mountdisk	/^function mountFunc() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
@@ -56,3 +64,4 @@ updateAur	update	/^function updateAur() {$/;"	f
 updatePacman	update	/^function updatePacman() {$/;"	f
 verification	brightness	/^function verification() {$/;"	f
 verification	flash	/^function verification() {$/;"	f
+verification	screen	/^function verification() {$/;"	f
