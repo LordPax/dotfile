@@ -3,7 +3,7 @@
 uid=$(id -u)
 gid=$(id -g)
 noUmountRegex="(/$|/boot|/home|/perso|/save)"
-veracrypt=0
+crypt=0 # 0: no, 1: veracrypt
 mode=0
 
 # info <msg>
@@ -18,12 +18,19 @@ function error() {
     notify-send "Error" "$1"
 }
 
+# echo_err <msg>
+function echo_err() {
+    [ -z "$1" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
 function helpFunc() {
-    echo "Usage: $(basename $0) [options]
+    echo "Usage: $(basename "$0") [options]
 
 Option:
 -h or --help .................... Show this help message and exit
 -v or --veracrypt ............... Use veracrypt
+-l or --luks .................... Use luks (with cryptsetup) (not implemented yet)
 -m or --mount ................... Mount the disk
 -u or --umount .................. Unmount the disk"
 }
@@ -31,20 +38,25 @@ Option:
 # mountFunc <diskToMount> <mountPoint>
 function mountFunc() {
     ([ "$1" == "" ] || [ "$2" == "" ]) && exit 1
-    if [ $veracrypt -eq 1 ]; then
-        veracrypt $1 $2 2> /dev/null && return 0 || return 1
+    if [ $crypt -eq 1 ]; then
+        veracrypt "$1" "$2" 2> /dev/null && return 0 || return 1
+    # elif [ $crypt -eq 2 ]; then
+    #     sudo cryptsetup luksOpen usbcrypt 2> /dev/null && return 0 || return 1
+    #     sudo mount -o "uid=$uid,gid=$gid" /dev/mapper/usbcrypt "$2" 2> /dev/null && return 0 || return 1
     else
-        sudo mount -o uid=$uid,gid=$gid $1 $2 2> /dev/null && return 0 || return 1
+        sudo mount -o "uid=$uid,gid=$gid" "$1" "$2" 2> /dev/null && return 0 || return 1
     fi
 }
 
 # umountFunc <diskToUmount>
 function umountFunc() {
     [ "$1" == "" ] && exit 1
-    if [ $veracrypt -eq 1 ]; then
-        veracrypt -d $1 2> /dev/null && return 0 || return 1
+    if [ $crypt -eq 1 ]; then
+        veracrypt -d "$1" 2> /dev/null && return 0 || return 1
+    # elif [ $crypt -eq 2 ]; then
+    #     sudo cryptsetup luksClose "$1" 2> /dev/null && return 0 || return 1
     else
-        sudo umount $1 2> /dev/null && return 0 || return 1
+        sudo umount "$1" 2> /dev/null && return 0 || return 1
     fi
 }
 
@@ -60,9 +72,9 @@ function mountDisk() {
     local mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
     [ "$mountPoint" = "" ] && exit 1
 
-    [ ! -d $mountPoint ] && mkdir -p $mountPoint
+    [ ! -d "$mountPoint" ] && mkdir -p "$mountPoint"
 
-    if mountFunc $diskToMount $mountPoint; then
+    if mountFunc "$diskToMount" "$mountPoint"; then
         info "Disk mounted to \"$mountPoint\""
     else
         error "Failed to mount disk"
@@ -71,7 +83,7 @@ function mountDisk() {
 }
 
 function umountDisk() {
-    if [ $veracrypt -eq 0 ]; then
+    if [ $crypt -eq 0 ]; then
         local mounted=$(lsblk -lp | \
             grep "part /" | \
             grep -Ev "$noUmountRegex" | \
@@ -88,7 +100,7 @@ function umountDisk() {
     local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
     [ "$diskToUmount" = "" ] && exit 1
 
-    if umountFunc $diskToUmount; then
+    if umountFunc "$diskToUmount"; then
         info "Disk \"$diskToUmount\" unmounted"
     else
         error "Failed to unmount disk"
@@ -103,7 +115,7 @@ if [ $# -ge 1 ]; then
                 helpFunc
                 exit 0;;
             -v | --veracrypt)
-                veracrypt=1;;
+                crypt=1;;
             -m | --mount)
                 mode=1;;
             -u | --umount)

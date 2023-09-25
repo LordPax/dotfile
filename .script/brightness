@@ -1,9 +1,9 @@
 #!/bin/bash
 # author : lordpax
-# brightness v1.0
+# brightness v1.2
 
 screen="eDP-1"
-version="v1.1"
+version="v1.2"
 action=0
 param=""
 
@@ -13,7 +13,6 @@ function echoErr() {
 }
 
 function helpFunc() {
-    #function_body
     echo $"Usage : $0 <option>
 
 Option :
@@ -35,13 +34,13 @@ function verification() {
 # getBrightness [%]
 function getBrightness() {
     local brightness=$(xrandr --verbose | grep -A 5 "^$screen " | grep Brightness | sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g")
-    [ "$1" == "%" ] && echo "$brightness * 100" | bc | cut -d '.' -f 1 || echo $brightness
+    [ "$1" == "%" ] && echo "$brightness * 100" | bc | cut -d '.' -f 1 || echo "$brightness"
 }
 
 # setBrightness <num>
 function setBrightness() {
     [ "$1" == "" ] && echoErr "Parameter is needed" && exit 1
-    xrandr --output $screen --brightness $1
+    xrandr --output "$screen" --brightness "$1"
 }
 
 # brightness <+|-> <num>
@@ -50,7 +49,7 @@ function brightness() {
 
     local brightness=$(getBrightness)
     local new=$(echo "$brightness $1 $2" | bc)
-    setBrightness $new
+    setBrightness "$new"
 }
 
 if [ $# -ge 1 ]; then
@@ -97,9 +96,9 @@ case $action in
     1)
         brightness $param;;
     2)
-        setBrightness $param;;
+        setBrightness "$param";;
     3)
-        getBrightness $param;;
+        getBrightness "$param";;
     *)
         echoErr "Something wrong, type : $0 --help"
         exit 1

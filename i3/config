@@ -122,6 +122,7 @@ set $ws10 "10"
 
 set $monitor1 eDP-1
 set $monitor2 DP-1
+# set $monitor2 HDMI-1-1
 
 # Ecran associé à un workspace
 workspace $ws1 output $monitor1
@@ -184,6 +185,8 @@ bindsym $mod+y exec ~/.script/update --update-pacman
 bindsym $mod+Shift+y exec ~/.script/update --update-aur
 bindsym $mod+i exec screenkey
 bindsym $mod+Shift+i exec killall screenkey
+bindsym $mod+w exec ~/.script/screen -c
+bindsym $mod+Shift+w exec ~/.script/screen -d
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
