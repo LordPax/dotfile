@@ -121,8 +121,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 set $monitor1 eDP-1
-set $monitor2 DP-1
-# set $monitor2 HDMI-1-1
+set $monitor2 DP-1 HDMI-1-1
 
 # Ecran associé à un workspace
 workspace $ws1 output $monitor1
@@ -225,7 +224,8 @@ for_window [class=".*"] title_format " %title"
 # exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/milky_way.jpg'
 exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/wp2618280-blackarch-wallpaper.png'
 # exec_always --no-startup-id "killall polybar; polybar -r bar1"
-exec_always --no-startup-id "killall polybar; polybar -r bar1; polybar -r bar2"
+# exec_always --no-startup-id "killall polybar; polybar -r bar1; polybar -r bar2"
+exec_always --no-startup-id "~/.script/polybar-startup"
 exec_always --no-startup-id "killall picom; picom"
 exec_always --no-startup-id "killall conky; conky"
 # exec_always --no-startup-id "killall picom; picom"
