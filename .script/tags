@@ -35,6 +35,7 @@ disconnectScreen	screen	/^function disconnectScreen() {$/;"	f
 echoErr	brightness	/^function echoErr() {$/;"	f
 echoErr	update	/^function echoErr() {$/;"	f
 echo_err	flash	/^function echo_err() {$/;"	f
+echo_err	mountdisk	/^function echo_err() {$/;"	f
 echo_err	screen	/^function echo_err() {$/;"	f
 encrypt	crypt	/^function encrypt() {$/;"	f
 error	crypt	/^function error() {$/;"	f
