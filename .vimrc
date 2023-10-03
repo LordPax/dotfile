@@ -176,7 +176,7 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
-command! -nargs=1 AsyncRunMdpdf :AsyncRun echo <q-args> | entr -n mdpdf <q-args>
+command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
@@ -190,11 +190,11 @@ command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht <args>"
 " endfor
 
 let mapleader = " "
+filetype plugin indent on
 syntax on
 set nocompatible
 set nu
 set rnu
-filetype plugin indent on
 set path+=**
 set wildmenu
 set mouse=a
@@ -226,12 +226,13 @@ set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
+set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType javascript set keywordprg=:ManJS\ javascript
-
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
@@ -372,6 +373,7 @@ let g:doge_mapping_comment_jump_backward = "<c-k>"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
+let g:ft_man_open_mode = 'vert'
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
@@ -384,6 +386,7 @@ exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
 highlight ModeMsg ctermbg=NONE
 highlight! link MoreMsg ModeMsg
 highlight Error ctermbg=NONE cterm=NONE

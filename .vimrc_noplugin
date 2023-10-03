@@ -63,14 +63,14 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
-function! ToggleReziseWindow()
+function! ResizeMode()
     if g:resizeMode == 0
         let g:resizeMode = 1
         map j <C-w>5<
         map k <C-w>5-
         map l <C-w>5+
         map m <C-w>5>
-        map <silent> <esc> :ToggleReziseWindow<cr>
+        map <silent> <esc> :ResizeMode<cr>
         echo "-- RESIZE --"
     else
         let g:resizeMode = 0
@@ -90,19 +90,14 @@ command ToggleFileManager call ToggleFileManager()
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
-command ToggleReziseWindow call ToggleReziseWindow()
-
-" for i in range(97,122)
-"     let c = nr2char(i)
-"     exec "map \e".c." <M-".c.">"
-" endfor
+command ResizeMode call ResizeMode()
 
 let mapleader = " "
+filetype plugin indent on
 syntax on
 set nocompatible
 set nu
 set rnu
-filetype plugin indent on
 set path+=**
 set wildmenu
 set mouse=a
@@ -110,9 +105,9 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set autoindent
+set smartindent
 set cursorline
 set cursorcolumn
-set smartindent
 set hlsearch
 set incsearch
 set title
@@ -130,6 +125,7 @@ set spelllang=fr
 set term=screen-256color
 set encoding=UTF-8
 set grepprg=ag\ --vimgrep
+set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
 
 autocmd FileType javascript set makeprg=npm\ run\ test
@@ -153,7 +149,7 @@ nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>z zfiB<CR>
-nmap <leader>r :ToggleReziseWindow<CR>
+nmap <leader>r :ResizeMode<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
@@ -186,11 +182,6 @@ nmap <F9> :grep! "<<<<<<< HEAD"<CR>
 nmap <F10> :grep! TODO<CR>
 nmap <F11> :set spell!<CR>
 
-" map <M-j> <C-w>5<
-" map <M-k> <C-w>5-
-" map <M-l> <C-w>5+
-" map <M-m> <C-w>5>
-
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
 noremap <C-w>l <C-w>k
@@ -207,7 +198,7 @@ map l <Up>
 map m <Right>
 
 let g:netrw_banner = 0
-let g:netrw_liststyle = 3
+let g:netrw_liststyle = 0
 let g:ft_man_open_mode = 'vert'
 
 colorscheme default
