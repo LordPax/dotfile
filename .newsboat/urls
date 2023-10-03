@@ -1,12 +1,22 @@
 "--- Tech ---"
-https://www.archlinux.org/feeds/news/
-https://lukesmith.xyz/rss.xml
 https://blog.asciinema.org/index.xml
 https://warisradji.com/atom.xml
-https://www.toolinux.com/spip.php?page=backend
-https://tutox.fr/feed/
-https://vimways.org/index.xml
 https://www.nextinpact.com/rss/news.xml
+https://www.usine-digitale.fr/developpement/rss
+https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml
+https://www.lemondeinformatique.fr/flux-rss/thematique/logiciel/rss.xml
+https://goodtech.info/feed/
+
+"--- Vim ---"
+https://vimways.org/index.xml
+https://lukesmith.xyz/rss.xml
+
+"--- GNU/Linux ---"
+https://www.archlinux.org/feeds/news/
+https://tutox.fr/feed/
+https://linuxfr.org/news.atom
+https://www.toolinux.com/spip.php?page=backend
+https://www.lemondeinformatique.fr/flux-rss/thematique/os/rss.xml
 
 "--- Youtube ---"
 https://bridge.easter.fr/?action=display&bridge=YouTubeCommunityTabBridge&context=By+username&username=AstronoGeek&format=Mrss
@@ -16,5 +26,6 @@ https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+usernam
 # "--- Twitter ---"
 # https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=AstronoGeek&format=Mrss
 # https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=Frederic_Molas&format=Mrss
+
 "--- ESGI ---"
 https://myges.fr/rss/news
