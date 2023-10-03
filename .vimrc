@@ -373,6 +373,7 @@ let g:doge_mapping_comment_jump_backward = "<c-k>"
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
+let g:ft_man_open_mode = 'vert'
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
@@ -385,6 +386,7 @@ exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
 exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
+exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
 highlight ModeMsg ctermbg=NONE
 highlight! link MoreMsg ModeMsg
 highlight Error ctermbg=NONE cterm=NONE
