@@ -151,6 +151,11 @@ function! ResizeMode()
     endif
 endfun
 
+" function! ManJS(args)
+"     vertical terminal bash -c "~/.script/vimcht "..a:args
+"     set filetype=javascript
+" endfun
+
 " function! ManJS(...)
 "     execute "new"
 "     setlocal buftype=nofile
