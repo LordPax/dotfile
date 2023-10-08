@@ -1,22 +1,32 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
-(tab-line-mode 1)
-(when (version<= "26.0.50" emacs-version )
-  (global-display-line-numbers-mode)) 
 (package-initialize)
 ; (package-refresh-contents)
 
-; Download Evil
-; (unless (package-installed-p 'evil)
-;   (package-install 'evil))
+; (setq inhibit-startup-message t)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(linum-relative-global-mode)
+(setq make-backup-files nil) ; stop creating ~ files
+(setq linum-relative-current-symbol "")
 
-; Enable Evil
-; (require 'evil)
-; (evil-mode 1)
+(require 'evil)
+(evil-mode 1)
 
-(require 'powerline)
-(powerline-default-theme)
+(define-key evil-motion-state-map (kbd "j") 'evil-backward-char)
+(define-key evil-motion-state-map (kbd "k") 'evil-next-line)
+(define-key evil-motion-state-map (kbd "l") 'evil-previous-line)
+(define-key evil-motion-state-map (kbd "m") 'evil-forward-char)
+(define-key evil-normal-state-map (kbd "m") 'nil)
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+
+; (require 'powerline)
+; (powerline-default-theme)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -24,7 +34,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(powerline-evil vscode-dark-plus-theme fzf evil)))
+   '(markdown-mode linum-relative magit vscode-dark-plus-theme powerline-evil fzf airline-themes))
+ '(send-mail-function 'mailclient-send-it))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -32,20 +43,7 @@
  ;; If there is more than one, they won't work right.
  )
 
-; (use-package vscode-dark-plus-theme
-;              :ensure t
-;              :config
-;              (load-theme 'vscode-dark-plus t))
-
-; (use-package fzf
-;              :bind     ;; Don't forget to set keybinds!
-;              :config   (setq fzf/args "-x --color bw --print-query --margin=1,0 --no-hscroll"
-;                              fzf/executable "fzf"
-;                              fzf/git-grep-args "-i --line-number %s"
-;                              ;; command used for `fzf-grep-*` functions
-;                              ;; example usage for ripgrep:
-;                              ;; fzf/grep-command "rg --no-heading -nH"
-;                              fzf/grep-command "grep -nrH"
-;                              ;; If nil, the fzf buffer will appear at the top of the window
-;                              fzf/position-bottom t
-;                              fzf/window-height 15))
+(use-package vscode-dark-plus-theme
+  :ensure t                        
+  :config                          
+  (load-theme 'vscode-dark-plus t))
