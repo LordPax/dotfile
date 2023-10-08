@@ -34,7 +34,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(markdown-mode linum-relative magit vscode-dark-plus-theme powerline-evil fzf airline-themes))
+   '(use-package markdown-mode linum-relative magit vscode-dark-plus-theme powerline-evil fzf airline-themes))
  '(send-mail-function 'mailclient-send-it))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
