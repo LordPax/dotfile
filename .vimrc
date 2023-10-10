@@ -15,8 +15,8 @@ Plug 'dense-analysis/ale'
 Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'ap/vim-css-color'
-" Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
@@ -181,7 +181,9 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
-command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
+" command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
+command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script/github-style.css"
+command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls

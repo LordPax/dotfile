@@ -10,6 +10,9 @@
 !_TAG_FIELD_DESCRIPTION	typeref	/Type and name of a variable or typedef/
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
+!_TAG_KIND_DESCRIPTION!CSS	i,id	/identities/
+!_TAG_KIND_DESCRIPTION!CSS	s,selector	/selectors/
 !_TAG_KIND_DESCRIPTION!Sh	a,alias	/aliases/
 !_TAG_KIND_DESCRIPTION!Sh	f,function	/functions/
 !_TAG_KIND_DESCRIPTION!Sh	h,heredoc	/label for here document/
@@ -18,6 +21,7 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
+!_TAG_PARSER_VERSION!CSS	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/home/lordpax/.script/	//
@@ -27,7 +31,13 @@
 !_TAG_PROGRAM_VERSION	6.0.0	/p6.0.20221218.0/
 !_TAG_ROLE_DESCRIPTION!Sh!heredoc	endmarker	/end marker/
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
+a	github-style.css	/^a {$/;"	s
+a:hover	github-style.css	/^a:hover {$/;"	s
+blockquote	github-style.css	/^blockquote {$/;"	s
+body	github-style.css	/^body {$/;"	s
 brightness	brightness	/^function brightness() {$/;"	f
+code	github-style.css	/^code {$/;"	s
+code	github-style.css	/^pre, code {$/;"	s
 colors	colors	/^function colors() {$/;"	f
 connectScreen	screen	/^function connectScreen() {$/;"	f
 decrypt	crypt	/^function decrypt() {$/;"	f
@@ -46,19 +56,48 @@ getBrightness	brightness	/^function getBrightness() {$/;"	f
 getConnectedScreen	screen	/^function getConnectedScreen() {$/;"	f
 getScreenMode	screen	/^function getScreenMode() {$/;"	f
 getTime	battery-time	/^function getTime() {$/;"	f
+h1	github-style.css	/^h1 {$/;"	s
+h1	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h2	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h2	github-style.css	/^h2 {$/;"	s
+h3	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h3	github-style.css	/^h3 {$/;"	s
+h4	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h4	github-style.css	/^h4 {$/;"	s
+h5	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h5	github-style.css	/^h5 {$/;"	s
+h6	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
+h6	github-style.css	/^h6 {$/;"	s
 helpFunc	brightness	/^function helpFunc() {$/;"	f
 helpFunc	crypt	/^function helpFunc() {$/;"	f
 helpFunc	flash	/^function helpFunc() {$/;"	f
 helpFunc	mountdisk	/^function helpFunc() {$/;"	f
 helpFunc	screen	/^function helpFunc() {$/;"	f
 helpFunc	update	/^function helpFunc() {$/;"	f
+hr	github-style.css	/^hr {$/;"	s
+img	github-style.css	/^img {$/;"	s
 info	crypt	/^function info() {$/;"	f
 info	mountdisk	/^function info() {$/;"	f
 info	screen	/^function info() {$/;"	f
 mountDisk	mountdisk	/^function mountDisk() {$/;"	f
 mountFunc	mountdisk	/^function mountFunc() {$/;"	f
+ol	github-style.css	/^ol {$/;"	s
+ol	github-style.css	/^ul, ol {$/;"	s
+ol ol	github-style.css	/^ol ol {$/;"	s
+ol ol ol	github-style.css	/^ol ol ol {$/;"	s
+p	github-style.css	/^p {$/;"	s
+pre	github-style.css	/^pre {$/;"	s
+pre	github-style.css	/^pre, code {$/;"	s
 setBrightness	brightness	/^function setBrightness() {$/;"	f
+table	github-style.css	/^table {$/;"	s
+table td	github-style.css	/^table th, table td {$/;"	s
+table th	github-style.css	/^table th {$/;"	s
+table th	github-style.css	/^table th, table td {$/;"	s
 timer	flash	/^function timer() {$/;"	f
+ul	github-style.css	/^ul {$/;"	s
+ul	github-style.css	/^ul, ol {$/;"	s
+ul ul	github-style.css	/^ul ul {$/;"	s
+ul ul ul	github-style.css	/^ul ul ul {$/;"	s
 umountDisk	mountdisk	/^function umountDisk() {$/;"	f
 umountFunc	mountdisk	/^function umountFunc() {$/;"	f
 updateAur	update	/^function updateAur() {$/;"	f

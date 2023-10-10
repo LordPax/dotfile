@@ -9,7 +9,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(use-package markdown-mode linum-relative magit vscode-dark-plus-theme powerline-evil fzf airline-themes))
+   '(yaml-mode nordic-night-theme editorconfig use-package markdown-mode linum-relative magit vscode-dark-plus-theme powerline-evil fzf airline-themes))
  '(send-mail-function 'mailclient-send-it))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -43,7 +43,23 @@
 ; (require 'powerline)
 ; (powerline-default-theme)
 
-(use-package vscode-dark-plus-theme
-  :ensure t                        
-  :config                          
-  (load-theme 'vscode-dark-plus t))
+; (use-package vscode-dark-plus-theme
+;   :ensure t                        
+;   :config                          
+;   (load-theme 'vscode-dark-plus t))
+
+(use-package nordic-night-theme
+  :ensure t
+  :config
+  (load-theme 'nordic-night t))
+
+; (use-package copilot
+;   :quelpa (copilot :fetcher github
+;                    :repo "zerolfx/copilot.el"
+;                    :branch "main"
+;                    :files ("dist" "*.el")))
+
+;(use-package copilot
+;  :straight (:host github :repo "zerolfx/copilot.el" :files ("dist" "*.el"))
+;  :ensure t)
+;; you can utilize :map :hook and :config to customize copilot
