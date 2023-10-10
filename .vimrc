@@ -183,6 +183,7 @@ command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
 " command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
 command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script/github-style.css"
+command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls

@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 16; /* Modification de la taille de la police */
+    font-size: 14; /* Modification de la taille de la police */
     line-height: 1.6;
     color: #333;
     padding: 10px;
@@ -40,7 +40,7 @@ h6 {
 
 p {
     margin: 0 0 10px;
-    font-size: 16px; /* Modification de la taille de la police */
+    font-size: 14px; /* Modification de la taille de la police */
 }
 
 a {
@@ -61,7 +61,7 @@ pre, code {
 
 pre {
     background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 3px;
     padding: 10px;
     overflow: auto;
@@ -97,6 +97,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    font-size: 14px; /* Modification de la taille de la police */
 }
 
 table th, table td {
@@ -112,7 +113,7 @@ table th {
 
 ul, ol {
     padding-left: 30px;
-    font-size: 16px; /* Modification de la taille de la police */
+    font-size: 14px; /* Modification de la taille de la police */
 }
 
 /* Style des listes non ordonnées */
