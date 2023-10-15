@@ -330,6 +330,16 @@ noremap <C-w>K <C-w>J
 noremap <C-w>L <C-w>K
 noremap <C-w>M <C-w>L
 
+tnoremap <C-w>j <C-w>h
+tnoremap <C-w>k <C-w>j
+tnoremap <C-w>l <C-w>k
+tnoremap <C-w>m <C-w>l
+
+tnoremap <C-w>J <C-w>H
+tnoremap <C-w>K <C-w>J
+tnoremap <C-w>L <C-w>K
+tnoremap <C-w>M <C-w>L
+
 map j <Left>
 map k <Down>
 map l <Up>

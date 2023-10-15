@@ -111,7 +111,7 @@ alias gb="git branch"
 
 alias dp="docker ps"
 alias dpa="docker ps -a"
-alias di="docker images"
+alias di="docker image"
 alias de="docker exec"
 alias dc="docker compose"
 alias dcu="docker compose up"
