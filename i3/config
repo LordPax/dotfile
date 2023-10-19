@@ -120,8 +120,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $monitor1 eDP-1
-set $monitor2 DP-1 HDMI-1-0 HDMI-1-1 HDMI-1-2
+set $monitor2 eDP-1
+set $monitor1 DP-1 HDMI-1-0 HDMI-1-1 HDMI-1-2
 
 # Ecran associé à un workspace
 workspace $ws1 output $monitor1

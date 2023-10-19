@@ -49,6 +49,8 @@ export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-2
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+export ANDROID_HOME=$HOME/Android/Sdk
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 
 [ -z $TMUX ] && tmux && exit
 

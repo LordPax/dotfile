@@ -188,7 +188,8 @@ command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
-command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht <args>"
+command -nargs=* ManCht :vertical terminal bash -c "~/.script/vimcht <args>"
+command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht javascript <args>"
 " command -nargs=* ManJS call ManJS(<args>)
 
 " for i in range(97,122)
@@ -239,7 +240,7 @@ set completeopt-=preview
 " set completepopup=highlight:Pmenu,border:off
 
 autocmd FileType javascript set makeprg=npm\ run\ test
-autocmd FileType javascript set keywordprg=:ManJS\ javascript
+autocmd FileType javascript set keywordprg=:ManCht\ javascript
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
@@ -329,6 +330,16 @@ noremap <C-w>J <C-w>H
 noremap <C-w>K <C-w>J
 noremap <C-w>L <C-w>K
 noremap <C-w>M <C-w>L
+
+tnoremap <C-w>j <C-w>h
+tnoremap <C-w>k <C-w>j
+tnoremap <C-w>l <C-w>k
+tnoremap <C-w>m <C-w>l
+
+tnoremap <C-w>J <C-w>H
+tnoremap <C-w>K <C-w>J
+tnoremap <C-w>L <C-w>K
+tnoremap <C-w>M <C-w>L
 
 map j <Left>
 map k <Down>

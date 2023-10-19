@@ -15,27 +15,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 32px; /* Modification de la taille de la police */
-}
-
-h2 {
     font-size: 28px; /* Modification de la taille de la police */
 }
 
-h3 {
+h2 {
     font-size: 24px; /* Modification de la taille de la police */
 }
 
-h4 {
+h3 {
     font-size: 20px; /* Modification de la taille de la police */
 }
 
+h4 {
+    font-size: 16px; /* Modification de la taille de la police */
+}
+
 h5 {
-    font-size: 18px; /* Modification de la taille de la police */
+    font-size: 14px; /* Modification de la taille de la police */
 }
 
 h6 {
-    font-size: 16px; /* Modification de la taille de la police */
+    font-size: 14px; /* Modification de la taille de la police */
 }
 
 p {
