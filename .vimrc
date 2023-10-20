@@ -229,6 +229,12 @@ autocmd FileType javascript set keywordprg=:ManCht\ javascript
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave * mkview
+  autocmd BufWinEnter * silent! loadview
+augroup END
+
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
 nmap <C-h> :bp<bar>sp<bar>bn<bar>bd<CR>
@@ -405,3 +411,9 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
+highlight VimwikiHeader1 ctermfg=39 ctermbg=NONE cterm=bold
+highlight VimwikiHeader2 ctermfg=39 ctermbg=NONE cterm=bold
+highlight VimwikiHeader3 ctermfg=39 ctermbg=NONE cterm=bold
+highlight VimwikiHeader4 ctermfg=39 ctermbg=NONE cterm=bold
+highlight VimwikiHeader5 ctermfg=39 ctermbg=NONE cterm=bold
+highlight VimwikiHeader6 ctermfg=39 ctermbg=NONE cterm=bold
