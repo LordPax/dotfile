@@ -12,11 +12,9 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'mileszs/ack.vim' " need the_silver_searcher
 Plug 'dense-analysis/ale'
-Plug 'tpope/vim-markdown'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'ap/vim-css-color'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-" Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
 Plug 'raimondi/delimitmate'
 Plug 'tpope/vim-repeat'
 Plug 'glts/vim-radical'
@@ -41,8 +39,13 @@ Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
+Plug 'vimwiki/vimwiki'
 runtime ftplugin/man.vim
 
+call plug#end()
+
+" Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
+" Plug 'tpope/vim-markdown'
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'easymotion/vim-easymotion'
@@ -59,8 +62,6 @@ runtime ftplugin/man.vim
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
 " Plug 'posva/vim-vue'
-
-call plug#end()
 
 let g:useSpace = 1
 let g:length = 4
@@ -151,20 +152,6 @@ function! ResizeMode()
     endif
 endfun
 
-" function! ManJS(args)
-"     vertical terminal bash -c "~/.script/vimcht "..a:args
-"     set filetype=javascript
-" endfun
-
-" function! ManJS(...)
-"     execute "new"
-"     setlocal buftype=nofile
-
-"     let l:content = system("~/.script/vim-cht ".a:000)
-"     call setline(1, split(l:content, "\n"))
-" endfun
-
-
 if has("persistent_undo")
     let target_path = expand('~/.undodir')
 
@@ -181,7 +168,6 @@ command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
-" command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf %
 command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script/github-style.css"
 command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
@@ -190,7 +176,6 @@ command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
 command -nargs=* ManCht :vertical terminal bash -c "~/.script/vimcht <args>"
 command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht javascript <args>"
-" command -nargs=* ManJS call ManJS(<args>)
 
 " for i in range(97,122)
 "     let c = nr2char(i)
@@ -274,7 +259,7 @@ nmap <leader>Jp :Jqplay<CR>
 nmap <leader>Jc :JqplayClose!<CR>
 
 nmap <leader>ga :Git add
-nmap <leader>gaa :Git add *<CR>
+nmap <leader>gaa :Git add --all<CR>
 nmap <leader>gpu :Git push origin
 nmap <leader>gpum :Git push origin master<CR>
 nmap <leader>gpud :Git push origin develop<CR>
@@ -285,7 +270,7 @@ nmap <leader>gs :Git status<CR>
 nmap <leader>gch :Git checkout
 nmap <leader>gco :Git commit
 nmap <leader>gl :Git log<CR>
-nmap <leader>gb :Git branch
+nmap <leader>gbr :Git branch
 nmap <leader>gbl :Git blame<CR>
 
 vmap <leader>y "+y
@@ -315,11 +300,6 @@ nmap <F9> :Ack! "<<<<<<< HEAD"<CR>
 nmap <F10> :Ack! TODO<CR>
 nmap <F11> :set spell!<CR>
 let g:doge_mapping="<F12>"
-
-" map <M-j> <C-w>5<
-" map <M-k> <C-w>5-
-" map <M-l> <C-w>5+
-" map <M-m> <C-w>5>
 
 noremap <C-w>j <C-w>h
 noremap <C-w>k <C-w>j
@@ -395,6 +375,9 @@ let g:ft_man_open_mode = 'vert'
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
+
+let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
+let g:vimwiki_ext2syntax = {}
 
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
