@@ -164,8 +164,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
-bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
+bindsym $mod+p exec --no-startup-id zenity --question --title "Eteindre" --text "Eteindre ?" && shutdown -P now
+bindsym $mod+Shift+p exec --no-startup-id zenity --question --title "Redémarer" --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
 bindsym $mod+s exec --no-startup-id thunar
 # bindsym $mod+u exec --no-startup-id xfce4-screenshooter
