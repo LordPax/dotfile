@@ -2,7 +2,7 @@
 # author : lordpax
 # brightness v1.2
 
-screen="eDP-1"
+screen="eDP1"
 version="v1.2"
 action=0
 param=""
