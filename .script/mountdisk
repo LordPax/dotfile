@@ -85,7 +85,7 @@ function mountDisk() {
 function umountDisk() {
     if [ $crypt -eq 0 ]; then
         local mounted=$(lsblk -lp | \
-            grep "part /" | \
+            grep "part */" | \
             grep -Ev "$noUmountRegex" | \
             awk '{print $1, "(" $4 ")"}'
         )

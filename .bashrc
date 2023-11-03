@@ -46,7 +46,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 PATH=$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
 export EDITOR=/usr/bin/vim
-export DOTFILE_BRANCH=compute-2
+export DOTFILE_BRANCH=jarvis
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export ANDROID_HOME=$HOME/Android/Sdk
@@ -62,7 +62,7 @@ alias backup_file="backup -c .config_backup/config.txt -o /media/veracrypt1/Back
 alias restore_file="backup -r /media/veracrypt1/Backup -o / -n backup"
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/"
 alias restore_mdp="cp /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/"
-alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-1 -o /home/lordpax/Documents/dotfile"
+alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt jarvis -o /home/lordpax/Documents/dotfile"
 
 alias viminstall="vimc PlugInstall"
 alias vimupdate="vimc PlugUpdate"

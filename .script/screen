@@ -3,8 +3,7 @@
 # screen v1.1
 
 action=0
-# ignoreScreen="eDP-1|None"
-ignoreScreen="None"
+ignoreScreen="eDP-1|None"
 version="v1.0"
 
 # info <msg>
