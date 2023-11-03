@@ -24,7 +24,7 @@ exec_always --no-startup-id setxkbmap -option caps:escape
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans 11
+font pango:DejaVu Sans 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -36,6 +36,7 @@ font pango:DejaVu Sans 11
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id blueman-applet
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
@@ -120,8 +121,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $monitor2 eDP-1
-set $monitor1 DP-1 HDMI-1-0 HDMI-1-1 HDMI-1-2
+set $monitor2 eDP-1 eDP1
+set $monitor1 DP-1 HDMI-1-0 HDMI-1-1 HDMI-1-2 DP1 DP2 DP3 DP4
 
 # Ecran associé à un workspace
 workspace $ws1 output $monitor1
@@ -209,9 +210,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 bindsym $mod+u exec --no-startup-id flameshot gui
 # bindsym $mod+u exec --no-startup-id xfce4-screenshooter
-# bindsym $mod+u exec --no-startup-id deepin-screenshot
 
-gaps inner 10
+gaps inner 11
 # smart_borders on
 # smart_gaps on
 # border_radius 15
@@ -219,21 +219,14 @@ gaps inner 10
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
 
-# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/tux_wallpaper.png'
-# exec_always feh --bg-scale '/usr/share/backgrounds/archlinux/split.png'
-# exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/milky_way.jpg'
 exec_always feh --bg-scale '/home/lordpax/Images/wallpaper/wp2618280-blackarch-wallpaper.png'
-# exec_always --no-startup-id "killall polybar; polybar -r bar1"
-# exec_always --no-startup-id "killall polybar; polybar -r bar1; polybar -r bar2"
 exec_always --no-startup-id "~/.script/polybar-startup"
 exec_always --no-startup-id "killall picom; picom"
 exec_always --no-startup-id "killall conky; conky"
-# exec_always --no-startup-id "killall picom; picom"
 
-# exec --no-startup-id firefox-developer-edition
 exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
-exec --no-startup-id discord
+exec --no-startup-id discord --disable-gpu
 
 assign [class="firefox"] $ws1
 assign [class="pulse-browser"] $ws1
