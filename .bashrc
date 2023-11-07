@@ -46,7 +46,7 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
 PATH=/var/lib/snapd/snap/bin:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH
 export EDITOR=/usr/bin/vim
-export DOTFILE_BRANCH=compute-1
+export DOTFILE_BRANCH=jarvis
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 

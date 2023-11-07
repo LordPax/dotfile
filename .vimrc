@@ -40,6 +40,7 @@ Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vimwiki/vimwiki'
+Plug 'vifm/vifm.vim'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -364,7 +365,7 @@ let g:undotree_WindowLayout = 3
 
 let g:ackprg = "ag --vimgrep"
 set grepprg=ag\ --vimgrep
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<s-tab>"

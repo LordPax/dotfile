@@ -1,6 +1,6 @@
 #!/bin/bash
 
-data=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "time to (empty|full)")
+data=$(upower -i /org/freedesktop/UPower/devices/battery_BAT1 | grep -E "time to (empty|full)")
 batTime=$(echo $data | awk '{print $4}')
 time=$(echo $data | awk '{print $5}')
 
