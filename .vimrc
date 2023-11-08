@@ -41,6 +41,7 @@ Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vimwiki/vimwiki'
 Plug 'vifm/vifm.vim'
+Plug 'hashivim/vim-terraform'
 runtime ftplugin/man.vim
 
 call plug#end()
