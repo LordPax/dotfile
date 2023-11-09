@@ -138,14 +138,17 @@ mark m /media/
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %c.zip %f
+command! tar !tar -cvzf %c.tar.gz %f
 command! run !! ./%f
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
-command! less :!less %f
+command! less :!bat -p %f && read -p "Press enter to continue" && clear
 command! openInTmux :!tmux new-window 'vim %f'
 command! ext :!ext %f
+command! encrypt :!~/.script/crypt -e %f
+command! decrypt :!~/.script/crypt -d %f
 
 " ------------------------------------------------------------------------------
 " File types association
