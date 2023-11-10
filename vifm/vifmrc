@@ -150,6 +150,7 @@ command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! less :!bat -p %f && read -p "Press enter to continue" && clear
 command! openInTmux :!tmux new-window 'vim %f'
+" command! openInTmux :!tmux new-window 'xdg-open %f'
 command! ext :!ext %f
 command! encrypt :!~/.script/crypt -e %f
 command! decrypt :!~/.script/crypt -d %f
@@ -189,6 +190,8 @@ command! findf :find . -type f -iname "*%a*"
 "
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.  There is also %FOREGROUND, which is useful for entering passwords.
+
+filextype {*.sc} sc-im %f
 
 " Pdf
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c

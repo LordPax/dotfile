@@ -18,6 +18,8 @@ message/rfc822=userapp-Thunderbird-RQNL61.desktop
 x-scheme-handler/mid=userapp-Thunderbird-RQNL61.desktop
 application/pdf=org.pwmt.zathura.desktop
 text/markdown=vim.desktop
+text/*=vim.desktop
+text/plain=vim.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;
