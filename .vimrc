@@ -250,8 +250,9 @@ nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>L :vert rightb term<CR>
-nmap <leader>n :vert term ++close ranger<CR>
-nmap <leader>N :bel term ++close ranger<CR>
+nmap <leader>n :Vifm<CR>
+" nmap <leader>n :vert term ++close ranger<CR>
+" nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
