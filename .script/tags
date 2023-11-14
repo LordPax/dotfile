@@ -33,6 +33,7 @@
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
 a	github-style.css	/^a {$/;"	s
 a:hover	github-style.css	/^a:hover {$/;"	s
+applyBackground	background	/^function applyBackground() {$/;"	f
 blockquote	github-style.css	/^blockquote {$/;"	s
 body	github-style.css	/^body {$/;"	s
 brightness	brightness	/^function brightness() {$/;"	f
@@ -44,10 +45,12 @@ decrypt	crypt	/^function decrypt() {$/;"	f
 disconnectScreen	screen	/^function disconnectScreen() {$/;"	f
 echoErr	brightness	/^function echoErr() {$/;"	f
 echoErr	update	/^function echoErr() {$/;"	f
+echo_err	background	/^function echo_err() {$/;"	f
 echo_err	flash	/^function echo_err() {$/;"	f
 echo_err	mountdisk	/^function echo_err() {$/;"	f
 echo_err	screen	/^function echo_err() {$/;"	f
 encrypt	crypt	/^function encrypt() {$/;"	f
+error	background	/^function error() {$/;"	f
 error	crypt	/^function error() {$/;"	f
 error	mountdisk	/^function error() {$/;"	f
 error	screen	/^function error() {$/;"	f
@@ -68,6 +71,7 @@ h5	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
 h5	github-style.css	/^h5 {$/;"	s
 h6	github-style.css	/^h1, h2, h3, h4, h5, h6 {$/;"	s
 h6	github-style.css	/^h6 {$/;"	s
+helpFunc	background	/^function helpFunc() {$/;"	f
 helpFunc	brightness	/^function helpFunc() {$/;"	f
 helpFunc	crypt	/^function helpFunc() {$/;"	f
 helpFunc	flash	/^function helpFunc() {$/;"	f
@@ -76,6 +80,7 @@ helpFunc	screen	/^function helpFunc() {$/;"	f
 helpFunc	update	/^function helpFunc() {$/;"	f
 hr	github-style.css	/^hr {$/;"	s
 img	github-style.css	/^img {$/;"	s
+info	background	/^function info() {$/;"	f
 info	crypt	/^function info() {$/;"	f
 info	mountdisk	/^function info() {$/;"	f
 info	screen	/^function info() {$/;"	f
@@ -88,6 +93,7 @@ ol ol ol	github-style.css	/^ol ol ol {$/;"	s
 p	github-style.css	/^p {$/;"	s
 pre	github-style.css	/^pre {$/;"	s
 pre	github-style.css	/^pre, code {$/;"	s
+selectBackground	background	/^function selectBackground() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
 table	github-style.css	/^table {$/;"	s
 table td	github-style.css	/^table th, table td {$/;"	s
@@ -101,7 +107,9 @@ ul ul ul	github-style.css	/^ul ul ul {$/;"	s
 umountDisk	mountdisk	/^function umountDisk() {$/;"	f
 umountFunc	mountdisk	/^function umountFunc() {$/;"	f
 updateAur	update	/^function updateAur() {$/;"	f
+updateBackground	background	/^function updateBackground() {$/;"	f
 updatePacman	update	/^function updatePacman() {$/;"	f
+verification	background	/^function verification() {$/;"	f
 verification	brightness	/^function verification() {$/;"	f
 verification	flash	/^function verification() {$/;"	f
 verification	screen	/^function verification() {$/;"	f

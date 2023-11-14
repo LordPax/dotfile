@@ -1,9 +1,11 @@
 #!/bin/bash
+# author : lordpax
+# background v1.1.0
 
 wallpaperPath="$HOME/Images/wallpaper"
 defaultImage="$wallpaperPath/default"
 choosenImage=""
-version="1.0.0"
+version="1.1.0"
 action=0
 
 # info <msg>
@@ -31,12 +33,14 @@ Option:
 -h or --help .................... Show this help message and exit
 -v or --version ................. Show version
 -b or --background .............. Apply background
--u or --update .................. Update background"
+-u or --update .................. Update background
+-s or --select .................. Select background"
 }
 
 function verification() {
     [ -z "$(which feh 2> /dev/null)" ] && error "\"feh\" is required" && exit 1
     [ -z "$(which notify-send 2> /dev/null)" ] && error "\"notify-send\" is required" && exit 1
+    [ -z "$(which rofi 2> /dev/null)" ] && error "\"rofi\" is required" && exit 1
 }
 
 # updateBackground <imagePath>
@@ -51,6 +55,14 @@ function updateBackground() {
     [ ! -d "$wallpaperPath" ] && mkdir -p "$wallpaperPath"
     [ -f "$defaultImage" ] && unlink "$defaultImage"
     ln -s "$choosenImage" "$defaultImage" && info "Background updated"
+}
+
+function selectBackground() {
+    [ ! -d "$wallpaperPath" ] && error "Directory \"$wallpaperPath\" not found" && exit 1
+    choosenImage=$(find "$wallpaperPath" -type f | rofi -dmenu -i -p "Select background")
+    [ -z "$choosenImage" ] && exit 0
+    updateBackground
+    applyBackground
 }
 
 if [ $# -ge 1 ]; then
@@ -68,6 +80,8 @@ if [ $# -ge 1 ]; then
                 action=2
                 choosenImage="$2"
                 shift;;
+            -s | --select)
+                action=3;;
             "");;
             *)
                 echo_err "Unknown parameter \"$1\""
@@ -84,6 +98,8 @@ case $action in
         applyBackground;;
     2)
         updateBackground;;
+    3)
+        selectBackground;;
     *)
         helpFunc
         exit 0;;

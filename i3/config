@@ -164,7 +164,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+p exec --no-startup-id zenity --question --title "Eteindre" --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --title "Redémarer" --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
-bindsym $mod+s exec --no-startup-id thunar
+# bindsym $mod+s exec --no-startup-id thunar
 bindsym $mod+u exec --no-startup-id flameshot gui
 bindsym $mod+w exec ~/.script/screen -c
 bindsym $mod+Shift+w exec ~/.script/screen -d
@@ -182,6 +182,7 @@ bindsym $mod+y exec ~/.script/update --update-pacman
 bindsym $mod+Shift+y exec ~/.script/update --update-aur
 bindsym $mod+i exec screenkey
 bindsym $mod+Shift+i exec killall screenkey
+bindsym $mod+s exec ~/.script/background -s
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -214,7 +215,7 @@ for_window [class=".*"] title_format " %title"
 for_window [class="Pavucontrol"] floating enable
 
 exec_always ~/.script/background -b
-exec_always --no-startup-id "~/.script/polybar-startup"
+exec_always --no-startup-id ~/.script/polybar-startup
 exec_always --no-startup-id "killall picom; picom"
 exec_always --no-startup-id "killall conky; conky"
 
