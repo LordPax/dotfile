@@ -15,7 +15,8 @@ highlight TabLineSel ctermfg=188 ctermbg=236 cterm=none
 
 highlight JobLine ctermfg=6 ctermbg=0 cterm=none
 highlight StatusLine ctermfg=188 ctermbg=235 cterm=none
-highlight Border ctermfg=238 ctermbg=234 cterm=none
+" highlight Border ctermfg=238 ctermbg=234 cterm=none
+highlight Border ctermfg=232 ctermbg=232 cterm=none
 
 highlight CurrLine ctermfg=0 ctermbg=145 cterm=none
 highlight OtherLine ctermfg=0 ctermbg=4 cterm=none
@@ -30,13 +31,21 @@ highlight WildMenu ctermfg=250 ctermbg=236 cterm=none
 highlight CmdLine ctermfg=188 ctermbg=232 cterm=none
 highlight ErrorMsg ctermfg=203 ctermbg=232 cterm=none
 
-highlight Directory ctermfg=33 ctermbg=-1 cterm=bold
-highlight Executable ctermfg=176 ctermbg=-1 cterm=none
-highlight Socket ctermfg=188 ctermbg=-1 cterm=none
-highlight Device ctermfg=188 ctermbg=-1 cterm=none
-highlight Fifo ctermfg=173 ctermbg=-1 cterm=none
-highlight Link ctermfg=151 ctermbg=-1 cterm=none
-highlight BrokenLink ctermfg=0 ctermbg=237 cterm=none
+highlight Directory cterm=bold ctermfg=cyan ctermbg=default
+highlight Executable cterm=bold ctermfg=green ctermbg=default
+highlight Socket cterm=bold ctermfg=magenta ctermbg=default
+highlight Device cterm=bold ctermfg=red ctermbg=default
+highlight Fifo cterm=bold ctermfg=cyan ctermbg=default
+highlight Link cterm=bold ctermfg=yellow ctermbg=default
+highlight BrokenLink cterm=bold ctermfg=red ctermbg=default
+
+" highlight Directory ctermfg=33 ctermbg=-1 cterm=bold
+" highlight Executable ctermfg=176 ctermbg=-1 cterm=none
+" highlight Socket ctermfg=188 ctermbg=-1 cterm=none
+" highlight Device ctermfg=188 ctermbg=-1 cterm=none
+" highlight Fifo ctermfg=173 ctermbg=-1 cterm=none
+" highlight Link ctermfg=151 ctermbg=-1 cterm=none
+" highlight BrokenLink ctermfg=0 ctermbg=237 cterm=none
 " no conversion defined for HardLink
 
 " no conversion defined for User1..User9

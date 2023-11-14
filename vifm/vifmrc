@@ -110,9 +110,12 @@ colorscheme codedark Default-256 Default
 
 " :mark mark /full/directory/path [filename]
 
-mark b ~/bin/
 mark h ~/
+mark c ~/.config/
+mark s ~/.script/
 mark d ~/Documents/
+mark n ~/Documents/Note/
+mark p ~/Documents/Programmation/
 mark m /media/
 
 " ------------------------------------------------------------------------------
@@ -137,18 +140,39 @@ mark m /media/
 
 command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
-command! zip zip -r %c.zip %f
-command! tar !tar -cvzf %c.tar.gz %f
-command! run !! ./%f
+command! zip zip -r %a.zip %f
+command! tar !tar -cvzf %a.tar.gz %f
+command! run !! ./%f &
+command! wine !wine %f &
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
 command! less :!bat -p %f && read -p "Press enter to continue" && clear
 command! openInTmux :!tmux new-window 'vim %f'
+" command! openInTmux :!tmux new-window 'xdg-open %f'
 command! ext :!ext %f
 command! encrypt :!~/.script/crypt -e %f
 command! decrypt :!~/.script/crypt -d %f
+command! findf :find . -type f -iname "*%a*"
+command! shred :!shred -uz %f
+
+command! ga :!git add %f
+command! gaa :!git add --all
+command! gpu :!git push origin %a
+command! gpum :!git push origin master
+command! gpud :!git push origin develop
+command! gpl :!git pull origin %a
+command! gplm :!git pull origin master
+command! gpld :!git pull origin develop
+command! gs :!git status && read -p "Press enter to continue" && clear
+" command! gs :!git status | vim -
+command! gch :!git checkout %a
+command! gcm :!git commit -m %a
+command! gco :!git commit
+command! gl :!git log && read -p "Press enter to continue" && clear
+" command! gl :!git log | vim -
+command! gbr :!git branch %a
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -184,6 +208,8 @@ command! decrypt :!~/.script/crypt -d %f
 "
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.  There is also %FOREGROUND, which is useful for entering passwords.
+
+filextype {*.sc} sc-im %f
 
 " Pdf
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c
@@ -228,12 +254,12 @@ filextype {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
           \*.fl[icv],*.m2v,*.mov,*.webm,*.ts,*.mts,*.m4v,*.r[am],*.qt,*.divx,
           \*.as[fx],*.unknown_video},
          \<video/*>
+        \ {View using smplayer}
+        \ smplayer %f &,
         \ {View using ffplay}
         \ ffplay -fs -hide_banner -autoexit %f,
         \ {View using Dragon}
         \ dragon %f:p,
-        \ {View using mplayer}
-        \ mplayer %f,
         \ {Play using mpv}
         \ mpv --no-video %f,
 fileviewer {*.avi,*.mp4,*.wmv,*.dat,*.3gp,*.ogv,*.mkv,*.mpg,*.mpeg,*.vob,
@@ -538,7 +564,8 @@ nnoremap <f7> :mkdir<space>
 nnoremap <f8> :delete<cr>
 
 nmap <C-m> :openInTmux<cr>
-nmap <C-p> :find<space>
+nmap <C-p> :findf<space>
+nmap <C-h> :marks<cr>
 
 map j <left>
 map k <down>

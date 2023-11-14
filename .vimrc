@@ -250,14 +250,16 @@ nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>L :vert rightb term<CR>
-nmap <leader>n :vert term ++close ranger<CR>
-nmap <leader>N :bel term ++close ranger<CR>
+nmap <leader>n :Vifm<CR>
+" nmap <leader>n :vert term ++close ranger<CR>
+" nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
 nmap <leader>r :ResizeMode<CR>
+nmap <leader>i :b #<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
@@ -333,6 +335,9 @@ map j <Left>
 map k <Down>
 map l <Up>
 map m <Right>
+
+map gk g<Down>
+map gl g<Up>
 
 let g:ctrlp_custom_ignore = {
     \'dir':  '\v(\.git|node_modules|build|dist)$',
