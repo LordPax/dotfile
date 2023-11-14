@@ -1,0 +1,90 @@
+#!/bin/bash
+
+wallpaperPath="$HOME/Images/wallpaper"
+defaultImage="$wallpaperPath/default"
+choosenImage=""
+version="1.0.0"
+action=0
+
+# info <msg>
+function info() {
+    [ -z "$1" ] && exit 1
+    notify-send "Info" "$1"
+}
+
+# error <msg>
+function error() {
+    [ -z "$1" ] && exit 1
+    notify-send "Error" "$1"
+}
+
+# echo_err <msg>
+function echo_err() {
+    [ -z "$1" ] && exit 1
+    echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function helpFunc() {
+    echo "Usage: $(basename "$0") [options]
+
+Option:
+-h or --help .................... Show this help message and exit
+-v or --version ................. Show version
+-b or --background .............. Apply background
+-u or --update .................. Update background"
+}
+
+function verification() {
+    [ -z "$(which feh 2> /dev/null)" ] && error "\"feh\" is required" && exit 1
+    [ -z "$(which notify-send 2> /dev/null)" ] && error "\"notify-send\" is required" && exit 1
+}
+
+# updateBackground <imagePath>
+function applyBackground() {
+    [ ! -f "$defaultImage" ] && error "File \"$defaultImage\" not found" && exit 1
+    feh --bg-scale "$defaultImage"
+}
+
+# updateBackground
+function updateBackground() {
+    [ ! -f "$choosenImage" ] && error "File \"$choosenImage\" not found" && exit 1
+    [ ! -d "$wallpaperPath" ] && mkdir -p "$wallpaperPath"
+    [ -f "$defaultImage" ] && unlink "$defaultImage"
+    ln -s "$choosenImage" "$defaultImage" && info "Background updated"
+}
+
+if [ $# -ge 1 ]; then
+    for _ in $(seq 1 $#); do
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0;;
+            -v | --version)
+                echo "$version"
+                exit 0;;
+            -b | --background)
+                action=1;;
+            -u | --update)
+                action=2
+                choosenImage="$2"
+                shift;;
+            "");;
+            *)
+                echo_err "Unknown parameter \"$1\""
+                exit 1;;
+        esac
+        shift
+    done
+fi
+
+verification
+
+case $action in
+    1)
+        applyBackground;;
+    2)
+        updateBackground;;
+    *)
+        helpFunc
+        exit 0;;
+esac

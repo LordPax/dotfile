@@ -20,4 +20,4 @@ function getTime() {
     echo "[ $hour h $minute min ]"
 }
 
-[ "$data" != "" ] && getTime
+[ "$data" != "" ] && getTime || echo ""
