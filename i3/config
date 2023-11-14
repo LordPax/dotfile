@@ -171,7 +171,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
-bindsym $mod+s exec --no-startup-id thunar
+bindsym $mod+u exec --no-startup-id flameshot gui
+# bindsym $mod+s exec --no-startup-id thunar
 
 bindsym $mod+x exec warpd --hint
 bindsym $mod+c exec warpd --normal
@@ -187,6 +188,7 @@ bindsym $mod+i exec screenkey
 bindsym $mod+Shift+i exec killall screenkey
 bindsym $mod+w exec ~/.script/screen -c
 bindsym $mod+Shift+w exec ~/.script/screen -d
+bindsym $mod+s exec ~/.script/background -s
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -208,7 +210,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-bindsym $mod+u exec --no-startup-id flameshot gui
 # bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 
 gaps inner 11
