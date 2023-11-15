@@ -311,10 +311,11 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {View in shotwell}
         \ shotwell,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-         \ imgt %px %py %pw %ph %c
-         " \ %pc
-         " \ imgc %px %py %pw %ph
-         " \ identify %f
+        \ identify %f;
+        \ catimg -w $((%pw * 2)) -ct -r 2 %c | grep -vE "25[lh]{1}"
+        " \ imgt %px %py %pw %ph %c
+        " \ %pc
+        " \ imgc %px %py %pw %ph
 
 " OpenRaster
 filextype *.ora
@@ -429,6 +430,8 @@ filextype *.pro qtcreator %f &
 filextype */
         \ {View in thunar}
         \ Thunar %f &,
+
+fileviewer */ tree %f
 
 " Syntax highlighting in preview
 "
