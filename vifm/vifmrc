@@ -142,37 +142,36 @@ command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %a.zip %f
 command! tar !tar -cvzf %a.tar.gz %f
-command! run !! ./%f &
+" command! run !! ./%f
+command! run ! ./%f %a &
 command! wine !wine %f &
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart full
-command! less :!bat -p %f && read -p "Press enter to continue" && clear
-command! openInTmux :!tmux new-window 'vim %f'
+command! less !!bat -p %f
+command! openInTmux !tmux new-window 'vim %f'
 " command! openInTmux :!tmux new-window 'xdg-open %f'
-command! ext :!ext %f
-command! encrypt :!~/.script/crypt -e %f
-command! decrypt :!~/.script/crypt -d %f
+command! ext !ext %f
+command! encrypt !~/.script/crypt -e %f
+command! decrypt !~/.script/crypt -d %f
 command! findf :find . -type f -iname "*%a*"
-command! shred :!shred -uz %f
+command! shred !shred -uz %f
 
-command! ga :!git add %f
-command! gaa :!git add --all
-command! gpu :!git push origin %a
-command! gpum :!git push origin master
-command! gpud :!git push origin develop
-command! gpl :!git pull origin %a
-command! gplm :!git pull origin master
-command! gpld :!git pull origin develop
-command! gs :!git status && read -p "Press enter to continue" && clear
-" command! gs :!git status | vim -
-command! gch :!git checkout %a
-command! gcm :!git commit -m %a
-command! gco :!git commit
-command! gl :!git log && read -p "Press enter to continue" && clear
-" command! gl :!git log | vim -
-command! gbr :!git branch %a
+command! ga !git add %f
+command! gaa !git add --all
+command! gpu !git push origin %a
+command! gpum !git push origin master
+command! gpud !git push origin develop
+command! gpl !git pull origin %a
+command! gplm !git pull origin master
+command! gpld !git pull origin develop
+command! gs !!git status
+command! gch !git checkout %a
+command! gcm !git commit -m %a
+command! gco !git commit
+command! gl !!git log
+command! gbr !git branch %a
 
 " ------------------------------------------------------------------------------
 " File types association
@@ -214,6 +213,10 @@ filextype {*.sc} sc-im %f
 " Pdf
 filextype {*.pdf},<application/pdf> zathura %c %i, apvlv %c, xpdf %c
 fileviewer {*.pdf},<application/pdf> pdftotext -nopgbrk %c -
+
+" Epub
+filextype {*.epub},<application/epub+zip> zathura %c %i
+fileviewer {*.epub},<application/epub+zip> unzip -l %c
 
 " PostScript
 filextype {*.ps,*.eps,*.ps.gz},<application/postscript>
@@ -311,10 +314,11 @@ filextype {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
         \ {View in shotwell}
         \ shotwell,
 fileviewer {*.bmp,*.jpg,*.jpeg,*.png,*.gif,*.xpm},<image/*>
-         \ imgt %px %py %pw %ph %c
-         " \ %pc
-         " \ imgc %px %py %pw %ph
-         " \ identify %f
+        \ identify %f;
+        \ catimg -w $((%pw * 2)) -ct -r 2 %c | grep -vE "25[lh]{1}"
+        " \ imgt %px %py %pw %ph %c
+        " \ %pc
+        " \ imgc %px %py %pw %ph
 
 " OpenRaster
 filextype *.ora
@@ -429,6 +433,8 @@ filextype *.pro qtcreator %f &
 filextype */
         \ {View in thunar}
         \ Thunar %f &,
+
+fileviewer */ tree %f
 
 " Syntax highlighting in preview
 "

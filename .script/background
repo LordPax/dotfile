@@ -1,11 +1,11 @@
 #!/bin/bash
 # author : lordpax
-# background v1.1.0
+# background v1.1.1
 
 wallpaperPath="$HOME/Images/wallpaper"
 defaultImage="$wallpaperPath/default"
 choosenImage=""
-version="1.1.0"
+version="1.1.1"
 action=0
 
 # info <msg>
@@ -33,8 +33,9 @@ Option:
 -h or --help .................... Show this help message and exit
 -v or --version ................. Show version
 -b or --background .............. Apply background
--u or --update .................. Update background
--s or --select .................. Select background"
+-u or --update <file> ........... Update background
+-s or --select .................. Select background
+-a or --all <file> .............. Update and apply background"
 }
 
 function verification() {
@@ -43,26 +44,30 @@ function verification() {
     [ -z "$(which rofi 2> /dev/null)" ] && error "\"rofi\" is required" && exit 1
 }
 
-# updateBackground <imagePath>
 function applyBackground() {
     [ ! -f "$defaultImage" ] && error "File \"$defaultImage\" not found" && exit 1
     feh --bg-scale "$defaultImage"
 }
 
-# updateBackground
 function updateBackground() {
     [ ! -f "$choosenImage" ] && error "File \"$choosenImage\" not found" && exit 1
     [ ! -d "$wallpaperPath" ] && mkdir -p "$wallpaperPath"
     [ -f "$defaultImage" ] && unlink "$defaultImage"
+
     ln -s "$choosenImage" "$defaultImage" && info "Background updated"
 }
 
 function selectBackground() {
     [ ! -d "$wallpaperPath" ] && error "Directory \"$wallpaperPath\" not found" && exit 1
-    choosenImage=$(find "$wallpaperPath" -type f | rofi -dmenu -i -p "Select background")
-    [ -z "$choosenImage" ] && exit 0
-    updateBackground
-    applyBackground
+
+    local image=$(
+        ls "$wallpaperPath" |\
+        grep -v default |\
+        rofi -dmenu -i -p "Select background"
+    )
+    [ -z "$image" ] && exit 0
+
+    choosenImage="$wallpaperPath/$image"
 }
 
 if [ $# -ge 1 ]; then
@@ -82,6 +87,10 @@ if [ $# -ge 1 ]; then
                 shift;;
             -s | --select)
                 action=3;;
+            -a | --all)
+                action=4
+                choosenImage="$2"
+                shift;;
             "");;
             *)
                 echo_err "Unknown parameter \"$1\""
@@ -99,7 +108,12 @@ case $action in
     2)
         updateBackground;;
     3)
-        selectBackground;;
+        selectBackground
+        updateBackground
+        applyBackground;;
+    4)
+        updateBackground
+        applyBackground;;
     *)
         helpFunc
         exit 0;;

@@ -95,6 +95,7 @@ alias myip="curl ifconfig.me"
 alias a='arsenal'
 alias scim="sc-im"
 alias me="curl https://ifconfig.me"
+alias mountme="sudo mount -o uid=1000,gid=1000"
 
 alias ga="git add"
 alias gaa="git add --all"
