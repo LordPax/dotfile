@@ -33,8 +33,9 @@ Option:
 -h or --help .................... Show this help message and exit
 -v or --version ................. Show version
 -b or --background .............. Apply background
--u or --update .................. Update background
--s or --select .................. Select background"
+-u or --update <file> ........... Update background
+-s or --select .................. Select background
+-a or --all <file> .............. Update and apply background"
 }
 
 function verification() {
@@ -86,6 +87,10 @@ if [ $# -ge 1 ]; then
                 shift;;
             -s | --select)
                 action=3;;
+            -a | --all)
+                action=4
+                choosenImage="$2"
+                shift;;
             "");;
             *)
                 echo_err "Unknown parameter \"$1\""
@@ -104,6 +109,9 @@ case $action in
         updateBackground;;
     3)
         selectBackground
+        updateBackground
+        applyBackground;;
+    4)
         updateBackground
         applyBackground;;
     *)
