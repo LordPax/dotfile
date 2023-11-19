@@ -62,7 +62,7 @@ function umountFunc() {
 
 function mountDisk() {
     local mountable=$(lsblk -lp | \
-        grep "part *$" | \
+        grep -E "(part|disk|rom) *$" | \
         awk '{print $1, "(" $4 ")"}'
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
@@ -85,13 +85,13 @@ function mountDisk() {
 function umountDisk() {
     if [ $crypt -eq 0 ]; then
         local mounted=$(lsblk -lp | \
-            grep "part */" | \
+            grep -E "(part|disk|rom) */" | \
             grep -Ev "$noUmountRegex" | \
             awk '{print $1, "(" $4 ")"}'
         )
     else
         local mounted=$(lsblk -lp | \
-            grep "dm   /" | \
+            grep "dm */" | \
             awk '{print $7, "(" $4 ")"}'
         )
     fi
