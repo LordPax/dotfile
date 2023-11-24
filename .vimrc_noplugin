@@ -63,6 +63,14 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
+function! XmlPretty(is_selection) range
+    if !executable('xmllint')
+        echohl ErrorMsg | echo "xmllint is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!xmllint --format -" : "%!xmllint --format -"
+endfun
+
 function! ResizeMode()
     if g:resizeMode == 0
         let g:resizeMode = 1
@@ -89,6 +97,7 @@ command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -range XmlPretty <line1>,<line2>call XmlPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
 
@@ -150,13 +159,11 @@ nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>z zfiB<CR>
 nmap <leader>r :ResizeMode<CR>
+nmap <leader>i :b #<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
 nmap <leader>se :set spelllang=en<CR>
-
-nmap <leader>Jp :Jqplay<CR>
-nmap <leader>Jc :JqplayClose!<CR>
 
 vmap <leader>y "+y
 map <leader>yy "+yy
@@ -206,6 +213,9 @@ map j <Left>
 map k <Down>
 map l <Up>
 map m <Right>
+
+map gk g<Down>
+map gl g<Up>
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0

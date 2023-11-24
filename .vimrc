@@ -1,7 +1,7 @@
 call plug#begin()
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
@@ -39,13 +39,13 @@ Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
-Plug 'vimwiki/vimwiki'
 Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
 runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'vimwiki/vimwiki'
 " Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
 " Plug 'tpope/vim-markdown'
 " Plug 'ctrlpvim/ctrlp.vim'
@@ -134,6 +134,14 @@ function! JsonPretty(is_selection) range
     silent exe a:is_selection ? "'<,'>!jq ." : "%!jq ."
 endfun
 
+function! XmlPretty(is_selection) range
+    if !executable('xmllint')
+        echohl ErrorMsg | echo "xmllint is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!xmllint --format -" : "%!xmllint --format -"
+endfun
+
 function! ResizeMode()
     if g:resizeMode == 0
         let g:resizeMode = 1
@@ -174,6 +182,7 @@ command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script
 command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -range XmlPretty <line1>,<line2>call XmlPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
 command -nargs=* ManCht :vertical terminal bash -c "~/.script/vimcht <args>"
@@ -217,7 +226,7 @@ set encoding=utf-8
 scriptencoding utf-8
 set spelllang=fr
 set term=screen-256color
-set statusline+=%{gutentags#statusline()}
+" set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
@@ -372,7 +381,7 @@ let g:undotree_WindowLayout = 3
 let g:ackprg = "ag --vimgrep"
 set grepprg=ag\ --vimgrep
 " let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme="codedark"
+" let g:airline_theme="codedark"
 
 let g:UltiSnipsExpandTrigger="<s-tab>"
 let g:UltiSnipsListSnippets="<c-n>"
@@ -389,8 +398,8 @@ let g:ft_man_open_mode = 'vert'
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
 
-let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
-let g:vimwiki_ext2syntax = {}
+" let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
+" let g:vimwiki_ext2syntax = {}
 
 colorscheme codedark
 exe "highlight Normal ctermbg="..s:back
@@ -418,9 +427,9 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
-highlight VimwikiHeader1 ctermfg=39 ctermbg=NONE cterm=bold
-highlight VimwikiHeader2 ctermfg=39 ctermbg=NONE cterm=bold
-highlight VimwikiHeader3 ctermfg=39 ctermbg=NONE cterm=bold
-highlight VimwikiHeader4 ctermfg=39 ctermbg=NONE cterm=bold
-highlight VimwikiHeader5 ctermfg=39 ctermbg=NONE cterm=bold
-highlight VimwikiHeader6 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader1 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader2 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader3 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader4 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader5 ctermfg=39 ctermbg=NONE cterm=bold
+" highlight VimwikiHeader6 ctermfg=39 ctermbg=NONE cterm=bold
