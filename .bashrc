@@ -56,9 +56,9 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 
 # alias syncdash="firefox-developer-edition localhost:8384"
 alias syncdash="pulse-browser localhost:8384"
-alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /media/veracrypt1/Backup -n dotfile_compute1 -s 1"
-alias restore_dotfile="backup -r /media/veracrypt1/Backup -o / -n dotfile_compute1"
-alias backup_file="backup -c .config_backup/config.txt -o /media/veracrypt1/Backup -n backup -s 1"
+alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /media/veracrypt1/Backup -n dotfile_jarvis -s 3"
+alias restore_dotfile="backup -r /media/veracrypt1/Backup -o / -n dotfile_jarvis"
+alias backup_file="backup -c .config_backup/config.txt -o /media/veracrypt1/Backup -n backup -s 3"
 alias restore_file="backup -r /media/veracrypt1/Backup -o / -n backup"
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/"
 alias restore_mdp="cp /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/"
