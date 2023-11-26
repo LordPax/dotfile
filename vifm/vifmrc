@@ -142,8 +142,8 @@ command! df df -h %m 2> /dev/null
 command! diff vim -d %f %F
 command! zip zip -r %a.zip %f
 command! tar !tar -cvzf %a.tar.gz %f
-" command! run !! ./%f
-command! run ! ./%f %a &
+command! run! ! ./%f %a &
+command! run !! ./%f %a
 command! wine !wine %f &
 command! make !!make %a
 command! mkcd :mkdir %a | cd %a
@@ -156,6 +156,7 @@ command! ext !ext %f
 command! encrypt !~/.script/crypt -e %f
 command! decrypt !~/.script/crypt -d %f
 command! findf :find . -type f -iname "*%a*"
+command! findd :find . -type d -iname "*%a*"
 command! shred !shred -uz %f
 
 command! ga !git add %f
@@ -434,7 +435,7 @@ filextype */
         \ {View in thunar}
         \ Thunar %f &,
 
-fileviewer */ tree %f
+fileviewer */ tree %c
 
 " Syntax highlighting in preview
 "

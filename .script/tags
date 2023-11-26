@@ -13,6 +13,13 @@
 !_TAG_KIND_DESCRIPTION!CSS	c,class	/classes/
 !_TAG_KIND_DESCRIPTION!CSS	i,id	/identities/
 !_TAG_KIND_DESCRIPTION!CSS	s,selector	/selectors/
+!_TAG_KIND_DESCRIPTION!Markdown	S,subsection	/level 2 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	T,l4subsection	/level 4 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	c,chapter	/chapters/
+!_TAG_KIND_DESCRIPTION!Markdown	n,footnote	/footnotes/
+!_TAG_KIND_DESCRIPTION!Markdown	s,section	/sections/
+!_TAG_KIND_DESCRIPTION!Markdown	t,subsubsection	/level 3 sections/
+!_TAG_KIND_DESCRIPTION!Markdown	u,l5subsection	/level 5 sections/
 !_TAG_KIND_DESCRIPTION!Sh	a,alias	/aliases/
 !_TAG_KIND_DESCRIPTION!Sh	f,function	/functions/
 !_TAG_KIND_DESCRIPTION!Sh	h,heredoc	/label for here document/
@@ -22,6 +29,7 @@
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_OUTPUT_VERSION	0.0	/current.age/
 !_TAG_PARSER_VERSION!CSS	0.0	/current.age/
+!_TAG_PARSER_VERSION!Markdown	0.0	/current.age/
 !_TAG_PARSER_VERSION!Sh	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/home/lordpax/.script/	//
@@ -31,6 +39,8 @@
 !_TAG_PROGRAM_VERSION	6.0.0	/p6.0.20221218.0/
 !_TAG_ROLE_DESCRIPTION!Sh!heredoc	endmarker	/end marker/
 !_TAG_ROLE_DESCRIPTION!Sh!script	loaded	/loaded/
+Description	README.md	/^## Description$/;"	s	chapter:Script
+Script	README.md	/^# Script$/;"	c
 a	github-style.css	/^a {$/;"	s
 a:hover	github-style.css	/^a:hover {$/;"	s
 applyBackground	background	/^function applyBackground() {$/;"	f

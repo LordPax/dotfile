@@ -67,7 +67,8 @@ function mountDisk() {
     )
     [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
 
-    local diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which disk" | awk '{print $1}')
+    local encryptedMsg=$([ $crypt -ne 0 ] && echo " encrypted" || echo "")
+    local diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which$encryptedMsg disk" | awk '{print $1}')
     [ "$diskToMount" = "" ] && exit 1
     local mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
     [ "$mountPoint" = "" ] && exit 1
@@ -97,7 +98,8 @@ function umountDisk() {
     fi
     [ "$mounted" = "" ] && error "No mounted disks found" && exit 1
 
-    local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which disk" | awk '{print $1}')
+    local encryptedMsg=$([ $crypt -ne 0 ] && echo " encrypted" || echo "")
+    local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which$encryptedMsg disk" | awk '{print $1}')
     [ "$diskToUmount" = "" ] && exit 1
 
     if umountFunc "$diskToUmount"; then

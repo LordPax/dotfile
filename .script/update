@@ -57,7 +57,7 @@ if [ $# -ge 1 ]; then
             updateAur
             exit 0;;
         --format)
-            echo "$(yay -Qum 2> /dev/null | wc -l) %{F#3498db}%{F-} $(checkupdates 2> /dev/null | wc -l)"
+            echo "$(yay -Qum 2> /dev/null | wc -l) %{F#3498db}󰚰%{F-} $(checkupdates 2> /dev/null | wc -l)"
             exit 0;;
         *)
             echoErr "Unknown parameter \"$1\""
