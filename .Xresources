@@ -45,7 +45,7 @@ URxvt*scrollBar: false
 URxvt*letterSpace: 0
 URxvt*internalBorder: 1
 URxvt*font: xft:DejaVu Sans Mono:Book:size=9
-! URxvt*font: xft:DejaVu Sans Mono:Book:size=9,xft:Symbols Nerd Font:style=Regular:size=12
+! URxvt*font: xft:DejaVu Sans Mono:Book:size=9,xft:Symbols Nerd Font Mono:style=Regular:size=12
 URxvt*boldFont: xft:DejaVu Sans Mono:Bold:size=9
 URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=9
 URxvt*boldItalicFont: xft:DejaVu Sans Mono:style=Bold Oblique:size=9
