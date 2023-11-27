@@ -1,7 +1,5 @@
 call plug#begin()
 
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
@@ -45,6 +43,8 @@ runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 " Plug 'vimwiki/vimwiki'
 " Plug 'Frederick888/vim-prettier', { 'branch': 'prettier-3-0', 'do': 'yarn install' }
 " Plug 'tpope/vim-markdown'
@@ -260,8 +260,6 @@ nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>L :vert rightb term<CR>
 nmap <leader>n :Vifm<CR>
-" nmap <leader>n :vert term ++close ranger<CR>
-" nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :Copilot panel<CR>
 nmap <leader>f :ToggleFileManager<CR>
