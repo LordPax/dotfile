@@ -232,6 +232,7 @@ set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
+set hidden
 " set completeopt=menuone,noinsert,noselect,popuphidden
 " set completepopup=highlight:Pmenu,border:off
 
