@@ -9,6 +9,7 @@
 [alias]
     hub = !gh
     file = !git show --pretty="" --name-status
+    br = !git branch
 [core]
     editor = vim
 [format]

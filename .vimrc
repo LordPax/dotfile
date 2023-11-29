@@ -288,7 +288,7 @@ nmap <leader>gs :Git status<CR>
 nmap <leader>gch :Git checkout
 nmap <leader>gco :Git commit
 nmap <leader>gl :Git log<CR>
-nmap <leader>gbr :Git branch
+nmap <leader>gbr :Git br<CR>
 nmap <leader>gbl :Git blame<CR>
 
 vmap <leader>y "+y

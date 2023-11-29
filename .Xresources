@@ -5,8 +5,9 @@
 *active: #FFFFFF
 
 *.foreground: #FFFFFF
-*.background: #14161b
-!*.cursorColor: #FFFFFF
+*.background: #080808
+! *.background: #14161b
+! *.cursorColor: #FFFFFF
 
 ! black
 *.color0: #14161b
