@@ -41,13 +41,12 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
-URxvt.perl-ext-common: default,matcher,resize-font,-tabbed
+URxvt*perl-lib: /home/lordpax/.script
+URxvt.perl-ext-common: default,unichr,matcher,resize-font,-tabbed
 URxvt*scrollBar: false
 URxvt*letterSpace: 0
 URxvt*internalBorder: 1
-! URxvt*font: xft:DejaVu Sans Mono:Book:size=11,xft:Symbols Nerd Font:style=1000-em:size=9
-! URxvt*font: xft:DejaVu Sans Mono:Book:size=11,xft:Unifont:style=Regular:size=11
-URxvt*font: xft:DejaVu Sans Mono:Book:size=11
+URxvt*font: xft:DejaVu Sans Mono:Book:size=11,xft:Symbols Nerd Font Mono:style=Regular:pixelsize=11:antialias=false
 ! URxvt*font: xft:DejaVu Sans Mono:Book:size=11
 URxvt*boldFont: xft:DejaVu Sans Mono:Bold:size=11
 URxvt*italicFont: xft:DejaVu Sans Mono:style=Oblique:size=11
