@@ -57,10 +57,10 @@ font-3 = "Symbols Nerd Font Mono:style=Regular:pixelsize=10;1"
 ; font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = i3 xwindow
-modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard networkspeeddown networkspeedup date powermenu
+modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard networkspeeddown networkspeedup date tray powermenu
 
-tray-position = right
-tray-padding = 2
+; tray-position = right
+; tray-padding = 2
 ; enable-ipc = true
 ; tray-background = #0063ff
 ; wm-restack = i3
@@ -278,6 +278,11 @@ label-connected = "%downspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = "%{F#3cb703}%{F-} "
 format-connected-prefix-foreground = ${colors.foreground}
+
+[module/tray]
+type = internal/tray
+; format-margin = 8px
+tray-spacing = 8px
 
 [settings]
 screenchange-reload = true
