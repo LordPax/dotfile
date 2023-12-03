@@ -47,6 +47,8 @@ applyBackground	background	/^function applyBackground() {$/;"	f
 blockquote	github-style.css	/^blockquote {$/;"	s
 body	github-style.css	/^body {$/;"	s
 brightness	brightness	/^function brightness() {$/;"	f
+checkDependencies	mountdisk	/^function checkDependencies() {$/;"	f
+choiceEncryption	mountdisk	/^function choiceEncryption() {$/;"	f
 code	github-style.css	/^code {$/;"	s
 code	github-style.css	/^pre, code {$/;"	s
 colors	colors	/^function colors() {$/;"	f
@@ -103,6 +105,7 @@ ol ol ol	github-style.css	/^ol ol ol {$/;"	s
 p	github-style.css	/^p {$/;"	s
 pre	github-style.css	/^pre {$/;"	s
 pre	github-style.css	/^pre, code {$/;"	s
+randomString	mountdisk	/^function randomString() {$/;"	f
 selectBackground	background	/^function selectBackground() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
 table	github-style.css	/^table {$/;"	s

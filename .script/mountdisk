@@ -3,18 +3,19 @@
 uid=$(id -u)
 gid=$(id -g)
 noUmountRegex="(/$|/boot|/home|/perso|/save)"
-crypt=0 # 0: no, 1: veracrypt
+encryption="none\nveracrypt\nluks"
+crypt=0 # 0: no, 1: veracrypt, 2: luks
 mode=0
 
 # info <msg>
 function info() {
-    [ "$1" == "" ] && exit 1
+    [ -z "$1" ] && exit 1
     notify-send "Info" "$1"
 }
 
 # error <msg>
 function error() {
-    [ "$1" == "" ] && exit 1
+    [ -z "$1" ] && exit 1
     notify-send "Error" "$1"
 }
 
@@ -24,55 +25,115 @@ function echo_err() {
     echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
 }
 
+function checkDependencies() {
+    local dependencies="rofi veracrypt cryptsetup zenity"
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
+}
+
+# randomString <length>
+function randomString() {
+    [ -z "$1" ] && exit 1
+    local string=$(\
+        tr -dc 'a-zA-Z0-9' < /dev/urandom | \
+        fold -w "$1" | \
+        head -n 1
+    )
+    echo "$string"
+}
+
 function helpFunc() {
     echo "Usage: $(basename "$0") [options]
 
 Option:
 -h or --help .................... Show this help message and exit
 -v or --veracrypt ............... Use veracrypt
--l or --luks .................... Use luks (with cryptsetup) (not implemented yet)
+-l or --luks .................... Use luks (with cryptsetup)
+-c or --choice .................. Choose between veracrypt, luks, or none
 -m or --mount ................... Mount the disk
 -u or --umount .................. Unmount the disk"
 }
 
 # mountFunc <diskToMount> <mountPoint>
 function mountFunc() {
-    ([ "$1" == "" ] || [ "$2" == "" ]) && exit 1
+    ([ -z "$1" ] || [ -z "$2" ]) && exit 1
     if [ $crypt -eq 1 ]; then
-        veracrypt "$1" "$2" 2> /dev/null && return 0 || return 1
-    # elif [ $crypt -eq 2 ]; then
-    #     sudo cryptsetup luksOpen usbcrypt 2> /dev/null && return 0 || return 1
-    #     sudo mount -o "uid=$uid,gid=$gid" /dev/mapper/usbcrypt "$2" 2> /dev/null && return 0 || return 1
+        veracrypt "$1" "$2"
+    elif [ $crypt -eq 2 ]; then
+        local luksName=$(randomString 5)
+
+        local password=$(\
+            zenity --password \
+            --title="Enter passphrase" \
+            --text="Enter passphrase"
+        )
+        [ -z "$password" ] && exit 1
+
+        local message=$(sudo cryptsetup open "$1" "$luksName" <<< "$password" 2>&1)
+        unset password
+        [ -n "$message" ] && error "$message" && exit 1
+
+        sudo mount -o "uid=$uid,gid=$gid" "/dev/mapper/$luksName" "$2"
     else
-        sudo mount -o "uid=$uid,gid=$gid" "$1" "$2" 2> /dev/null && return 0 || return 1
+        sudo mount -o "uid=$uid,gid=$gid" "$1" "$2"
     fi
 }
 
 # umountFunc <diskToUmount>
 function umountFunc() {
-    [ "$1" == "" ] && exit 1
+    [ -z "$1" ] && exit 1
     if [ $crypt -eq 1 ]; then
-        veracrypt -d "$1" 2> /dev/null && return 0 || return 1
-    # elif [ $crypt -eq 2 ]; then
-    #     sudo cryptsetup luksClose "$1" 2> /dev/null && return 0 || return 1
+        veracrypt -d "$1"
+    elif [ $crypt -eq 2 ]; then
+        sudo umount "$1"
+        local luksName=$(echo "$1" | awk -F/ '{print $NF}')
+        sudo cryptsetup close "$luksName"
     else
-        sudo umount "$1" 2> /dev/null && return 0 || return 1
+        sudo umount "$1"
     fi
 }
 
+# choiceEncryption
+function choiceEncryption() {
+    local choice=$(\
+        echo -e "$encryption" | \
+        rofi -dmenu -p "Choose encryption" | \
+        awk '{print $1}'
+    )
+    [ -z "$choice" ] && exit 1
+
+    local number=$(\
+        echo -e "$encryption" | \
+        grep -n "$choice" | \
+        awk -F: '{print $1}'
+    )
+    [ -z "$number" ] && exit 1
+    crypt=$((number - 1))
+}
+
 function mountDisk() {
-    local mountable=$(lsblk -lp | \
+    local mountable=$(\
+        lsblk -lp | \
         grep -E "(part|disk|rom) *$" | \
         awk '{print $1, "(" $4 ")"}'
     )
-    [ "$mountable" = "" ] && error "No mountable disks found" && exit 1
+    [ -z "$mountable" ] && error "No mountable disks found" && exit 1
 
     local encryptedMsg=$([ $crypt -ne 0 ] && echo " encrypted" || echo "")
-    local diskToMount=$(echo -e "$mountable" | rofi -dmenu -p "Mount which$encryptedMsg disk" | awk '{print $1}')
-    [ "$diskToMount" = "" ] && exit 1
-    local mountPoint=$(find /media -maxdepth 1 -type d 2> /dev/null | rofi -dmenu -p "Mount to which directory")
-    [ "$mountPoint" = "" ] && exit 1
+    local diskToMount=$(\
+        echo -e "$mountable" | \
+        rofi -dmenu -p "Mount which$encryptedMsg disk" | \
+        awk '{print $1}'
+    )
+    [ -z "$diskToMount" ] && exit 1
+    local mountPoint=$(\
+        find /media -maxdepth 1 -type d 2> /dev/null | \
+        rofi -dmenu -p "Mount to which directory"
+    )
 
+    [ -z "$mountPoint" ] && exit 1
     [ ! -d "$mountPoint" ] && mkdir -p "$mountPoint"
 
     if mountFunc "$diskToMount" "$mountPoint"; then
@@ -84,23 +145,21 @@ function mountDisk() {
 }
 
 function umountDisk() {
-    if [ $crypt -eq 0 ]; then
-        local mounted=$(lsblk -lp | \
-            grep -E "(part|disk|rom) */" | \
-            grep -Ev "$noUmountRegex" | \
-            awk '{print $1, "(" $4 ")"}'
-        )
-    else
-        local mounted=$(lsblk -lp | \
-            grep "dm */" | \
-            awk '{print $7, "(" $4 ")"}'
-        )
-    fi
-    [ "$mounted" = "" ] && error "No mounted disks found" && exit 1
+    local mounted=$(\
+        lsblk -lp | \
+        grep -E "(part|disk|rom|dm|crypt) */" | \
+        grep -Ev "$noUmountRegex" | \
+        awk '{print $1, "(" $4 ")"}'
+    )
+    [ -z "$mounted" ] && error "No mounted disks found" && exit 1
 
     local encryptedMsg=$([ $crypt -ne 0 ] && echo " encrypted" || echo "")
-    local diskToUmount=$(echo -e "$mounted" | rofi -dmenu -p "Umount which$encryptedMsg disk" | awk '{print $1}')
-    [ "$diskToUmount" = "" ] && exit 1
+    local diskToUmount=$(\
+        echo -e "$mounted" | \
+        rofi -dmenu -p "Umount which$encryptedMsg disk" | \
+        awk '{print $1}'\
+    )
+    [ -z "$diskToUmount" ] && exit 1
 
     if umountFunc "$diskToUmount"; then
         info "Disk \"$diskToUmount\" unmounted"
@@ -110,26 +169,30 @@ function umountDisk() {
     fi
 }
 
-if [ $# -ge 1 ]; then
-    for i in $(seq 1 $#); do
-        case $1 in
-            -h | --help)
-                helpFunc
-                exit 0;;
-            -v | --veracrypt)
-                crypt=1;;
-            -m | --mount)
-                mode=1;;
-            -u | --umount)
-                mode=2;;
-            "");;
-            *)
-                echo_err $"Unknown parameter \"$1\""
-                exit 1
-        esac
-        shift
-    done
-fi
+checkDependencies
+
+for _ in $(seq 1 $#); do
+    case $1 in
+        -h | --help)
+            helpFunc
+            exit 0;;
+        -v | --veracrypt)
+            crypt=1;;
+        -l | --luks)
+            crypt=2;;
+        -m | --mount)
+            mode=1;;
+        -u | --umount)
+            mode=2;;
+        -c | --choice)
+            choiceEncryption;;
+        "");;
+        *)
+            echo_err $"Unknown parameter \"$1\""
+            exit 1
+    esac
+    shift
+done
 
 if [ $mode -eq 1 ]; then
     mountDisk

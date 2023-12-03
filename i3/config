@@ -174,10 +174,10 @@ bindsym $mod+x exec warpd --hint
 bindsym $mod+c exec warpd --normal
 bindsym $mod+g exec warpd --grid
 
-bindsym $mod+n exec ~/.script/mountdisk --mount
-bindsym $mod+Shift+n exec ~/.script/mountdisk --umount
-bindsym $mod+b exec ~/.script/mountdisk --mount --veracrypt
-bindsym $mod+Shift+b exec ~/.script/mountdisk --umount --veracrypt
+bindsym $mod+n exec ~/.script/mountdisk --mount --choice
+bindsym $mod+Shift+n exec ~/.script/mountdisk --umount --choice
+# bindsym $mod+b exec ~/.script/mountdisk --mount --veracrypt
+# bindsym $mod+Shift+b exec ~/.script/mountdisk --umount --veracrypt
 bindsym $mod+y exec ~/.script/update --update-pacman
 bindsym $mod+Shift+y exec ~/.script/update --update-aur
 bindsym $mod+i exec screenkey
