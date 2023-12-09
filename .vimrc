@@ -406,7 +406,7 @@ exe "highlight NonText ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
 exe "highlight CursorLine ctermbg="..s:back2
 exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
+exe "highlight VertSplit ctermbg=NONE ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back
 exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
 highlight ModeMsg ctermbg=NONE
@@ -426,6 +426,11 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
+" highlight TabLine ctermbg=NONE 
+" highlight TabLineFill ctermbg=NONE 
+" highlight TabLineSel ctermbg=NONE ctermfg=75
+" highlight StatusLine ctermbg=NONE ctermfg=75
+" highlight StatusLineNC ctermbg=NONE
 " highlight VimwikiHeader1 ctermfg=39 ctermbg=NONE cterm=bold
 " highlight VimwikiHeader2 ctermfg=39 ctermbg=NONE cterm=bold
 " highlight VimwikiHeader3 ctermfg=39 ctermbg=NONE cterm=bold
