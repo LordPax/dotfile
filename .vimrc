@@ -262,7 +262,7 @@ nmap <leader>l :bel term<CR>
 nmap <leader>L :vert rightb term<CR>
 nmap <leader>n :Vifm<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
-nmap <leader>o :Copilot panel<CR>
+nmap <leader>o :bufdo bd<CR>
 nmap <leader>f :ToggleFileManager<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfiB<CR>
