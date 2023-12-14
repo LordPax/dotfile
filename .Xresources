@@ -41,6 +41,7 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+Xft.dpi: 90
 URxvt*perl-lib: /home/lordpax/.script
 URxvt.perl-ext-common: default,unichr,matcher,resize-font,-tabbed
 URxvt*scrollBar: false
