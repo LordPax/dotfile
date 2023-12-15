@@ -205,11 +205,18 @@ colorscheme matcha-dark
 
 unmap m<Any>
 unmap M<Any>
+unmap q<Any>
 
 nmap j <Left>
 nmap k <Down>
 nmap l <Up>
 nmap m <Right>
+nmap q :close<cr>
+nmap d <scrollPageDownHalf>
+nmap u <scrollPageUpHalf>
+" nmap f <scrollPageDownHalf>
+" nmap b <scrollPageUpHalf>
+nmap U <restoreTab>
 
 nmap J <backInHistory>
 nmap M <forwardInHistory>
