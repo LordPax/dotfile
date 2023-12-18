@@ -172,6 +172,7 @@ bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shu
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
 bindsym $mod+u exec --no-startup-id flameshot gui
+# bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 # bindsym $mod+s exec --no-startup-id thunar
 
 bindsym $mod+x exec warpd --hint
@@ -208,7 +209,6 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-# bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 
 gaps inner 11
 # smart_borders on
@@ -217,7 +217,7 @@ gaps inner 11
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Blueman-manager|Pavucontrol|Lxappearance"] floating enable
+for_window [class="Blueman-manager|Pavucontrol|Lxappearance|Gcolor3"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id "~/.script/polybar-startup"

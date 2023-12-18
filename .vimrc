@@ -187,6 +187,7 @@ command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
 command -nargs=* ManCht :vertical terminal bash -c "~/.script/vimcht <args>"
 command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht javascript <args>"
+command -nargs=* ManTS :vertical terminal bash -c "~/.script/vimcht typescript <args>"
 
 " for i in range(97,122)
 "     let c = nr2char(i)
@@ -238,6 +239,7 @@ set hidden
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType javascript set keywordprg=:ManCht\ javascript
+autocmd FileType typescript set keywordprg=:ManCht\ typescript
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
