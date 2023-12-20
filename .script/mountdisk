@@ -149,16 +149,22 @@ function umountDisk() {
         lsblk -lp | \
         grep -E "(part|disk|rom|dm|crypt) */" | \
         grep -Ev "$noUmountRegex" | \
-        awk '{print $1, "(" $4 ")"}'
+        awk '{print $1, "(" $4 ")", $7}'
     )
     [ -z "$mounted" ] && error "No mounted disks found" && exit 1
 
     local encryptedMsg=$([ $crypt -ne 0 ] && echo " encrypted" || echo "")
     local diskToUmount=$(\
         echo -e "$mounted" | \
-        rofi -dmenu -p "Umount which$encryptedMsg disk" | \
-        awk '{print $1}'\
+        rofi -dmenu -p "Umount which$encryptedMsg disk"
     )
+
+    if [ $crypt -eq 2 ]; then
+        diskToUmount=$(echo "$diskToUmount" | awk '{print $1}')
+    else
+        diskToUmount=$(echo "$diskToUmount" | awk '{print $3}')
+    fi
+
     [ -z "$diskToUmount" ] && exit 1
 
     if umountFunc "$diskToUmount"; then
