@@ -67,6 +67,7 @@ alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt
 alias getconf="getdotfile -o .config"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 alias backup_log="bat ~/.config_backup/backup.log"
+alias remove-orphans="pacman -Qtdq | sudo pacman -Rns -"
 
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"
