@@ -57,7 +57,7 @@ font-3 = "Symbols Nerd Font Mono:style=Regular:pixelsize=10;1"
 ; font-4 = "Font Awesome 6 Free:style=Solid:pixelsize=10;1"
 ; font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
-modules-left = i3 xwindow
+modules-left = arch-logo i3 xwindow
 modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard networkspeeddown networkspeedup date tray powermenu
 
 ; tray-position = right
@@ -72,6 +72,10 @@ modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard netwo
 
 cursor-click = pointer
 cursor-scroll = ns-resize
+
+[module/arch-logo]
+type = custom/script
+exec = echo "   %{F#3498db}󰣇%{F-}"
 
 [module/pulseaudio-control]
 type = custom/script
