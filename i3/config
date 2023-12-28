@@ -117,6 +117,8 @@ set $ws10 "10"
 
 set $monitor1 DP-3
 set $monitor2 HDMI-1
+# set $monitor1 "$(~/.script/screen --connected primary)"
+# set $monitor2 "$(~/.script/screen --connected secondary)"
 
 # Ecran associé à un workspace
 workspace $ws1 output $monitor1
@@ -141,6 +143,9 @@ bindsym $mod+egrave workspace number $ws7
 bindsym $mod+underscore workspace number $ws8
 bindsym $mod+ccedilla workspace number $ws9
 bindsym $mod+agrave workspace number $ws10
+
+bindsym $mod+Ctrl+j move workspace to output right
+bindsym $mod+Ctrl+m move workspace to output left
 
 # move focused container to workspace
 bindsym $mod+Shift+ampersand move container to workspace number $ws1
@@ -210,8 +215,7 @@ gaps inner 10
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Pavucontrol"] floating enable
-for_window [class="Gcolor3"] floating enable
+for_window [class="Pavucontrol|Gcolor3"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id ~/.script/polybar-startup

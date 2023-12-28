@@ -1,8 +1,10 @@
 #!/bin/bash
+# author : lordpax
 
 uid=$(id -u)
 gid=$(id -g)
-noUmountRegex="(/$|/boot|/home|/perso|/save)"
+noUmountRegex="/($|boot|home|perso|save)"
+dependencies="rofi veracrypt cryptsetup zenity"
 encryption="none\nveracrypt\nluks"
 crypt=0 # 0: no, 1: veracrypt, 2: luks
 mode=0
@@ -26,7 +28,6 @@ function echo_err() {
 }
 
 function checkDependencies() {
-    local dependencies="rofi veracrypt cryptsetup zenity"
     for dependency in $dependencies; do
         ! command -v "$dependency" > /dev/null 2>&1 && \
             echo_err "Dependency \"$dependency\" not found" && exit 1
@@ -36,12 +37,9 @@ function checkDependencies() {
 # randomString <length>
 function randomString() {
     [ -z "$1" ] && exit 1
-    local string=$(\
-        tr -dc 'a-zA-Z0-9' < /dev/urandom | \
+    tr -dc 'a-zA-Z0-9' < /dev/urandom | \
         fold -w "$1" | \
         head -n 1
-    )
-    echo "$string"
 }
 
 function helpFunc() {

@@ -47,7 +47,9 @@ applyBackground	background	/^function applyBackground() {$/;"	f
 blockquote	github-style.css	/^blockquote {$/;"	s
 body	github-style.css	/^body {$/;"	s
 brightness	brightness	/^function brightness() {$/;"	f
+checkDependencies	background	/^function checkDependencies() {$/;"	f
 checkDependencies	mountdisk	/^function checkDependencies() {$/;"	f
+checkDependencies	screen	/^function checkDependencies() {$/;"	f
 choiceEncryption	mountdisk	/^function choiceEncryption() {$/;"	f
 code	github-style.css	/^code {$/;"	s
 code	github-style.css	/^pre, code {$/;"	s
@@ -122,7 +124,5 @@ umountFunc	mountdisk	/^function umountFunc() {$/;"	f
 updateAur	update	/^function updateAur() {$/;"	f
 updateBackground	background	/^function updateBackground() {$/;"	f
 updatePacman	update	/^function updatePacman() {$/;"	f
-verification	background	/^function verification() {$/;"	f
 verification	brightness	/^function verification() {$/;"	f
 verification	flash	/^function verification() {$/;"	f
-verification	screen	/^function verification() {$/;"	f

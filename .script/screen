@@ -1,10 +1,12 @@
 #!/bin/bash
 # author : lordpax
-# screen v1.1
+# screen v1.2
 
 action=0
-ignoreScreen="eDP-1|None"
-version="v1.0"
+ignoreScreen="None"
+version="v1.2"
+param=""
+dependencies="rofi notify-send"
 
 # info <msg>
 function info() {
@@ -28,32 +30,48 @@ function helpFunc() {
     echo "Usage: $(basename "$0") [options]
 
 Option:
--h or --help .................... Show this help message and exit
--v or --version ................. Show version
--c or --connect ................. Connect a screen
--d or --disconnect .............. Disconnect a screen
--s or --status .................. Show the status of the screen"
+-h or --help ............................ Show this help message and exit
+-v or --version ......................... Show version
+-c or --connect ......................... Connect a screen
+-d or --disconnect ...................... Disconnect a screen
+-s or --status .......................... Show the status of the screen
+--connected <primary|secondary|all> ..... Get the connected screen"
 }
 
-function verification() {
-    [ -z "$(which rofi 2> /dev/null)" ] && error "\"rofi\" is required" && exit 1
-    [ -z "$(which notify-send 2> /dev/null)" ] && error "\"notify-send\" is required" && exit 1
+function checkDependencies() {
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
 }
 
-# getConnectedScreen [ignore]
+# getConnectedScreen <primary|secondary|all> [ignore]
 function getConnectedScreen() {
+    [ -z "$1" ] && exit 1
+
     local scr=$(
         xrandr | \
-            grep " connected" | \
-            awk '{print $1}'
+        grep " connected"
     )
 
-    [ "$1" != "" ] && echo "$scr" | grep -vE "$1" || echo "$scr"
+    case $1 in
+        primary)
+            scr=$(echo "$scr" | grep "primary");;
+        secondary)
+            scr=$(echo "$scr" | grep -v "primary");;
+        all);;
+        *)
+            exit 1;;
+    esac
+
+    scr=$(echo "$scr" | awk '{print $1}')
+
+    [ "$2" != "" ] && echo "$scr" | grep -vE "$2" || echo "$scr"
 }
 
 # getScreenMode <screen>
 function getScreenMode() {
-    [ "$1" == "" ] && exit 1
+    [ -z "$1" ] && exit 1
     xrandr | \
         awk -v monitor="^$1 connected" '/connected/ {p = 0} $0 ~ monitor {p = 1} p' | \
         grep -v " connected" | \
@@ -65,33 +83,33 @@ function connectScreen() {
     local rotationList="none\nnormal\nleft\nright\ninverted"
     local commande="xrandr"
 
-    local screens=$(getConnectedScreen "$ignoreScreen")
-    [ "$screens" == "" ] && error "No screen found" && exit 1
+    local screens=$(getConnectedScreen all "$ignoreScreen")
+    [ -z "$screens" ] && error "No screen found" && exit 1
 
     local screen=$(echo "$screens" | rofi -dmenu -p "Connect a screen")
-    [ "$screen" == "" ] && exit 1
+    [ -z "$screen" ] && exit 1
 
     commande="$commande --output $screen"
 
     local modeList=$(getScreenMode "$screen")
     local mode=$(echo -e "auto\n$modeList" | rofi -dmenu -p "Choose mode")
-    [ "$mode" == "" ] && exit 1
+    [ -z "$mode" ] && exit 1
     commande=$([ "$mode" != "auto" ] && echo "$commande --mode $mode" || echo "$commande --auto")
 
     local side=$(echo -e "$sideList"| rofi -dmenu -p "Choose side")
-    [ "$side" == "" ] && exit 1
+    [ -z "$side" ] && exit 1
     if [ "$side" != "none" ]; then
-        local otherScreens=$(getConnectedScreen "^$screen$")
-        [ "$otherScreens" == "" ] && exit 1
+        local otherScreens=$(getConnectedScreen all "^$screen$")
+        [ -z "$otherScreens" ] && exit 1
 
         local otherScreen=$(echo "$otherScreens" | rofi -dmenu -p "Screen side")
-        [ "$otherScreen" == "" ]  && exit 1
+        [ -z "$otherScreen" ]  && exit 1
 
         commande="$commande --$side $otherScreen"
     fi
 
     local rotation=$(echo -e "$rotationList" | rofi -dmenu -p "Choose rotation")
-    [ "$rotation" == "" ] && exit 1
+    [ -z "$rotation" ] && exit 1
     [ "$rotation" != "none" ] && commande="$commande --rotate $rotation"
 
     if $commande; then
@@ -102,11 +120,11 @@ function connectScreen() {
 }
 
 function disconnectScreen() {
-    local screens=$(getConnectedScreen "$ignoreScreen")
-    [ "$screens" == "" ] && error "No screen found" && exit 1
+    local screens=$(getConnectedScreen all "$ignoreScreen")
+    [ -z "$screens" ] && error "No screen found" && exit 1
 
     local screen=$(echo "$screens" | rofi -dmenu -p "Disconnect a screen")
-    [ "$screen" == "" ] && exit 1
+    [ -z "$screen" ] && exit 1
 
     if xrandr --output "$screen" --off; then
         info "Screen disconnected"
@@ -115,8 +133,15 @@ function disconnectScreen() {
     fi
 }
 
+# function switchWorkspace() {
+#     local primaryScreen=$(getConnectedScreen primary "$ignoreScreen")
+#     local secondaryScreen=$(getConnectedScreen secondary "$ignoreScreen")
+
+#     i3-msg "workspace 1; move workspace to output $primaryScreen"
+# }
+
 if [ $# -ge 1 ]; then
-    for i in $(seq 1 $#); do
+    for _ in $(seq 1 $#); do
         case $1 in
             -h | --help)
                 helpFunc
@@ -130,6 +155,10 @@ if [ $# -ge 1 ]; then
                 action=2;;
             -s | --status)
                 action=3;;
+            --connected)
+                action=4
+                param="$2"
+                shift;;
             "");;
             *)
                 echo_err "Unknown parameter $1"
@@ -139,7 +168,7 @@ if [ $# -ge 1 ]; then
     done
 fi
 
-verification
+checkDependencies
 
 case $action in
     1)
@@ -148,6 +177,8 @@ case $action in
         disconnectScreen;;
     3)
         xrandr --listmonitors;;
+    4)
+        getConnectedScreen "$param" "$ignoreScreen";;
     *)
         helpFunc
         exit 1;;
