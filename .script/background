@@ -1,11 +1,12 @@
 #!/bin/bash
 # author : lordpax
-# background v1.1.1
+# background v1.1.2
 
 wallpaperPath="$HOME/Images/wallpaper"
 defaultImage="$wallpaperPath/default"
+dependencies="rofi feh notify-send"
 choosenImage=""
-version="1.1.1"
+version="1.1.2"
 action=0
 
 # info <msg>
@@ -38,10 +39,11 @@ Option:
 -a or --all <file> .............. Update and apply background"
 }
 
-function verification() {
-    [ -z "$(which feh 2> /dev/null)" ] && error "\"feh\" is required" && exit 1
-    [ -z "$(which notify-send 2> /dev/null)" ] && error "\"notify-send\" is required" && exit 1
-    [ -z "$(which rofi 2> /dev/null)" ] && error "\"rofi\" is required" && exit 1
+function checkDependencies() {
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
 }
 
 function applyBackground() {
@@ -100,7 +102,7 @@ if [ $# -ge 1 ]; then
     done
 fi
 
-verification
+checkDependencies
 
 case $action in
     1)
