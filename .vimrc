@@ -1,3 +1,4 @@
+let g:cligpt_model="mistral-medium"
 call plug#begin()
 
 Plug 'tpope/vim-fugitive'
