@@ -150,4 +150,8 @@ function cdf() {
     cd "$(dirname "$file")" || return 1
 }
 
+function nu() {
+    nvm use "$(cut -d. -f1 .nvmrc)"
+}
+
 function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }

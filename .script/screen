@@ -6,7 +6,7 @@ action=0
 ignoreScreen="None"
 version="v1.2"
 param=""
-dependencies="rofi notify-send"
+dependencies="rofi notify-send i3-msg xrandr awk grep seq"
 
 # info <msg>
 function info() {
@@ -113,7 +113,9 @@ function connectScreen() {
     [ "$rotation" != "none" ] && commande="$commande --rotate $rotation"
 
     if $commande; then
+        sleep 1
         info "Screen connected" 
+        i3-msg "restart"
     else
         error "Screen not connected"
     fi
@@ -127,18 +129,13 @@ function disconnectScreen() {
     [ -z "$screen" ] && exit 1
 
     if xrandr --output "$screen" --off; then
+        sleep 1
         info "Screen disconnected"
+        i3-msg "restart"
     else
         error "Screen not disconnected"
     fi
 }
-
-# function switchWorkspace() {
-#     local primaryScreen=$(getConnectedScreen primary "$ignoreScreen")
-#     local secondaryScreen=$(getConnectedScreen secondary "$ignoreScreen")
-
-#     i3-msg "workspace 1; move workspace to output $primaryScreen"
-# }
 
 if [ $# -ge 1 ]; then
     for _ in $(seq 1 $#); do
