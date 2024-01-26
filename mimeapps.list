@@ -20,6 +20,7 @@ application/pdf=org.pwmt.zathura.desktop
 text/markdown=vim.desktop
 text/*=vim.desktop
 text/plain=vim.desktop
+x-scheme-handler/ror2mm=r2modman.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;

@@ -16,6 +16,7 @@ exec xrdb /home/lordpax/.Xresources
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
 exec --no-startup-id setxkbmap fr
+exec --no-startup-id system-config-printer-applet
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -215,7 +216,7 @@ gaps inner 10
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Pavucontrol|Gcolor3"] floating enable
+for_window [class="Pavucontrol|Gcolor3|System-config-printer.py"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id ~/.script/polybar-startup
