@@ -37,6 +37,7 @@ font pango:DejaVu Sans 10
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id blueman-applet
+exec_always --no-startup-id system-config-printer-applet
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
@@ -220,7 +221,7 @@ gaps inner 11
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Blueman-manager|Pavucontrol|Lxappearance|Gcolor3"] floating enable
+for_window [class="Blueman-manager|Pavucontrol|Lxappearance|Gcolor3|System-config-printer.py"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id "~/.script/polybar-startup"
