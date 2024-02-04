@@ -20,8 +20,8 @@ color info blue black bold
 color article white default
 
 # browser firefox-developer-edition
-# browser firefox
-browser pulse-browser
+browser firefox
+# browser pulse-browser
 
 highlight all "---.*---" yellow
 highlight feedlist ".*(0/0))" black
