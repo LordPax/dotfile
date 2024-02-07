@@ -163,6 +163,14 @@ function! ResizeMode()
     endif
 endfun
 
+function! MinifyJson(is_selection) range
+    if !executable('jq')
+        echohl ErrorMsg | echo "jq is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!jq -c ." : "%!jq -c ."
+endfun
+
 if has("persistent_undo")
     let target_path = expand('~/.undodir')
 
@@ -183,6 +191,7 @@ command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script
 command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -range MinifyJson <line1>,<line2>call MinifyJson(<range>)
 command -range XmlPretty <line1>,<line2>call XmlPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
