@@ -253,11 +253,11 @@ autocmd FileType typescript set keywordprg=:ManCht\ typescript
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
-" augroup remember_folds
-"   autocmd!
-"   autocmd BufWinLeave * mkview
-"   autocmd BufWinEnter * silent! loadview
-" augroup END
+augroup remember_folds
+  autocmd!
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  autocmd BufWinEnter ?* silent! loadview
+augroup END
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
