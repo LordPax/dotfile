@@ -40,6 +40,7 @@ Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
+" Plug 'TabbyML/vim-tabby'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -401,6 +402,7 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
 let g:doge_mapping_comment_jump_forward = "<c-l>"
 let g:doge_mapping_comment_jump_backward = "<c-k>"
+let g:tabby_keybinding_accept = '<Tab>'
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0
