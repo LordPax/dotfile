@@ -91,12 +91,21 @@ function! ResizeMode()
     endif
 endfun
 
+function! MinifyJson(is_selection) range
+    if !executable('jq')
+        echohl ErrorMsg | echo "jq is not installed" | echohl None | return
+    endif
+
+    silent exe a:is_selection ? "'<,'>!jq -c ." : "%!jq -c ."
+endfun
+
 command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
 command ToggleFileManager call ToggleFileManager()
 command Sudow :w !sudo tee % >/dev/null
 command -range JsonPretty <line1>,<line2>call JsonPretty(<range>)
+command -range MinifyJson <line1>,<line2>call MinifyJson(<range>)
 command -range XmlPretty <line1>,<line2>call XmlPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
@@ -127,6 +136,8 @@ set nobackup
 set noswapfile
 set autoread
 set signcolumn="yes"
+set listchars=tab:>-,space:.,trail:. ",eol:↲
+set invlist
 set re=0
 set encoding=utf-8
 scriptencoding utf-8
@@ -136,10 +147,18 @@ set encoding=UTF-8
 set grepprg=ag\ --vimgrep
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
+set completeopt-=preview
+set hidden
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
+
+augroup remember_folds
+  autocmd!
+  " autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  autocmd BufWinEnter ?* silent! loadview
+augroup END
 
 nmap <C-i> :bp<CR>
 nmap <C-o> :bn<CR>
@@ -153,13 +172,13 @@ nmap <C-p> :find<space>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
 nmap <leader>L :vert rightb term<CR>
-nmap <leader>n :vert term ++close ranger<CR>
-nmap <leader>N :bel term ++close ranger<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
+nmap <leader>o :bufdo bd<CR>
 nmap <leader>f :ToggleFileManager<CR>
-nmap <leader>z zfiB<CR>
+nmap <leader>z zfaB<CR>
 nmap <leader>r :ResizeMode<CR>
 nmap <leader>i :b #<CR>
+nmap <leader>ev :vsp ~/.vimrc<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
