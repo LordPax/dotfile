@@ -240,6 +240,7 @@ set spelllang=fr
 set term=screen-256color
 " set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
+set grepprg=ag\ --vimgrep
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
 set omnifunc=syntaxcomplete#Complete
@@ -281,6 +282,8 @@ nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfaB<CR>
 nmap <leader>r :ResizeMode<CR>
 nmap <leader>i :b #<CR>
+nmap <leader>ev :vsp ~/.vimrc<CR>
+nmap <leader>sv :source ~/.vimrc<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
@@ -391,7 +394,6 @@ let g:go_list_type = "quickfix"
 let g:undotree_WindowLayout = 3
 
 let g:ackprg = "ag --vimgrep"
-set grepprg=ag\ --vimgrep
 " let g:airline#extensions#tabline#enabled = 1
 " let g:airline_theme="codedark"
 
