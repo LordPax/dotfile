@@ -227,7 +227,7 @@ exe "highlight NonText ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
 exe "highlight CursorLine ctermbg="..s:back2.." cterm=NONE"
 exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight VertSplit ctermbg="..s:back3.." ctermfg="..s:front
+exe "highlight VertSplit ctermbg=NONE ctermfg="..s:front
 exe "highlight LineNr ctermbg="..s:back.." ctermfg="..s:front
 exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
 highlight ModeMsg ctermbg=NONE
