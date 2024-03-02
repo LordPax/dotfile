@@ -41,11 +41,11 @@ Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
-" Plug 'TabbyML/vim-tabby'
 runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'TabbyML/vim-tabby'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'vimwiki/vimwiki'
