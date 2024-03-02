@@ -34,6 +34,7 @@ Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
+Plug 'LordPax/vim-translate'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
