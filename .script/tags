@@ -49,8 +49,12 @@ blockquote	github-style.css	/^blockquote {$/;"	s
 body	github-style.css	/^body {$/;"	s
 brightness	brightness	/^function brightness() {$/;"	f
 checkDependencies	background	/^function checkDependencies() {$/;"	f
+checkDependencies	brightness	/^function checkDependencies() {$/;"	f
+checkDependencies	crypt	/^function checkDependencies() {$/;"	f
+checkDependencies	flash	/^function checkDependencies() {$/;"	f
 checkDependencies	mountdisk	/^function checkDependencies() {$/;"	f
 checkDependencies	screen	/^function checkDependencies() {$/;"	f
+checkDependencies	update	/^function checkDependencies() {$/;"	f
 choiceEncryption	mountdisk	/^function choiceEncryption() {$/;"	f
 code	github-style.css	/^code {$/;"	s
 code	github-style.css	/^pre, code {$/;"	s
@@ -99,6 +103,13 @@ info	background	/^function info() {$/;"	f
 info	crypt	/^function info() {$/;"	f
 info	mountdisk	/^function info() {$/;"	f
 info	screen	/^function info() {$/;"	f
+main	background	/^function main() {$/;"	f
+main	brightness	/^function main() {$/;"	f
+main	crypt	/^function main() {$/;"	f
+main	flash	/^function main() {$/;"	f
+main	mountdisk	/^function main() {$/;"	f
+main	screen	/^function main() {$/;"	f
+main	update	/^function main() {$/;"	f
 mountDisk	mountdisk	/^function mountDisk() {$/;"	f
 mountFunc	mountdisk	/^function mountFunc() {$/;"	f
 ol	github-style.css	/^ol {$/;"	s
@@ -109,6 +120,8 @@ p	github-style.css	/^p {$/;"	s
 pre	github-style.css	/^pre {$/;"	s
 pre	github-style.css	/^pre, code {$/;"	s
 randomString	mountdisk	/^function randomString() {$/;"	f
+screenPresetHouse	screen	/^function screenPresetHouse() {$/;"	f
+screenPresetWork	screen	/^function screenPresetWork() {$/;"	f
 selectBackground	background	/^function selectBackground() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
 table	github-style.css	/^table {$/;"	s

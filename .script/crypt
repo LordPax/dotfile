@@ -1,5 +1,7 @@
 #!/bin/bash
 
+dependencies="zenity aescrypt"
+
 # info <msg>
 function info() {
     [ "$1" == "" ] && exit 1
@@ -21,12 +23,20 @@ Option:
 -d or --decrypt ................. Decrypt files"
 }
 
+function checkDependencies() {
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
+}
+
 function encrypt() {
     firstPass=$(zenity --password --title="Mot de passe")
     secondPass=$(zenity --password --title="Confirmation mot de passe")
 
-    if [ $firstPass == $secondPass ]; then
-        aescrypt -e -p $firstPass "$@" &> /dev/null && shred -zu "$@" || error "Une erreur s'est produite"
+    if [ "$firstPass" == "$secondPass" ]; then
+        aescrypt -e -p "$firstPass" "$@" &> /dev/null && \
+            shred -zu "$@" || error "Une erreur s'est produite"
     else
         error "Les mots de passe sont différents"
     fi
@@ -37,25 +47,31 @@ function encrypt() {
 
 function decrypt() {
     password=$(zenity --password --title="Mot de passe")
-    aescrypt -d -p $password "$@" &> /dev/null && rm "$@" || error "Une erreur s'est produite"
+    aescrypt -d -p "$password" "$@" &> /dev/null && \
+        rm "$@" || error "Une erreur s'est produite"
     unset password
 }
 
-if [ $# -ge 1 ]; then
-    case $1 in
-        -h | --help)
-            helpFunc
-            exit 0 ;;
-        -e | --encrypt)
-            shift
-            encrypt "$@"
-            exit 0;;
-        -d | --decrypt)
-            shift
-            decrypt "$@"
-            exit 0;;
-        *)
-            error "Unknown paramater \"$1\""
-            exit 1 ;;
-    esac
-fi
+function main() {
+    if [ $# -ge 1 ]; then
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0 ;;
+            -e | --encrypt)
+                shift
+                encrypt "$@"
+                exit 0;;
+            -d | --decrypt)
+                shift
+                decrypt "$@"
+                exit 0;;
+            *)
+                error "Unknown paramater \"$1\""
+                exit 1 ;;
+        esac
+    fi
+}
+
+checkDependencies
+main "$@"

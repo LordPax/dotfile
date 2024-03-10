@@ -111,6 +111,7 @@ alias gch="git checkout"
 alias gco="git commit"
 alias gl="git log"
 alias gb="git branch"
+alias gsu="git submodule update --remote --merge"
 
 alias dp="docker ps"
 alias dpa="docker ps -a"
