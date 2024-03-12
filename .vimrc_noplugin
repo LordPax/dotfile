@@ -156,7 +156,7 @@ autocmd FileType cs set makeprg=dotnet\ build
 
 augroup remember_folds
   autocmd!
-  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  " autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
   autocmd BufWinEnter ?* silent! loadview
 augroup END
 
@@ -179,7 +179,6 @@ nmap <leader>z zfaB<CR>
 nmap <leader>r :ResizeMode<CR>
 nmap <leader>i :b #<CR>
 nmap <leader>ev :vsp ~/.vimrc<CR>
-nmap <leader>sv :source ~/.vimrc<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>

@@ -6,6 +6,7 @@ screen="eDP1"
 version="v1.2"
 action=0
 param=""
+dependencies="xrandr bc"
 
 function echoErr() {
     [ "$1" == "" ] && exit 1
@@ -25,6 +26,13 @@ Option :
 -g ................................................ Get brightness
 -G ................................................ Get brightness as a percentage"
     exit 0
+}
+
+function checkDependencies() {
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
 }
 
 function verification() {
@@ -53,54 +61,59 @@ function brightness() {
     setBrightness "$new"
 }
 
-if [ $# -ge 1 ]; then
-    for i in $(seq 1 $#); do
-        case $1 in
-            -h | --help)
-                helpFunc;;
-            -v | --version)
-                echo $version
-                exit 0;;
-            --screen)
-                screen="$2"
-                shift;;
-            -i)
-                action=1
-                param="+ $2"
-                shift;;
-            -d)
-                action=1
-                param="- $2"
-                shift;;
-            -s)
-                action=2
-                param="$2"
-                shift;;
-            -g)
-                action=3;;
-            -G)
-                action=3
-                param="%";;
-            "")
-                ;;
-            *)
-                echoErr $"Unknown parameter \"$1\""
-                exit 1
-        esac
-        shift
-    done
-fi
+function main() {
+    if [ $# -ge 1 ]; then
+        for _ in $(seq 1 $#); do
+            case $1 in
+                -h | --help)
+                    helpFunc;;
+                -v | --version)
+                    echo $version
+                    exit 0;;
+                --screen)
+                    screen="$2"
+                    shift;;
+                -i)
+                    action=1
+                    param="+ $2"
+                    shift;;
+                -d)
+                    action=1
+                    param="- $2"
+                    shift;;
+                -s)
+                    action=2
+                    param="$2"
+                    shift;;
+                -g)
+                    action=3;;
+                -G)
+                    action=3
+                    param="%";;
+                "")
+                    ;;
+                *)
+                    echoErr $"Unknown parameter \"$1\""
+                    exit 1
+            esac
+            shift
+        done
+    fi
 
-verification
+    verification
 
-case $action in
-    1)
-        brightness $param;;
-    2)
-        setBrightness "$param";;
-    3)
-        getBrightness "$param";;
-    *)
-        echoErr "Something wrong, type : $0 --help"
-        exit 1
-esac
+    case $action in
+        1)
+            brightness $param;;
+        2)
+            setBrightness "$param";;
+        3)
+            getBrightness "$param";;
+        *)
+            echoErr "Something wrong, type : $0 --help"
+            exit 1
+    esac
+}
+
+checkDependencies
+main "$@"

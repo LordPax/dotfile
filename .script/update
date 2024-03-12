@@ -1,8 +1,17 @@
 #!/bin/bash
 
+dependencies="checkupdates yay"
+
 function echoErr() {
     [ "$1" == "" ] && exit 1
     echo -e "\e[31mERROR :\e[0m $1" > /dev/stderr
+}
+
+function checkDependencies() {
+    for dependency in $dependencies; do
+        ! command -v "$dependency" > /dev/null 2>&1 && \
+            echo_err "Dependency \"$dependency\" not found" && exit 1
+    done
 }
 
 function helpFunc() {
@@ -39,29 +48,34 @@ function updateAur() {
     [ $? -eq 0 ] && urxvt -e sh -c 'yay -Syu --aur'
 }
 
-if [ $# -ge 1 ]; then
-    case $1 in
-        -h | --help)
-            helpFunc
-            exit 0;;
-        --nb-pacman)
-            checkupdates 2> /dev/null | wc -l
-            exit 0;;
-        --update-pacman)
-            updatePacman
-            exit 0;;
-        --nb-aur)
-            yay -Qum 2> /dev/null | wc -l
-            exit 0;;
-        --update-aur)
-            updateAur
-            exit 0;;
-        --format)
-            echo "$(yay -Qum 2> /dev/null | wc -l) %{F#3498db}󰚰%{F-} $(checkupdates 2> /dev/null | wc -l)"
-            exit 0;;
-        *)
-            echoErr "Unknown parameter \"$1\""
-            exit 1;;
-    esac
-    shift
-fi
+function main() {
+    if [ $# -ge 1 ]; then
+        case $1 in
+            -h | --help)
+                helpFunc
+                exit 0;;
+            --nb-pacman)
+                checkupdates 2> /dev/null | wc -l
+                exit 0;;
+            --update-pacman)
+                updatePacman
+                exit 0;;
+            --nb-aur)
+                yay -Qum 2> /dev/null | wc -l
+                exit 0;;
+            --update-aur)
+                updateAur
+                exit 0;;
+            --format)
+                echo "$(yay -Qum 2> /dev/null | wc -l) %{F#3498db}󰚰%{F-} $(checkupdates 2> /dev/null | wc -l)"
+                exit 0;;
+            *)
+                echoErr "Unknown parameter \"$1\""
+                exit 1;;
+        esac
+        shift
+    fi
+}
+
+checkDependencies
+main "$@"

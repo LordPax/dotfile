@@ -34,17 +34,18 @@ Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'LordPax/vim-cligpt'
 Plug 'LordPax/vim-encrypt'
+Plug 'LordPax/vim-translate'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
-" Plug 'TabbyML/vim-tabby'
 runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'TabbyML/vim-tabby'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'vimwiki/vimwiki'
@@ -257,7 +258,7 @@ autocmd FileType cs set makeprg=dotnet\ build
 
 augroup remember_folds
   autocmd!
-  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  " autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
   autocmd BufWinEnter ?* silent! loadview
 augroup END
 
@@ -283,7 +284,6 @@ nmap <leader>z zfaB<CR>
 nmap <leader>r :ResizeMode<CR>
 nmap <leader>i :b #<CR>
 nmap <leader>ev :vsp ~/.vimrc<CR>
-nmap <leader>sv :source ~/.vimrc<CR>
 
 nmap <leader>ss z=
 nmap <leader>sf :set spelllang=fr<CR>
