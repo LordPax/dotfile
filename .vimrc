@@ -274,7 +274,7 @@ nmap <C-p> :find<space>
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
-nmap <leader>L :vert rightb term<CR>
+nmap <leader>L :bel term ++close<space>
 nmap <leader>n :Vifm<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :bufdo bd<CR>
