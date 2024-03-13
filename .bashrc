@@ -49,8 +49,16 @@ export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-2
 
 # Android
-export ANDROID_HOME=$HOME/Android/Sdk
+# export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_HOME=/opt/android-sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export ANDROID_AVD_HOME=$HOME/.android/avd
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
+# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# Flutter
+export PATH="$PATH:/opt/flutter/bin"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
