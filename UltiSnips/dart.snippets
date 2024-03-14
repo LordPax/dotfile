@@ -8,3 +8,29 @@ class $1 extends StatelessWidget {
     }
 }
 endsnippet
+
+snippet statefull "create a stateless widget" in
+class $1 extends StatefullWidget {
+    const $1({super.key});
+
+    @override
+    _$1State createState() => _$1State();
+}
+endsnippet
+
+snippet inh "create a stateless widget" in
+class $1 extends InheritedWidget {
+    const $1({super.key, required super.child});
+
+	static $1 of(BuildContext context) {
+		final $1? result = context.dependOnInheritedWidgetOfExactType<$1>();
+		assert(result != null, 'No $1 found in context');
+		return result!;
+	}
+
+    @override
+    bool updateShouldNotify(covariant $1 oldWidget) {
+		return true;
+	}
+}
+endsnippet
