@@ -19,7 +19,7 @@ function helpFunc() {
 Option :
 -h or --help ...................................... Show help
 -v or --version ................................... Show version
---screen <screen> ................................. Change screen
+-S or --screen <screen> ................................. Change screen
 -i <num> .......................................... Increment brightness
 -d <num> .......................................... Decrement brightness
 -s <num> .......................................... Set brightness
@@ -70,7 +70,7 @@ function main() {
                 -v | --version)
                     echo $version
                     exit 0;;
-                --screen)
+                -S | --screen)
                     screen="$2"
                     shift;;
                 -i)
