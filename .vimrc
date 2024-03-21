@@ -41,6 +41,8 @@ Plug 'azabiong/vim-highlighter'
 Plug 'prisma/vim-prisma'
 Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -274,7 +276,7 @@ nmap <C-p> :find<space>
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
-nmap <leader>L :vert rightb term<CR>
+nmap <leader>L :bel term ++close<space>
 nmap <leader>n :Vifm<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :bufdo bd<CR>

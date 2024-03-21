@@ -11,7 +11,8 @@
 
 set $mod Mod4
 
-exec --no-startup-id ~/.script/startup
+# exec --no-startup-id ~/.script/startup
+exec --no-startup-id ~/.script/screen -p screenPresetStartup enable
 exec xrdb /home/lordpax/.Xresources
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator

@@ -103,6 +103,7 @@ info	background	/^function info() {$/;"	f
 info	crypt	/^function info() {$/;"	f
 info	mountdisk	/^function info() {$/;"	f
 info	screen	/^function info() {$/;"	f
+loadPreset	screen	/^function loadPreset() {$/;"	f
 main	background	/^function main() {$/;"	f
 main	brightness	/^function main() {$/;"	f
 main	crypt	/^function main() {$/;"	f
@@ -120,7 +121,7 @@ p	github-style.css	/^p {$/;"	s
 pre	github-style.css	/^pre {$/;"	s
 pre	github-style.css	/^pre, code {$/;"	s
 randomString	mountdisk	/^function randomString() {$/;"	f
-screenPresetHouse	screen	/^function screenPresetHouse() {$/;"	f
+screenPresetStartup	screen	/^function screenPresetStartup() {$/;"	f
 screenPresetWork	screen	/^function screenPresetWork() {$/;"	f
 selectBackground	background	/^function selectBackground() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
