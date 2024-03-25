@@ -4,6 +4,8 @@
 
 [[ $- != *i* ]] && return
 
+[ -z "$TMUX" ] && tmux && exit
+
 PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
@@ -36,31 +38,30 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-[[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
+# Default
 export PATH=$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
 export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-2
 
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Xmake
+[ -s "$HOME/.xmake/profile" ] && source "$HOME/.xmake/profile" # load xmake profile
+
 # Android
-# export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_HOME=/opt/android-sdk
-export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_AVD_HOME=$HOME/.android/avd
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
-# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # Flutter
 export PATH="$PATH:/opt/flutter/bin"
 
-# bun
+# Bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
@@ -69,11 +70,9 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
-[ -z $TMUX ] && tmux && exit
-
 # alias syncdash="firefox-developer-edition localhost:8384"
-alias syncdash="firefox localhost:8384"
 # alias syncdash="pulse-browser localhost:8384"
+alias syncdash="firefox localhost:8384"
 alias backup_dotfile="backup -c .config_backup/config_dotfile.txt -o /media/veracrypt1/Backup -n dotfile_jarvis -s 3"
 alias restore_dotfile="backup -r /media/veracrypt1/Backup -o / -n dotfile_jarvis"
 alias backup_file="backup -c .config_backup/config.txt -o /media/veracrypt1/Backup -n backup -s 3"
@@ -87,8 +86,8 @@ alias viminstall="vimc PlugInstall"
 alias vimupdate="vimc PlugUpdate"
 alias vimclean="vimc PlugClean"
 
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
+alias df='df -h'
+alias free='free -h'
 alias more=less
 alias ls='ls --color'
 alias grep='grep --color=auto'

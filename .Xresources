@@ -10,7 +10,8 @@
 ! *.cursorColor: #FFFFFF
 
 ! black
-*.color0: #14161b
+/* *.color0: #14161b */
+*.color0: #080808
 *.color8: #373b41
 
 ! red
