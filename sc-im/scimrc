@@ -1,6 +1,6 @@
 # Papercolor dark theme
 REDEFINE_COLOR "WHITE" 239 239 239
-REDEFINE_COLOR "BLACK" 28 28 28
+REDEFINE_COLOR "BLACK" 8 8 8
 REDEFINE_COLOR "RED" 255 149 128
 REDEFINE_COLOR "GREEN" 175 215 0
 REDEFINE_COLOR "YELLOW" 255 175 95
@@ -21,15 +21,15 @@ color "type=INFO_MSG fg=YELLOW bg=BLACK bold=0"
 color "type=ERROR_MSG fg=WHITE bg=RED bold=0"
 color "type=INPUT fg=BLUE bg=BLACK"
 color "type=CELL_ERROR fg=WHITE bg=RED bold=0"
-color "type=HEADINGS fg=WHITE bg=BLACK bold=0"
-color "type=HEADINGS_ODD fg=WHITE bg=BLACK bold=0"
+color "type=HEADINGS fg=BLUE bg=BLACK bold=0"
+color "type=HEADINGS_ODD fg=BLUE bg=BLACK bold=0"
 color "type=CELL_SELECTION fg=WHITE bg=BLUE bold=1"
 color "type=CELL_SELECTION_SC fg=WHITE bg=BLUE bold=1"
 color "type=NUMB fg=YELLOW bg=BLACK bold=0"
 color "type=CELL_NEGATIVE fg=MAGENTA bg=BLACK bold=0"
 color "type=EXPRESSION fg=GREEN bg=BLACK bold=0"
 # To not italicize strings, replace italic=1 with italic=0 on following line
-color "type=STRG fg=BLUE bg=BLACK bold=0 italic=1"
+color "type=STRG fg=WHITE bg=BLACK bold=0 italic=1"
 color "type=DATEF fg=YELLOW bg=BLACK"
 color "type=HELP_HIGHLIGHT fg=BLACK bg=WHITE"
 

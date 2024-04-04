@@ -4,6 +4,8 @@
 
 [[ $- != *i* ]] && return
 
+[ -z $TMUX ] && tmux && exit
+
 PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
@@ -36,25 +38,37 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+# Default
+export PATH=$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
+export EDITOR=/usr/bin/vim
+export DOTFILE_BRANCH=jarvis
+
+# Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
+# Xmake
 [[ -s "$HOME/.xmake/profile" ]] && source "$HOME/.xmake/profile" # load xmake profile
-PATH=/var/lib/snapd/snap/bin:$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$HOME/go/bin:$HOME/.cargo/bin:$PATH
-export EDITOR=/usr/bin/vim
-export DOTFILE_BRANCH=jarvis
+
+# Android
+export ANDROID_HOME=/opt/android-sdk
+export ANDROID_AVD_HOME=$HOME/.android/avd
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
+
+# Flutter
+export PATH="$PATH:/opt/flutter/bin"
+
+# Golang
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-
-[ -z $TMUX ] && tmux && exit
+export PATH=$GOBIN:$PATH
 
 # alias syncdash="firefox-developer-edition localhost:8384"
-alias syncdash="firefox localhost:8384"
 # alias syncdash="pulse-browser localhost:8384"
+alias syncdash="firefox localhost:8384"
 alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s 3"
 alias backup_file_usb="backup -c /home/lordpax/.config_backup/config.txt -o /media/veracrypt1/Backup -n backup_glados -s 3"
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"
@@ -156,3 +170,5 @@ function cdf() {
     [ -z "$file" ] && return 1
     cd "$(dirname "$file")" || return 1
 }
+
+function urldecode() { : "${*//+/ }"; echo -e "${_//%/\\x}"; }
