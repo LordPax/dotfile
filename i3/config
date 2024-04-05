@@ -171,7 +171,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+p exec --no-startup-id zenity --question --title "Eteindre" --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --title "Redémarer" --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
-bindsym $mod+s exec --no-startup-id thunar
+bindsym $mod+s exec ~/programme/cligpt -c -g speech
 bindsym $mod+u exec --no-startup-id flameshot gui
 bindsym $mod+w exec ~/.script/screen -c
 bindsym $mod+Shift+w exec ~/.script/screen -d
