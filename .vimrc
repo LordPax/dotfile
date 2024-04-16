@@ -44,6 +44,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 Plug 'vito-c/jq.vim'
+Plug 'posva/vim-vue'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -69,7 +70,6 @@ call plug#end()
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
-" Plug 'posva/vim-vue'
 
 let g:useSpace = 1
 let g:length = 4
