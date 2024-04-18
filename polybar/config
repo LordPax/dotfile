@@ -455,6 +455,8 @@ menu-2-1-exec = menu-open-0
 [module/luminosity]
 type = custom/script
 exec = echo "%{F#3498db}%{F-} $(~/.script/brightness --screen ${MONITOR} -G)%"
+scroll-up = ~/.script/brightness --screen ${MONITOR} -i 0.1
+scroll-down = ~/.script/brightness --screen ${MONITOR} -d 0.1
 interval = 1
 
 [module/title]

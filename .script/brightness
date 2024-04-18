@@ -7,6 +7,7 @@ version="v1.2"
 action=0
 param=""
 dependencies="xrandr bc"
+name=$(basename "$0")
 
 function echoErr() {
     [ "$1" == "" ] && exit 1
@@ -14,17 +15,17 @@ function echoErr() {
 }
 
 function helpFunc() {
-    echo $"Usage : $0 <option>
+    echo $"Usage : $name <option>
 
 Option :
--h or --help ...................................... Show help
--v or --version ................................... Show version
--S or --screen <screen> ................................. Change screen
--i <num> .......................................... Increment brightness
--d <num> .......................................... Decrement brightness
--s <num> .......................................... Set brightness
--g ................................................ Get brightness
--G ................................................ Get brightness as a percentage"
+-h or --help ................ Show help
+-v or --version ............. Show version
+-S or --screen <screen> ..... Change screen
+-i <num> .................... Increment brightness
+-d <num> .................... Decrement brightness
+-s <num> .................... Set brightness
+-g .......................... Get brightness
+-G .......................... Get brightness as a percentage"
     exit 0
 }
 
@@ -41,7 +42,12 @@ function verification() {
 
 # getBrightness [%]
 function getBrightness() {
-    local brightness=$(xrandr --verbose | grep -A 5 "^$screen " | grep Brightness | sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g")
+    local brightness=$(
+        xrandr --verbose | \
+        grep -A 5 "^$screen " | \
+        grep Brightness | \
+        sed -e "s/.*: \([0-9]*\.[0-9]*\)/\1/g"
+    )
     [ -z "$brightness" ] && echo "None" && exit 1
     [ "$1" == "%" ] && echo "$brightness * 100" | bc | cut -d '.' -f 1 || echo "$brightness"
 }
