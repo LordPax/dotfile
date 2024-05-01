@@ -43,6 +43,7 @@ Plug 'vifm/vifm.vim'
 Plug 'hashivim/vim-terraform'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
+Plug 'vito-c/jq.vim'
 runtime ftplugin/man.vim
 
 call plug#end()

@@ -152,7 +152,7 @@ command! reload :write | restart full
 command! less !!bat -p %f
 command! openInTmux !tmux new-window 'vim %f'
 " command! openInTmux :!tmux new-window 'xdg-open %f'
-command! ext !ext %f
+command! ext !~/.script/ext %f
 command! encrypt !~/.script/crypt -e %f
 command! decrypt !~/.script/crypt -d %f
 command! findf :find . -type f -iname "*%a*"

@@ -10,16 +10,14 @@ PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
 [ -r /usr/share/bash-completion/bash_completion ] && . /usr/share/bash-completion/bash_completion
 
-set -o vi
-bind 'set show-mode-in-prompt on'
-bind 'set vi-cmd-mode-string \e[01;34m(NOR)\e[0m'
-bind 'set vi-ins-mode-string \e[01;33m(INS)\e[0m'
-bind -m vi 'j: backward-char'
-bind -m vi 'k: history-search-forward'
-bind -m vi 'l: history-search-backward'
-bind -m vi 'm: forward-char'
-# bind -m vi-command 'Control-l: clear-screen'
-# bind -m vi-insert 'Control-l: clear-screen'
+# set -o vi
+# bind 'set show-mode-in-prompt on'
+# bind 'set vi-cmd-mode-string \e[01;34m(NOR)\e[0m'
+# bind 'set vi-ins-mode-string \e[01;33m(INS)\e[0m'
+# bind -m vi 'j: backward-char'
+# bind -m vi 'k: history-search-forward'
+# bind -m vi 'l: history-search-backward'
+# bind -m vi 'm: forward-char'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -55,11 +53,12 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=/opt/android-sdk
 export ANDROID_AVD_HOME=$HOME/.android/avd
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 
 # Flutter
-export PATH="$PATH:/opt/flutter/bin"
+# export PATH="$PATH:/opt/flutter/bin"
+# export PATH="$PATH:/usr/lib/flutter/bin/"
 
 # Golang
 export GOPATH=$HOME/go
@@ -82,6 +81,7 @@ alias getconf="getdotfile -o .config"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 alias backup_log="bat ~/.config_backup/backup.log"
 alias remove-orphans="pacman -Qtdq | sudo pacman -Rns -"
+alias mdpdf="mdpdf --style=$HOME/.script/github-style.css"
 
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"

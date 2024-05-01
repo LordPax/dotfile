@@ -24,9 +24,8 @@ https://bridge.easter.fr/?action=display&bridge=YouTubeCommunityTabBridge&contex
 https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+custom+name&custom=AstronoGeek&duration_min=&duration_max=&format=Mrss
 https://bridge.easter.fr/?action=display&bridge=YoutubeBridge&context=By+username&u=joueurdugrenier&duration_min=&duration_max=&format=Mrss
 
-# "--- Twitter ---"
-# https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=AstronoGeek&format=Mrss
-# https://bridge.easter.fr/?action=display&bridge=TwitterBridge&context=By+username&u=Frederic_Molas&format=Mrss
+"--- Beyond all reason ---"
+https://www.beyondallreason.info/microblogs/rss.xml
 
 "--- ESGI ---"
 https://myges.fr/rss/news
