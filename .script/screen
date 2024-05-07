@@ -167,8 +167,8 @@ function screenPresetWork() {
     local screens=$(getConnectedScreen all "$ignoreScreen")
     [ -z "$screens" ] && error "Preset : No screen found" && exit 1
 
-    echo -e "$screens" | grep -Evq "eDP1|DP4|DP3" && \
-        error "Preset : Required screen \"eDP1, DP4, DP3\" not found" && exit 1
+    echo -e "$screens" | grep -Evq "eDP-1|DP-4|DP-3" && \
+        error "Preset : Required screen \"eDP-1, DP-4, DP-3\" not found" && exit 1
 
     if [ -z "$choosePreset" ]; then
         choosePreset=$(echo -e "enable\ndisable" | rofi -dmenu -p "Choose preset")
@@ -176,13 +176,13 @@ function screenPresetWork() {
 
     case $choosePreset in
         enable)
-            xrandr --output DP4 --auto --right-of eDP1
-            xrandr --output DP3 --auto --right-of DP4 --scale 1.3125
-            xrandr --output eDP1 --off;;
+            xrandr --output DP-4 --auto --right-of eDP-1
+            xrandr --output DP-3 --auto --right-of DP-4 --scale 1.3125
+            xrandr --output eDP-1 --off;;
         disable)
-            xrandr --output eDP1 --auto
-            xrandr --output DP4 --off
-            xrandr --output DP3 --off;;
+            xrandr --output eDP-1 --auto
+            xrandr --output DP-4 --off
+            xrandr --output DP-3 --off;;
         *)
             error "Preset : Unknown action" &&
             exit 1;;

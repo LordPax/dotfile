@@ -12,7 +12,7 @@
 set $mod Mod4
 
 exec_always xrdb /home/lordpax/.Xresources
-exec_always --no-startup-id ~/.script/brightness --screen eDP1 -s 0.7
+exec_always --no-startup-id ~/.script/brightness --screen eDP-1 -s 0.7
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec_always --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id /usr/lib/kdeconnectd
@@ -48,8 +48,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/.script/brightness --screen eDP1 -i 0.1
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/.script/brightness --screen eDP1 -d 0.1
+bindsym XF86MonBrightnessUp exec --no-startup-id ~/.script/brightness --screen eDP-1 -i 0.1
+bindsym XF86MonBrightnessDown exec --no-startup-id ~/.script/brightness --screen eDP-1 -d 0.1
 
 # bindsym
 

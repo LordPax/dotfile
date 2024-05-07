@@ -275,6 +275,8 @@ nmap <C-j> [s
 nmap <C-m> ]s
 nmap <C-p> :find<space>
 
+nmap <leader>cp :let @+ = expand("%")<CR>
+
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
@@ -311,6 +313,7 @@ nmap <leader>gl :Git log<CR>
 nmap <leader>gbr :Git br<CR>
 nmap <leader>gbl :Git blame<CR>
 
+" Dlv
 nmap <leader>db :DlvToggleBreakpoint<CR>
 
 vmap <leader>y "+y
