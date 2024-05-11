@@ -57,7 +57,7 @@ export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 
 # Flutter
-# export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/opt/flutter/bin"
 # export PATH="$PATH:/usr/lib/flutter/bin/"
 
 # Golang

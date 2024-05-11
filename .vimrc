@@ -44,6 +44,9 @@ Plug 'hashivim/vim-terraform'
 Plug 'dart-lang/dart-vim-plugin'
 Plug 'thosakwe/vim-flutter'
 Plug 'vito-c/jq.vim'
+Plug 'posva/vim-vue'
+Plug 'sebdah/vim-delve'
+Plug 'puremourning/vimspector'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -69,7 +72,6 @@ call plug#end()
 " Plug 'nickspoons/vim-sharpenup'
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'leafgarland/typescript-vim'
-" Plug 'posva/vim-vue'
 
 let g:useSpace = 1
 let g:length = 4
@@ -274,6 +276,8 @@ nmap <C-j> [s
 nmap <C-m> ]s
 nmap <C-p> :find<space>
 
+nmap <leader>cp :let @+ = expand("%")<CR>
+
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
 nmap <leader>l :bel term<CR>
@@ -309,6 +313,23 @@ nmap <leader>gco :Git commit
 nmap <leader>gl :Git log<CR>
 nmap <leader>gbr :Git br<CR>
 nmap <leader>gbl :Git blame<CR>
+
+" Dlv
+autocmd FileType go nmap <leader>db :DlvToggleBreakpoint<CR>
+autocmd FileType go nmap <leader>dT :DlvClearAll<CR>
+
+" Vimspector
+nnoremap <Leader>dd :call vimspector#Launch()<CR>
+nnoremap <Leader>de :call vimspector#Reset()<CR>
+nnoremap <Leader>dc :call vimspector#Continue()<CR>
+
+autocmd FileType (javascript|typescript) nnoremap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
+autocmd FileType (javascript|typescript) nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+
+nmap <Leader>dj <Plug>VimspectorStepOut
+nmap <Leader>dk <Plug>VimspectorStepOver
+nmap <Leader>dl <Plug>VimspectorRestart
+nmap <Leader>dm <Plug>VimspectorStepInto
 
 vmap <leader>y "+y
 map <leader>yy "+yy
