@@ -46,7 +46,7 @@ Plug 'thosakwe/vim-flutter'
 Plug 'vito-c/jq.vim'
 Plug 'posva/vim-vue'
 Plug 'sebdah/vim-delve'
-Plug 'puremourning/vimspector'
+" Plug 'puremourning/vimspector'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -319,17 +319,17 @@ autocmd FileType go nmap <leader>db :DlvToggleBreakpoint<CR>
 autocmd FileType go nmap <leader>dT :DlvClearAll<CR>
 
 " Vimspector
-nnoremap <Leader>dd :call vimspector#Launch()<CR>
-nnoremap <Leader>de :call vimspector#Reset()<CR>
-nnoremap <Leader>dc :call vimspector#Continue()<CR>
+" nnoremap <Leader>dd :call vimspector#Launch()<CR>
+" nnoremap <Leader>de :call vimspector#Reset()<CR>
+" nnoremap <Leader>dc :call vimspector#Continue()<CR>
 
-autocmd FileType (javascript|typescript) nnoremap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
-autocmd FileType (javascript|typescript) nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+" autocmd FileType (javascript|typescript) nnoremap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
+" autocmd FileType (javascript|typescript) nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
 
-nmap <Leader>dj <Plug>VimspectorStepOut
-nmap <Leader>dk <Plug>VimspectorStepOver
-nmap <Leader>dl <Plug>VimspectorRestart
-nmap <Leader>dm <Plug>VimspectorStepInto
+" nmap <Leader>dj <Plug>VimspectorStepOut
+" nmap <Leader>dk <Plug>VimspectorStepOver
+" nmap <Leader>dl <Plug>VimspectorRestart
+" nmap <Leader>dm <Plug>VimspectorStepInto
 
 vmap <leader>y "+y
 map <leader>yy "+yy
