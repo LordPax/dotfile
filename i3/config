@@ -217,7 +217,7 @@ gaps inner 10
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Pavucontrol|Gcolor3|System-config-printer.py"] floating enable
+for_window [class="Pavucontrol|Gcolor3|System-config-printer.py|Galculator"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id ~/.script/polybar-startup
