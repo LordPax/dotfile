@@ -263,7 +263,7 @@ autocmd FileType cs set makeprg=dotnet\ build
 
 augroup remember_folds
   autocmd!
-  " autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
   autocmd BufWinEnter ?* silent! loadview
 augroup END
 
@@ -277,6 +277,7 @@ nmap <C-m> ]s
 nmap <C-p> :find<space>
 
 nmap <leader>cp :let @+ = expand("%")<CR>
+nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>

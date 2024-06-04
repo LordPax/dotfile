@@ -57,7 +57,7 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 
 # Flutter
-# export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/opt/flutter/bin"
 # export FLUTTER_ROOT="/usr/lib/flutter/bin"
 # export FLUTTER_HOME=$FLUTTER_ROOT
 # export PATH="$PATH:$FLUTTER_ROOT"
