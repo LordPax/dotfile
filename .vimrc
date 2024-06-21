@@ -46,7 +46,7 @@ Plug 'thosakwe/vim-flutter'
 Plug 'vito-c/jq.vim'
 Plug 'posva/vim-vue'
 Plug 'sebdah/vim-delve'
-" Plug 'puremourning/vimspector'
+Plug 'puremourning/vimspector'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -77,6 +77,7 @@ let g:useSpace = 1
 let g:length = 4
 let g:fileMan = 0
 let g:resizeMode = 0
+let g:dark = 1
 let s:back = 232
 let s:back2 = 234
 let s:back3 = 235
@@ -170,6 +171,16 @@ function! ResizeMode()
     endif
 endfun
 
+function! ToggleDarkMode()
+    if g:dark == 1
+        let g:dark = 0
+        colorscheme delek
+    else
+        let g:dark = 1
+        colorscheme codedark
+    endif
+endfun
+
 function! MinifyJson(is_selection) range
     if !executable('jq')
         echohl ErrorMsg | echo "jq is not installed" | echohl None | return
@@ -202,6 +213,7 @@ command -range MinifyJson <line1>,<line2>call MinifyJson(<range>)
 command -range XmlPretty <line1>,<line2>call XmlPretty(<range>)
 command -nargs=1 Fls :filter /<args>/ ls
 command ResizeMode call ResizeMode()
+command ToggleDarkMode call ToggleDarkMode()
 command -nargs=* ManCht :vertical terminal bash -c "~/.script/vimcht <args>"
 command -nargs=* ManJS :vertical terminal bash -c "~/.script/vimcht javascript <args>"
 command -nargs=* ManTS :vertical terminal bash -c "~/.script/vimcht typescript <args>"
@@ -263,7 +275,7 @@ autocmd FileType cs set makeprg=dotnet\ build
 
 augroup remember_folds
   autocmd!
-  " autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
+  autocmd BufWinLeave,BufLeave,BufWritePost,BufHidden,QuitPre ?* nested silent! mkview
   autocmd BufWinEnter ?* silent! loadview
 augroup END
 
@@ -277,6 +289,7 @@ nmap <C-m> ]s
 nmap <C-p> :find<space>
 
 nmap <leader>cp :let @+ = expand("%")<CR>
+nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -319,17 +332,17 @@ autocmd FileType go nmap <leader>db :DlvToggleBreakpoint<CR>
 autocmd FileType go nmap <leader>dT :DlvClearAll<CR>
 
 " Vimspector
-" nnoremap <Leader>dd :call vimspector#Launch()<CR>
-" nnoremap <Leader>de :call vimspector#Reset()<CR>
-" nnoremap <Leader>dc :call vimspector#Continue()<CR>
+nnoremap <Leader>dd :call vimspector#Launch()<CR>
+nnoremap <Leader>de :call vimspector#Reset()<CR>
+nnoremap <Leader>dc :call vimspector#Continue()<CR>
 
-" autocmd FileType (javascript|typescript) nnoremap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
-" autocmd FileType (javascript|typescript) nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
+autocmd FileType (javascript|typescript) nnoremap <Leader>db :call vimspector#ToggleBreakpoint()<CR>
+autocmd FileType (javascript|typescript) nnoremap <Leader>dT :call vimspector#ClearBreakpoints()<CR>
 
-" nmap <Leader>dj <Plug>VimspectorStepOut
-" nmap <Leader>dk <Plug>VimspectorStepOver
-" nmap <Leader>dl <Plug>VimspectorRestart
-" nmap <Leader>dm <Plug>VimspectorStepInto
+nmap <Leader>dj <Plug>VimspectorStepOut
+nmap <Leader>dk <Plug>VimspectorStepOver
+nmap <Leader>dl <Plug>VimspectorRestart
+nmap <Leader>dm <Plug>VimspectorStepInto
 
 vmap <leader>y "+y
 map <leader>yy "+yy
@@ -441,6 +454,9 @@ let g:vim_http_tempbuffer = 1
 " let g:vimwiki_ext2syntax = {}
 
 colorscheme codedark
+" colorscheme delek
+
+" for codedark
 exe "highlight Normal ctermbg="..s:back
 exe "highlight NonText ctermbg="..s:back
 exe "highlight EndOfBuffer ctermbg="..s:back
@@ -466,6 +482,7 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
+
 " highlight TabLine ctermbg=NONE 
 " highlight TabLineFill ctermbg=NONE 
 " highlight TabLineSel ctermbg=NONE ctermfg=75
