@@ -55,6 +55,7 @@ export ANDROID_AVD_HOME=$HOME/.android/avd
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
+export CHROME_EXECUTABLE=/usr/bin/chromium
 
 # Flutter
 export PATH="$PATH:/opt/flutter/bin"
