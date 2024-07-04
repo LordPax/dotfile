@@ -223,7 +223,7 @@ gaps inner 11
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Blueman-manager|Pavucontrol|Lxappearance|Gcolor3|System-config-printer.py|Galculator"] floating enable
+for_window [class="Blueman-manager|Pavucontrol|pavucontrol|Lxappearance|Gcolor3|System-config-printer.py|Galculator|flameshot"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id "~/.script/polybar-startup"
