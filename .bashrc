@@ -4,7 +4,8 @@
 
 [[ $- != *i* ]] && return
 
-[ -z "$TMUX" ] && tmux && exit
+# [ -z "$TMUX" ] && tmux && exit
+[ -z "$TMUX" ] && tmux
 
 PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
@@ -40,6 +41,7 @@ shopt -s histappend
 export PATH=$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
 export EDITOR=/usr/bin/vim
 export DOTFILE_BRANCH=compute-2
+export GPG_TTY=$(tty)
 
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
@@ -57,7 +59,8 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 
 # Flutter
-export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/opt/flutter/bin:$HOME/.pub-cache/bin"
+export CHROME_EXECUTABLE=/usr/bin/chromium
 # export FLUTTER_ROOT="/usr/lib/flutter/bin"
 # export FLUTTER_HOME=$FLUTTER_ROOT
 # export PATH="$PATH:$FLUTTER_ROOT"
