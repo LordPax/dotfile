@@ -4,8 +4,8 @@
 
 [[ $- != *i* ]] && return
 
-# [ -z "$TMUX" ] && tmux && exit
-[ -z "$TMUX" ] && tmux
+[ -z "$TMUX" ] && tmux && exit
+# [ -z "$TMUX" ] && tmux
 
 PS1='\[\e[01;36m\][\u@\h\[\e[01;37m\] \W\[\e[01;36m\]]\$\[\e[0m\] '
 
