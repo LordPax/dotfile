@@ -58,7 +58,7 @@ export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDRO
 export CHROME_EXECUTABLE=/usr/bin/chromium
 
 # Flutter
-export PATH="$PATH:/opt/flutter/bin"
+export PATH="$PATH:/opt/flutter/bin:$HOME/.pub-cache/bin"
 # export PATH="$PATH:/usr/lib/flutter/bin/"
 
 # Golang

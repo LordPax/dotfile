@@ -289,7 +289,8 @@ nmap <C-m> ]s
 nmap <C-p> :find<space>
 
 nmap <leader>cp :let @+ = expand("%")<CR>
-nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
+autocmd FileType javascript|typescript nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
+autocmd FileType go nmap <leader>cb :let @+ = "b ".expand("%").":".line(".")<CR>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
