@@ -289,7 +289,8 @@ nmap <C-m> ]s
 nmap <C-p> :find<space>
 
 nmap <leader>cp :let @+ = expand("%")<CR>
-nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
+autocmd Filetype javascript nmap <leader>cb :let @+ = "sb('".expand("%")."', ".line(".").")"<CR>
+autocmd Filetype go nmap <leader>cb :let @+ = "b ".expand("%").":".line(".")<CR>
 
 nmap <leader>j :Prettier<CR>
 nmap <leader>k :nohlsearch<CR>
@@ -441,7 +442,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsEditSplit="vertical"
 let g:doge_mapping_comment_jump_forward = "<c-l>"
 let g:doge_mapping_comment_jump_backward = "<c-k>"
+
 let g:tabby_keybinding_accept = '<Tab>'
+" let g:tabby_trigger_mode = 'manual'
 
 let g:netrw_banner = 0
 let g:netrw_liststyle = 0

@@ -85,6 +85,7 @@ alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /media/veracrypt1/"
 alias restore_mdp="cp /media/veracrypt1/Mots_de_passe.kdbx ~/Perso/"
 alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt jarvis -o /home/lordpax/Documents/dotfile"
 alias getconf="getdotfile -o .config"
+alias tabbycpu="docker run --entrypoint /opt/tabby/bin/tabby-cpu -it -p 8080:8080 -v $HOME/.tabby:/data tabbyml/tabby serve --model StarCoder-1B --chat-model Qwen2-1.5B-Instruct"
 
 alias viminstall="vimc PlugInstall"
 alias vimupdate="vimc PlugUpdate"
