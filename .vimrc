@@ -269,8 +269,8 @@ set hidden
 
 autocmd FileType javascript set makeprg=npm\ run\ test
 autocmd FileType javascript set keywordprg=:ManCht\ javascript
+autocmd FileType typescript set makeprg=npx\ tsc
 autocmd FileType typescript set keywordprg=:ManCht\ typescript
-autocmd FileType typescript set makeprg=npm\ run\ build
 autocmd FileType cs set makeprg=dotnet\ build
 
 augroup remember_folds
