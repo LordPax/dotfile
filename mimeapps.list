@@ -21,6 +21,7 @@ text/markdown=vim.desktop
 text/*=vim.desktop
 text/plain=vim.desktop
 x-scheme-handler/ror2mm=r2modman.desktop
+image/png=nsxiv.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;
@@ -43,3 +44,4 @@ x-scheme-handler/mailto=userapp-Thunderbird-RQNL61.desktop;
 x-scheme-handler/mid=userapp-Thunderbird-RQNL61.desktop;
 application/x-ms-dos-executable=wine.desktop;
 inode/directory=wine.desktop;
+image/png=nsxiv.desktop;

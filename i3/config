@@ -19,6 +19,7 @@ exec --no-startup-id /usr/bin/kdeconnect-indicator
 exec --no-startup-id setxkbmap fr
 exec --no-startup-id system-config-printer-applet
 exec --no-startup-id solaar -w hide
+exec --no-startup-id syncthingtray
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -236,7 +237,7 @@ assign [class="Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
 assign [class="discord"] $ws6
 assign [class="thunderbird"] $ws6
-assign [class="Steam"] $ws6
+assign [class="steam"] $ws6
 assign [class="KeePassXC"] $ws6
 assign [class="Bitcoin-Qt"] $ws6
 assign [class="electrum"] $ws6
