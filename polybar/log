@@ -1,0 +1,1731 @@
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1a00002)
+polybar|error: tray: Failed to setup tray client '' (0x120006a) remopolybar|warn:  module/i3: Apolybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpectedpolybar|error: module/i3: Fpolybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2 (Npolybar|warn:  module/i3: Apolybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2 (polybar|warn:  module/i3: Atpolybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2 polybar|warn:  module/i3: Attpolybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2polybar|warn:  module/i3: Attepolybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10polybar|error: module/i3: Failepolybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno polybar|warn:  module/i3: Attempolybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x1polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+gnal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|error: Failed to start 'module/tray' (reason: Failed to get control of the systray selection)
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.615': errno 2 (No such file or directory))
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1800002)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1800002)
+polybar|warn:  Systray selection already managed (window=0x1800002)
+polybar|warn:  Systray selection already managed (window=0x2400002)
+polybar|error: tray: Failed to unembed window '' (0x0a00013)
+polybar|error: tray: Failed to setup tray client '' (0x0a00013) removing... (XCB_WINDOW (3))
+polybar|error: Failed to reconfigure client(0x2200003, solaar), removing... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x2200003)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.621': errno 2 (No such file or directory))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1600002)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1600002)
+polybar|warn:  Systray selection already managed (window=0x1600002)
+polybar|warn:  Systray selection already managed (window=0x0c00002)
+polybar|error: Failed to query _XEMBED_INFO, removing client(0x1a00013, Syncthing Tray) ... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x1a00013)
+polybar|error: Failed to reconfigure client(0x2200003, solaar), removing... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x2200003)
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|error: Failed to query _XEMBED_INFO, removing client(0x4200003, steam) ... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x4200003)
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|error: tray: Failed to clear client(0x6e00009, electrum) (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x6e00009)
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|error: tray: Failed to unembed window '' (0x6e00009)
+polybar|error: tray: Failed to unembed window '' (0x6e00009)
+polybar|error: tray: Failed to unembed window '' (0x6e00009)
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x13: errno 9 (Bad file descriptor))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x13: errno 9 (Bad file descriptor))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x13: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x13: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x11: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x13: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x2600002)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x0c00002)
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x0a00002)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.623': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0xf: errno 104 (Connection reset by peer))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.623': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.623': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.623': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.623': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x0a00002)
+polybar|warn:  Systray selection already managed (window=0x0a00002)
+polybar|warn:  Systray selection already managed (window=0x2400002)
+polybar|error: tray: Failed to setup tray client '' (0x1a00013) removing... (XCB_DRAWABLE (9))
+polybar|error: Failed to reconfigure client(0x2200003, solaar), removing... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x2200003)
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|error: tray: Failed to setup tray client '' (0x4200003) removing... (XCB_DRAWABLE (9))
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  Dropping unmatched character '💻' (U+1f4bb) in '   J'ai reçu le PC du lycée 💻 - Y...'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  Dropping unmatched character '🔫' (U+1f52b) in '   🔫 PPSH Snow Wolf / MP41r Trenc...'
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0x11: errno 104 (Connection reset by peer))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0x10: errno 104 (Connection reset by peer))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Lost systray selection, deactivating...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0xf: errno 104 (Connection reset by peer))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to read header from socket 0xf: errno 104 (Connection reset by peer))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x2600002)
+polybar|error: tray: Failed to setup tray client '' (0x1a00013) removing... (XCB_DRAWABLE (9))
+polybar|error: Failed to reconfigure client(0x2200003, solaar), removing... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x2200003)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1600002)
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|error: Failed to query _XEMBED_INFO, removing client(0x4200003, steam) ... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x4200003)
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.631': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1200002)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0xf: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loaded 13 modules
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|warn:  Systray selection already managed (window=0x1200002)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1200002)
+polybar|warn:  Systray selection already managed (window=0x1400002)
+polybar|error: Failed to reconfigure client(0x2000003, solaar), removing... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x2000003)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Unexpected EOF while reading header)
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x19: errno 9 (Bad file descriptor))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|error: module/i3: Failed to reconnect socket (reason: Failed to connect to i3 at '/run/user/1000/i3/ipc-socket.635': errno 2 (No such file or directory))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x10: errno 22 (Invalid argument))
+polybar|warn:  module/i3: Attempting to reconnect socket (reason: Failed to read header from socket 0x19: errno 9 (Bad file descriptor))
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Received signal(15): Terminated
+polybar|notice:  Termination signal received, shutting down...
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|warn:  Naming your configuration file 'config' is deprecated, the expected name is 'config.ini'.
+polybar|notice:  Parsing config file: /home/lordpax/.config/polybar/config
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'arch-logo' of type 'custom/script'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|notice:  Loading module 'i3' of type 'internal/i3'
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|error: Invalid value for "module/i3.label-visible-background", using default value (reason: The reference ${module/i3.label-focused-background} does not exist (no fallback set))
+polybar|notice:  Loading module 'xwindow' of type 'internal/xwindow'
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|notice:  Loading module 'crypto-BTC' of type 'custom/script'
+polybar|notice:  Loading module 'crypto-ETH' of type 'custom/script'
+polybar|notice:  Loading module 'pulseaudio-control' of type 'custom/script'
+polybar|notice:  Loading module 'updates' of type 'custom/script'
+polybar|notice:  Loading module 'xkeyboard' of type 'custom/script'
+polybar|notice:  Loading module 'networkspeeddown' of type 'internal/network'
+polybar|notice:  Loading module 'networkspeedup' of type 'internal/network'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'tray' of type 'internal/tray'
+polybar|notice:  Loading module 'powermenu' of type 'custom/menu'
+polybar|notice:  Loaded 13 modules
+polybar|warn:  Systray selection already managed (window=0x1400002)
+polybar|notice:  Loaded font "fixed:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "unifont:fontformat=truetype:size=8:antialias=false" (name=DejaVu Sans, offset=0, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "siji:pixelsize=10" (name=DejaVu Sans, offset=1, file=/usr/share/fonts/TTF/DejaVuSans.ttf)
+polybar|notice:  Loaded font "Symbols Nerd Font Mono:style=Regular:pixelsize=10" (name=Symbols Nerd Font Mono, offset=1, file=/usr/share/fonts/TTF/SymbolsNerdFontMono-Regular.ttf)
+polybar|warn:  Systray selection already managed (window=0x1400002)
+polybar|warn:  Systray selection already managed (window=0x4200002)
+polybar|error: Failed to query _XEMBED_INFO, removing client(0x180001b, Syncthing Tray) ... (XCB_WINDOW (3))
+polybar|error: tray: Failed to unembed window '' (0x180001b)
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeedup: Failed to query interface 'wlan0'
+polybar|warn:  module/networkspeeddown: Failed to query interface 'wlan0'

@@ -10,7 +10,7 @@ function echoErr() {
 function checkDependencies() {
     for dependency in $dependencies; do
         ! command -v "$dependency" > /dev/null 2>&1 && \
-            echo_err "Dependency \"$dependency\" not found" && exit 1
+            echoErr "Dependency \"$dependency\" not found" && exit 1
     done
 }
 

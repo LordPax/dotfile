@@ -270,7 +270,7 @@ interval = 600
 
 [module/networkspeedup]
 type = internal/network
-interface = wlp3s0
+interface = wlan0
 label-connected = "%upspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = "%{F#3cb703}%{F-} "
@@ -278,7 +278,7 @@ format-connected-prefix-foreground = ${colors.foreground}
 
 [module/networkspeeddown]
 type = internal/network
-interface = wlp3s0
+interface = wlan0
 label-connected = "%downspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = "%{F#3cb703}%{F-} "

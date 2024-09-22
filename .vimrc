@@ -125,10 +125,10 @@ function! ToggleLength()
     exe "set shiftwidth="..g:length
 endfun
 
-function! ToggleFileManager()
+function! ToggleFileManager(dir)
     if g:fileMan == 0
         let g:fileMan = 1
-        exe "Lex | vertical resize 30"
+        exe "Lex "..a:dir.." | vertical resize 30"
     else
         let g:fileMan = 0
         exe "Lex"
@@ -204,7 +204,8 @@ endif
 command HelpKey call HelpKey()
 command ToggleExpandTab call ToggleExpandTab()
 command ToggleLength call ToggleLength()
-command ToggleFileManager call ToggleFileManager()
+command ToggleFileManager call ToggleFileManager("")
+command ToggleFileManagerHere call ToggleFileManager("%:p:h")
 command! AsyncRunMdpdf :AsyncRun echo % | entr -n mdpdf % --style="$HOME/.script/github-style.css"
 command! RunMdpdf :!mdpdf % --style="$HOME/.script/github-style.css"
 command Sudow :w !sudo tee % >/dev/null
@@ -301,6 +302,7 @@ nmap <leader>n :Vifm<CR>
 nmap <leader>m :call cursor(0, getpos(".")[2] + (len(expand("<cword>"))/2))<CR>
 nmap <leader>o :bufdo bd<CR>
 nmap <leader>f :ToggleFileManager<CR>
+nmap <leader>F :ToggleFileManagerHere<CR>
 nmap <leader>u :UndotreeToggle<CR>
 nmap <leader>z zfaB<CR>
 nmap <leader>r :ResizeMode<CR>

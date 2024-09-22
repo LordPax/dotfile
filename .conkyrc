@@ -73,12 +73,8 @@ conky.text = [[
     ${font Open Sans Bold: size 12}${color 61afef}STORAGE$font ${hr 3}$color
     ${color 97A2B8}/ $color $alignr ${fs_used /}/${fs_size /}
     ${color 98c379}${fs_bar 5 /}$color
-    ${color 97A2B8}/home $color $alignr ${fs_used /home}/${fs_size /home}
-    ${color 98c379}${fs_bar 5 /home}$color
     ${color 97A2B8}/save $color $alignr ${fs_used /save}/${fs_size /save}
     ${color 98c379}${fs_bar 5 /save}$color
-    ${color 97A2B8}/perso $color $alignr ${fs_used /perso}/${fs_size /perso}
-    ${color 98c379}${fs_bar 5 /perso}$color
 
     ${font Open Sans Bold: size 12}${color 61afef}PROCESSES$font ${hr 3}$color
     ${color 97A2B8}Name                 PID     CPU     MEM$color
