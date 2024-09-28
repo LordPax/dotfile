@@ -32,9 +32,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'mg979/vim-visual-multi'
 Plug 'bfrg/vim-cpp-modern'
-Plug 'LordPax/vim-cligpt'
-Plug 'LordPax/vim-encrypt'
-Plug 'LordPax/vim-translate'
+Plug 'LordPax/vim-aicli'
 Plug 'nicwest/vim-http'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'azabiong/vim-highlighter'
@@ -51,6 +49,9 @@ runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'LordPax/vim-cligpt'
+" Plug 'LordPax/vim-encrypt'
+" Plug 'LordPax/vim-translate'
 " Plug 'TabbyML/vim-tabby'
 " Plug 'vim-airline/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
