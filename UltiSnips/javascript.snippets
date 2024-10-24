@@ -59,3 +59,17 @@ const ${1:func_name} = ($2) => new Promise((resolve, reject) => {
 	$3
 })
 endsnippet
+
+snippet testroute "loopback test route"
+$1.remoteMethod('testRoute', {
+	description: 'Test route',
+	http: {
+		path: '/test',
+		verb: 'get',
+	},
+});
+
+Signalements.testRoute = async function() {
+	$2
+};
+endsnippet

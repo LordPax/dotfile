@@ -17,6 +17,9 @@ exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec_always --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
+exec --no-startup-id syncthingtray
+exec --no-startup-id blueman-applet
+exec --no-startup-id system-config-printer-applet
 # exec_always --no-startup-id setxkbmap -option altwin:swap_alt_win
 # exec_always --no-startup-id "killall /bin/warpd; /bin/warpd"
 
@@ -38,8 +41,6 @@ font pango:DejaVu Sans 10
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec_always --no-startup-id nm-applet
-exec_always --no-startup-id blueman-applet
-exec_always --no-startup-id system-config-printer-applet
 
 # Use pactl to adjust volume in PulseAudio.
 # set $refresh_i3status killall -SIGUSR1 i3status
