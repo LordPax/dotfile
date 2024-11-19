@@ -45,6 +45,7 @@ Plug 'vito-c/jq.vim'
 Plug 'posva/vim-vue'
 Plug 'sebdah/vim-delve'
 Plug 'puremourning/vimspector'
+Plug 'rhysd/conflict-marker.vim'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -489,6 +490,12 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
+
+highlight ConflictMarkerBegin guibg=#2f7366 ctermbg=23 cterm=bold
+highlight ConflictMarkerOurs guibg=#2e5049 ctermbg=23 cterm=bold
+highlight ConflictMarkerTheirs guibg=#344f69 ctermbg=24 cterm=bold
+highlight ConflictMarkerEnd guibg=#2f628e ctermbg=24 cterm=bold
+highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81 ctermbg=96 cterm=bold
 
 " highlight TabLine ctermbg=NONE 
 " highlight TabLineFill ctermbg=NONE 
