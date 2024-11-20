@@ -83,6 +83,7 @@ alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_g
 alias backup_log="bat ~/.config_backup/backup.log"
 alias remove-orphans="pacman -Qtdq | sudo pacman -Rns -"
 alias mdpdf="mdpdf --style=$HOME/.script/github-style.css"
+alias bat="bat -p"
 
 alias save_mdp="cp ~/Perso/Mots_de_passe.kdbx /save"
 alias restore_mdp="cp /save/Mots_de_passe.kdbx ~/Perso"

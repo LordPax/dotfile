@@ -1,4 +1,3 @@
-let g:cligpt_model="mistral-medium"
 call plug#begin()
 
 Plug 'tpope/vim-fugitive'
@@ -45,6 +44,7 @@ Plug 'vito-c/jq.vim'
 Plug 'posva/vim-vue'
 Plug 'sebdah/vim-delve'
 Plug 'puremourning/vimspector'
+Plug 'rhysd/conflict-marker.vim'
 runtime ftplugin/man.vim
 
 call plug#end()
@@ -447,7 +447,7 @@ let g:UltiSnipsEditSplit="vertical"
 let g:doge_mapping_comment_jump_forward = "<c-l>"
 let g:doge_mapping_comment_jump_backward = "<c-k>"
 
-let g:tabby_keybinding_accept = '<Tab>'
+" let g:tabby_keybinding_accept = '<Tab>'
 " let g:tabby_trigger_mode = 'manual'
 
 let g:netrw_banner = 0
@@ -456,6 +456,9 @@ let g:ft_man_open_mode = 'vert'
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
+
+let g:ai_text_history = "default"
+let g:ai_text_sdk = "claude"
 
 " let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
 " let g:vimwiki_ext2syntax = {}
@@ -489,6 +492,12 @@ highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
 highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
 highlight SignColumn ctermbg=NONE ctermfg=NONE
 highlight Folded ctermfg=188 cterm=NONE
+
+highlight ConflictMarkerBegin guibg=#2f7366 ctermbg=23 cterm=bold
+highlight ConflictMarkerOurs guibg=#2e5049 ctermbg=23 cterm=bold
+highlight ConflictMarkerTheirs guibg=#344f69 ctermbg=24 cterm=bold
+highlight ConflictMarkerEnd guibg=#2f628e ctermbg=24 cterm=bold
+highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81 ctermbg=96 cterm=bold
 
 " highlight TabLine ctermbg=NONE 
 " highlight TabLineFill ctermbg=NONE 
