@@ -1,4 +1,3 @@
-let g:cligpt_model="mistral-medium"
 call plug#begin()
 
 Plug 'tpope/vim-fugitive'
@@ -448,7 +447,7 @@ let g:UltiSnipsEditSplit="vertical"
 let g:doge_mapping_comment_jump_forward = "<c-l>"
 let g:doge_mapping_comment_jump_backward = "<c-k>"
 
-let g:tabby_keybinding_accept = '<Tab>'
+" let g:tabby_keybinding_accept = '<Tab>'
 " let g:tabby_trigger_mode = 'manual'
 
 let g:netrw_banner = 0
@@ -457,6 +456,9 @@ let g:ft_man_open_mode = 'vert'
 
 let g:vim_http_split_vertically = 1
 let g:vim_http_tempbuffer = 1
+
+let g:ai_text_history = "default"
+let g:ai_text_sdk = "claude"
 
 " let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
 " let g:vimwiki_ext2syntax = {}
