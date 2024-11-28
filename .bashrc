@@ -68,7 +68,9 @@ export PATH=$GOBIN:$PATH
 
 # alias syncdash="firefox-developer-edition localhost:8384"
 # alias syncdash="pulse-browser localhost:8384"
-alias syncdash="firefox localhost:8384"
+# alias syncdash="firefox localhost:8384"
+alias syncdash="zen-browser localhost:8384"
+alias syncdash-rasp="ssh -L 8385:localhost:8384 lordpax@192.168.1.25"
 alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s 3"
 alias backup_file_usb="backup -c /home/lordpax/.config_backup/config.txt -o /media/veracrypt1/Backup -n backup_glados -s 3"
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"

@@ -230,7 +230,8 @@ exec --no-startup-id discord
 exec --no-startup-id keepassxc
 exec --no-startup-id thunderbird
 
-assign [class="firefox"] $ws1
+# assign [class="firefox"] $ws1
+assign [class="zen-alpha"] $ws1
 assign [class="pulse-browser"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="Xfce4-terminal"] $ws3
