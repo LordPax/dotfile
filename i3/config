@@ -193,12 +193,6 @@ bindsym $mod+b exec ~/.script/background -s
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-    # These bindings trigger as soon as you enter the resize mode
-
-    # Pressing left will shrink the window’s width.
-    # Pressing right will grow the window’s width.
-    # Pressing up will shrink the window’s height.
-    # Pressing down will grow the window’s height.
     bindsym j resize shrink width 50 px or 10 ppt
     bindsym k resize grow height 50 px or 10 ppt
     bindsym l resize shrink height 50 px or 10 ppt
@@ -219,7 +213,7 @@ gaps inner 10
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Pavucontrol|pavucontrol|Gcolor3|System-config-printer.py|Galculator|gnome-calculator|Solaar"] floating enable
+for_window [class="Pavucontrol|pavucontrol|Gcolor3|System-config-printer.py|Galculator|gnome-calculator|Solaar|Localsend"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id ~/.script/polybar-startup
@@ -229,6 +223,7 @@ exec_always --no-startup-id "killall conky; conky"
 exec --no-startup-id discord
 exec --no-startup-id keepassxc
 exec --no-startup-id thunderbird
+exec --no-startup-id nkeko
 
 # assign [class="firefox"] $ws1
 assign [class="zen-alpha"] $ws1
@@ -242,6 +237,7 @@ assign [class="steam"] $ws6
 assign [class="KeePassXC"] $ws6
 assign [class="Bitcoin-Qt"] $ws6
 assign [class="electrum"] $ws6
+assign [class="nheko"] $ws6
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #285577   #285577
