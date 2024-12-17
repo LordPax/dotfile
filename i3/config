@@ -246,6 +246,7 @@ assign [class="thunderbird"] $ws4
 assign [class="KeePassXC|keepassxc"] $ws4
 assign [class="Steam"] $ws4
 assign [class="electrum"] $ws4
+assign [class="nheko"] $ws4
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #285577   #285577
