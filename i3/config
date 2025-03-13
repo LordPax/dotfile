@@ -235,9 +235,9 @@ exec --no-startup-id thunderbird
 exec --no-startup-id keepassxc
 exec --no-startup-id discord --disable-gpu
 
-# assign [class="firefox"] $ws1
-assign [class="zen-alpha"] $ws1
-assign [class="pulse-browser"] $ws1
+# assign [class="pulse-browser"] $ws1
+assign [class="firefox"] $ws1
+assign [class="zen"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="xfce4-terminal|Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
