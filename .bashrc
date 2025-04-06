@@ -66,6 +66,9 @@ export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$GOBIN:$PATH
 
+# Rust
+export PATH=$HOME/.cargo/bin:$PATH
+
 # alias syncdash="firefox-developer-edition localhost:8384"
 # alias syncdash="pulse-browser localhost:8384"
 # alias syncdash="firefox localhost:8384"
