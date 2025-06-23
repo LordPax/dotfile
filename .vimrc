@@ -172,13 +172,44 @@ function! ResizeMode()
     endif
 endfun
 
+fun! CodeDark()
+    " colorscheme codedark
+    colorscheme habamax
+    exe "highlight Normal ctermbg="..s:back
+    exe "highlight NonText ctermbg="..s:back
+    exe "highlight EndOfBuffer ctermbg="..s:back
+    exe "highlight CursorLine ctermbg="..s:back2
+    exe "highlight CursorColumn ctermbg="..s:back2
+    exe "highlight VertSplit ctermbg=NONE ctermfg="..s:front
+    exe "highlight LineNr ctermbg="..s:back
+    exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
+    highlight ModeMsg ctermbg=NONE
+    highlight! link MoreMsg ModeMsg
+    highlight Error ctermbg=NONE cterm=NONE
+    highlight! link ErrorMsg Error
+    highlight! link SpellBad Error
+    highlight WarningMsg ctermbg=NONE
+    highlight Question ctermbg=NONE
+    highlight SpecialKey ctermfg=237
+    highlight Visual ctermfg=NONE ctermbg=239
+    highlight ALEErrorSign ctermfg=red ctermbg=NONE
+    highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
+    highlight ALEError ctermfg=red ctermbg=NONE
+    highlight ALEWarning ctermfg=yellow ctermbg=NONE
+    highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
+    highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
+    highlight SignColumn ctermbg=NONE ctermfg=NONE
+    highlight Folded ctermfg=188 cterm=NONE
+endfun
+
 function! ToggleDarkMode()
     if g:dark == 1
         let g:dark = 0
         colorscheme delek
     else
         let g:dark = 1
-        colorscheme codedark
+        call CodeDark()
+        " colorscheme codedark
     endif
 endfun
 
@@ -460,44 +491,18 @@ let g:vim_http_tempbuffer = 1
 let g:ai_text_history = "default"
 let g:ai_text_sdk = "claude"
 
+call CodeDark()
+
 " let g:vimwiki_list = [{'path': '~/Documents/Note/', 'syntax': 'markdown', 'ext': 'md'}]
 " let g:vimwiki_ext2syntax = {}
 
-colorscheme codedark
 " colorscheme delek
 
-" for codedark
-exe "highlight Normal ctermbg="..s:back
-exe "highlight NonText ctermbg="..s:back
-exe "highlight EndOfBuffer ctermbg="..s:back
-exe "highlight CursorLine ctermbg="..s:back2
-exe "highlight CursorColumn ctermbg="..s:back2
-exe "highlight VertSplit ctermbg=NONE ctermfg="..s:front
-exe "highlight LineNr ctermbg="..s:back
-exe "highlight CursorLineNr ctermbg="..s:back.." cterm=bold"
-highlight ModeMsg ctermbg=NONE
-highlight! link MoreMsg ModeMsg
-highlight Error ctermbg=NONE cterm=NONE
-highlight! link ErrorMsg Error
-highlight! link SpellBad Error
-highlight WarningMsg ctermbg=NONE
-highlight Question ctermbg=NONE
-highlight SpecialKey ctermfg=237
-highlight Visual ctermfg=NONE ctermbg=239
-highlight ALEErrorSign ctermfg=red ctermbg=NONE
-highlight ALEWarningSign ctermfg=yellow ctermbg=NONE
-highlight ALEError ctermfg=red ctermbg=NONE
-highlight ALEWarning ctermfg=yellow ctermbg=NONE
-highlight ALEVirtualTextError ctermfg=red ctermbg=NONE
-highlight ALEVirtualTextWarning ctermfg=yellow ctermbg=NONE
-highlight SignColumn ctermbg=NONE ctermfg=NONE
-highlight Folded ctermfg=188 cterm=NONE
-
-highlight ConflictMarkerBegin guibg=#2f7366 ctermbg=23 cterm=bold
-highlight ConflictMarkerOurs guibg=#2e5049 ctermbg=23 cterm=bold
-highlight ConflictMarkerTheirs guibg=#344f69 ctermbg=24 cterm=bold
-highlight ConflictMarkerEnd guibg=#2f628e ctermbg=24 cterm=bold
-highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81 ctermbg=96 cterm=bold
+" highlight ConflictMarkerBegin guibg=#2f7366 ctermbg=23 cterm=bold
+" highlight ConflictMarkerOurs guibg=#2e5049 ctermbg=23 cterm=bold
+" highlight ConflictMarkerTheirs guibg=#344f69 ctermbg=24 cterm=bold
+" highlight ConflictMarkerEnd guibg=#2f628e ctermbg=24 cterm=bold
+" highlight ConflictMarkerCommonAncestorsHunk guibg=#754a81 ctermbg=96 cterm=bold
 
 " highlight TabLine ctermbg=NONE 
 " highlight TabLineFill ctermbg=NONE 

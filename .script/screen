@@ -167,7 +167,7 @@ function screenPresetWork() {
     local screens=$(getConnectedScreen all "$ignoreScreen")
     [ -z "$screens" ] && error "Preset : No screen found" && exit 1
 
-    echo -e "$screens" | grep -Evq "eDP-1|DP-4|DP-3" && \
+    echo -e "$screens" | grep -Evq "eDP-1|DP-4|DP-1" && \
         error "Preset : Required screen \"eDP-1, DP-4, DP-3\" not found" && exit 1
 
     if [ -z "$choosePreset" ]; then
@@ -176,14 +176,13 @@ function screenPresetWork() {
 
     case $choosePreset in
         enable)
-            xrandr --output DP-4 --auto --right-of eDP-1
-            # xrandr --output DP-3 --auto --right-of DP-4 --scale 1.3125
-            xrandr --output DP-3 --auto --right-of DP-4
+            xrandr --output DP-1 --mode 2560x1440 --right-of eDP-1
+            xrandr --output DP-4 --auto --right-of DP-1
             xrandr --output eDP-1 --off;;
         disable)
             xrandr --output eDP-1 --auto
             xrandr --output DP-4 --off
-            xrandr --output DP-3 --off;;
+            xrandr --output DP-1 --off;;
         *)
             error "Preset : Unknown action" &&
             exit 1;;
