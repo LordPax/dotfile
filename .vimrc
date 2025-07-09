@@ -4,7 +4,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
-Plug 'tomasiser/vim-code-dark'
 Plug 'pangloss/vim-javascript'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -49,6 +48,7 @@ runtime ftplugin/man.vim
 
 call plug#end()
 
+" Plug 'tomasiser/vim-code-dark'
 " Plug 'LordPax/vim-cligpt'
 " Plug 'LordPax/vim-encrypt'
 " Plug 'LordPax/vim-translate'
@@ -173,7 +173,9 @@ function! ResizeMode()
 endfun
 
 fun! CodeDark()
-    colorscheme codedark
+    " colorscheme codedark
+    set background=dark
+    colorscheme habamax
     exe "highlight Normal ctermbg="..s:back
     exe "highlight NonText ctermbg="..s:back
     exe "highlight EndOfBuffer ctermbg="..s:back
@@ -204,11 +206,11 @@ endfun
 function! ToggleDarkMode()
     if g:dark == 1
         let g:dark = 0
-        colorscheme delek
+        set background=light
+        colorscheme retrobox
     else
         let g:dark = 1
         call CodeDark()
-        " colorscheme codedark
     endif
 endfun
 
