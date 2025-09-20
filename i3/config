@@ -120,8 +120,8 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $monitor1 DP-3
-set $monitor2 HDMI-1
+set $monitor1 DP-2
+set $monitor2 DP-0
 # set $monitor1 "$(~/.script/screen --connected primary)"
 # set $monitor2 "$(~/.script/screen --connected secondary)"
 
@@ -129,7 +129,7 @@ set $monitor2 HDMI-1
 workspace $ws1 output $monitor1
 workspace $ws2 output $monitor1
 workspace $ws3 output $monitor1
-workspace $ws4 output $monitor1
+workspace $ws4 output $monitor2
 workspace $ws5 output $monitor1
 workspace $ws6 output $monitor2
 workspace $ws7 output $monitor2
