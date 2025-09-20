@@ -58,7 +58,7 @@ font-3 = "Symbols Nerd Font Mono:style=Regular:pixelsize=10;1"
 ; font-5 = "Font Awesome 6 Brands:pixelsize=10;1"
 
 modules-left = arch-logo i3 xwindow
-modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard networkspeeddown networkspeedup date tray powermenu
+modules-right = crypto-BTC crypto-ETH pulseaudio-control updates xkeyboard luminosity networkspeeddown networkspeedup date tray powermenu
 
 ; tray-position = right
 ; tray-padding = 2
@@ -288,6 +288,13 @@ format-connected-prefix-foreground = ${colors.foreground}
 type = internal/tray
 ; format-margin = 8px
 tray-spacing = 8px
+
+[module/luminosity]
+type = custom/script
+exec = echo "%{F#3498db}%{F-} $(~/.script/brightness --screen $MONITOR -G)%"
+scroll-up = ~/.script/brightness --screen ${MONITOR} -i 0.1
+scroll-down = ~/.script/brightness --screen ${MONITOR} -d 0.1
+interval = 1
 
 [settings]
 screenchange-reload = true
