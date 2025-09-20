@@ -120,9 +120,9 @@ ol ol ol	github-style.css	/^ol ol ol {$/;"	s
 p	github-style.css	/^p {$/;"	s
 pre	github-style.css	/^pre {$/;"	s
 pre	github-style.css	/^pre, code {$/;"	s
+presetStartup	screen	/^function presetStartup() {$/;"	f
+presetWork	screen	/^function presetWork() {$/;"	f
 randomString	mountdisk	/^function randomString() {$/;"	f
-screenPresetStartup	screen	/^function screenPresetStartup() {$/;"	f
-screenPresetWork	screen	/^function screenPresetWork() {$/;"	f
 selectBackground	background	/^function selectBackground() {$/;"	f
 setBrightness	brightness	/^function setBrightness() {$/;"	f
 table	github-style.css	/^table {$/;"	s

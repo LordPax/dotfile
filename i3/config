@@ -11,8 +11,7 @@
 
 set $mod Mod4
 
-# exec --no-startup-id ~/.script/startup
-exec --no-startup-id ~/.script/screen -p screenPresetStartup enable
+exec --no-startup-id ~/.script/screen -p presetStartup enable
 exec xrdb /home/lordpax/.Xresources
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
@@ -20,6 +19,7 @@ exec --no-startup-id setxkbmap fr
 exec --no-startup-id system-config-printer-applet
 exec --no-startup-id solaar -w hide
 exec --no-startup-id syncthingtray
+exec --no-startup-id blueman-applet
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -213,7 +213,7 @@ gaps inner 10
 
 for_window [class=".*"] border pixel 2
 for_window [class=".*"] title_format " %title"
-for_window [class="Pavucontrol|pavucontrol|Nl.hjdskes.gcolor3|System-config-printer.py|Galculator|gnome-calculator|Solaar|Localsend"] floating enable
+for_window [class="Blueman-manager|Pavucontrol|pavucontrol|Nl.hjdskes.gcolor3|System-config-printer.py|Galculator|gnome-calculator|Solaar|Localsend"] floating enable
 
 exec_always ~/.script/background -b
 exec_always --no-startup-id ~/.script/polybar-startup
@@ -230,13 +230,13 @@ assign [class="pulse-browser"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
-assign [class="discord"] $ws6
-assign [class="thunderbird"] $ws6
-assign [class="steam"] $ws6
-assign [class="KeePassXC"] $ws6
-assign [class="Bitcoin-Qt"] $ws6
-assign [class="electrum"] $ws6
-assign [class="nheko"] $ws6
+assign [class="discord"] $ws4
+assign [class="thunderbird"] $ws4
+assign [class="steam"] $ws4
+assign [class="KeePassXC"] $ws4
+assign [class="Bitcoin-Qt"] $ws4
+assign [class="electrum"] $ws4
+assign [class="nheko"] $ws4
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #4c7899 #285577 #ffffff #285577   #285577
