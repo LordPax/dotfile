@@ -13,7 +13,8 @@ set $mod Mod4
 
 exec xrdb /home/lordpax/.Xresources
 exec --no-startup-id ~/.script/screen -p presetStartup enable
-exec_always --no-startup-id ~/.script/brightness --screen eDP-1 -s 0.8
+exec_always --no-startup-id ~/.script/brightness --screen DP-0 -s 0.8
+exec_always --no-startup-id ~/.script/brightness --screen DP-2 -s 0.8
 exec --no-startup-id /usr/lib/xfce4/notifyd/xfce4-notifyd
 exec --no-startup-id /usr/bin/kdeconnect-indicator
 exec --no-startup-id setxkbmap fr
