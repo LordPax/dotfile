@@ -104,14 +104,14 @@ alias vimclean="vimc PlugClean"
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias more=less
-alias ls='ls --color'
+alias ls='ls --color --group-directories-first'
+alias ll="ls -l"
 alias grep='grep --color=auto'
 alias copy="xsel --clipboard -i"
 alias paste="xsel --clipboard -o"
 alias emacs="emacs -nw"
 alias dust="dust -r"
 alias ctagsx="ctags --exclude=node_modules --exclude=dist"
-alias ll="ls -l"
 alias vimex="vim -c Ex"
 alias myip="curl ifconfig.me"
 alias a='arsenal'
