@@ -5,7 +5,9 @@ API="https://api.kraken.com/0/public/Ticker"
 crypto=$([ -z "$1" ] && echo "BTC" || echo "$1")
 cryptojq=$([ -z "$2" ] && echo "XXBTZEUR" || echo "$2")
 
-quote=$(curl -sf "$API?pair=${crypto}EUR" | jq -r ".result.${cryptojq}.c[0]")
-quote=$(LANG=C printf "%.2f" "$quote")
+response=$(curl -sf "$API?pair=${crypto}EUR" | jq -r ".result.${cryptojq}.c[0]")
+[[ -z "$response" ]] && echo "N/A" && exit 1
 
-echo "$quote €"
+price=$(LANG=C printf "%.2f" "$response")
+
+echo "$price €"
