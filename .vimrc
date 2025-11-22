@@ -292,7 +292,7 @@ set spelllang=fr
 set term=screen-256color
 " set statusline+=%{gutentags#statusline()}
 set encoding=UTF-8
-set grepprg=ag\ --vimgrep
+set grepprg=grep\ -RnH\ --color=never
 set wildignore+=*/node_modules/*,*/.git/*,*/build/*,*/dist/*
 set keywordprg=:Man
 set omnifunc=syntaxcomplete#Complete
