@@ -4,9 +4,6 @@
 
 (load-theme 'modus-vivendi t)
 
-(require 'evil)
-(evil-mode 1)
-
 (use-package copilot
   :vc (:url "https://github.com/copilot-emacs/copilot.el"
 	    :rev :newest
@@ -17,10 +14,21 @@
 (unless (package-installed-p 'magit) (package-install 'magit))
 (unless (package-installed-p 'markdown-mode) (package-install 'markdown-mode))
 
+(evil-mode 1)
+(line-number-mode t)
+(column-number-mode t)
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(add-hook 'prog-mode-hook 'copilot-mode)
+
 (setq copilot-log-output nil)
 (setq make-backup-files nil) ; stop creating ~ files
 (setq-default indent-tabs-mode t)
 (setq-default tab-width 4)
+(setq display-line-numbers-type 'relative)
 
 (define-key evil-motion-state-map (kbd "j") 'evil-backward-char)
 (define-key evil-motion-state-map (kbd "k") 'evil-next-line)
@@ -33,15 +41,6 @@
 (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
 (define-key copilot-completion-map (kbd "C-TAB") 'copilot-accept-completion-by-word)
 (define-key copilot-completion-map (kbd "C-<tab>") 'copilot-accept-completion-by-word)
-
-(line-number-mode t)
-(column-number-mode t)
-(menu-bar-mode -1)
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-(add-hook 'prog-mode-hook 'copilot-mode)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
