@@ -2,8 +2,6 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
-(load-theme 'modus-vivendi t)
-
 (use-package copilot
   :vc (:url "https://github.com/copilot-emacs/copilot.el"
 	    :rev :newest
@@ -14,6 +12,7 @@
 (unless (package-installed-p 'magit) (package-install 'magit))
 (unless (package-installed-p 'markdown-mode) (package-install 'markdown-mode))
 
+(load-theme 'modus-vivendi t)
 (evil-mode 1)
 (line-number-mode t)
 (column-number-mode t)
