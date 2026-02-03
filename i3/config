@@ -55,7 +55,7 @@ floating_modifier $mod
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
 # bindsym $mod+Return exec xfce4-terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -226,14 +226,14 @@ exec --no-startup-id discord
 exec --no-startup-id keepassxc
 exec --no-startup-id thunderbird
 
-# assign [class="firefox"] $ws1
-assign [class="zen-alpha"] $ws1
-assign [class="pulse-browser"] $ws1
+assign [class="firefox"] $ws1
+assign [class="zen"] $ws1
 assign [class="code-oss"] $ws2
 assign [class="Xfce4-terminal"] $ws3
 assign [class="URxvt"] $ws3
+assign [class="st-256color"] $ws3
 assign [class="discord"] $ws4
-assign [class="thunderbird"] $ws4
+assign [class="org.mozilla.Thunderbird"] $ws4
 assign [class="steam"] $ws4
 assign [class="KeePassXC"] $ws4
 assign [class="Bitcoin-Qt"] $ws4

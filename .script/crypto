@@ -6,7 +6,7 @@ crypto=$([ -z "$1" ] && echo "BTC" || echo "$1")
 cryptojq=$([ -z "$2" ] && echo "XXBTZEUR" || echo "$2")
 
 response=$(curl -sf "$API?pair=${crypto}EUR" | jq -r ".result.${cryptojq}.c[0]")
-[[ -z "$response" ]] && echo "N/A" && exit 1
+([ -z "$response" ] || [ "$response" = "null" ]) && echo "N/A" && exit 1
 
 price=$(LANG=C printf "%.2f" "$response")
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dependencies="checkupdates yay"
+dependencies="checkupdates yay st zenity awk"
 
 function echoErr() {
     [ "$1" == "" ] && exit 1
@@ -34,7 +34,8 @@ function updatePacman() {
         --column="Old version" \
         --column="New version" &> /dev/null
 
-    [ $? -eq 0 ] && urxvt -e sh -c 'sudo pacman -Syu archlinux-keyring'
+    # [ $? -eq 0 ] && urxvt -e sh -c 'sudo pacman -Syu archlinux-keyring'
+    [ $? -eq 0 ] && st sh -c 'sudo pacman -Syu archlinux-keyring; read -n 1 -s -p "Press [ENTER] to continue..."'
 }
 
 function updateAur() {
@@ -45,7 +46,8 @@ function updateAur() {
         --column="Old version" \
         --column="New version" &> /dev/null
 
-    [ $? -eq 0 ] && urxvt -e sh -c 'yay -Syu --aur'
+    # [ $? -eq 0 ] && urxvt -e sh -c 'yay -Syu --aur'
+    [ $? -eq 0 ] && st sh -c 'yay -Syu --aur; read -n 1 -s -p "Press [ENTER] to continue..."'
 }
 
 function main() {
