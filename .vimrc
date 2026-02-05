@@ -451,7 +451,8 @@ let g:gutentags_ctags_exclude = [
 let g:gitgutter_sign_priority = 1
 let b:ale_linters = {
     \'javascript': ['eslint'],
-    \'typescript': ['eslint'],
+    \'typescript': ['tsserver', 'eslint'],
+    \'typescriptreact': ['tsserver', 'eslint'],
     \'sh': ['shellcheck', 'sh'],
     \'c': ['gcc'],
     \'cpp': ['clang', 'g++'],
@@ -461,6 +462,11 @@ let b:ale_linters = {
     \'css': ['stylelint'],
     \'scss': ['stylelint'],
     \'go': ['golint', 'gofmt', 'govet']
+\}
+let g:ale_linters_ignore = {
+    \'javascript': ['deno'],
+    \'typescript': ['deno'],
+    \'typescriptreact': ['deno']
 \}
 
 let g:go_list_type = "quickfix"

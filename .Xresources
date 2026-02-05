@@ -42,6 +42,8 @@
 *.color7: #bfbaac
 *.color15: #fdf6e3
 
+! UXTerm*font: xft:DejaVu Sans Mono:Book:size=9,xft:Symbols Nerd Font Mono:style=Regular:pixelsize=9:antialias=false
+
 URxvt*perl-lib: /home/lordpax/.script
 URxvt.perl-ext-common: default,unichr,matcher,resize-font,-tabbed
 URxvt*scrollBar: false
@@ -63,3 +65,4 @@ URxvt.keysym.C-minus: resize-font:smaller
 URxvt.keysym.C-plus: resize-font:bigger
 URxvt.keysym.C-equal: resize-font:reset
 URxvt.keysym.C-question: resize-font:show
+
