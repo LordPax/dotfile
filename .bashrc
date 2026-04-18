@@ -39,6 +39,7 @@ shopt -s histappend
 # Default
 export PATH=$HOME/programme:$HOME/.local/bin:$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
 export EDITOR=/usr/bin/vim
+export SYSTEMD_EDITOR=vim
 export DOTFILE_BRANCH=jarvis
 
 # Node Version Manager
@@ -78,11 +79,13 @@ alias backup_file="backup -c /home/lordpax/.config_backup/config.txt -o /save -s
 alias backup_file_usb="backup -c /home/lordpax/.config_backup/config.txt -o /media/veracrypt1/Backup -n backup_glados -s 3"
 alias backup_dotfile="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /save -n dotfile -s 3"
 alias backup_dotfile_usb="backup -c /home/lordpax/.config_backup/config_dotfile.txt -o /media/veracrypt1/Backup -n dotfile_glados -s 3"
+alias backup_neocity="backup -c /home/lordpax/.config_backup/config_neocity.txt -o /save -n neocity -s 3"
 alias restore_file="backup -r /save -o /"
 alias restore_file_usb="backup -r /media/veracrypt1/Backup -o / -n backup_glados"
 alias restore_dotfile="backup -r /save -o / -n dotfile"
 alias restore_dotfile_usb="backup -r /media/veracrypt1/Backup -o / -n dotfile_glados"
-alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt compute-2 -o /home/lordpax/Documents/dotfile"
+alias restore_neocity="backup -r /save -o / -n neocity"
+alias git_dotfile="backup -g /home/lordpax/.config_backup/config_dotfile_git.txt glados -o /home/lordpax/Documents/dotfile"
 alias getconf="getdotfile -o .config"
 alias save_rapport="backup -f /home/lordpax/Documents/Alternance/Rapport_teddy_gauthier.odt -o /save -n backup_rapport_alternance -s 3"
 alias backup_log="bat ~/.config_backup/backup.log"

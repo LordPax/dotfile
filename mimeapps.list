@@ -24,16 +24,16 @@ x-scheme-handler/ror2mm=r2modman.desktop
 image/png=nsxiv.desktop
 
 [Added Associations]
-x-scheme-handler/http=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-x-scheme-handler/https=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-x-scheme-handler/chrome=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-text/html=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/x-extension-htm=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/x-extension-html=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/x-extension-shtml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/xhtml+xml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/x-extension-xhtml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
-application/x-extension-xht=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;zen.desktop;
+x-scheme-handler/http=zen.desktop;firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+x-scheme-handler/https=zen.desktop;firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+x-scheme-handler/chrome=zen.desktop;firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+text/html=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/x-extension-htm=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/x-extension-html=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/x-extension-shtml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/xhtml+xml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/x-extension-xhtml=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
+application/x-extension-xht=firefox.desktop;userapp-Pulse Browser-9IHI41.desktop;zen-alpha.desktop;zen-beta.desktop;
 text/x-scala=sc-usercreated-1.desktop;
 application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
 application/json=vim-usercreated-1.desktop;
