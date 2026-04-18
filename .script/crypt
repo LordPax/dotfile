@@ -34,12 +34,10 @@ function encrypt() {
     firstPass=$(zenity --password --title="Mot de passe")
     secondPass=$(zenity --password --title="Confirmation mot de passe")
 
-    if [ "$firstPass" == "$secondPass" ]; then
-        aescrypt -e -p "$firstPass" "$@" &> /dev/null && \
-            shred -zu "$@" || error "Une erreur s'est produite"
-    else
-        error "Les mots de passe sont différents"
-    fi
+    [ "$firstPass" != "$secondPass" ] && error "Les mots de passe sont différents" && exit 1
+
+    aescrypt -e -p "$firstPass" "$@" &> /dev/null && \
+        shred -zu "$@" || error "Une erreur s'est produite"
 
     unset firstPass
     unset secondPass

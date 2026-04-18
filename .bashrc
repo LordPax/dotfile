@@ -72,7 +72,7 @@ export PATH=$BUN_INSTALL/bin:$PATH
 # Golang
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOBIN
+export PATH=$GOBIN:$PATH
 
 # alias syncdash="firefox-developer-edition localhost:8384"
 # alias syncdash="pulse-browser localhost:8384"
@@ -95,7 +95,7 @@ alias vimclean="vimc PlugClean"
 alias df='df -h'
 alias free='free -h'
 alias more=less
-alias ls='ls --color'
+alias ls='ls --color --group-directories-first'
 alias grep='grep --color=auto'
 alias copy="xsel --clipboard -i"
 alias paste="xsel --clipboard -o"

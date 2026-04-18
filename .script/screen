@@ -1,11 +1,11 @@
 #!/bin/bash
 # author : lordpax
-# screen v1.3
+# screen v1.4
 
 ignoreScreen="None"
-version="v1.3"
+version="v1.4"
 dependencies="rofi notify-send i3-msg xrandr awk grep seq"
-presets="screenPresetWork\nscreenPresetStartup"
+presets="presetWork\npresetStartup"
 name=$(basename "$0")
 
 # info <msg>
@@ -52,10 +52,7 @@ function checkDependencies() {
 function getConnectedScreen() {
     [ -z "$1" ] && exit 1
 
-    local scr=$(
-        xrandr | \
-        grep " connected"
-    )
+    local scr=$(xrandr | grep " connected")
 
     case $1 in
         primary)
@@ -93,10 +90,7 @@ function connectScreen() {
     [ -z "$screen" ] && exit 1
 
     if echo -e "$presets" | grep -q "$screen"; then
-        $screen
-        sleep 1
-        info "Preset applied"
-        i3-msg "restart"
+        loadPreset "$screen" enable
         exit 0
     fi
 
@@ -135,8 +129,13 @@ function disconnectScreen() {
     local screens=$(getConnectedScreen all "$ignoreScreen")
     [ -z "$screens" ] && error "No screen found" && exit 1
 
-    local screen=$(echo "$screens" | rofi -dmenu -p "Disconnect a screen")
+    local screen=$(echo -e "$screens\n$presets" | rofi -dmenu -p "Disconnect a screen")
     [ -z "$screen" ] && exit 1
+
+    if echo -e "$presets" | grep -q "$screen"; then
+        loadPreset "$screen" disable
+        exit 0
+    fi
 
     ! xrandr --output "$screen" --off && \
         error "Screen not disconnected" && exit 1
@@ -161,8 +160,8 @@ function loadPreset() {
 }
 
 # preset for work on laptop with 2 screens
-# screenPresetWork [enable|disable]
-function screenPresetWork() {
+# presetWork [enable|disable]
+function presetWork() {
     local choosePreset="$1"
     local screens=$(getConnectedScreen all "$ignoreScreen")
     [ -z "$screens" ] && error "Preset : No screen found" && exit 1
@@ -190,14 +189,14 @@ function screenPresetWork() {
 }
 
 # preset for main pc startup
-# screenPresetStartup [enable|disable]
-function screenPresetStartup() {
+# presetStartup [enable|disable]
+function presetStartup() {
     local choosePreset="$1"
     local screens=$(getConnectedScreen all "$ignoreScreen")
     [ -z "$screens" ] && error "Preset : No screen found" && exit 1
 
-    echo -e "$screens" | grep -Evq "DP-3|HDMI-1" && \
-        error "Preset : Required screen \"DP-3, HDMI-1\" not found" && exit 1
+    echo -e "$screens" | grep -Evq "DP-0|DP-2" && \
+        error "Preset : Required screen \"DP-0, DP-2\" not found" && exit 1
 
     if [ -z "$choosePreset" ]; then
         choosePreset=$(echo -e "enable\ndisable" | rofi -dmenu -p "Choose preset")
@@ -205,11 +204,11 @@ function screenPresetStartup() {
 
     case $choosePreset in
         enable)
-            xrandr --output DP-3 --mode 1920x1080 --primary
-            xrandr --output HDMI-1 --mode 1366x768 --right-of DP-3;;
+            xrandr --output DP-2 --mode 1920x1080 --primary
+            xrandr --output DP-0 --mode 1920x1080 --right-of DP-2;;
         disable)
-            xrandr --output DP-3 --auto
-            xrandr --output HDMI-1 --off;;
+            xrandr --output DP-2 --auto
+            xrandr --output DP-0 --off;;
         *)
             error "Preset : Unknown action" &&
             exit 1;;

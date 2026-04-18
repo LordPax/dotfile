@@ -59,7 +59,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec urxvt
+# bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec st
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -111,6 +112,9 @@ bindsym $mod+q focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
+
+# sticky window
+bindsym $mod+s sticky toggle
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -178,7 +182,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+p exec --no-startup-id zenity --question --text "Eteindre ?" && shutdown -P now
 bindsym $mod+Shift+p exec --no-startup-id zenity --question --text "Redémarer ?" && shutdown -r now
 bindsym $mod+o exec betterlockscreen -l
-bindsym $mod+s exec ~/programme/cligpt -c -g speech
+# bindsym $mod+s exec ~/programme/cligpt -c -g speech
 bindsym $mod+u exec --no-startup-id flameshot gui
 # bindsym $mod+u exec --no-startup-id xfce4-screenshooter
 
